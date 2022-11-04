@@ -55,11 +55,11 @@ public class Principal {
             }            
             
             if (solucion.equals(miRespuesta)) {
-                System.out.println("\n***   ***   ***              ¡ ¡ ¡  C O R R E C T O  ! ! !              ***   ***   ***\n");
+                System.out.println("\n***   ***   ***              ¡ ¡ ¡  C O R R E C T O  ! ! !              ***   ***   ***");
                 aciertos = (1 + aciertos);
                 solucion = "0";
             } else {                    
-                System.out.println("\n***   ***   ***          ¡ ¡ ¡  E R R O R  ! ! !          ***   ***   ***\n");
+                System.out.println("\n***   ***   ***          ¡ ¡ ¡  E R R O R  ! ! !          ***   ***   ***");
                 fallos = (1 + fallos);
                 aciertos = (-1 + aciertos);
             }          
@@ -69,8 +69,7 @@ public class Principal {
     }
     
     public static void ver_notas() {
-        System.out.println("\nACIERTOS  = " + aciertos);
-        System.out.println("FALLOS    = " + fallos + "\n");
+        System.out.println("\n    ACIERTOS  = " + aciertos + "        FALLOS    = " + fallos);       
     }
 
     public static void main(String[] args) {
