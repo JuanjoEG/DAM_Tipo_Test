@@ -29,7 +29,7 @@ public class Test_English {
         *  2. TEMA: AT PRESENT                                                 *
         *  3. TEMA: DATE AND TIME                                              *
         *  4. TEMA: ON THE PHONE                                               *
-        *  5. TEMA:                                                            *
+        *  5. TEMA: LIKES AND DISLIKES                                         *
         *  6. TEMA:                                                            *
         *  7. TEMA:                                                            *
         *  8. TEMA:                                                            *
@@ -112,16 +112,16 @@ public class Test_English {
                     case "5" -> {
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Which of the following expressions is the most formal?", "I love watching series on Netflix.", "She has a genuine liking for detective stories.", "I hate loud noises.", "I like working in a hospital.", "2");
+            /*02*/      tipo_test("If you take offence at something, it means:", "That you like that.", "That you feel upset about it.", "That you have insulted someone.", "That you don't care about it.", "2");
+            /*03*/      tipo_test("My sister is completely down with her teacher. This sentences means that:", "My sister hates her teacher.", "My sister loves her teacher.", "My sister annoys her teacher.", "None of the options is correct.", "2");
+            /*04*/      tipo_test("Peter dies for dark chocolate. This sentence means that:", "Peter got sick from eating too much dark chocolate.", "Peter hates dark chocolate.", "Peter loves dark chocolate.", "Peter doesn't care about dark chocolate.", "3");
+            /*05*/      tipo_test("Which of the following expressions is used to express that you like something?", "It's not my cup of tea.", "To be put off by it.", "To be into it.", "To have no sympathy for it.", "3");
+            /*06*/      tipo_test("Which of the following expressions is not used for instructions?", "How do you do?", "Do you want me to?", "What do I do?", "How do I do?", "1");
+            /*07*/      tipo_test("Which of the following sentences is incorrect?", "So you're not taking any call in the afternoon, are you?", "We need to arrive at the airport three hours in advance, don't we?", "You have to walk one hour a day to keep fit, don't I?", "They arrive at 5pm, don't they?", "3");
+            /*08*/      tipo_test("Choose the right option to complete the sentence:\n        I'm ... I didn't catch that. Could you please say it again?", "Scared", "Afraid", "Mindful", "Frightened", "2");
+            /*09*/      tipo_test("What does the following expression mean:\n        To be on the same page / screen", "To be connected to the same website.", "To see the same screen on your laptop / computer.", "To have the same understanding of something.", "To synchronise watches.", "3");
+            /*10*/      tipo_test("How can I rephrase the following sentence:\n        Let me go through that again.", "Let me repeat that.", "Let's not go over that again.", "I didn't catch that.", "What is the best way to ...?", "1");                        
                     }
                     case "6" -> {
                         System.out.println("\nTEMA " + menu + "\n");
