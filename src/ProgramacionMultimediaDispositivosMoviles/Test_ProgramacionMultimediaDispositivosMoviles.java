@@ -263,7 +263,30 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
             /*09*/      tipo_test("", "", "", "", "", "");
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
-                    
+                    case "40" -> {
+                        System.out.println("\nTEMA " + menu + "\n");
+                        
+            /*01*/      tipo_test("El valor view.GONE del método setVisibility ...", "Ocultará un elemento.", "Mostrará un elemento.", "El método no existe.", "El valor no existe, es View.Visible.", "1");
+            /*02*/      tipo_test("SQLite nos provee de una clase para permitir seleccionar valores de una tabla sin usar\n        sentencias SELECT de SQL, a través de la función query: ¿qué nos devolverá dicha\n        función?", "Un objeto Cursor.", "Un array.", "Un Stream.", "Un ArrayList.", "1");
+            /*03*/      tipo_test("¿Qué estado de una aplicación móvil representa que la actividad (pantalla de la app)\n        está siendo utilizada por el usuario?", "Activa.", "Creada.", "Iniciada.", "En ejecución.", "1");
+            /*04*/      tipo_test("¿Cómo se llama la pantalla de carga de las apps?", "SplashScreen.", "LoadScreen.", "TimeScreen.", "LoadingScreen.", "1");
+            /*05*/      tipo_test("¿Cuál de los siguientes layouts no existe?", "LinearLayout.", "GuideLayout.", "FrameLayout.", "RowLayout.", "2");
+            /*06*/      tipo_test("¿Qué estado de una app móvil, tiene la actividad visible, pero sin el foco?", "Activa.", "Visible.", "Pausada.", "Parada.", "3");
+            /*07*/      tipo_test("¿Qué evento de las apps de Android representa el momento en que la actividad va a\n        dejar de responder a la interacción del usuario?", "onCreate(Bundle).", "onStop().", "onResume().", "onPause().", "4");
+            /*08*/      tipo_test("¿Cuál de las siguientes es una forma válida de ejecutar una app Android?", "En el emulador integrado de Android Studio.", "En un emulador de terceros.", "En un dispositivo físico.", "Todas las respuestas son correctas.", "4");
+            /*09*/      tipo_test("¿Dónde suelen estar localizados los recursos que vamos a necesitar para nuestras\n        aplicaciones móviles en Android?", "En el fichero xml res.", "En carpetas conteniendo ficheros con los recursos y ficheros XML.", "Cada recurso suele tener su propio fichero xml.", "Dentro de la carpeta xml.", "3");
+            /*10*/      tipo_test("¿Cuál de las siguientes NO es una capa de la estructura del sistema operativo\n        Android?", "Bibliotecas.", "Núcleo Linux.", "Interfaz de Usuario.", "Aplicaciones.", "3"); 
+            /*11*/      tipo_test("El elemento TextView de una pantalla de una aplicación móvil ...", "Muestra etiquetas de texto en pantalla.", "Representa una caja de texto donde podemos escribir.", "Se utiliza para editar los textos de strings.xml.", "No existe.", "1");
+            /*12*/      tipo_test("¿Cuál de los siguientes elementos no se puede usar en una actividad de\n        configuración?", "CheckBoxPreference.", "LabelPreference.", "EditTextPreference.", "ListPreference.", "2");
+            /*13*/      tipo_test("En una app Android, dentro de un mismo LinearLayout, si en el elemento A weight es\n        igual a 1 y en el elemento B weight es igual a 2:", "A tendrá el doble de tamaño que B.", "B tendrá el doble de tamaño que A.", "Habrá un elemento de A y dos de B.", "El elemento weight no pertenece al LinearLayout.", "2");
+            /*14*/      tipo_test("¿Qué lenguajes de programación podemos usar para programar apps para iOS?", "Java y XML.", "C# y XML.", "Swift u Objective-C.", "Java o Kotlin y XML.", "3");
+            /*15*/      tipo_test("¿Cuál es el entorno de desarrollo para desarrollar apps Android de Google?", "NetBeans.", "Eclipse.", "Android Studio.", "XCode.", "3");
+            /*16*/      tipo_test("Si voy a traducir una app con el código cs, ¿a qué idioma la estoy traduciendo?", "Castellano.", "Checo.", "Checheno.", "Catalán.", "2");
+            /*17*/      tipo_test("El atributo android:shrinkColumns:", "Indicará las columnas que pueden expandir para absorber el espacio libre dejado por las\n    demás columnas a la derecha de la pantalla.", "Indicará las columnas que se pueden contraer para dejar espacio al resto de columnas\n    que se puedan salir por la derecha de la pantalla.", "Indicará que las columnas tendrán el mismo ancho.", "Indicará las columnas de la tabla que se quieren ocultar completamente.", "2");
+            /*18*/      tipo_test("El método onCreateViewHolder:", "Hereda de RecyclerView.ViewHolder que representará un elemento de la lista.", "Obtendrá la interfaz gráfica de los elementos de la lista.", "Mostrará los datos de los elementos de la lista.", "Devolverá los elementos que tendrá la lista.", "2");
+            /*19*/      tipo_test("¿Qué atributo de un menú deberemos configurar si queremos que este se oculte?", "Hidden.", "Visible.", "Show.", "NotHidden.", "2");
+            /*20*/      tipo_test("¿Es posible ordenar los valores de una consulta de datos?", "Si, pero solo si usamos el método rawQuery.", "Si, pero solo si utilizamos el método execSQL.", "Si.", "No.", "3"); 
+                    }
                     case "0" -> {}
                     default -> System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
                 }

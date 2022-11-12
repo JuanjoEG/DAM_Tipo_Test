@@ -30,8 +30,8 @@ public class Test_DesarrolloInterfaces {
         *  3. TEMA: GENERACIÓN DE INTERFACES A PARTIR DE DOCUMENTOS XML        *
         *  4. TEMA: CREACIÓN DE COMPONENTES                                    *
         *  5. TEMA: EXPLOTACIÓN DE COMPONENTES VISUALES                        *
-        *  6. TEMA:                                                            *
-        *  7. TEMA:                                                            *
+        *  6. TEMA: USABILIDAD I: CONCEPTO Y NORMATIVA                         *
+        *  7. TEMA: USABILIDAD II: PAUTAS DE DISEÑO                            *
         *  8. TEMA:                                                            *
         *  9. TEMA:                                                            *
         * 10. TEMA:                                                            *
@@ -112,30 +112,30 @@ public class Test_DesarrolloInterfaces {
                     case "5" -> {
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("¿Cuál de las siguientes no es una característica de las pruebas unitarias?", "Rápida ejecución.", "Independencia respecto a otros tests.", "Un único uso.", "Cada test debe poder comprobar si es válido por si mismo.", "3");
+            /*02*/      tipo_test("¿Qué métodos se utilizan en las pruebas de tipo JUnit de Eclipse?", "assert", "get", "set", "build", "1");
+            /*03*/      tipo_test("¿Cuál de los siguientes tipos de eventos son los producidos por el usuario,\n        habitualmente a través del teclado o del puntero del ratón?", "Eventos internos.", "Eventos propios.", "Eventos externos.", "Eventos impropios.", "3");
+            /*04*/      tipo_test("¿Cuál de los siguientes eventos está relacionado con el cambio de un componente, de\n        tamaño, posición ...?", "EventObject ", "MouseEvent", "ComponentEvent", "ContainerEvent", "3");
+            /*05*/      tipo_test("¿Cuál de los siguientes eventos es el asociado al componente JScrollBar?", "AdjustmentEvent", "TextEvent", "ActionEvent", "ItemEvent", "1");
+            /*06*/      tipo_test("¿Qué acción dispara el evento keyReleased?", "Se produce al pulsar una tecla.", "Se produce al pulsar y soltar una tecla.", "Se produce al soltar una tecla.", "Se produce al pulsar dos teclas.", "3");
+            /*07*/      tipo_test("¿Qué método no se podrá utilizar con el escuchador KeyListener?", "keyPressed", "keyGained", "keyTyped", "keyRelease", "2");
+            /*08*/      tipo_test("¿Qué evento debe utilizarse con un JSpinner para detectar su cambio de estado?", "stateChanged", "itemStateChanged", "actionPerformed", "actionMove", "1");
+            /*09*/      tipo_test("¿Qué evento debe utilizarse con un JComboBox para detectar la selección realizada en\n        él?", "itemStateChanged", "stateChanged", "itemFocus", "stateFocus", "1");
+            /*10*/      tipo_test("Cuando se activa y vincula un escuchador o listener a un componente:", "Los componentes no realizan un filtrado previo de los eventos para determinar si los\n    manejan o no.", "Los componentes realizan un filtrado previo de los eventos para determinar si los\n    manejan o no.", "No será necesaria la asociación de la acción al evento para manejar el evento.", "Es una acción que se realiza de manera automática.", "1");                        
                     }
                     case "6" -> {
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                       
+            /*01*/      tipo_test("¿Cuál de los siguientes conceptos hace referencia a la facilidad o dificultad de uso de\n        un sitio web?", "Accesibilidad.", "Practicidad.", "Usabilidad.", "Utilidad.", "3");
+            /*02*/      tipo_test("¿Cuál de las siguientes no es una característica deseable en una interfaz?", "Alta tasa de error.", "Facilidad de aprendizaje.", "Eficiencia de uso.", "Alta satisfacción.", "1");
+            /*03*/      tipo_test("¿Cuál de los siguientes principios de diseño de un sistema interactivo no es\n        recomendable?", "Facilitar buenos mensajes de error.", "Conocer al usuario.", "Maximizar la memorización.", "Optimizar las operaciones mediante la rápida ejecución de operaciones comunes.", "3");
+            /*04*/      tipo_test("La disciplina que estudia el intercambio de información entre las personas y los\n        ordenadores, cuyo objetivo es que el intercambio y acceso a la información sea lo más\n        eficiente posible es:", "La accesibilidad computacional.", "La comunicación humana.", "La interacción persona ordenador.", "La actividad informática.", "3");
+            /*05*/      tipo_test("¿Cuál es la función de la Organización Internacional de la Normalización, ISO?", "Crear normas y estándares cuyo objetivo principal es conseguir asegurar que servicios y\n    productos presenten ciertos niveles de calidad, eficiencia y seguridad.", "Definir la usabilidad como la capacidad de un producto para ser entendido, aprendido,\n    usado y resultar atractivo para el usuario.", "Tener normas y estándares en materia relativa a la consecución de buenos parámetros\n    de usabilidad con respecto al diseño y desarrollo de interfaces que favorecen la\n    interacción entre la aplicación y el usuario.", "Todas las anteriores son correctas.", "4");
+            /*06*/      tipo_test("¿Cuál es la guía de usabilidad donde se recogen los beneficios relativos a las medidas\n        de usabilidad evaluadas?", "ISO/IEC  9126-1.", "ISO/IEC 14915.", "ISO/IEC 9241.", "IEC TR 61997.", "3");
+            /*07*/      tipo_test("¿Cuáles son las principales medidas de usabilidad de las aplicaciones?", "Satisfacción.", "Efectividad.", "Eficiencia.", "Todas las anteriores.", "4");
+            /*08*/      tipo_test("¿Qué es la evaluación heurística?", "Es una prueba realizada por expertos.", "Es lo contrario al método de inspección.", "Es una única evaluación de alto nivel.", "Es una prueba realizada por usuarios.", "1");
+            /*09*/      tipo_test("¿Qué criterio no se debería tener en cuenta a la hora de diseñar pruebas de usabilidad\n        con usuarios?", "Pruebas genéricas.", "Pruebas razonables.", "Pruebas factibles.", "Tiempo de realización razonable.", "1");
+            /*10*/      tipo_test("¿Cuál de los siguientes no es un tipo de test de usabilidad?", "Test de uso pautado.", "Test de uso descontextualizado.", "Test de uso natural.", "Test de uso artificial.", "4");                       
                     }
                     case "7" -> {
                         System.out.println("\nTEMA " + menu + "\n");
@@ -263,7 +263,30 @@ public class Test_DesarrolloInterfaces {
             /*09*/      tipo_test("", "", "", "", "", "");
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
-                    
+                    case "40" -> {
+                        System.out.println("\nTEMA " + menu + "\n");
+                        
+            /*01*/      tipo_test("XML es ...", "Es un lenguaje utilizado para estructurar, almacenar e intercambiar datos entre distintas\n    plataformas.", "Un lenguaje de programación estandarizado.", "El estándar más empleado en la programación orientada a objetos.", "Un lenguaje de programación para almacenar los atributos de una clase en Java.", "1");
+            /*02*/      tipo_test("Un componente puede ...", "Ser implementado siempre que se parta de otro componente ya creado.", "Interactuar con otros componentes software a través de las interfaces de comunicación.", "Interactuar sólo consigo mismo.", "La A y C son ciertas.", "2");
+            /*03*/      tipo_test("Dentro de las pautas de diseño en relación al aspecto de la interfaz encontramos ...", "Tamaño de la fuente.", "Color de la fuente.", "Estilo.", "Fuentes y Distribución de elementos.", "4");
+            /*04*/      tipo_test("¿Qué son los atajos de teclado en una aplicación?", "Un mecanismo para abrir antes el programa.", "Las instrucciones que ejecuta el sistema operativo al ejecutar un programa.", "Son combinaciones de teclas para acceder más rápidamente a determinadas acciones.", "Las demás respuestas son incorrectas.", "3");
+            /*05*/      tipo_test("Una propiedad en Programación Orientada a Objetos (POO) ...", "Representa solo el comportamiento de un objeto,", "Representa un conjunto de objetos que comparten una misma estructura y comportamientos.", "Define las características de un objeto.", "Las demás respuestas son incorrectas. ", "3");
+            /*06*/      tipo_test("¿Qué es ISO?", "Es la organización internacional de normalización.", "Es el protocolo de interfaces de usuario.", "Son las normas que deben seguir los navegadores.", "Las demás respuestas son incorrectas.", "1");
+            /*07*/      tipo_test("Los eventos en una aplicación ...", "Son el único mecanismo para almacenar datos de una aplicación.", "Son los elementos de la interfaz que almacenan los datos.", "Son un mecanismo para estructurar los elementos de la interfaz.", "Proporcionan un mecanismo adecuado para tratar las diferentes formas de interacción\n    entre el usuario y la aplicación.", "4");
+            /*08*/      tipo_test("Sobre el IDE de desarrollo Eclipse es cierto que ...", "Es de código propietario.", "No es multiplataforma.", "Es de código abierto y no es multiplataforma.", "Es de código abierto y multiplataforma.", "4");
+            /*09*/      tipo_test("¿Qué es la programación basada en eventos?", "Es la clave de la interacción entre el usuario y una interfaz.", "Un lenguaje estructurado.", "Un paradigma orientado a objetos sin tipado.", "Todas las respuestas son correctas.", "1");
+            /*10*/      tipo_test("¿Qué es la usabilidad?", "Es un conjunto de parámetros para diseñar sistemas más eficientes.", "Es cómo se muestran las interfaces al usuario.", "Es la manera en como un usuario accede a la información.", "Es todo el conjunto de reglas para mostrar la información al usuario.", "1");
+            /*11*/      tipo_test("Un documento XML tiene ...", "Una gran flexibilidad y no requiere cerrar las etiquetas.", "Una estructura no anidada y libre.", "Una estructura anidada de manera jerárquica.", "Una estructura jerárquica, pero no anidada.", "3");
+            /*12*/      tipo_test("En relación a los componentes en Java Swing es cierto que ...", "Son los elementos que se sitúan sólo sobre el Jpanel.", "Son los elementos que se sitúan sólo sobre el JPanel y el JDialog.", "Son los elementos que se sitúan en la ventana.", "La A y C son ciertas.", "3");
+            /*13*/      tipo_test("En relación a la clase JFrame en Java Swing es cierto que ...", "Es la destinada para crear los marcos contenedores.", "Sólo se puede crear una por cada aplicación.", "Es la destinada para la creación de la ventana para la interfaz.", "La B y C son ciertas.", "3");
+            /*14*/      tipo_test("¿Qué elemento de la interfaz de Eclipse contiene paneles para crear componentes y\n        modificar sus propiedades?", "Vista de diseño.", "Run.", "Palette.", "Toolbar.", "1");
+            /*15*/      tipo_test("Los menús desplegables se crean utilizando el componente:", "JComboBox.", "ButtonGroup.", "JTextField.", "JCheckBox.", "1");
+            /*16*/      tipo_test("¿Cuál de las siguientes líneas es correcta en XML?", "<i> Texto", "<i> Texto <i>", "<i> Texto </i>", "<I> Texto <I>", "3");
+            /*17*/      tipo_test("Para definir el nuevo comportamiento de un componente e implementar nuevos\n        métodos se usará la palabra reservada:", "@Superextend", "@Superride", "@Override", "@Overextend", "3");
+            /*18*/      tipo_test("¿Cuál de los siguientes eventos está relacionado con el cambio de un componente,\n        de tamaño, posición ...?", "EventObject", "MouseEvent", "ComponentEvent", "ContainerEvent", "3");
+            /*19*/      tipo_test("¿Cuál es la guía de usabilidad donde se recogen los beneficios relativos a las medidas\n        de usabilidad evaluadas?", "ISO/IEC  9126-1.", "ISO/IEC 14915.", "ISO/IEC 9241.", "IEC TR 61997.", "3");
+            /*20*/      tipo_test("¿Cuál de las siguientes pautas de diseño de la estructura de la interfaz de usuario se\n        debe evitar?", "Punto focal.", "Consistencia de ventanas.", "Incoherencia entre elementos.", "Legibilidad y flujo entre elementos.", "3");  
+                    }
                     case "0" -> {}
                     default -> System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
                 }

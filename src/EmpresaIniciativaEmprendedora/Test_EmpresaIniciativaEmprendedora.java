@@ -263,7 +263,30 @@ public class Test_EmpresaIniciativaEmprendedora {
             /*09*/      tipo_test("", "", "", "", "", "");
             /*10*/      tipo_test("", "", "", "", "", "");                       
                     }
-                    
+                    case "40" -> {
+                        System.out.println("\nTEMA " + menu + "\n");
+                        
+            /*01*/      tipo_test("Un mercado con pocos oferentes y muchos demandantes y en el que existe control\n        sobre los precios, es un:", "Competencia perfecta.", "Oligopolio.", "Monopolio.", "Oligopsonio.", "2");
+            /*02*/      tipo_test("El enfoque de marketing estratégico:", "Se enfoca en el corto plazo para garantizar la supervivencia de la empresa.", "Se enfoca en el largo plazo y tiene como objetivo garantizar la supervivencia de la empresa.", "Se enfoca en el medio y corto plazo para garantizar la supervivencia de la empresa.", "Se enfoca en el medio y corto plazo traduciendo las estrategias en acciones concretas.", "2");
+            /*03*/      tipo_test("El autónomo dispone de una serie de coberturas, en el caso de la incapacidad\n        temporal por enfermedad común o accidente no laboral estaría dentro de la cobertura\n        por:", "Contingencias comunes.", "Contingencias profesionales.", "Cese de actividad.", "Formación y prevención.", "1");
+            /*04*/      tipo_test("En el análisis DAFO:", "Fortalezas y oportunidades hace visible el potencial de la empresa.", "Combinación de amenazas y debilidades muestra el potencial de la empresa.", "Fortalezas y oportunidades muestran las limitaciones de la empresa.", "Las fortalezas y amenazas representan los desafíos a los que se enfrenta la empresa.", "1");
+            /*05*/      tipo_test("La estructura organizativa debe reflejar la organización de:", "Los recursos materiales y tecnológicos.", "Las personas y responsabilidades.", "Del trabajo y procesos.", "Todas son correctas.", "4");
+            /*06*/      tipo_test("El trabajador por cuenta ajena:", "Trabaja para terceros.", "Obtiene unos ingresos fijos.", "Sigue una organización impuesta.", "Todas las respuestas son correctas.", "4");
+            /*07*/      tipo_test("Señala la respuesta correcta:", "Una innovación de producto hace referencia a las novedades que se llevan a cabo sobre\n    el proceso de producción del producto.", "La técnica del elevator pitch se utiliza para generar ideas de negocio.", "La investigación comercial se recomienda llevarla a cabo antes de llevar a cabo un\n    proyecto de negocio.", "La rentabilidad no es un factor clave a considerar para iniciar un proyecto.", "3");
+            /*08*/      tipo_test("Teoría que añade las figuras del empresario profesional y empresario patrimonial:", "El empresario riesgo.", "El empresario innovador.", "El empresario tecnócrata.", "El empresario líder.", "1");
+            /*09*/      tipo_test("El autónomo societario:", "Posee más del 25% de una sociedad limitada.", "No está obligado a darse de alta como autónomo.", "No trabaja en la empresa.", "Ninguna de las anteriores es correcta.", "1");
+            /*10*/      tipo_test("Parte del plan de empresa que recoge cómo vamos a crear nuestros productos y\n        servicios y qué necesitamos para hacerlo:", "Plan de marketing.", "Plan de desarrollo.", "Plan de calidad.", "Plan de financiación.", "2");
+            /*11*/      tipo_test("Señala la respuesta correcta:", "La cultura organizativa es un elemento tangible de la empresa.", "La imagen de marca es la forma en la que nos ven los grupos de interés de la empresa.", "No es necesaria la definición de objetivos dentro de una empresa.", "La Responsabilidad Social Corporativa sólo pretende buscar un impacto a nivel social.", "2");
+            /*12*/      tipo_test("Las ?4P? o Marketing mix incluye las siguientes variables clave:", "Producto, Precio, Publicidad y Venta.", "Producto, Precio, Promoción y Venta.", "Producto, Precio, Distribución y Promoción.", "Producto, Precio, Producción y Promoción.", "3");
+            /*13*/      tipo_test("Herramienta de comunicación que incluye las acciones destinadas a crear y mantener\n        en el tiempo relaciones estables y duraderas entre la empresa y su público de interés:", "Promoción de ventas", "Marketing directo", "Publicidad.", "Relaciones Públicas.", "4");
+            /*14*/      tipo_test("Introducir nuevas formas de promocionar un producto se denomina:", "Innovación de producto.", "Innovación de marketing.", "Innovación de procesos.", "Innovación organizacional.", "2");
+            /*15*/      tipo_test("Si un negocio puede crecer y expandirse, podemos decir que es un emprendimiento:", "Escalable.", "Privado.", "De imitación.", "Público.", "1");
+            /*16*/      tipo_test("Es una afirmación incorrecta sobre el empresario:", "Tiene mayor poder de decisión que el trabajador.", "En ocasiones debe llevarse el trabajo a casa.", "Sigue una organización impuesta.", "Todas son correctas.", "3");
+            /*17*/      tipo_test("Podemos considerar los indicadores de responsabilidad social corporativa como:", "La integración por parte de la empresa de acciones que mejoren la sociedad.", "La implementación de los objetivos de la empresa.", "Las metodologías para medir la gestión de la responsabilidad social corporativa de la empresa.", "Ninguna respuesta es correcta.", "3");
+            /*18*/      tipo_test("La competencia dentro del DAFO es:", "Una fortaleza.", "Una debilidad.", "Una oportunidad.", "Una amenaza.", "4");
+            /*19*/      tipo_test("Las publicaciones (gratuitas) de una red social forman parte de:", "La publicidad digital.", "El E-mail marketing.", "Las relaciones públicas 2.0.", "El marketing de contenidos.", "3");
+            /*20*/      tipo_test("Las Sociedades Limitadas:", "No deben inscribirse en el Registro Mercantil.", "Tienen 3.000? de capital mínimo inicial.", "No puede tener más de 5 socios.", "Tienen su capital dividido en acciones.", "2");
+                    }
                     case "0" -> {}
                     default -> System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
                 }

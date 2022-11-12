@@ -1,6 +1,9 @@
 package _Main_;
 
+import java.io.IOException;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -45,6 +48,10 @@ public class Principal {
             System.out.print("Indica tu respuesta: ");
             miRespuesta = teclaStr.nextLine();
             
+            for (int i=0; i<20; i++) {
+                System.out.println("");
+            }
+            
             switch (miRespuesta) {
                 case "A", "a" -> miRespuesta = "1";
                 case "B", "b" -> miRespuesta = "2";
@@ -52,8 +59,7 @@ public class Principal {
                 case "D", "d" -> miRespuesta = "4";
                 default -> {
                 }
-            }            
-            
+            }
             if (solucion.equals(miRespuesta)) {
                 System.out.println("\n***   ***   ***              ¡ ¡ ¡  C O R R E C T O  ! ! !              ***   ***   ***");
                 aciertos = (1 + aciertos);
@@ -63,8 +69,9 @@ public class Principal {
                 fallos = (1 + fallos);
                 aciertos = (-1 + aciertos);
             }          
-            
+            System.out.println("\n\n\n");
         } while ( !"0".equals(solucion) );
+        
         ver_notas();
     }
     

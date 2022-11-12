@@ -30,7 +30,7 @@ public class Test_SistemasGestionEmpresarial {
         *  3. TEMA: LOS MÓDULOS DE UN ERP                                      *
         *  4. TEMA: EL PROYECTO DE IMPLANTACIÓN DE UN ERP                      *
         *  5. TEMA: EL ENTORNO DE INSTALACIÓN DE ERP-CRM                       *
-        *  6. TEMA:                                                            *
+        *  6. TEMA: TIPOS DE INSTALACIONES DE SISTEMAS ERP-CRM                 *
         *  7. TEMA:                                                            *
         *  8. TEMA:                                                            *
         *  9. TEMA:                                                            *
@@ -112,30 +112,30 @@ public class Test_SistemasGestionEmpresarial {
                     case "5" -> {
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("SAP S/4 HANA ...", "Se trata de una plataforma de \"datos en memoria\".", "Se trata de una plataforma de \"datos en disco duro\".", "Ofrece peores rendimientos que SAP R/3 en aplicaciones analísticas como puede ser el\n    Big Data.", "Ninguna respuesta es correcta.", "1");
+            /*02*/      tipo_test("En SAP S/4 HANA ...", "Los módulos siguen denominándose módulos.", "Los módulos han pasado a denominarse LoB (Line of Business).", "Los módulos han pasado a denominarse HLM (High Level Module).", "Ninguna respuesta es correcta.", "2");
+            /*03*/      tipo_test("La instalación en local de SAP HANA 2.0 Express Edition se puede hacer de:", "Tres formas distintas: con un instalador, mediante máquina virtual o por medio de\n    docker.", "Dos formas distintas: con un instalador o mediante máquina virtual.", "Una simple forma: con una máquina virtual.", "Una simple forma: con un instalador.", "1");
+            /*04*/      tipo_test("Para la instalación de SAP HANA 2.0 Express Edition en local mediante un instalador\n        es necesario:", "Disponer de, al menos, 16GB de memoria RAM.", "Tener instalado Java Runtime Enviroment (JRE) 8 o superior.", "Disponer de un procesador con al menos 2 núcleos.", "Todas las respuestas son correctas.", "4");
+            /*05*/      tipo_test("Para la instalación de SAP HANA 2.0 Express Edition en local haciendo uso de una\n        máquina virtual preconfigurada es necesario:", "Disponer de al menos 64 GB de RAM", "Tener instalado Java Runtime Enviroment (JRE) 7.", "Tener, al menos 100GB de espacio libre en el disco duro.", "Ninguna respuesta es correcta.", "4");
+            /*06*/      tipo_test("La instalación de Odoo en local se puede hacer de:", "Tres formas distintas: con un instalador, mediante código fuente o por medio de docker.", "Dos formas distintas: con un instalador o mediante docker.", "Una simple forma: con el código fuente.", "Una simple forma: con un instalador.", "1");
+            /*07*/      tipo_test("Para instalar Odoo en local, en una empresa donde lo usarán 20 trabajadores, será\n        necesario disponer de un equipo con:", "4 CPUs y 8GB de memoria RAM mínimo.", "2 CPUs y 8GB de memoria RAM mínimo.", "2 * 8 CPUs y 32GB de memoria RAM mínimo.", "Ninguna respuesta es correcta.", "1");
+            /*08*/      tipo_test("Odoo tiene como requisito software en todas las opciones de instalación disponer\n        de ...", "Un servidor de base de datos MySQL.", "Java Runtime Environment (JRE) 8 o superior.", "Docker.", "Ninguna respuesta es correcta.", "4");
+            /*09*/      tipo_test("Odoo proporciona un instalador para ...", "Windows.", "Distribuciones basadas en Debian (Debian, Ubuntu, ...).", "Distribuciones basadas en RPM (Fedora, CentOS, RHEL, ...).", "Todas las respuestas son correctas.", "4");
+            /*10*/      tipo_test("Los módulos de Odoo están implementados en ...", "Python.", "Java.", "C++.", "Ninguna respuesta es correcta.", "1");                        
                     }
                     case "6" -> {
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                       
+            /*01*/      tipo_test("Para realizar hacer uso de un ERP mediante SaaS ...", "Es necesario instalarse algún software en local.", "Es necesario instalar algún plugin en el navegador.", "No es necesario instalar nada, simplemente conectarse a través de un navegador.", "Ninguna de las anteriores es correcta.", "3");
+            /*02*/      tipo_test("La instalación de un ERP en un hosting puede ser ...", "En un hosting del proveedor oficial.", "En un hosting de un tercero.", "En un hosting propio.", "Todas las respuestas son correctas.", "4");
+            /*03*/      tipo_test("El software copyleft ...", "Permite al redistribuidor agregar restricciones adicionales.", "No permite al redistribuidor agregar restricciones adicionales.", "Hace que el código sea privado.", "Ninguna respuesta es correcta.", "2");
+            /*04*/      tipo_test("La licencia LGPLv3 ...", "Es más permisiva que la apache 2.0.", "Es más permisiva que la GPLv3.", "Es más permisiva que la MPL 1.1 (Mozilla Public License).", "Ninguna respuesta es correcta.", "2");
+            /*05*/      tipo_test("La versión Express Edition de SAP es ...", "Siempre de pago.", "Siempre gratuita.", "Gratuita hasta los 32GB.", "Ninguna respuesta es correcta.", "3");
+            /*06*/      tipo_test("La versión Runtime Edition de SAP ...", "Solo pueden usar aplicaciones SAP.", "Pueden usar aplicaciones SAP y no SAP.", "Solo se puede usar en local (on-premise).", "Solo se puede usar en la nube (cloud).", "1");
+            /*07*/      tipo_test("La versión SaaS de Odoo ...", "Siempre es de pago.", "Está totalmente administrada por Odoo S.A.", "Además de un navegador, es necesario instalar software en nuestro host para usarlo.", "Ninguna respuesta es correcta.", "2");
+            /*08*/      tipo_test("Para instalar la versión empresarial de Odoo con el instalador en una distribución\n        Debian o RPM ...", "No se puede hacer uso del repositorio que ofrece Odoo, solo con los paquetes 'deb'\n    y 'rpm' respectivamente.", "Se puede hacer uso tanto del repositorio que ofrece Odoo como de los paquetes 'deb' y\n    'rpm' respectivamente.", "No se puede instalar la versión empresarial de Odoo con el instalador.", "Ninguna respuesta es correcta.", "2");
+            /*09*/      tipo_test("La versión de instalación con el instalador ...", "Instalará en Windows todo lo necesario para ejecutar Odoo (no requiere instalar nada más).", "Instalará en distribuciones Debian todo lo necesario para ejecutar Odoo (no requiere\n    instalar nada más)", "Instalará en distribuciones RPM todo lo necesario para ejecutar Odoo (no requiere\n    instalar nada más)", "Ninguna respuesta es correcta.", "1");
+            /*10*/      tipo_test("La versión de instalación con el código fuente ...", "Es la modalidad más conveniente para los usuarios desarrolladores.", "Es la modalidad más conveniente para los usuarios que no necesiten desarrollar.", "No es especialmente conveniente para ningún grupo de usuarios.", "Ninguna respuesta es correcta.", "1");                       
                     }
                     case "7" -> {
                         System.out.println("\nTEMA " + menu + "\n");
@@ -263,7 +263,30 @@ public class Test_SistemasGestionEmpresarial {
             /*09*/      tipo_test("", "", "", "", "", "");
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
-                    
+                    case "40" -> {
+                        System.out.println("\nTEMA " + menu + "\n");
+                        
+            /*01*/      tipo_test("Para la instalación de SAP S/4 HANA en local ...", "No influye la versión del producto SAP.", "SAP no tiene socios certificados del hardware necesario.", "Los requisitos hardware son a voluntad del cliente.", "Los requisitos hardware y software dependen de muchísimos factores.", "4");
+            /*02*/      tipo_test("Los módulos logísticos se encargan de realizar las tareas de ...", "Gestión de materiales.", "Ventas y distribución.", "Planificación de la producción.", "Todas las respuestas son correctas.", "4");
+            /*03*/      tipo_test("El control de facturación supone ...", "Imprimir todos los documentos disponibles.", "Tener ya un pedido de nuestros clientes.", "Que el producto aún no lo ha enviado el proveedor.", "Registrar la factura que nos ha enviado el proveedor.", "4");
+            /*04*/      tipo_test("En la fase de implantación de un ERP se realizan estimaciones de ...", "Objetivo.", "Recursos.", "Tiempos.", "Todas las respuestas son correctas.", "4");
+            /*05*/      tipo_test("El desarrollo de programas de código abierto está basado en ...", "Su registro de la propiedad intelectual.", "La colaboración abierta.", "El pago del coste de desarrollo.", "Todas las respuestas son correctas.", "2");
+            /*06*/      tipo_test("Para instalar Odoo se puede realizar ...", "Online.", "Con Instalador.", "Con Docker.", "Todas las respuestas son correctas.", "4");
+            /*07*/      tipo_test("El ERP Odoo tiene módulos que permiten ...", "Chatear en privado con los empleados.", "Gestionar la Contabilidad.", "Controlar el Inventario.", "Todas las respuestas son correctas.", "1");
+            /*08*/      tipo_test("En los años 70 aparecieron los ...", "MRP.", "ERP.", "MRP II.", "CRM.", "1");
+            /*09*/      tipo_test("Un software comercial es aquel que es desarrollado por una empresa que pretende\n        ganar dinero por ...", "Su modificación.", "Su uso.", "Su desarrollo.", "Las demás respuestas son incorrectas.", "2");
+            /*10*/      tipo_test("Dentro de los pasos para completar el flujo de compra-venta en Odoo tenemos ...", "Facturación y Atención al cliente.", "Facturación y Recibir producto.", "Analizar los beneficios y publicitar el producto.", "Publicitar y vender el producto.", "2");
+            /*11*/      tipo_test("Entre las desventajas del código abierto está que ...", "No se puede hacer cambios en el código, pero sí mostrarlo.", "La garantía suele estar limitada.", "Los fabricantes del software no tienen soporte técnico.", "Las demás respuestas son incorrectas.", "2");
+            /*12*/      tipo_test("SAP permite la instalación de SAP S/4 HANA mediante ...", "Un instalable en Linux.", "Un instalable en windows.", "Un instalable en Java.", "Todas las respuestas son correctas.", "1");
+            /*13*/      tipo_test("Entre las ventajas del código propietario está que ...", "Es más barato que el libre.", "Se puede distribuir mostrando su código.", "Las comunidades incorporan los cambios rápidamente.", "Son desarrollados por grandes fabricantes de software.", "4");
+            /*14*/      tipo_test("Un CRM permite gestionar ...", "Contactos.", "Campañas de marketing.", "Nuevas oportunidades de negocio.", "Todas las respuestas son correctas.", "4");
+            /*15*/      tipo_test("Entre las ventajas del código abierto encontramos que ...", "La evolución del software no depende de un proveedor, sino de la comunidad.", "La evolución del software se hace de forma genérica y depende de la comunidad.", "Es un software muy especializado y puede evolucionar en áreas específicas.", "Ninguna respuesta es correcta.", "1");
+            /*16*/      tipo_test("En el módulo de Empleados de Odoo nos permiten ...", "Gestionar gastos del empleado.", "Gestionar vacaciones del empleado.", "Gestionar evaluaciones del empleado.", "Todas las respuestas con correctas.", "4");
+            /*17*/      tipo_test("El diseño técnico ...", "Es creado por los analistas en la fase de análisis.", "Es creado por los técnicos en la fase de análisis.", "Es creado por los analistas en la fase de parametrización y diseño.", "Es creado por los técnicos en la fase de parametrización y diseño.", "4");
+            /*18*/      tipo_test("Para la instalación de SAP HANA 2.0 Express Edition en local haciendo uso de una\n        máquina virtual preconfigurada es necesario:", "Disponer de, al menos, 16GB de memoria RAM.", "Tener instalado Java Runtime Enviroment (JRE) 7.", "Tener, al menos 100GB de espacio libre en el disco duro.", "Ninguna respuesta es correcta.", "4");
+            /*19*/      tipo_test("La versión de instalación con el instalador ...", "Instalará en Windows todo lo necesario para ejecutar Odoo (no requiere instalar nada más).", "Instalará en distribuciones Debian todo lo necesario para ejecutar Odoo (no requiere\n    instalar nada más)", "Instalará en distribuciones RPM todo lo necesario para ejecutar Odoo (no requiere\n    instalar nada más)", "Ninguna respuesta es correcta.", "1");
+            /*20*/      tipo_test("El análisis de los beneficios ...", "Puede hacerse en cualquier momento.", "Puede hacerse solo una vez al mes.", "Puede hacerse solo una vez al año.", "Puede hacerse solo 4 veces al año (una por trimestre).", "1");
+                    }
                     case "0" -> {}
                     default -> System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
                 }

@@ -30,7 +30,7 @@ public class Test_English {
         *  3. TEMA: DATE AND TIME                                              *
         *  4. TEMA: ON THE PHONE                                               *
         *  5. TEMA: LIKES AND DISLIKES                                         *
-        *  6. TEMA:                                                            *
+        *  6. TEMA: PAST ACTIVITIES                                            *
         *  7. TEMA:                                                            *
         *  8. TEMA:                                                            *
         *  9. TEMA:                                                            *
@@ -126,16 +126,16 @@ public class Test_English {
                     case "6" -> {
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Which of the following expressions is incorrect:", "At weekends, we didn't visited our grandparents.", "At weekends, we always visited our grandparents.", "Did you visit your grandparents at weekends?", "At weekends, we never visited our grandparents.", "1");
+            /*02*/      tipo_test("Choose the right option to complete the sentence:\n        I ... football at school. I was very good!", "Played.", "Playd.", "Plaied.", "Playt.", "1");
+            /*03*/      tipo_test("Choose the right option to complete the sentence:\n        When my aunt came to visit, she always ... home-made chocolate chip cookies.", "Brought.", "Bringed.", "Broughed.", "Braught.", "1");
+            /*04*/      tipo_test("Choose the right option to complete the sentence:\n        I didn't ... the vase. I swear!", "Break.", "Broke.", "Brake.", "Braked.", "1");
+            /*05*/      tipo_test("Choose the right option to complete the sentence:\n        When I was a little girl, I ... of becoming an astronaut.", "Both options are correct.", "Dreamed.", "Dreamt.", "None of the options is correct.", "1");
+            /*06*/      tipo_test("Choose the right preposition to complete the sentence:\n        Harry arrived ... January 1st.", "On.", "In.", "At.", "Over.", "1");
+            /*07*/      tipo_test("Choose the right preposition to complete the sentence:\n        The meeting is scheduled ? 3pm.", "At.", "In.", "On.", "Over.", "1");
+            /*08*/      tipo_test("Which of the following sentences is correct?", "I started working for this company a long time ago.", "I started working for this company ago a long time.", "I start working for this company a long time ago.", "I started work for this company ago a long time.", "1");
+            /*09*/      tipo_test("Choose the right option to complete the sentence:\n        She came to visit last Saturday and we haven't heard from her ...", "After that.", "Before that.", "Ago.", "All options are incorrect.", "1");
+            /*10*/      tipo_test("Which of the following expressions is correct for giving directions?", "Turn right.", "Take the right.", "Spin to the right.", "All options are incorrect.", "1");                        
                     }
                     case "7" -> {
                         System.out.println("\nTEMA " + menu + "\n");
