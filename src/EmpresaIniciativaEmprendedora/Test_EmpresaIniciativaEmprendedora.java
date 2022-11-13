@@ -29,9 +29,10 @@ public class Test_EmpresaIniciativaEmprendedora {
         *  2. TEMA: FACTORES CLAVES EN EL EMPRENDIMIENTO                       *
         *  3. TEMA: EL EMPRESARIO                                              *
         *  4. TEMA: PLAN DE EMPRESA Y CULTURA EMPRESARIAL                      *
-        *  5. TEMA:                                                            *
-        *  6. TEMA:                                                            *
-        *  7. TEMA:                                                            *
+        *  5. TEMA: LA EMPRESA: ANÁLISIS DEL ENTORNO Y MERCADO                 *
+        *  6. TEMA: MARKETING Y SU PLAN EN LA EMPRESA                          *
+        *  7. TEMA: FORMULAS JURÍDICAS DE LAS EMPRESAS.                        *
+        *           TRÁMITES DE CONSTITUCIÓN Y DE ACTIVIDAD.                   *
         *  8. TEMA:                                                            *
         *  9. TEMA:                                                            *
         * 10. TEMA:                                                            *
@@ -112,30 +113,35 @@ public class Test_EmpresaIniciativaEmprendedora {
                     case "5" -> {
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Un entorno simple y estático con poco riesgo se denomina:", "Estable.", "Intermedio.", "Turbulento.", "Simple.", "1");
+            /*02*/      tipo_test("Forma parte del macroentorno:", "Los clientes de una empresa.", "La economía de una región.", "Los proveedores de una empresa.", "Los intermediarios de una empresa.", "2");
+            /*03*/      tipo_test("El nivel educativo de la población de una región forma parte del ámbito:", "Económico.", "Político.", "Social.", "Tecnológico.", "3");
+            /*04*/      tipo_test("Los impuestos que estén en vigor en un país forma parte del ámbito:", "Político.", "Legal.", "Económico.", "Social.", "2");
+            /*05*/      tipo_test("La competencia dentro del DAFO es:", "Una fortaleza", "Una debilidad.", "Una oportunidad.", "Una amenaza.", "4");
+            /*06*/      tipo_test("Manifiestan los desafios a los que se debe enfrentar la empresa:", "La suma de debilidades y oportunidades.", "La suma de amenazas y oportunidades.", "La suma de fortalezas y debilidades.", "La suma de fortalezas y oportunidades.", "1");
+            /*07*/      tipo_test("Si nos referimos al momento en el que un usuario compra un producto hablamos de\n        segmentación:", "Conductual.", "Psicográfica.", "Demográfica.", "Geográfica.", "1");
+            /*08*/      tipo_test("Si decimos que una persona tiene un estilo de vida sedentario, nos estamos refiriendo\n        a la segmentación:", "Psicográfica.", "Conductual.", "Geográfica.", "Demográfica.", "1");
+            /*09*/      tipo_test("Si hay muchos oferentes y unos pocos demandantes, estamos hablando de:", "Competencia perfecta.", "Oligopolio.", "Oligopsonio.", "Monopolio.", "3");
+            /*10*/      tipo_test("Es la estrategia de mercado que se basa en decidir cuáles son nuestros productos más\n        rentables y volcar más esfuerzos en ellos:", "Estrategia funcional.", "Estrategia posicional.", "Estrategia de cartera.", "Estrategia de segmentación.", "3");                        
                     }
                     case "6" -> {
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Es una de las funciones del departamento de marketing:", "Gestionar la marca.", "Gestionar la responsabilidad social corporativa.", "Analizar el mercado.", "Todas las anteriores son correctas.", "4");
+            /*02*/      tipo_test("Es la estrategia de marketing que se centra en las variables producto, precio,\n        promoción y distribución:", "Marketing mix.", "Marketing operativo.", "Marketing estratégico.", "Marketing de atracción.", "1");
+            /*03*/      tipo_test("Es la estrategia de marketing que se enfoca a largo plazo.", "Marketing mix.", "Marketing operativo.", "Marketing estratégico.", "Marketing de atracción.", "3");
+            /*04*/      tipo_test("Cuando nos referimos del camino que hace el cliente desde que nos descubren hasta\n        que finalizan la compra estamos hablando de:", "Embudo de ventas.", "Estrategia.", "Objetivos del marketing.", "Público objetivo.", "1");
+            /*05*/      tipo_test("Es una afirmación incorrecta en relación al contenido del plan de marketing:", "Es imprescindible realizar un presupuesto de acciones de marketing ya que los recursos\n    de la empresa son limitados", "Es mucho más importante saber quiénes son nuestros clientes que cuáles son sus\n    motivaciones.", "Es importante conocer el entorno de la empresa.", "La misión, visión y valores deben incluirse en el plan de marketing.", "2");
+            /*06*/      tipo_test("Es una línea de trabajo del departamento comercial de la empresa:", "Gestión del trabajo comercial.", "Desarrollo de los comerciales.", "Relación con el consumidor.", "Todas las anteriores son correctas.", "4");
+            /*07*/      tipo_test("Es la táctica del departamento de comunicación destinada a crear relaciones estables\n        y duraderas entre las empresas y sus grupos de interés:", "Relaciones públicas.", "Publicidad.", "Marketing directo.", "Promoción de ventas.", "1");
+            /*08*/      tipo_test("Es la táctica del departamento de comunicación que engloba aquellas herramientas\n        encaminadas a motivar y accionar la venta inmediata del producto.", "Relaciones públicas.", "Publicidad.", "Marketing directo.", "Promoción de ventas.", "4");
+            /*09*/      tipo_test("No forma parte del marketing digital:", "Publicidad en Instagram.", "Aplicaciones móviles.", "Folletos.", "Página web.", "3");
+            /*10*/      tipo_test("Las publicaciones (gratuitas) de una red social forman parte de:", "La publicidad digital.", "El E-mail marketing.", "Las relaciones públicas 2.0.", "El marketing de contenidos.", "3");
+            /*11*/      tipo_test("Claves del plan de Marketing que se encarga de saber cómo es el proceso\n        de comprea de nuestros consumidores, cómo es el camino que recorren\n        desde que nos descubren hasta que realizan la compra.", "Audiencia y público objetivo.", "Objetivos de marketing.", "Estrategia.", "Funnel o embudo de ventas.", "4");
+            /*12*/      tipo_test("¿Qué líneas de trabajo o tácticas debe desarrollar el Departamento Comercial?", "Gestión del trabajo comercial.", "Desarrollo de los comerciales.", "Relación con el consumidor.", "Todas son correctas.", "4");
+            /*13*/      tipo_test("Acciones destinadas a persuadir, informar, generar recuerdo a través de\n        un mensaje controlado, centrado en un atributo concreto del producto o\n        marca y que aparece en espacios pagados de los medios o plataformas.", "Promoción de ventas.", "Marketing directo.", "Publicidad.", "Relaciones Públicas", "3");
+            /*14*/      tipo_test("Herramienta de la comunicación digital que consiste en realizar acciones\n        destinadas a conversar y crear comunidad con la audiencia ya sea para\n        acercarlos a la primera compra, compra recurrente o fidelizar clientes.", "E-Mail marketing.", "Marketing de contenidos.", "Mobile marketing.", "Relaciones públicas 2.0", "4");
+            
                     }
                     case "7" -> {
                         System.out.println("\nTEMA " + menu + "\n");
@@ -277,7 +283,7 @@ public class Test_EmpresaIniciativaEmprendedora {
             /*09*/      tipo_test("El autónomo societario:", "Posee más del 25% de una sociedad limitada.", "No está obligado a darse de alta como autónomo.", "No trabaja en la empresa.", "Ninguna de las anteriores es correcta.", "1");
             /*10*/      tipo_test("Parte del plan de empresa que recoge cómo vamos a crear nuestros productos y\n        servicios y qué necesitamos para hacerlo:", "Plan de marketing.", "Plan de desarrollo.", "Plan de calidad.", "Plan de financiación.", "2");
             /*11*/      tipo_test("Señala la respuesta correcta:", "La cultura organizativa es un elemento tangible de la empresa.", "La imagen de marca es la forma en la que nos ven los grupos de interés de la empresa.", "No es necesaria la definición de objetivos dentro de una empresa.", "La Responsabilidad Social Corporativa sólo pretende buscar un impacto a nivel social.", "2");
-            /*12*/      tipo_test("Las ?4P? o Marketing mix incluye las siguientes variables clave:", "Producto, Precio, Publicidad y Venta.", "Producto, Precio, Promoción y Venta.", "Producto, Precio, Distribución y Promoción.", "Producto, Precio, Producción y Promoción.", "3");
+            /*12*/      tipo_test("Las \"4P\" o Marketing mix incluye las siguientes variables clave:", "Producto, Precio, Publicidad y Venta.", "Producto, Precio, Promoción y Venta.", "Producto, Precio, Distribución y Promoción.", "Producto, Precio, Producción y Promoción.", "3");
             /*13*/      tipo_test("Herramienta de comunicación que incluye las acciones destinadas a crear y mantener\n        en el tiempo relaciones estables y duraderas entre la empresa y su público de interés:", "Promoción de ventas", "Marketing directo", "Publicidad.", "Relaciones Públicas.", "4");
             /*14*/      tipo_test("Introducir nuevas formas de promocionar un producto se denomina:", "Innovación de producto.", "Innovación de marketing.", "Innovación de procesos.", "Innovación organizacional.", "2");
             /*15*/      tipo_test("Si un negocio puede crecer y expandirse, podemos decir que es un emprendimiento:", "Escalable.", "Privado.", "De imitación.", "Público.", "1");
@@ -286,6 +292,16 @@ public class Test_EmpresaIniciativaEmprendedora {
             /*18*/      tipo_test("La competencia dentro del DAFO es:", "Una fortaleza.", "Una debilidad.", "Una oportunidad.", "Una amenaza.", "4");
             /*19*/      tipo_test("Las publicaciones (gratuitas) de una red social forman parte de:", "La publicidad digital.", "El E-mail marketing.", "Las relaciones públicas 2.0.", "El marketing de contenidos.", "3");
             /*20*/      tipo_test("Las Sociedades Limitadas:", "No deben inscribirse en el Registro Mercantil.", "Tienen 3.000? de capital mínimo inicial.", "No puede tener más de 5 socios.", "Tienen su capital dividido en acciones.", "2");
+            /*21*/      tipo_test("Según la innovación, el emprendimiento en el que se implementa algo nuevo en el\n        mercado es:", "Emprendimiento espejo.", "Emprendimiento innovador.", "Emprendimiento pequeño.", "Emprendimiento por necesidad.", "2");
+            /*22*/      tipo_test("Cuando se habla de que en una región haya una variada oferta formativa y esta puede\n        ser clave para que una persona dé el paso para emprender. ¿De qué factor que influye\n        en los emprendedores estamos hablando?", "El gobierno.", "La sociedad.", "El sistema educativo.", "La Familia.", "3");
+            /*23*/      tipo_test("Al definir nuestra idea de negocio, esta debe de tener las siguientes características:", " Diferencia con la competencia.", "Que cubra necesidades de la población.", "Que sea factible de realizar.", "Todas son correctas.", "4");
+            /*24*/      tipo_test("Señala la respuesta correcta:", "En las empresas individuales su propietario es una persona jurídica.", "El autónomo tiene responsabilidad limitada.", "En la comunidad de bienes no existe un mínimo legal de capital inicial.", "Una Sociedad Civil Privada es una empresa societaria.", "3");
+            /*25*/      tipo_test("Tipo de emprendimiento en el que se toma una idea que ya existe y se explota aprovechando la oportunidad:", "Emprendimiento por necesidad.", "Emprendimiento innovador.", "Emprendimiento espejo.", "Emprendimiento escalable.", "3");
+            /*26*/      tipo_test("Es una característica importante que debe tener un emprendedor.", "Pasión.", "Confianza en sí mismo.", "Creatividad.", "Todas son correctas.", "4");
+            /*27*/      tipo_test("Es la teoría en la que el empresario es únicamente la persona que aporta el dinero\n        asumiendo el riesgo de no saber si tendría beneficios o si recuperará ese capital:", "Teoría clásica.", "Teoría del empresario riesgo.", "Teoría del empresario innovador.", "Teoría del empresario líder.", "1");
+            /*28*/      tipo_test("La misión, visión y valores:", "Es algo complementario y poco importante dentro de una empresa.", "Es un elemento tangible de la empresa.", "Es un elemento intangible de la empresa.", "Es un elemento activo de la empresa.", "3");
+            /*29*/      tipo_test("No es un trámite que deba hacer obligatoriamente las sociedades civiles privadas:", "Realización de un contrato privado.", "Alta de los socios en el censo de empresarios, profesionales y retenedores.", "Escritura de constitución de la sociedad.", "Solicitud del Número de Identificación Fiscal.", "3");
+            /*30*/      //tipo_test("", "", "", "", "", ""); 
                     }
                     case "0" -> {}
                     default -> System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
