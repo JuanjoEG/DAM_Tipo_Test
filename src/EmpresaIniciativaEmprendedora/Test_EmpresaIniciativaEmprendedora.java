@@ -12,6 +12,8 @@ public class Test_EmpresaIniciativaEmprendedora {
     
     public static void main(String[] args) {
         
+        _Main_.Principal.setAsignatura("EMPRESA E INICIATIVA EMPRENDEDORA");
+        
                 String menu="";
         do {
             Principal.setFallos(0);
@@ -54,7 +56,8 @@ public class Test_EmpresaIniciativaEmprendedora {
                 System.out.print("Seleccione una opción: ");
                 menu = teclaStr.nextLine();
                 switch (menu) {
-                    case "1" -> {                        
+                    case "1" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
         
             /*01*/      tipo_test("El conjunto de valores y actitudes que tiene una persona para mejorar un proyecto\n        profesional, personal o social se denomina:", "Idea de negocio.", "Cultura emprendedora.", "Innovación.", "Ninguna de las anteriores es correcta.", "2");
@@ -69,6 +72,7 @@ public class Test_EmpresaIniciativaEmprendedora {
             /*10*/      tipo_test("Es un tipo de investigación comercial cuantitativo.", "Reunión de grupo.", "Pseudocompra.", "Encuesta.", "Todas las anteriores son correctas.", "3");                        
                     }
                     case "2" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
         
             /*01*/      tipo_test("Las subvenciones que puedan otorgarse, por parte de la administración, a los\n        emprendedores forman parte del factor:", "Familia.", "Gobierno.", "Cultura.", "Educación.", "2");
@@ -83,6 +87,7 @@ public class Test_EmpresaIniciativaEmprendedora {
             /*10*/      tipo_test("Es una afirmación correcta sobre el emprendedor en España.", "Más del 80% de los emprendedores son hombres.", "La mayoría de los emprendedores no tienen ningún tipo de estudios.", "Gran parte de los emprendedores tienen algún estudio relacionado con el\n    emprendimiento.", "Todas las anteriores son correctas.", "3");
                     }
                     case "3" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("Es la persona al mando de una empresa u organización que gestiona y toma las\n        decisiones para la misma como empleado, no como propietario:", "Emprendedor.", "Directivo.", "Socio.", "Inversor.", "2");
@@ -97,6 +102,7 @@ public class Test_EmpresaIniciativaEmprendedora {
             /*10*/      tipo_test("¿Cuál es el porcentaje mínimo que debe poseer un socio de una empresa para que\n        tenga que darse de alta como autónomo?", "El 25%.", "El 15%.", "El 20%.", "El 30%.", "1");                        
                     }
                     case "4" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");                       
                         
             /*01*/      tipo_test("La misión, visión y valores:", "Es algo complementario y poco importante dentro de una empresa.", "Es un elemento tangible de la empresa.", "Es un elemento intangible de la empresa.", "Es un elemento activo de la empresa.", "3");
@@ -111,6 +117,7 @@ public class Test_EmpresaIniciativaEmprendedora {
             /*10*/      tipo_test("Son los objetivos que tienen que ver con la percepción de los públicos de interés hacia\n        la empresa:", "Objetivos estratégicos.", "Objetivos generales.", "Objetivos cualitativos.", "Objetivos cuantitativos.", "3");                        
                     }
                     case "5" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("Un entorno simple y estático con poco riesgo se denomina:", "Estable.", "Intermedio.", "Turbulento.", "Simple.", "1");
@@ -125,6 +132,7 @@ public class Test_EmpresaIniciativaEmprendedora {
             /*10*/      tipo_test("Es la estrategia de mercado que se basa en decidir cuáles son nuestros productos más\n        rentables y volcar más esfuerzos en ellos:", "Estrategia funcional.", "Estrategia posicional.", "Estrategia de cartera.", "Estrategia de segmentación.", "3");                        
                     }
                     case "6" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("Es una de las funciones del departamento de marketing:", "Gestionar la marca.", "Gestionar la responsabilidad social corporativa.", "Analizar el mercado.", "Todas las anteriores son correctas.", "4");
@@ -137,27 +145,26 @@ public class Test_EmpresaIniciativaEmprendedora {
             /*08*/      tipo_test("Es la táctica del departamento de comunicación que engloba aquellas herramientas\n        encaminadas a motivar y accionar la venta inmediata del producto.", "Relaciones públicas.", "Publicidad.", "Marketing directo.", "Promoción de ventas.", "4");
             /*09*/      tipo_test("No forma parte del marketing digital:", "Publicidad en Instagram.", "Aplicaciones móviles.", "Folletos.", "Página web.", "3");
             /*10*/      tipo_test("Las publicaciones (gratuitas) de una red social forman parte de:", "La publicidad digital.", "El E-mail marketing.", "Las relaciones públicas 2.0.", "El marketing de contenidos.", "3");
-            /*11*/      tipo_test("Claves del plan de Marketing que se encarga de saber cómo es el proceso\n        de comprea de nuestros consumidores, cómo es el camino que recorren\n        desde que nos descubren hasta que realizan la compra.", "Audiencia y público objetivo.", "Objetivos de marketing.", "Estrategia.", "Funnel o embudo de ventas.", "4");
-            /*12*/      tipo_test("¿Qué líneas de trabajo o tácticas debe desarrollar el Departamento Comercial?", "Gestión del trabajo comercial.", "Desarrollo de los comerciales.", "Relación con el consumidor.", "Todas son correctas.", "4");
-            /*13*/      tipo_test("Acciones destinadas a persuadir, informar, generar recuerdo a través de\n        un mensaje controlado, centrado en un atributo concreto del producto o\n        marca y que aparece en espacios pagados de los medios o plataformas.", "Promoción de ventas.", "Marketing directo.", "Publicidad.", "Relaciones Públicas", "3");
-            /*14*/      tipo_test("Herramienta de la comunicación digital que consiste en realizar acciones\n        destinadas a conversar y crear comunidad con la audiencia ya sea para\n        acercarlos a la primera compra, compra recurrente o fidelizar clientes.", "E-Mail marketing.", "Marketing de contenidos.", "Mobile marketing.", "Relaciones públicas 2.0", "4");
+            
             
                     }
                     case "7" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("En esta forma jurídica es obligatorio que los socios aporten bienes:", "Sociedad civil privada.", "Sociedad limitada.", "Sociedad anónima.", "Comunidad de bienes.", "4");
+            /*02*/      tipo_test("Las divisiones de capital de las sociedades anónimas se denominan:", "Participaciones.", "Acciones.", "Particiones.", "Divisiones.", "2");
+            /*03*/      tipo_test("Las Sociedades Limitadas:", "No deben inscribirse en el Registro Mercantil.", "Tienen 3.000 Euros de capital mínimo inicial.", "No puede tener más de 5 socios.", "Tienen su capital dividido en acciones.", "2");
+            /*04*/      tipo_test("No es un trámite que deba hacer obligatoriamente las sociedades civiles privadas:", "Realización de un contrato privado.", "Alta de los socios en el censo de empresarios, profesionales y retenedores.", "Escritura de constitución de la sociedad", "Solicitud del Número de Identificación Fiscal.", "3");
+            /*05*/      tipo_test("No debe hacer ningún trámite de constitución como tal:", "Autónomo.", "Sociedad de Responsabilidad Limitada.", "Sociedad Cooperativa.", "Todas son correctas.", "1");
+            /*06*/      tipo_test("El certificado de denominación negativa consiste en:", "Que el Registro Mercantil te da un nombre para la empresa.", "Elegir el nombre de la empresa.", "Asegurarse de que no existe otra empresa con el mismo nombre.", "Elegir entre varias opciones que te da el Registro Mercantil.", "3");
+            /*07*/      tipo_test("Las sociedades cooperativas:", "Deberán inscribirse en el Registro Mercantil.", "No tienen obligación de inscribirse en ningún Registro.", "Deberán inscribirse en el Registro de Sociedades.", "Deberán inscribirse en el Registro de Sociedades cooperativas y laborales.", "4");
+            /*08*/      tipo_test("No es un aspecto que se deba incluir en los estatutos de una sociedad:", "El número de trabajadores que tiene.", "Cuánto tiempo va a durar.", "El domicilio social de la empresa.", "El funcionamiento de la Junta General.", "1");
+            /*09*/      tipo_test("Es un documento que hay que llevar a la notaría para elaborar la escritura pública de\n        constitución de la sociedad:", "La certificación negativa del nombre.", "El certificado bancario.", "Los estatutos de la sociedad.", "Todas son correctas.", "4");
+            /*10*/      tipo_test("El alta en el Impuesto de Actividades Económicas es un trámite:", "Laboral.", "Fiscal.", "De actividad.", "Municipal.", "2");                        
                     }
                     case "8" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -172,6 +179,7 @@ public class Test_EmpresaIniciativaEmprendedora {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "9" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -186,6 +194,7 @@ public class Test_EmpresaIniciativaEmprendedora {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "10" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -200,6 +209,7 @@ public class Test_EmpresaIniciativaEmprendedora {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "11" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -214,6 +224,7 @@ public class Test_EmpresaIniciativaEmprendedora {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "12" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -228,6 +239,7 @@ public class Test_EmpresaIniciativaEmprendedora {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "13" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -242,6 +254,7 @@ public class Test_EmpresaIniciativaEmprendedora {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "14" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -256,6 +269,7 @@ public class Test_EmpresaIniciativaEmprendedora {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "15" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -270,6 +284,7 @@ public class Test_EmpresaIniciativaEmprendedora {
             /*10*/      tipo_test("", "", "", "", "", "");                       
                     }
                     case "40" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("Un mercado con pocos oferentes y muchos demandantes y en el que existe control\n        sobre los precios, es un:", "Competencia perfecta.", "Oligopolio.", "Monopolio.", "Oligopsonio.", "2");
@@ -301,7 +316,10 @@ public class Test_EmpresaIniciativaEmprendedora {
             /*27*/      tipo_test("Es la teoría en la que el empresario es únicamente la persona que aporta el dinero\n        asumiendo el riesgo de no saber si tendría beneficios o si recuperará ese capital:", "Teoría clásica.", "Teoría del empresario riesgo.", "Teoría del empresario innovador.", "Teoría del empresario líder.", "1");
             /*28*/      tipo_test("La misión, visión y valores:", "Es algo complementario y poco importante dentro de una empresa.", "Es un elemento tangible de la empresa.", "Es un elemento intangible de la empresa.", "Es un elemento activo de la empresa.", "3");
             /*29*/      tipo_test("No es un trámite que deba hacer obligatoriamente las sociedades civiles privadas:", "Realización de un contrato privado.", "Alta de los socios en el censo de empresarios, profesionales y retenedores.", "Escritura de constitución de la sociedad.", "Solicitud del Número de Identificación Fiscal.", "3");
-            /*30*/      //tipo_test("", "", "", "", "", ""); 
+            /*30*/      tipo_test("Claves del plan de Marketing que se encarga de saber cómo es el proceso\n        de comprea de nuestros consumidores, cómo es el camino que recorren\n        desde que nos descubren hasta que realizan la compra.", "Audiencia y público objetivo.", "Objetivos de marketing.", "Estrategia.", "Funnel o embudo de ventas.", "4");
+            /*31*/      tipo_test("¿Qué líneas de trabajo o tácticas debe desarrollar el Departamento Comercial?", "Gestión del trabajo comercial.", "Desarrollo de los comerciales.", "Relación con el consumidor.", "Todas son correctas.", "4");
+            /*32*/      tipo_test("Acciones destinadas a persuadir, informar, generar recuerdo a través de\n        un mensaje controlado, centrado en un atributo concreto del producto o\n        marca y que aparece en espacios pagados de los medios o plataformas.", "Promoción de ventas.", "Marketing directo.", "Publicidad.", "Relaciones Públicas", "3");
+            /*33*/      tipo_test("Herramienta de la comunicación digital que consiste en realizar acciones\n        destinadas a conversar y crear comunidad con la audiencia ya sea para\n        acercarlos a la primera compra, compra recurrente o fidelizar clientes.", "E-Mail marketing.", "Marketing de contenidos.", "Mobile marketing.", "Relaciones públicas 2.0", "4"); 
                     }
                     case "0" -> {}
                     default -> System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");

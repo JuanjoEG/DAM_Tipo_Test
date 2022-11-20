@@ -14,6 +14,8 @@ public class Principal {
     static int fallos = 0;
     static int aciertos = 0;
     static int contador = 0;
+    static String tema = "0";
+    static String asignatura =" ";
 
     public static void setFallos(int fallos) {
         Principal.fallos = fallos;
@@ -26,7 +28,15 @@ public class Principal {
     public static void setContador(int contador) {
         Principal.contador = contador;
     }
-        
+
+    public static void setTema(String tema) {
+        Principal.tema = tema;
+    }
+
+    public static void setAsignatura(String asignatura) {
+        Principal.asignatura = asignatura;
+    }    
+    
     public static void tipo_test (String pregunta, String resp_1, String resp_2, String resp_3, String resp_4, String solucion) {
         
         String miRespuesta;
@@ -57,6 +67,11 @@ public class Principal {
                 case "B", "b" -> miRespuesta = "2";
                 case "C", "c" -> miRespuesta = "3";
                 case "D", "d" -> miRespuesta = "4";
+                case "0" -> {
+                    fallos = (1 + fallos);
+                    aciertos = (-1 + aciertos);
+                    solucion = "0";
+                }
                 default -> {
                 }
             }
@@ -76,7 +91,7 @@ public class Principal {
     }
     
     public static void ver_notas() {
-        System.out.println("\n    ACIERTOS  = " + aciertos + "        FALLOS    = " + fallos);       
+        System.out.println("\n" + asignatura + "       TEMA: " + tema + "       ACIERTOS  = " + aciertos + "       FALLOS    = " + fallos);       
     }
 
     public static void main(String[] args) {

@@ -11,6 +11,8 @@ import static _Main_.Principal.tipo_test;
 public class Test_AccesoDatos {
     
         public static void main(String[] args) {
+            
+            _Main_.Principal.setAsignatura("ACCESO A DATOS");
         
                 String menu="";
         do {
@@ -31,7 +33,7 @@ public class Test_AccesoDatos {
         *  4. TEMA: MANEJO DE CONECTORES I                                     *
         *  5. TEMA: MANEJO DE CONECTORES II                                    *
         *  6. TEMA: MANEJO DE CONECTORES III: SENTENCIAS                       *
-        *  7. TEMA:                                                            *
+        *  7. TEMA: EL MAPEO OBJETO RELACIONAL                                 *
         *  8. TEMA:                                                            *
         *  9. TEMA:                                                            *
         * 10. TEMA:                                                            *
@@ -53,7 +55,8 @@ public class Test_AccesoDatos {
                 System.out.print("Seleccione una opción: ");
                 menu = teclaStr.nextLine();
                 switch (menu) {
-                    case "1" -> {                        
+                    case "1" -> {
+                        _Main_.Principal.setTema(menu);                        
                         System.out.println("\nTEMA " + menu + "\n");
         
             /*01*/      tipo_test("La librería Java que se usará para la gestión de archivos, lectura, escritura y más\n        funcionalidades es:", "Java.io", "Io.java", "Lio.java", "Java.tio", "1");
@@ -68,6 +71,7 @@ public class Test_AccesoDatos {
             /*10*/      tipo_test("Si quisiera saber el posicionamiento del puntero usando una clase\n        RandomAccessFile ...", "Usariamos el método seek().", "Usaríamos el método getFilePointer().", "Usaríamos el método read().", "Ninguna es correcta.", "2");                        
                     }
                     case "2" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
         
             /*01*/      tipo_test("Se podría definir un flujo o Stream como ...", "Un fichero de corta extensión.", "Una secuencia ordenada de información.", "Un método genérico.", "Una clase muy conocida.", "2");
@@ -82,6 +86,7 @@ public class Test_AccesoDatos {
             /*10*/      tipo_test("¿Qué clase fue desarrollada para leer datos primitivos de Java?", "DataInputStream", "DataStream", "Data", "Date", "1");
                     }
                     case "3" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("Una ventaja real del analizador DOM es ...", "Una vez introducido el fichero obtenemos el árbol con sus nodos.", "Velocidad de proceso.", "Velocidad de ejecución.", "Instanciación.", "1");
@@ -96,6 +101,7 @@ public class Test_AccesoDatos {
             /*10*/      tipo_test("Un test unitario ...", "Es una pieza de código única por su valía.", "Es una pieza de código que valida otra parte de código.", "Es un código que se ejecuta en los entornos de integración.", "Todas son verdaderas.", "2");                       
                     }
                     case "4" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");                       
                         
             /*01*/      tipo_test("Al conjunto de clases y librerías que unen la parte del cliente con la base de datos lo\n        llamamos:", "Conector.", "Enlazador.", "Puerto.", "Sector.", "1");
@@ -110,6 +116,7 @@ public class Test_AccesoDatos {
             /*10*/      tipo_test("Gestionar los distintos drivers que tenemos en un aplicativo y presentarlos en la\n        misma capa para tener acceso a ellos es tarea de ...", "Statement", "Resulset", "Connection", "DriverManager", "4");                       
                     }
                     case "5" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("Una base de datos embebida en disco almacena la información en:", "Memoria Ram.", "Disco duro.", "Procesador.", "Caché.", "2");
@@ -124,6 +131,7 @@ public class Test_AccesoDatos {
             /*10*/      tipo_test("Las bases de datos cliente/servidor:", "Son embebidas", "Son independientes.", "Son bases de datos en memoria.", "Son bases de datos gestoras.", "2");                       
                     }
                     case "6" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("El comando que nos permite cambiar las condiciones generales de la base de datos\n        es ...", "ALTER TABLE", "ALTER DATABASE", "ALTER BASE", "ALTER INDEX", "2");
@@ -138,20 +146,22 @@ public class Test_AccesoDatos {
             /*10*/      tipo_test("¿Qué método es el que usaremos para realizer consultas con un objeto Statement?", "executeQuery()", "executeSelect()", "executeUpdate()", "Todas son verdaderas.", "1");                        
                     }
                     case "7" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Un Framework que facilita el almacenamiento de los objetos a una base de datos\n        relacional es un ...", "Gestor de datos.", "ORM.", "ROM.", "Gestor relacional.", "2");
+            /*02*/      tipo_test("Mejorar la eficiencia en el desarrollo ...", "Es una ventaja de usar un ORM.", "No debe influir a la hora de usar un ORM.", "Influye al usar depende qué tipo de base de datos relacional.", "Todas son falsas.", "1");
+            /*03*/      tipo_test("EBEAN e IBATIS son ...", "Bases de datos que podemos elegir.", "Diferentes drivers de conexión.", "Distintas opciones de ORM del mercado.", "Todas son falsas.", "3");
+            /*04*/      tipo_test("Nhibernate es ...", "La opción que disponemos del Framework Hibernate en lenguaje .Net.", "Una versión más potente de Hibernate.", "Una versión lite de Hibernate.", "Un Framework de control de seguridad.", "1");
+            /*05*/      tipo_test("¿Qué características básicas podemos decir que tiene Hibernate?", "Sencillo y pesado.", "Simplicidad y robusto.", "Fácil de instalar y ligero.", "Todas son falsas.", "2");
+            /*06*/      tipo_test("¿De qué principio Java hace uso el Framework Hibernate?", "Reflexión.", "Multiplataforma.", "Autoensamblaje.", "Todas son falsas.", "1");
+            /*07*/      tipo_test("El principio de reflexión hace referencia a:", "Todos los objetos se pueden sobrescribir.", "Los objetos no son manipulables.", "Permite el análisis y la modificación de los distintos atributos y características de las\n    distintas clases en tiempo de ejecución.", "Todas son verdaderas.", "3");
+            /*08*/      tipo_test("¿Qué objeto usaremos en Hibernate para instanciar una conexión directa con nuestra\n        base de datos relacional?", "SessionFactory Object", "Session Object.", "Query Object.", "ORM.", "2");
+            /*09*/      tipo_test("¿Qué objeto es el encargado de coger el fichero de configuración entre otras\n        funciones?", "SessionFactory Object", "Session Object.", "Query Object.", "ORM.", "1");
+            /*10*/      tipo_test("¿En qué fichero podremos introducir nuestras configuraciones de Hibernate?", "Application.properties.", "App.zip.", "Configuration.config.", "Todas son falsas.", "1");                        
                     }
                     case "8" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -166,6 +176,7 @@ public class Test_AccesoDatos {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "9" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -180,6 +191,7 @@ public class Test_AccesoDatos {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "10" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -194,6 +206,7 @@ public class Test_AccesoDatos {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "11" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -208,6 +221,7 @@ public class Test_AccesoDatos {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "12" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -222,6 +236,7 @@ public class Test_AccesoDatos {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "13" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -236,6 +251,7 @@ public class Test_AccesoDatos {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "14" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -250,6 +266,7 @@ public class Test_AccesoDatos {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "15" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -264,6 +281,7 @@ public class Test_AccesoDatos {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "40" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("El método unread() aplicado sobre un objeto PushbackReader ...", "Vacía el buffer de lectura.", "Se utiliza para eliminar bytes de los streams.", "Devuelve al stream de datos el byte que hemos leído con anterioridad.", "Es un método que no existe.", "3");

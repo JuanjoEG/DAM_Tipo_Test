@@ -12,6 +12,8 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
     
     public static void main(String[] args) {
         
+        _Main_.Principal.setAsignatura("PROGRAMACIÓN MULTIMEDIA Y DISPOSITIVOS MÓVILES");
+        
                 String menu="";
         do {
             Principal.setFallos(0);
@@ -30,8 +32,8 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
         *  3. TEMA: PROGRAMACIÓN EN ANDROID I                                  *
         *  4. TEMA: PROGRAMACIÓN EN ANDROIS II: LAYOUTS                        *
         *  5. TEMA: PROGRAMACIÓN EN ANDROIS III: BOTONES Y LISTAS              *
-        *  6. TEMA:                                                            *
-        *  7. TEMA:                                                            *
+        *  6. TEMA: PROGRAMACIÓN EN ANDROID IV: MULTIPANTALLA                  *
+        *  7. TEMA: MULTIMEDIA Y BASES DE DATOS                                *
         *  8. TEMA:                                                            *
         *  9. TEMA:                                                            *
         * 10. TEMA:                                                            *
@@ -53,7 +55,8 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
                 System.out.print("Seleccione una opción: ");
                 menu = teclaStr.nextLine();
                 switch (menu) {
-                    case "1" -> {                        
+                    case "1" -> {
+                        _Main_.Principal.setTema(menu);                        
                         System.out.println("\nTEMA " + menu + "\n");
         
             /*01*/      tipo_test("¿Qué lenguajes de programación podemos usar para programar apps para Android?", "Java y XML.", "C# y XML.", "Swfit o C#.", "Java o Kotlin y XML.", "4");
@@ -68,6 +71,7 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
             /*10*/      tipo_test("El evento onStart():", "Este evento representa cuando actividad va a empezar a responder a la interacción del usuario.", "Este evento representa cuando actividad va a dejar de responder a la interacción del usuario.", "Este evento representa cuando actividad ha pasado completamente a segundo plano.", "Ninguna de las respuestas anteriores es correcta.", "4");                        
                     }
                     case "2" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
         
             /*01*/      tipo_test("¿Cuál es el entorno de desarrollo para desarrollar apps Android de Google?", "NetBeans.", "Eclipse.", "Android Studio.", "XCode.", "3");
@@ -82,6 +86,7 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
             /*10*/      tipo_test("¿A qué pestaña de configuración hemos de ir para configurar nuestro dispositivo físico\n        para que pueda depurar apps en Android Studio?", "Opciones de red.", "Opciones de desarrollador.", "Opciones de depuración.", "Más opciones.", "2");
                     }
                     case "3" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("¿En qué fichero se encuentran los textos de un proyecto en Android Studio?", "colors.xml", "drawables.xml", "strings.xml", "styles.xml", "3");
@@ -96,6 +101,7 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
             /*10*/      tipo_test("Si voy a traducir una app con el código cs, ¿a qué idioma la estoy traduciendo?", "Castellano.", "Checo.", "Checheno.", "Catalán.", "2");                        
                     }
                     case "4" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");                       
                         
             /*01*/      tipo_test("¿De qué clase hereda ScrollView?", "LinealLayout", "TableLayout", "FrameLayout", "ConstraintLayout", "3");
@@ -110,6 +116,7 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
             /*10*/      tipo_test("La propiedad wrap_content:", "Esta propiedad va a definir el tamaño del alto del elemento.", "Esta propiedad nos indica que el elemento mida lo mismo que su contenedor.", "Esta propiedad nos indica que el elemento mida lo justo y necesario.", "Esta propiedad va a definir el tamaño del ancho del elemento.", "3");                        
                     }
                     case "5" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("RecyclerView.Adapter:", "Representa un adaptador que gestionará cómo se mostrarán los elementos en pantalla.", "Se encargará de la gestión de la memoria.", "Se utiliza para añadir decoraciones.", "Todas las opciones son correctas.", "1");
@@ -124,34 +131,37 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
             /*10*/      tipo_test("¿Podemos saber qué RadioButton está activo dentro de un grupo?", "No, en los grupos se introducen CheckBox.", "Si.", "Si, pero solo si la cantidad de RadioButton que hay en el grupo es par.", "Si, pero solo si la cantidad de RadioButton que hay en el grupo es impar.", "2");                        
                     }
                     case "6" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("El atributo android:id de los menús:", "Es el identificador único del menú.", "Es el icono que aparecerá en el menú desplegable junto al menú.", "Es el texto que aparecerá en el menú desplegable junto al icono. Deberá ir en strings.xml. ", "Los menús no tienen id, eso son los objetos gráficos.", "1");
+            /*02*/      tipo_test("¿Qué atributo de un menú deberemos configurar si queremos que este se oculte?", "Hidden.", "Visible.", "Show.", "NotHidden.", "2");
+            /*03*/      tipo_test("¿Desde dónde podremos acceder a las preferencias de la app?", "Solo desde la pantalla de SettingsActivity.", "Solo desde un objeto del tipo SharedPreferences.", "Las preferencias una vez creadas no son accesibles. ", "Desde cualquier punto de la aplicación.", "4");
+            /*04*/      tipo_test("El atributo android:title de los menús:", "Es el identificador único del menú.", "Es el icono que aparecerá en el menú desplegable junto al menú.", "Es el texto que aparecerá en el menú desplegable junto al icono. Deberá ir en strings.xml. ", "Es el título de la pantalla donde estarán los menús.", "3");
+            /*05*/      tipo_test("El modo de acceso de las preferencias MODE_PRIVATE:", "Sólo nuestra aplicación tiene acceso a estas preferencias.", "Todas las aplicaciones pueden leer estas preferencias, pero sólo la nuestra puede modificarlas.", "Todas las aplicaciones pueden leer y modificar estas preferencias.", "Ninguna de las respuestas anteriores es correcta.", "1");
+            /*06*/      tipo_test("El atributo android:icon de los menús:", "Es el identificador único del menú.", "Es el icono que aparecerá en el menú desplegable junto al menú.", "Es el texto que aparecerá en el menú desplegable junto al icono. Deberá ir en strings.xml. ", "Es el título de aplicación.", "2");
+            /*07*/      tipo_test("El modo de acceso de las preferencias MODE_WORLD_READABLE:", "Sólo nuestra aplicación tiene acceso a estas preferencias.", "Todas las aplicaciones pueden leer estas preferencias, pero sólo la nuestra puede modificarlas.", "Todas las aplicaciones pueden leer y modificar estas preferencias.", "Ninguna de las respuestas anteriores es correcta.", "2");
+            /*08*/      tipo_test("¿Cómo se llama la pantalla de carga de las apps?", "SplashScreen.", "LoadScreen.", "TimeScreen.", "LoadingScreen.", "1");
+            /*09*/      tipo_test("Con un Intent podemos:", "Lanzar una hebra.", "Liberar el espacio de memoria de la app cuando se cierre.", "Cambiar el estilo de una caja de texto.", "Ir a otra pantalla.", "4");
+            /*10*/      tipo_test("El modo de acceso de las preferencias MODE_WORLD_WRITABLE:", "Sólo nuestra aplicación tiene acceso a estas preferencias.", "Todas las aplicaciones pueden leer estas preferencias, pero sólo la nuestra puede modificarlas.", "Todas las aplicaciones pueden leer y modificar estas preferencias.", "Ninguna de las respuestas anteriores es correcta.", "3");                        
                     }
                     case "7" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("¿Qué método de la clase SQLiteOpenHelper es el que hay que sobrescribir para que\n        actualice automáticamente la base de datos?", "onCreate()", "delete()", "onUpgrade()", "Hay que crear un método propio.", "3");
+            /*02*/      tipo_test("¿Cómo podemos insertar valores en una tabla?", "Únicamente mediante el método insert.", "Únicamente ejecutando la consulta INSERT con el método execSQL.", "Únicamente con el método rawQuery.", "Podremos ejecutarlas mediante el método insert o mediante el método execSQL,\n    aunque es más recomendable el primero.", "4");
+            /*03*/      tipo_test("Para reproducir un sonido corto utilizaremos:", "La clase SoundPool.", "La clase MediaPlayer.", "Ninguna de las dos clases.", "Ambas clases.", "1");
+            /*04*/      tipo_test("Cuando utilizamos un objeto de la clase MediaPlayer, después de llamar al método\n        stop deberemos llamar al método:", "Play.", "Stop de nuevo.", "Release.", "Pause.", "3");
+            /*05*/      tipo_test("¿Qué gestor de bases de datos podemos utilizar en Android?", "MySQL.", "Microsoft SQL Server.", "SQLite.", "MongoDB.", "3");
+            /*06*/      tipo_test("¿Cuál de las siguientes opciones no podremos ejecutarla en nuestra base de\n        datos de nuestra app Android?", "Inserción de valores.", "Consulta de valores.", "Actualización de valores.", "Podremos realizarlas todas.", "4");
+            /*07*/      tipo_test("Para realizar una operación de inserción de datos deberemos llamar al método:", "getWritableDatabase.", "getReadableDatabase.", "getInsertableDatabase.", "getModificableDatabase.", "1");
+            /*08*/      tipo_test("Para insertar valores en un objeto del tipo ContentValues:", "Debemos ir insertando valor a valor con el método insert.", "Deberemos insertarle un array con todos los valores como String.", "Deberemos insertarle un objeto clave-valor compuesto por el nombre de la columna y su\n    valor con el método put.", "Para insertar datos no debemos usar un objeto de tipo ContentValues.", "3");
+            /*09*/      tipo_test("¿Es posible ordenar los valores de una consulta de datos?", "Si, pero solo si usamos el método rawQuery.", "Si, pero solo si utilizamos el método execSQL.", "Si.", "No.", "3");
+            /*10*/      tipo_test("Para realizar una operación de consulta de datos deberemos llamar al método:", "getWritableDatabase.", "getReadableDatabase.", "getInsertableDatabase.", "getModificableDatabase.", "2");                        
                     }
                     case "8" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -166,6 +176,7 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "9" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -180,6 +191,7 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "10" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -194,6 +206,7 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
             /*10*/      tipo_test("", "", "", "", "", "");                       
                     }
                     case "11" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -208,6 +221,7 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
             /*10*/      tipo_test("", "", "", "", "", "");                       
                     }
                     case "12" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -222,6 +236,7 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "13" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -236,6 +251,7 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "14" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -250,6 +266,7 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "15" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -264,6 +281,7 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "40" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("El valor view.GONE del método setVisibility ...", "Ocultará un elemento.", "Mostrará un elemento.", "El método no existe.", "El valor no existe, es View.Visible.", "1");

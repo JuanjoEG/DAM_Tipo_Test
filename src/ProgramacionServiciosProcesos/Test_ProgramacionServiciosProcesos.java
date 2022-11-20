@@ -12,6 +12,8 @@ public class Test_ProgramacionServiciosProcesos {
     
     public static void main(String[] args) {
         
+        _Main_.Principal.setAsignatura("PROGRAMACIÓN DE SERVICIOS Y PROCESOS");
+        
                 String menu="";
                 
         do {
@@ -31,8 +33,8 @@ public class Test_ProgramacionServiciosProcesos {
         *  3. TEMA: GESTIÓN DE PROCESOS                                        *
         *  4. TEMA: INTRODUCCIÓN A LA PROGRAMACIÓN PARALELA O MULTIHILO        *
         *  5. TEMA: GESTIÓN DE HILOS                                           *
-        *  6. TEMA:                                                            *
-        *  7. TEMA:                                                            *
+        *  6. TEMA: SINCRONIZACIÓN DE VARIOS HILOS                             *
+        *  7. TEMA: INTRODUCCIÓN A LA COMUNICACIÓN ENTRE APLICACIONES          *
         *  8. TEMA:                                                            *
         *  9. TEMA:                                                            *
         * 10. TEMA:                                                            *
@@ -54,7 +56,8 @@ public class Test_ProgramacionServiciosProcesos {
                 System.out.print("Seleccione una opción: ");
                 menu = teclaStr.nextLine();
                 switch (menu) {
-                    case "1" -> {                        
+                    case "1" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
         
             /*01*/      tipo_test("Un clúster es:", "Varios ordenadores interconectados en red.", "Varios ordenadores interconectados en red y que funcionan como uno solo.", "La unión de todas las piezas que forman un ordenador.", "Varios ordenadores interconectados en red que no comparten ningún recurso.", "2");
@@ -69,6 +72,7 @@ public class Test_ProgramacionServiciosProcesos {
                         tipo_test("El Grid Computing:", "Son sistemas computacionales muy potentes y que se utilizan para tareas que necesitan\n    una enorme capacidad de cálculo.", "Son sistemas donde podremos tener varios recursos, por ejemplo, espacio en disco.", "En este tipo de computación distribuida van a poder usarse ordenadores muy potentes\n    conectados en red entre sí.", "Ninguna de las respuestas anteriores es correcta.", "3");                        
                     }
                     case "2" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
         
             /*01*/      tipo_test("Los procesos por lotes:", "Este tipo de procesos están formados por una serie de tareas a realizar\n    de las que el usuario que las ejecuta únicamente está interesado en su resultado final,\n    no en su ejecución.", "En este tipo de procesos va a haber una interacción del usuario y del propio proceso,\n    pudiendo este pedir al usuario datos necesarios para su ejecución.", "Este tipo de procesos son ciertas tareas en las que el tiempo de respuesta\n    por parte del sistema es crítico.", "Ninguna de las respuestas anteriores es correcta.", "1");
@@ -83,6 +87,7 @@ public class Test_ProgramacionServiciosProcesos {
             /*10*/      tipo_test("Indica cuál de las siguientes respuestas es falsa:", "Los procesos son independientes y tienen su propio espacio de memoria asignado.", "El sistema operativo se refiere a los procesos que gestiona mediante su PID.", "Dos procesos diferentes pueden tener el mismo PID.", "El algoritmo FIFO no puede sufrir inanición.", "3");
                     }
                     case "3" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("¿Cuál de los siguientes comandos permite ejecutar un proceso?", "ProcessBuilder.start()", "Runtime.exec()", "Ambas respuestas son correctas.", "Ambas respuestas son incorrectas.", "3");
@@ -97,6 +102,7 @@ public class Test_ProgramacionServiciosProcesos {
             /*10*/      tipo_test("El fujo OutputStream:", "Será el flujo de entrada.\n    Está conectado a la entrada estándar del proceso hijo.", "Será el flujo de salida.\n    Está conectado a la salida estándar del proceso hijo.", "Será el flujo de salida para los errores.\n    Está conectado a la salida estándar de errores del proceso hijo.", "Ninguna de las respuestas es correcta.", "2");                        
                     }
                     case "4" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");                       
                         
             /*01*/      tipo_test("¿Cuántos hilos podremos ejecutar en un mismo proceso?", "Ninguno, son los hilos los que ejecutan los procesos.", "Hay un límite de 2 hilos por proceso.", "Todos los que necesitemos.", "Hay un límite de 3 hilos por proceso.", "3");
@@ -111,6 +117,7 @@ public class Test_ProgramacionServiciosProcesos {
             /*10*/      tipo_test("¿A qué método podemos llamar varias veces de la clase hebra para ver si ha sido interrumpido?", "public static boolean interrupted()", "public boolean isInterrupted()", "public static boolean isInterrupted()", "public static void interrupted()", "2");                        
                     }
                     case "5" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("¿Qué método deberemos usar si queremos esperar a que un hilo\n        acabe de ejecutar su tarea para seguir con el programa?", "sleep", "wait", "join", "refuse", "3");
@@ -125,34 +132,37 @@ public class Test_ProgramacionServiciosProcesos {
             /*10*/      tipo_test("¿Qué método deberemos usar si queremos que cuando todos los hilos\n        tengan la misma prioridad se ejecuten de manera equilibrada?", "wait", "notifyAll", "yield", "join", "3");                        
                     }
                     case "6" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Si tenemos una situación en la que diferentes hilos que tienen una visión diferente de\n        un mismo dato, tenemos un problema de:", "Inanición.", "Interbloqueo.", "Bloqueo activo.", "Inconsistencia de memoria.", "4");
+            /*02*/      tipo_test("La zona de exclusión mutua es:", "El código de cada hilo.", "El código que ejecuta cada hilo de forma independente.", "El código que engloba los recursos críticos.", "Ninguna de las respuestas anteriores es correcta.", "3");
+            /*03*/      tipo_test("El método acquire de los semáforos:", "Permite adquirir todos los hilos que permitamos acceder a la sección crítica.", "Nos va a permitir cerrar la sección crítica y que ningún otro hilo pueda acceder a ella.", "Nos va a permitir abrir la sección crítica y que otro hilo pueda acceder a ella.", "Nos va a permitir liberar los recursos del semáforo.", "2");
+            /*04*/      tipo_test("A una clase que tiene un método con el modificador synchronized la llamamos:", "Sincronizada.", "Monitor.", "Abstracta.", "Excluyente.", "2");
+            /*05*/      tipo_test("Si tenemos una situación en la que dos o más hilos están esperando que suceda un\n        evento que solo puede generar un hilo que se encuentra bloqueado, tenemos un\n        problema de:", "Inanición.", "Interbloqueo.", "Bloqueo activo.", "Inconsistencia de memoria.", "2");
+            /*06*/      tipo_test("¿Cuántos métodos sincronizados podrá tener un monitor?", "Únicamente 1.", "Podrá tener 2 como máximo.", "Podrá tener 5 como máximo.", "Podrá tener todos los que necesitemos.", "4");
+            /*07*/      tipo_test("Si tenemos una situación en la que tenemos dos hilos que están cambiando\n        continuamente de estado y terminan por bloquearse mutuamente, tenemos un\n        problema de:", "Inanición.", "Interbloqueo.", "Bloqueo activo.", "Inconsistencia de memoria.", "3");
+            /*08*/      tipo_test("¿Qué bloques de código nos interesará más marcar como synchronized?", "Los bloques que tengan variables normales.", "Los bloques que tengan variables de la sección crítica.", "Nos interesará marcar todo el código como synchronized.", "Los constructores de las clases monitores.", "2");
+            /*09*/      tipo_test("Si tenemos una situación en la que cuando a un hilo se deniega continuamente el\n        acceso a un recurso compartido al que quiere tener acceso porque otros hilos toman\n        el control antes que él, tenemos un problema de:", "Inanición", "Interbloqueo.", "Bloqueo activo.", "Inconsistencia de memoria.", "1");
+            /*10*/      tipo_test("El método release de los semáforos:", "Permite adquirir todos los hilos que permitamos acceder a la sección crítica.", "Nos va a permitir cerrar la sección crítica y que ningún otro hilo pueda acceder a ella.", "Nos va a permitir abrir la sección crítica y que otro hilo pueda acceder a ella.", "Nos va a permitir liberar los recursos del semáforo.", "3");                        
                     }
                     case "7" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("El protocolo NFS:", "Este protocolo es el encargado de traducir a direcciones IP los nombres de los\n    dispositivos que se encuentra en la red.", "Este protocolo es el encargado de efectuar las transferencias de ficheros.", "Este protocolo es el que va a permitir que podamos compartir ficheros en diferentes\n    ordenadores de una red.", "Este protocolo es el que va a permitir que sea posible la conexión remota de terminales.", "3");
+            /*02*/      tipo_test("En el modelo TCP/IP, la capa de transporte:", "Esta capa está compuesta por todos aquellos elementos hardware de comunicaciones.", "Esta capa está compuesta por todos aquellos elementos software encargados de dirigir\n    los paquetes por la red.", "Esta capa está compuesta por todos aquellos elementos software cuya función es crear\n    el canal de comunicación.", "Esta capa está compuesta por aplicaciones de red.", "3");
+            /*03*/      tipo_test("¿Cuál de las siguientes capas no pertenece al modelo OSI?", "Capa de transporte.", "Capa de Internet.", "Capa física.", "Capa de sesión.", "2");
+            /*04*/      tipo_test("El protocolo FTP:", "Este protocolo posibilita la transferencia de ficheros.", "Este protocolo es el encargado de traducir a direcciones IP los nombres de los\n    dispositivos que se encuentra en la red.", "Este protocolo es el que va a permitir que podamos compartir ficheros en diferentes\n    ordenadores de una red.", "Este protocolo es el encargado de definir la manera en la que se gestiona el correo\n    electrónico.", "1");
+            /*05*/      tipo_test("¿Qué protocolo es el que se usa en aplicaciones de transmisión de voz?", "TCP.", "UDP.", "Ambos son adecuados para este tipo de aplicación.", "Se utiliza una mezcla de ambos.", "2");
+            /*06*/      tipo_test("El protocolo UDP es más rápido que el TCP porque:", "No es más rápido.", "Porque su implementación es más compleja.", "Porque no realiza control del flujo ni de errores.", "Porque lo ejecutan equipos más potentes.", "3");
+            /*07*/      tipo_test("¿Qué significan las siglas del protocolo TCP?", "Protocolo de Conteo de Transmisión.", "Protocolo de Control de Transmisión.", "Protocolo de Control de Paquetes.", "Protocolo de Conteo de Paquetes.", "2");
+            /*08*/      tipo_test("El protocolo HTTP:", "Este protocolo es el encargado de definir la manera en la que se van a comunicar los\n    servidores y navegadores web.", "Este protocolo es el encargado de definir la manera en la que se gestiona el correo\n    electrónico.", "Este protocolo es el encargado de traducir a direcciones IP los nombres de los\n    dispositivos que se encuentra en la red.", "Ninguna de las respuestas es correcta.", "1");
+            /*09*/      tipo_test("En el modelo TCP/IP la capa que está compuesta por aplicaciones de red es:", "Capa de red.", "Capa de aplicación.", "Capa de Internet.", "Capa de transporte.", "2");
+            /*10*/      tipo_test("La responsable de la representación de la información corresponde a la capa OSI:", "Red.", "Transporte.", "Presentación.", "Aplicación.", "3");                        
                     }
                     case "8" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -167,6 +177,7 @@ public class Test_ProgramacionServiciosProcesos {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "9" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -181,6 +192,7 @@ public class Test_ProgramacionServiciosProcesos {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "10" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -195,6 +207,7 @@ public class Test_ProgramacionServiciosProcesos {
             /*10*/      tipo_test("", "", "", "", "", "");                       
                     }
                     case "11" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -209,6 +222,7 @@ public class Test_ProgramacionServiciosProcesos {
             /*10*/      tipo_test("", "", "", "", "", "");                       
                     }
                     case "12" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -223,6 +237,7 @@ public class Test_ProgramacionServiciosProcesos {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "13" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -237,6 +252,7 @@ public class Test_ProgramacionServiciosProcesos {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "14" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -251,6 +267,7 @@ public class Test_ProgramacionServiciosProcesos {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "15" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -265,6 +282,7 @@ public class Test_ProgramacionServiciosProcesos {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "40" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("El protocolo TCP ...", "También se conoce como modelo TCP/IP.", "Crea un flujo de transmisión de datos entre origen y destino, partiendo el mensaje que\n    se quiere enviar en paquetes, y enviándolo por el canal de comunicación.", "Es el Protocolo Central de Transmisión.", "Las demás respuestas son incorrectas.", "2");

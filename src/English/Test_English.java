@@ -11,6 +11,8 @@ import static _Main_.Principal.tipo_test;
 public class Test_English {
     
         public static void main(String[] args) {
+            
+            _Main_.Principal.setAsignatura("ENGLISH");
         
                 String menu="";
         do {
@@ -31,7 +33,7 @@ public class Test_English {
         *  4. TEMA: ON THE PHONE                                               *
         *  5. TEMA: LIKES AND DISLIKES                                         *
         *  6. TEMA: PAST ACTIVITIES                                            *
-        *  7. TEMA:                                                            *
+        *  7. TEMA: FUTURE                                                     *
         *  8. TEMA:                                                            *
         *  9. TEMA:                                                            *
         * 10. TEMA:                                                            *
@@ -53,7 +55,8 @@ public class Test_English {
                 System.out.print("Seleccione una opción: ");
                 menu = teclaStr.nextLine();
                 switch (menu) {
-                    case "1" -> {                        
+                    case "1" -> {
+                        _Main_.Principal.setTema(menu);                        
                         System.out.println("\nTEMA " + menu + "\n");
         
             /*01*/      tipo_test("Which of the following greetings is formal?", "Good morning, Mr. Smith", "Hi, Fred", "Good morning, Alice.", "What's up?", "1");
@@ -68,6 +71,7 @@ public class Test_English {
             /*10*/      tipo_test("Which of the following sentences is incorrect?", "We'll see you again next week.", "We'll see you again in a week.", "We'll see you again in next week.", "All the sentences are incorrect.", "3");                        
                     }
                     case "2" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
         
             /*01*/      tipo_test("Right after waking up you usually ...", "Go to bed", "Do homework", "Get up", "Go home", "3");
@@ -82,6 +86,7 @@ public class Test_English {
             /*10*/      tipo_test("Which of the following adverbs is used to express that something happens\n        frequently?", "Rarely", "Often", "Sometimes", "Occasionally", "2");
                     }
                     case "3" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("Which of the following times is midnight?", "1:00", "0:00", "Both options are correct.", "None of the options is correct.", "2");
@@ -96,6 +101,7 @@ public class Test_English {
             /*10*/      tipo_test("Choose the right preposition to complete the sentence:\n        We are closed ... July for holidays.", "At", "On", "In", "Over", "3");                        
                     }
                     case "4" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");                       
                         
             /*01*/      tipo_test("Which of the following is not a good tip when receiving a phone call?", "Smile.", "Ask the caller their name.", "Speak fast so that the call is shorter.", "Don't be afraid to ask the caller to repeat something.", "3");
@@ -110,6 +116,7 @@ public class Test_English {
             /*10*/      tipo_test("Which of the following sentences is incorrect?", "Are they not going back home for Christmas?", "Aren't they going back home for Christmas?", "Are they going back home for Christmas?", "Are not they going back home for Christmas?", "4");                        
                     }
                     case "5" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("Which of the following expressions is the most formal?", "I love watching series on Netflix.", "She has a genuine liking for detective stories.", "I hate loud noises.", "I like working in a hospital.", "2");
@@ -124,6 +131,7 @@ public class Test_English {
             /*10*/      tipo_test("How can I rephrase the following sentence:\n        Let me go through that again.", "Let me repeat that.", "Let's not go over that again.", "I didn't catch that.", "What is the best way to ...?", "1");                        
                     }
                     case "6" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("Which of the following expressions is incorrect:", "At weekends, we didn't visited our grandparents.", "At weekends, we always visited our grandparents.", "Did you visit your grandparents at weekends?", "At weekends, we never visited our grandparents.", "1");
@@ -138,20 +146,22 @@ public class Test_English {
             /*10*/      tipo_test("Which of the following expressions is correct for giving directions?", "Turn right.", "Take the right.", "Spin to the right.", "All options are incorrect.", "1");                        
                     }
                     case "7" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                     
+            /*01*/      tipo_test("Which of the following is not a use of the future simple?", "Predictions based on present evidence.", "Requests.", "Promises.", "Decisions made at the moment of speaking.", "1");
+            /*02*/      tipo_test("Which of the following is not a use of the future with GOING TO?", "Plans.", "Offers.", "Intentions.", "Decisions made before the moment of speaking.", "2");
+            /*03*/      tipo_test("Choose the right option to complete the sentence: No way! You ... be going to the party!", "Want.", "Wont.", "Wan't.", "Won't.", "4");
+            /*04*/      tipo_test("Choose the right option to complete the sentence:\n        I've already booked my next summer holidays.\n        I ... spend a month in Florida!", "am.", "am going to.", "will.", "will going to.", "2");
+            /*05*/      tipo_test("Choose the right option to complete the sentence: ... you do me a favour, please?\n        Can you help me to sort out these books?", "Will.", "Are you going to.", "Can you go to.", "None of the options is correct.", "1");
+            /*06*/      tipo_test("Which of the following sentences is correct?", "She's not going to play tennis any more.", "She won't going to play tennis any more.", "She're not going to play tennis any more.", "She won't plays tennis any more.", "1");
+            /*07*/      tipo_test("Choose the right option to complete the sentence: I ... I totally agree with you.", "See what you mean.", "Watch what you mean.", "Listen to what you mean.", "Hear what you mean.", "1");
+            /*08*/      tipo_test("Which of the following is a synonym of \"entirely\" in I entirely agree.", "Partly.", "Somehow.", "Wholeheartedly.", "At times.", "3");
+            /*09*/      tipo_test("Choose the right option to complete the sentence: I'm ... I don't agree with you.", "Afraid.", "Scared.", "Frightened.", "Startled.", "1");
+            /*10*/      tipo_test("Which of the following expressions is not a synonym of \"totally\" in:\n        I totally disagree with what he said.", "Fundamentally.", "Strongly.", "Up to a point.", "Absolutely.", "3");                     
                     }
                     case "8" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -166,6 +176,7 @@ public class Test_English {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "9" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
              /*01*/      tipo_test("", "", "", "", "", "");
@@ -180,6 +191,7 @@ public class Test_English {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "10" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -194,6 +206,7 @@ public class Test_English {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "11" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -208,6 +221,7 @@ public class Test_English {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "12" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -222,6 +236,7 @@ public class Test_English {
             /*10*/      tipo_test("", "", "", "", "", "");                       
                     }
                     case "13" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -236,6 +251,7 @@ public class Test_English {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "14" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -250,6 +266,7 @@ public class Test_English {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "15" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");

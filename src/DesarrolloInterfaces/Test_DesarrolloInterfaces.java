@@ -12,6 +12,8 @@ public class Test_DesarrolloInterfaces {
     
     public static void main(String[] args) {
         
+        _Main_.Principal.setAsignatura("DESARROLLO DE INTERFACES");
+        
                 String menu="";
         do {
             Principal.setFallos(0);
@@ -53,7 +55,8 @@ public class Test_DesarrolloInterfaces {
                 System.out.print("Seleccione una opción: ");
                 menu = teclaStr.nextLine();
                 switch (menu) {
-                    case "1" -> {                        
+                    case "1" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
         
             /*01*/      tipo_test("¿Cuál es el objetivo de un lenguaje de programación?", "Escribir instrucciones interpretables por una persona.", "Controlar diferentes comportamientos lógicos o físicos de una máquina.", "Desarrollar interfaces.", "Implementar una página web.", "2");
@@ -68,6 +71,7 @@ public class Test_DesarrolloInterfaces {
             /*10*/      tipo_test("¿Cuál de las siguientes herramientas de edición de interfaces pertenece a Unity?", "MonoDevelop.", "NetBeans.", "VisualStudio.", "Glade.", "1");                       
                     }
                     case "2" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
         
             /*01*/      tipo_test("¿Qué es una clase en Java?", "Representa un conjunto de atributos ordenados que tienen un propósito.", "Representa un conjunto de objetos que comparte una mista estructura (atributos) y\n    comportamientos (métodos).", "Representa un objeto que hereda de otra clase.", "Representa un método que recibe argumentos y crea un objeto.", "2");
@@ -82,6 +86,7 @@ public class Test_DesarrolloInterfaces {
             /*10*/      tipo_test("¿Qué manejador de componentes permite un diseño más flexible y preciso?", "FlowLayout.", "BorderLayout.", "GridBagLayout.", "GridLayout.", "3");
                     }
                     case "3" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("¿Qué significa XML?", "X-Markup Language", "eXtensible Markup Language", "Example Markup Language", "eXtra Modern Link", "2");
@@ -96,6 +101,7 @@ public class Test_DesarrolloInterfaces {
             /*10*/      tipo_test("¿Cuál de los siguientes sería un código XML bien formado?", "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n    <numeros>\n        <1 letra=\"u\" letra=\"a\" letra=\"d\">1</>\n        <2 letra=\"d\" letra=\"b\" letra=\"e\">2</>\n        <3 letra=\"s\" letra=\"c\" letra=\"f\">3</>\n    </numeros>", "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n    <numeros>\n        <letra=\"u\" letra=\"a\" letra=\"d\">1</>\n        <letra=\"d\" letra=\"b\" letra=\"e\">2</>\n        <letra=\"s\" letra=\"c\" letra=\"f\">3</>\n    </numeros>", "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n    <numeros>\n        <numero1 letra=\"a\" letra2=\"d\" letra3=\"o\">1</1>\n        <numero2 letra=\"b\" letra2=\"e\" letra3=\"s\">2</2>\n        <numero3 letra=\"c\" letra2=\"f\" letra3=\"i\">3</3>\n    </numeros>", "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n    <numeros>\n        <numero1 letra=\"a\" letra2=\"d\" letra3=\"o\">1</numero1>\n        <numero2 letra=\"b\" letra2=\"e\" letra3=\"s\">2</numero2>\n        <numero3 letra=\"c\" letra2=\"f\" letra3=\"i\">3</numero3>\n    </numeros>", "4");                        
                     }
                     case "4" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");                       
                         
             /*01*/      tipo_test("¿Qué ventaja supone la reutilización de componentes?", "Reducción de los costes del proyecto.", "Simplificación de pruebas de software.", "Mejora de la calidad del software.", "Todas las anteriores son ciertas.", "4");
@@ -110,6 +116,7 @@ public class Test_DesarrolloInterfaces {
             /*10*/      tipo_test("La clase Graphics de Java permite dibujar como si de un lienzo se tratase sobre una\n        interfaz. Esta clase pertenece a la librería", "JButton", "SWING", "AWT", "JCanvas", "3");                       
                     }
                     case "5" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("¿Cuál de las siguientes no es una característica de las pruebas unitarias?", "Rápida ejecución.", "Independencia respecto a otros tests.", "Un único uso.", "Cada test debe poder comprobar si es válido por si mismo.", "3");
@@ -124,6 +131,7 @@ public class Test_DesarrolloInterfaces {
             /*10*/      tipo_test("Cuando se activa y vincula un escuchador o listener a un componente:", "Los componentes no realizan un filtrado previo de los eventos para determinar si los\n    manejan o no.", "Los componentes realizan un filtrado previo de los eventos para determinar si los\n    manejan o no.", "No será necesaria la asociación de la acción al evento para manejar el evento.", "Es una acción que se realiza de manera automática.", "1");                        
                     }
                     case "6" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("¿Cuál de los siguientes conceptos hace referencia a la facilidad o dificultad de uso de\n        un sitio web?", "Accesibilidad.", "Practicidad.", "Usabilidad.", "Utilidad.", "3");
@@ -138,20 +146,22 @@ public class Test_DesarrolloInterfaces {
             /*10*/      tipo_test("¿Cuál de los siguientes no es un tipo de test de usabilidad?", "Test de uso pautado.", "Test de uso descontextualizado.", "Test de uso natural.", "Test de uso artificial.", "4");                       
                     }
                     case "7" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                       
+            /*01*/      tipo_test("¿Cuál de las siguientes pautas de diseño de la estructura de la interfaz de usuario se\n        debe evitar?", "Punto focal.", "Consistencia de ventanas.", "Incoherencia entre elementos.", "Legibilidad y flujo entre elementos.", "3");
+            /*02*/      tipo_test("¿Qué se debe perseguir a la hora de diseñar un menú?", "Utilizar los menús en cascada siempre que sea posible.", "Situarlo en la parte más baja de la interfaz de la aplicación.", "La correcta navegación dentro de una aplicación mostrando todas las condiciones\n    posibles y permitiendo al usuario seleccionar las diferentes acciones mostradas.", "Mantenerlo ocultado la mayor parte del tiempo posible.", "3");
+            /*03*/      tipo_test("¿En cuál de los siguientes casos se está realizando una mala selección de diseño\n        de ventanas?", "Las ventanas pueden ser cerradas en todo momento por el usuario.", "La modificación del tamaño puede realizarla el propio usuario.", "Las ventanas se despliegan constantemente y no se pueden cerrar.", "El usuario controlar las ventanas abriéndolas cuando desee.", "3");
+            /*04*/      tipo_test("Selecciona cuál de los siguientes textos es el más óptimo para un cuadro de diálogo:", "Error 404.", "Impresora no encontrada.", "Ha cometido un error irreparable. Apague el ordenador y vuelva a encenderlo.", "La impresora seleccionada no ha podido encontrarse. ¿Desea probar con otro\n    dispositivo? SI NO", "4");
+            /*05*/      tipo_test("A la hora de diseñar un icono para guardar un documento en una interfaz de un\n        procesador de texto, ¿Cuál sería la mejor opción?", "Icono de un sello postal.", "Icono de un cerebro.", "Icono de un disquete.", "Icono de un casette.", "3");
+            /*06*/      tipo_test("En una interfaz de usuario para una aplicación médica se desea transmitir mediante\n        su estética un mensaje de tranquilidad mientras el usuario responde a una serie de\n        preguntas sobre su perfil. ¿Cuáles de los siguientes colores crees que puede ser el más\n        adecuado utilizar en la interfaz?", "Rojo.", "Amarillo.", "Negro.", "Azul.", "4");
+            /*07*/      tipo_test("Respecto a las fuentes utilizadas para los textos de las interfaces:", "Siempre que sea posible se utilizará color de fuente claro sobre fondo claro.", "Siempre que sea posible se utilizará color de fuente oscuro sobre fondo oscuro.", "Siempre que sea posible se utilizará color de fuente oscuro sobre fondo claro.", "Siempre que sea posible se utilizará color de fuente claro sobre fondo oscuro.", "3");
+            /*08*/      tipo_test("Indica cuál de las siguientes pautas no debe seguirse respecto al diseño de los\n        elementos interactivos como botones, checkbox y radiobutton:", "Los títulos deben ser intuitivos.", "Las acciones codificadas en cada opción deben quedar suficientemente comprensibles\n    para el usuario.", "Las opciones deben ser fácilmente distinguibles unas de otras y por tanto, relativamente\n    rápidas de escoger y seleccionar.", "El usuario debe investigar sobre la función de cada una de las opciones.", "4");
+            /*09*/      tipo_test("Respeto a la presentación de datos en interfaces utilizando gráficos, ¿cuál de las\n        siguientes pautas no es recomendable seguir?", "El tamaño debe adecuarse a las dimensiones de la pantalla.", "No se debe abusar del número de gráficos.", "Es aconsejable utilizar pocos pero que aportan un valor añadido a la aplicación.", "El diseño debe ser de tal manera que muestre la información lo más redundante posible\n    utilizando múltiples tipos de gráficos para una misma información.", "4");
+            /*10*/      tipo_test("¿Cuál debe ser la primera pauta de diseño de la secuencia de control\n        de las aplicaciones?", "Diseñar y establecer de forma clara el objetivo principal asociado a cada uno\n    de los elementos de la interfaz.", "Establecer la consecución de cada objetivo con una secuencia de control válida.", "Mostrar y documentar para el usuario la secuencia establecida para que pueda\n    implementarla sin problemas.", "En la medida de lo posible utilizar la regla de los tres click, lo que implica que para llegar\n    a cualquier objetivo sean necesarios como máximo este número de selecciones.", "1");                       
                     }
                     case "8" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -166,6 +176,7 @@ public class Test_DesarrolloInterfaces {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "9" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -180,6 +191,7 @@ public class Test_DesarrolloInterfaces {
             /*10*/      tipo_test("", "", "", "", "", "");                       
                     }
                     case "10" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -194,6 +206,7 @@ public class Test_DesarrolloInterfaces {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "11" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -208,6 +221,7 @@ public class Test_DesarrolloInterfaces {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "12" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -222,6 +236,7 @@ public class Test_DesarrolloInterfaces {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "13" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -236,6 +251,7 @@ public class Test_DesarrolloInterfaces {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "14" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -250,6 +266,7 @@ public class Test_DesarrolloInterfaces {
             /*10*/      tipo_test("", "", "", "", "", "");                       
                     }
                     case "15" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
@@ -264,6 +281,7 @@ public class Test_DesarrolloInterfaces {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "40" -> {
+                        _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("XML es ...", "Es un lenguaje utilizado para estructurar, almacenar e intercambiar datos entre distintas\n    plataformas.", "Un lenguaje de programación estandarizado.", "El estándar más empleado en la programación orientada a objetos.", "Un lenguaje de programación para almacenar los atributos de una clase en Java.", "1");
