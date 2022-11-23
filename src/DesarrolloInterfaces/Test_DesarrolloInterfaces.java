@@ -294,6 +294,7 @@ public class Test_DesarrolloInterfaces {
             /*08*/      tipo_test("Sobre el IDE de desarrollo Eclipse es cierto que ...", "Es de código propietario.", "No es multiplataforma.", "Es de código abierto y no es multiplataforma.", "Es de código abierto y multiplataforma.", "4");
             /*09*/      tipo_test("¿Qué es la programación basada en eventos?", "Es la clave de la interacción entre el usuario y una interfaz.", "Un lenguaje estructurado.", "Un paradigma orientado a objetos sin tipado.", "Todas las respuestas son correctas.", "1");
             /*10*/      tipo_test("¿Qué es la usabilidad?", "Es un conjunto de parámetros para diseñar sistemas más eficientes.", "Es cómo se muestran las interfaces al usuario.", "Es la manera en como un usuario accede a la información.", "Es todo el conjunto de reglas para mostrar la información al usuario.", "1");
+            
             /*11*/      tipo_test("Un documento XML tiene ...", "Una gran flexibilidad y no requiere cerrar las etiquetas.", "Una estructura no anidada y libre.", "Una estructura anidada de manera jerárquica.", "Una estructura jerárquica, pero no anidada.", "3");
             /*12*/      tipo_test("En relación a los componentes en Java Swing es cierto que ...", "Son los elementos que se sitúan sólo sobre el Jpanel.", "Son los elementos que se sitúan sólo sobre el JPanel y el JDialog.", "Son los elementos que se sitúan en la ventana.", "La A y C son ciertas.", "3");
             /*13*/      tipo_test("En relación a la clase JFrame en Java Swing es cierto que ...", "Es la destinada para crear los marcos contenedores.", "Sólo se puede crear una por cada aplicación.", "Es la destinada para la creación de la ventana para la interfaz.", "La B y C son ciertas.", "3");
@@ -304,6 +305,7 @@ public class Test_DesarrolloInterfaces {
             /*18*/      tipo_test("¿Cuál de los siguientes eventos está relacionado con el cambio de un componente,\n        de tamaño, posición ...?", "EventObject", "MouseEvent", "ComponentEvent", "ContainerEvent", "3");
             /*19*/      tipo_test("¿Cuál es la guía de usabilidad donde se recogen los beneficios relativos a las medidas\n        de usabilidad evaluadas?", "ISO/IEC  9126-1.", "ISO/IEC 14915.", "ISO/IEC 9241.", "IEC TR 61997.", "3");
             /*20*/      tipo_test("¿Cuál de las siguientes pautas de diseño de la estructura de la interfaz de usuario se\n        debe evitar?", "Punto focal.", "Consistencia de ventanas.", "Incoherencia entre elementos.", "Legibilidad y flujo entre elementos.", "3");
+            
             /*21*/      tipo_test("La efectividad en relación a la usabilidad es ...", "Cómo de rápida es una aplicación.", "El grado de éxito de una aplicación.", "El coste de desarrollar una aplicación.", "A y B son correctas.", "2");
             /*22*/      tipo_test("Es cierto que los elementos de diseño deben ...", "Acelerar la carga de la aplicación.", "Generar en el usuario una sensación de rapidez.", "Facilitar y mejorar la usabilidad de la aplicación.", "Todas las respuestas son correctas.", "3");
             /*23*/      tipo_test("Las propiedades de los componentes definen ...", "Los comportamientos de la aplicación, pero son los datos.", "Los datos públicos que forman la apariencia y comportamiento del objeto.", "Sólo los datos que se almacenarán en la aplicación al terminar su ejecución.", "El comportamiento de la aplicación.", "2");
@@ -314,7 +316,87 @@ public class Test_DesarrolloInterfaces {
             /*28*/      tipo_test("¿Qué método devuelve un valor utilizando return?", "set", "get", "Ambos.", "Ninguno.", "2");
             /*29*/      tipo_test("¿Qué evento debe utilizarse con un JSpinner para detectar su cambio de estado?", "stateChanged", "itemStateChanged", "actionPerformed", "actionMove", "1");
             /*30*/      tipo_test("¿Cuáles son las principales medidas de usabilidad de las aplicaciones?", "Satisfacción.", "Efectividad.", "Eficiencia.", "Todas las anteriores.", "4");
-            /*31*/      tipo_test("Respecto a las fuentes utilizadas para los textos de las interfaces:", "Siempre que sea posible se utilizará color de fuente claro sobre fondo claro.", "Siempre que sea posible se utilizará color de fuente oscuro sobre fondo oscuro.", " Siempre que sea posible se utilizará color de fuente oscuro sobre fondo claro.", "Siempre que sea posible se utilizará color de fuente claro sobre fondo oscuro.", "3");
+            
+            /*31*/      tipo_test("Respecto a las fuentes utilizadas para los textos de las interfaces:", "Siempre que sea posible se utilizará color de fuente claro sobre fondo claro.", "Siempre que sea posible se utilizará color de fuente oscuro sobre fondo oscuro.", "Siempre que sea posible se utilizará color de fuente oscuro sobre fondo claro.", "Siempre que sea posible se utilizará color de fuente claro sobre fondo oscuro.", "3");
+            /*32*/      tipo_test("Crear un componente software consiste en ...", "Crear un bloque de software reutilizable.", "Diseñar los elementos que tendrá sólo la interfaz de la aplicación.", "Implementar siempre nuevo software según se necesite.", "Las demás respuestas son incorrectas.", "1");
+            /*33*/      tipo_test("¿Qué herramienta de edición de interfaces es de tipo propietaria?", "MonoDevelop.", "Glade.", "NetBeans.", "Visual Studio.", "4");
+            /*34*/      tipo_test("¿Qué diferencia existe entre JFrame y JDialog?", "La ventana principal de una aplicación es un JDialog y es aconsejable utilizar para\n    pantallas secundarias JFrame.", "La ventana principal de una aplicación es un JFrame y es aconsejable utilizar para\n    pantallas secundarias JDialog.", "De tipo JDialog sólo debe de haber una ventana.", "De tipo JFrame es recomendable que haya varias ventanas.", "2");
+            /*35*/      tipo_test("Identifica cuál de las siguientes opciones es la correcta en cuanto a los valores de XML:", "<libro isbn=9788491713760 edicion=1 paginas=192/>", "<libro isbn=\"9788491713760\" edicion=\"1\" paginas=\"192\"/>", "<libro isbn=\"9788491713760\" edicion=1 paginas=\"192\"/>", "<libro isbn=9788491713760 edicion='1' paginas=192/>", "2");
+            /*36*/      tipo_test("¿Cuál de las siguientes herramientas tiene la opción de aplicar capas permitiendo\n        aplicar a las imágenes multitud de efectos y tratamientos?", "GIMP.", "Paint.", "Pinta.", "Pinta 3D.", "1");
+            /*37*/      tipo_test("¿Qué evento debe utilizarse con un JComboBox para detectar la selección realizada en él?", "itemStateChanged", "stateChanged", "itemFocus", "stateFocus", "1");
+            /*38*/      tipo_test("¿Por qué es importante el desarrollo de las pruebas software?", "Aumenta el trabajo de los desarrolladores.", "No es muy útil, pero es algo interesante.", "Hace el código más simple y con menos líneas.", "Se reducen los tiempos de desarrollo.", "4");
+            /*39*/      tipo_test("¿Qué permite la persistencia de un componente?", "Transmitir datos entre aplicaciones que emplean distintos lenguajes.", "Almacenar datos en las bases de datos.", "Que el estado de una clase no varíe.", "Las demás respuestas son incorrectas.", "3");
+            /*40*/      tipo_test("¿Qué paquetes se deben instalar en Eclipse para poder trabajar correctamente con la\n        librería Swing?", "Docker Tooling.", "General Purpose Tools.", "EclipseRT Target Platform Components.", "Swing Designer y WindowBuilder.", "4");
+            
+            /*41*/      tipo_test("¿Qué es una clase en Java?", "Representa un conjunto de objetos que comparte una mista estructura (métodos)\n    y comportamientos (atributos).", "Representa un conjunto de objetos que comparte una mista estructura (atributos)\n    y comportamientos (métodos).", "Representa un objeto que hereda de otra clase.", "Representa un método que recibe argumentos y crea un objeto.", "2");
+            /*42*/      tipo_test("¿Cuáles es el objetivo del lenguaje RSS?", "Difundir información a usuarios que se han suscrito a una fuentes de contenidos\n    actualizada frecuentemente.", "Representar elementos geométricos vectoriales, imágenes de mapa de bits y texto.", "Marcar contenido como texto, imágenes y enlaces en forma de hipervínculos para crear\n    una estructura que pueda ser mostrada por los navegadores.", "Ninguno de los anteriores.", "1");
+            /*43*/      tipo_test("¿Cuál de las siguientes no es una característica común de los componentes\n        desarrollados como JavaBean?", "Parametrización.", "Persistencia.", "Customización.", "Eventos.", "1");
+            /*44*/      tipo_test("¿Cuál debe ser la primera pauta de diseño de la secuencia de control de las\n        aplicaciones?", "Diseñar y establecer de forma clara el objetivo principal asociado a cada uno de los\n    elementos de la interfaz.", "Establecer la consecución de cada objetivo con una secuencia de control válida.", "Mostrar y documentar para el usuario la secuencia establecida para que pueda\n    implementarla sin problemas.", "En la medida de lo posible utilizar la regla de los tres click, lo que implica que para llegar\n    a cualquier objetivo sean necesarios como máximo este número de selecciones.", "1");
+            /*45*/      tipo_test("¿Cuál es el objetivo de un lenguaje de programación?", "Escribir instrucciones interpretables por una persona.", "Controlar diferentes comportamientos lógicos o físicos de una máquina.", "Desarrollar interfaces.", "Implementar una página web.", "2");
+            /*46*/      tipo_test("¿Cuáles son las principales ventajas del editor Atom?", "No es una herramienta multinivel.", "Su disposición de paneles es estática.", "No es multiplataforma.", "Ninguna es correcta.", "4");
+            /*47*/      tipo_test("¿Cuál de los siguientes principios de diseño de un sistema interactivo no es\n        recomendable?", "Facilitar buenos mensajes de error.", "Conocer al usuario.", "Maximizar la memorización.", "Optimizar las operaciones mediante la rápida ejecución de operaciones comunes.", "3");
+            /*48*/      tipo_test("Selecciona cuál de los siguientes textos es el más óptimo para un cuadro de diálogo:", "Error 404.", "Impresora no encontrada.", "Ha cometido un error irreparable. Apague el ordenador y vuelva a encenderlo.", "La impresora seleccionada no ha podido encontrarse. ¿Desea probar con otro\n    dispositivo? SI NO", "4");
+            /*49*/      tipo_test("¿Cuál de las siguientes afirmaciones referida a las propiedades de los componentes es falsa?", "Las propiedades indexadas son aquellas que representan un conjunto de valores en\n    forma de array.", "Las propiedades simples son aquellas que representan solo un valor.", "Los métodos clave que permiten analizar el contenido de una propiedad o atributo son\n    los de tipo set, mientras que para modificar su valor se utilizan los métodos get.", "Los métodos clave que permiten analizar el contenido de una propiedad o atributo son\n    los de tipo get, mientras que para modificar su valor se utilizan los métodos set.", "3");
+            /*50*/      tipo_test("¿Qué es la evaluación heurística?", "Es una prueba realizada por expertos.", "Es lo contrario al método de inspección.", "s una única evaluación de alto nivel.", "Es una prueba realizada por usuarios.", "1");
+            
+            /*51*/      tipo_test("¿Qué se debe perseguir a la hora de diseñar un menú?", "Utilizar los menús en cascada siempre que sea posible.", "Situarlo en la parte más baja de la interfaz de la aplicación.", "La correcta navegación dentro de una aplicación mostrando todas las condiciones\n    posibles y permitiendo al usuario seleccionar las diferentes acciones mostradas.", "Mantenerlo ocultado la mayor parte del tiempo posible.", "3");
+            /*52*/      tipo_test("¿Cuál de las siguientes herramientas de edición de interfaces pertenece a Unity?", "MonoDevelop.", "NetBeans.", "VisualStudio.", "Glade.", "1");
+            /*53*/      tipo_test("¿Qué es un objeto?", "Las características que tienen las clases.", "Los métodos que tienen las clases.", "Una cápsula que contiene los datos y métodos ligados a él.", "Los métodos que reciben argumentos.", "3");
+            /*54*/      tipo_test("¿Cuál de las siguientes líneas es correcta en XML?", "<i> Texto", "<i> Texto <i>", "<i> Texto </i>", "<I> Texto <I>", "3");
+            /*55*/      tipo_test("¿Qué acción dispara el evento keyReleased?", "Se produce al pulsar una tecla.", "Se produce al pulsar y soltar una tecla.", "Se produce al soltar una tecla.", "Se produce al pulsar dos teclas.", "3");
+            /*56*/      tipo_test("¿Cuál de los siguientes no es un lenguaje de alto nivel?", "Java.", "HTML.", "Python.", "Ensamblador.", "4");
+            /*57*/      tipo_test("¿Cuál de las siguientes afirmaciones respecto a los métodos de Java es cierta?", "Los métodos definen la estructura de un objeto y no pueden recibir argumentos.", "Los métodos definen el comportamiento de un objeto y pueden recibir o no argumentos.", "Los métodos definen el comportamiento de un objeto y deben recibir argumentos.", "Los métodos definen la estructura de una clase y no pueden recibir argumentos.", "2");
+            /*58*/      tipo_test("¿Qué características deben tener en cuenta a la hora de crear un componente?", "La implementación puede estar realizada con cualquier lenguaje de programación,\n    pero ha de estar completa.", "Constituye un módulo no reutilizable, sin compilar.", "Su distribución se realiza en varios paquetes ejecutables.", "Debe ser un elemento que no aporte funcionalidad a la interfaz.", "1");
+            /*59*/      tipo_test("¿Qué métodos se utilizan en las pruebas de tipo JUnit de Eclipse?", "assert.", "get.", "set.", "build.", "1");
+            /*60*/      tipo_test("¿Cuál de las siguientes no es una característica deseable en una interfaz?", "Alta tasa de error.", "Facilidad de aprendizaje.", "Eficiencia de uso.", "Alta satisfacción.", "1");
+            
+            /*61*/      tipo_test("Indica cuál de las siguientes pautas no debe seguirse respecto al diseño de los\n        elementos interactivos como botones, checkbox y radiobutton:", "Los títulos deben ser intuitivos.", "Las acciones codificadas en cada opción deben quedar suficientemente comprensibles\n    para el usuario.", "Las opciones deben ser fácilmente distinguibles unas de otras y por tanto,\n    relativamente rápidas de escoger y seleccionar.", "El usuario debe investigar sobre la función de cada una de las opciones.", "4");
+            /*62*/      tipo_test("¿Cuál de los siguientes no es un editor compatible con XML?", "Pages.", "Notepad++.", "Dreamweaver.", " Visual Studio Code.", "1");
+            /*63*/      tipo_test("Al implementar un nuevo componente:", "Habrá que crear solo las propiedades nuevas, pero no habrá que implementar las que ya\n    posee el componente base.", "Solo podrá contener las propiedades del componente base del que hereda.", "No tendrá ninguna propiedad del componente base del que hereda, siendo todas distintas.", "Ninguna es correcta.", "1");
+            /*64*/      tipo_test("¿Qué método no se podrá utilizar con el escuchador KeyListene?", "keyPressed.", "keyGained.", "keyTyped.", "keyRelease.", "2");
+            /*65*/      tipo_test("¿Cuál de los siguientes conceptos hace referencia a la facilidad o dificultad de uso de\n        un sitio web?", "Accesibilidad.", "Practicidad.", "Usabilidad.", "Utilidad.", "3");
+            /*66*/      //tipo_test("", "", "", "", "", "");
+            /*67*/      //tipo_test("", "", "", "", "", "");
+            /*68*/      //tipo_test("", "", "", "", "", "");
+            /*69*/      //tipo_test("", "", "", "", "", "");
+            /*70*/      //tipo_test("", "", "", "", "", "");
+            
+            /*71*/      //tipo_test("", "", "", "", "", "");
+            /*72*/      //tipo_test("", "", "", "", "", "");
+            /*73*/      //tipo_test("", "", "", "", "", "");
+            /*74*/      //tipo_test("", "", "", "", "", "");
+            /*75*/      //tipo_test("", "", "", "", "", "");
+            /*76*/      //tipo_test("", "", "", "", "", "");
+            /*77*/      //tipo_test("", "", "", "", "", "");
+            /*78*/      //tipo_test("", "", "", "", "", "");
+            /*79*/      //tipo_test("", "", "", "", "", "");
+            /*80*/      //tipo_test("", "", "", "", "", "");
+            
+            /*81*/      //tipo_test("", "", "", "", "", "");
+            /*82*/      //tipo_test("", "", "", "", "", "");
+            /*83*/      //tipo_test("", "", "", "", "", "");
+            /*84*/      //tipo_test("", "", "", "", "", "");
+            /*85*/      //tipo_test("", "", "", "", "", "");
+            /*86*/      //tipo_test("", "", "", "", "", "");
+            /*87*/      //tipo_test("", "", "", "", "", "");
+            /*88*/      //tipo_test("", "", "", "", "", "");
+            /*89*/      //tipo_test("", "", "", "", "", "");
+            /*90*/      //tipo_test("", "", "", "", "", "");
+            
+            /*91*/      //tipo_test("", "", "", "", "", "");
+            /*92*/      //tipo_test("", "", "", "", "", "");
+            /*93*/      //tipo_test("", "", "", "", "", "");
+            /*94*/      //tipo_test("", "", "", "", "", "");
+            /*95*/      //tipo_test("", "", "", "", "", "");
+            /*96*/      //tipo_test("", "", "", "", "", "");
+            /*97*/      //tipo_test("", "", "", "", "", "");
+            /*98*/      //tipo_test("", "", "", "", "", "");
+            /*99*/      //tipo_test("", "", "", "", "", "");
+           /*100*/      //tipo_test("", "", "", "", "", "");
+           
+           /*101*/      //tipo_test("", "", "", "", "", "");
+            
+            
                     }
                     case "0" -> {}
                     default -> System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");

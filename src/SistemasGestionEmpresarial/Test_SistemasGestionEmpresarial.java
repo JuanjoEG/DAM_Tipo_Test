@@ -294,6 +294,7 @@ public class Test_SistemasGestionEmpresarial {
             /*08*/      tipo_test("En los años 70 aparecieron los ...", "MRP.", "ERP.", "MRP II.", "CRM.", "1");
             /*09*/      tipo_test("Un software comercial es aquel que es desarrollado por una empresa que pretende\n        ganar dinero por ...", "Su modificación.", "Su uso.", "Su desarrollo.", "Las demás respuestas son incorrectas.", "2");
             /*10*/      tipo_test("Dentro de los pasos para completar el flujo de compra-venta en Odoo tenemos ...", "Facturación y Atención al cliente.", "Facturación y Recibir producto.", "Analizar los beneficios y publicitar el producto.", "Publicitar y vender el producto.", "2");
+            
             /*11*/      tipo_test("Entre las desventajas del código abierto está que ...", "No se puede hacer cambios en el código, pero sí mostrarlo.", "La garantía suele estar limitada.", "Los fabricantes del software no tienen soporte técnico.", "Las demás respuestas son incorrectas.", "2");
             /*12*/      tipo_test("SAP permite la instalación de SAP S/4 HANA mediante ...", "Un instalable en Linux.", "Un instalable en windows.", "Un instalable en Java.", "Todas las respuestas son correctas.", "1");
             /*13*/      tipo_test("Entre las ventajas del código propietario está que ...", "Es más barato que el libre.", "Se puede distribuir mostrando su código.", "Las comunidades incorporan los cambios rápidamente.", "Son desarrollados por grandes fabricantes de software.", "4");
@@ -304,6 +305,7 @@ public class Test_SistemasGestionEmpresarial {
             /*18*/      tipo_test("Para la instalación de SAP HANA 2.0 Express Edition en local haciendo uso de una\n        máquina virtual preconfigurada es necesario:", "Disponer de, al menos, 16GB de memoria RAM.", "Tener instalado Java Runtime Enviroment (JRE) 7.", "Tener, al menos 100GB de espacio libre en el disco duro.", "Ninguna respuesta es correcta.", "4");
             /*19*/      tipo_test("La versión de instalación con el instalador ...", "Instalará en Windows todo lo necesario para ejecutar Odoo (no requiere instalar nada más).", "Instalará en distribuciones Debian todo lo necesario para ejecutar Odoo (no requiere\n    instalar nada más)", "Instalará en distribuciones RPM todo lo necesario para ejecutar Odoo (no requiere\n    instalar nada más)", "Ninguna respuesta es correcta.", "1");
             /*20*/      tipo_test("El análisis de los beneficios ...", "Puede hacerse en cualquier momento.", "Puede hacerse solo una vez al mes.", "Puede hacerse solo una vez al año.", "Puede hacerse solo 4 veces al año (una por trimestre).", "1");
+            
             /*21*/      tipo_test("Los tipos de licencias software son ...", "Libre y cerrado.", "Software libre, código abierto y código propietario.", "Código cerrado y software público.", "Todas las respuestas son correctas.", "2");
             /*22*/      tipo_test("Una licencia software es ...", "Un contrato entre el desarrollador del software y el usuario.", "Un archivo que viene con la aplicación y no vincula a las partes.", "Un requisito que no es necesario cumplir al adquirir el software.", "Las demás respuestas son incorrectas.", "1");
             /*23*/      tipo_test("Recibir un producto en el flujo de compra-venta supone que ...", "Debemos enviar la orden compra al fabricante.", "Hay que emitir la factura de compra.", "El fabricante del producto ya nos ha hecho llegar el material.", "Todas las respuestas son correctas.", "3");
@@ -314,6 +316,85 @@ public class Test_SistemasGestionEmpresarial {
             /*28*/      tipo_test("La versión Express Edition de SAP es ...", "Siempre de pago.", "Siempre gratuita.", "Gratuita hasta los 32GB.", "Ninguna respuesta es correcta.", "3");
             /*29*/      tipo_test("Cuando creamos por primera vez un producto ...", "Podremos indicarle el stock que tenemos durante la creación.", "Éste se crea con cantidad 0.", "Éste se crea con cantidad 1.", "Ninguna respuesta es correcta.", "2");
             /*30*/      //tipo_test("", "", "", "", "", "");
+            
+            /*31*/      //tipo_test("", "", "", "", "", "");
+            /*32*/      //tipo_test("", "", "", "", "", "");
+            /*33*/      //tipo_test("", "", "", "", "", "");
+            /*34*/      //tipo_test("", "", "", "", "", "");
+            /*35*/      //tipo_test("", "", "", "", "", "");
+            /*36*/      //tipo_test("", "", "", "", "", "");
+            /*37*/      //tipo_test("", "", "", "", "", "");
+            /*38*/      //tipo_test("", "", "", "", "", "");
+            /*39*/      //tipo_test("", "", "", "", "", "");
+            /*40*/      //tipo_test("", "", "", "", "", "");
+            
+            /*41*/      //tipo_test("", "", "", "", "", "");
+            /*42*/      //tipo_test("", "", "", "", "", "");
+            /*43*/      //tipo_test("", "", "", "", "", "");
+            /*44*/      //tipo_test("", "", "", "", "", "");
+            /*45*/      //tipo_test("", "", "", "", "", "");
+            /*46*/      //tipo_test("", "", "", "", "", "");
+            /*47*/      //tipo_test("", "", "", "", "", "");
+            /*48*/      //tipo_test("", "", "", "", "", "");
+            /*49*/      //tipo_test("", "", "", "", "", "");
+            /*50*/      //tipo_test("", "", "", "", "", "");
+            
+            /*51*/      //tipo_test("", "", "", "", "", "");
+            /*52*/      //tipo_test("", "", "", "", "", "");
+            /*53*/      //tipo_test("", "", "", "", "", "");
+            /*54*/      //tipo_test("", "", "", "", "", "");
+            /*55*/      //tipo_test("", "", "", "", "", "");
+            /*56*/      //tipo_test("", "", "", "", "", "");
+            /*57*/      //tipo_test("", "", "", "", "", "");
+            /*58*/      //tipo_test("", "", "", "", "", "");
+            /*59*/      //tipo_test("", "", "", "", "", "");
+            /*60*/      //tipo_test("", "", "", "", "", "");
+            
+            /*61*/      //tipo_test("", "", "", "", "", "");
+            /*62*/      //tipo_test("", "", "", "", "", "");
+            /*63*/      //tipo_test("", "", "", "", "", "");
+            /*64*/      //tipo_test("", "", "", "", "", "");
+            /*65*/      //tipo_test("", "", "", "", "", "");
+            /*66*/      //tipo_test("", "", "", "", "", "");
+            /*67*/      //tipo_test("", "", "", "", "", "");
+            /*68*/      //tipo_test("", "", "", "", "", "");
+            /*69*/      //tipo_test("", "", "", "", "", "");
+            /*70*/      //tipo_test("", "", "", "", "", "");
+            
+            /*71*/      //tipo_test("", "", "", "", "", "");
+            /*72*/      //tipo_test("", "", "", "", "", "");
+            /*73*/      //tipo_test("", "", "", "", "", "");
+            /*74*/      //tipo_test("", "", "", "", "", "");
+            /*75*/      //tipo_test("", "", "", "", "", "");
+            /*76*/      //tipo_test("", "", "", "", "", "");
+            /*77*/      //tipo_test("", "", "", "", "", "");
+            /*78*/      //tipo_test("", "", "", "", "", "");
+            /*79*/      //tipo_test("", "", "", "", "", "");
+            /*80*/      //tipo_test("", "", "", "", "", "");
+            
+            /*81*/      //tipo_test("", "", "", "", "", "");
+            /*82*/      //tipo_test("", "", "", "", "", "");
+            /*83*/      //tipo_test("", "", "", "", "", "");
+            /*84*/      //tipo_test("", "", "", "", "", "");
+            /*85*/      //tipo_test("", "", "", "", "", "");
+            /*86*/      //tipo_test("", "", "", "", "", "");
+            /*87*/      //tipo_test("", "", "", "", "", "");
+            /*88*/      //tipo_test("", "", "", "", "", "");
+            /*89*/      //tipo_test("", "", "", "", "", "");
+            /*90*/      //tipo_test("", "", "", "", "", "");
+            
+            /*91*/      //tipo_test("", "", "", "", "", "");
+            /*92*/      //tipo_test("", "", "", "", "", "");
+            /*93*/      //tipo_test("", "", "", "", "", "");
+            /*94*/      //tipo_test("", "", "", "", "", "");
+            /*95*/      //tipo_test("", "", "", "", "", "");
+            /*96*/      //tipo_test("", "", "", "", "", "");
+            /*97*/      //tipo_test("", "", "", "", "", "");
+            /*98*/      //tipo_test("", "", "", "", "", "");
+            /*99*/      //tipo_test("", "", "", "", "", "");
+           /*100*/      //tipo_test("", "", "", "", "", "");
+           
+           /*101*/      //tipo_test("", "", "", "", "", "");
                     }
                     case "0" -> {}
                     default -> System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");

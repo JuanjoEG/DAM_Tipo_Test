@@ -286,24 +286,26 @@ public class Test_AccesoDatos {
                         
             /*01*/      tipo_test("El método unread() aplicado sobre un objeto PushbackReader ...", "Vacía el buffer de lectura.", "Se utiliza para eliminar bytes de los streams.", "Devuelve al stream de datos el byte que hemos leído con anterioridad.", "Es un método que no existe.", "3");
             /*02*/      tipo_test("HyperSQL", "Para mayor compatibilidad, está desarrollado en lenguaje C.", "Facilita una interfaz ODBC para el acceso a datos.", "Solo se puede ejecutar en modo embebido.", "Se ajusta a la versión estándar SQL 2011 y a la especificación JDBC4.", "4");
-            /*03*/      tipo_test("Java DB", "Está construida sobre el motor de base de datos Derby.", "Es la base sobre la que se construyó el motor de la base de datos Derby.", "Solo se puede desplegar en modo simple embebido.", "Solo soporta funcionalidades de bases de datos orientadas a objetos.", "1");
-            /*04*/      tipo_test("En bases de datos, es ejemplo de sentencias de manipulación de datos:", "Alter database", "Select", "Insert", "Alter table", "3");
+            /*03*/      tipo_test("En la clase RandomAccessFile el modo de acceso \"rwd\" ...", "Hace referencia al modo escritura.", "Hace referencia al modo lectura.", "Hace referencia al modo lectura escritura.", "Hace referencia al modo lectura escritura síncrona.", "4");
+            /*04*/      tipo_test("¿Qué método nos indica que un token es de tipo número?", "TT_EOL", "TT_EOF", "TT_NUMBER", "TT_WORD", "3");
             /*05*/      tipo_test("Para el análisis de un Stream, con un acceso basado en carácteres, usaremos ...", "PushbackReader", "PushbackInputStream", "FileInputStream", "DataInputStream", "1");
-            /*06*/      tipo_test("En bases de datos, para modificar el nombre de las columnas de una tabla, usaremos ...", "Alter table", "Rename in table", "Replace", "Update", "1");
-            /*07*/      tipo_test("En bases de datos, es ejemplo de sentencias de definición de datos:", "Create a database y create table.", "Insert", "Select", "Delete", "1");
+            /*06*/      tipo_test("En bases de datos, para modificar el nombre de las columnas de una tabla, usaremos ...", "Alter table.", "Rename in table.", "Replace.", "Update.", "1");
+            /*07*/      tipo_test("En bases de datos, es ejemplo de sentencias de definición de datos:", "Create a database y create table.", "Insert.", "Select.", "Delete.", "1");
             /*08*/      tipo_test("ORM", "Tiene la ventaja de que el mapeado automático de las bases de datos consume pocos\n    recursos del sistema.", "Es un framework que facilita el almacenamiento de los datos en un base de datos\n    relacional.", "Tiene el inconveniente de que complica introducir nuevas funciones (como el cacheo de\n    información).", "Está basado en una arquitectura funcional de 2 fases: datos del objeto y persistencia\n    (o mapeo).", "2");
             /*09*/      tipo_test("Respecto a la utilización de buffers para acceder a los ficheros:", "Mejora el rendimiento del sistema.", "Se consigue con las clases BufferInputStream y BufferOutputStream.", "Se consigue con las clases BufferReaderStream y BufferWriterStream.", "Todas las respuestas son correctas.", "1");
-            /*10*/      tipo_test("Trabajando con ficheros, para el acceso de entrada (lectura) basado en caracteres,\n        usaremos la clase:", "FileInputStream", "FileReader", "RandomAccessFile", "Todas las respuestas son correctas.", "2");
+            /*10*/      tipo_test("Trabajando con ficheros, para el acceso de entrada (lectura) basado en caracteres,\n        usaremos la clase:", "FileInputStream.", "FileReader.", "RandomAccessFile.", "Todas las respuestas son correctas.", "2");
+            
             /*11*/      tipo_test("Para tratar una excepción en java, podemos ...", "Rodear el código propenso a excepciones en un bloque try/catch.", "Añadir la excepción a la definición del método, lanzándola a un nivel superior.", "Incluir instrucciones que se ejecutarán siempre, independientemente de si hay excepción\n    o no.", "Todas las respuestas son correctas.", "4");
-            /*12*/      tipo_test("En java, para crear el fichero \"prueba.txt\", usaremos:", "File fichero = new File(\"prueba.txt\");", "File fichero = new File(\"prueba.txt\");\n    fichero.createNewFile();", "File fichero = new File(\"prueba.txt\");\n    fichero.mkdirs();", "File fichero = new File(\"prueba.txt\");\n    fichero.exists();", "2");
+            /*12*/      tipo_test("¿Que nos indica el método TT_NUMBER de la clase StreamTokenizer?", "Inicio del fichero.", "Fin de línea.", "Fin del fichero.", "Un token es de tipo número.", "4");
             /*13*/      tipo_test("El driver JDBC-ODBC (tipo 1)", "No se distribuye con el paquete del lenguaje Java.", "Usa una API nativa.", "Es muy rápido, al no tener capas intermedias.", "Es el recomendado para trabajar con applets.", "2");
             /*14*/      tipo_test("Aplicando el método close(), conseguiremos ...", "Finalizar nuestra aplicación.", "Bloquear nuestro fichero contra escritura.", "Cerrar la lectura del fichero.", "Cerrar el flujo de datos, liberando los recursos ocupados.", "4");
             /*15*/      tipo_test("¿Qué método nos indica que un token es de tipo palabra?", "TT_EOL", "TT_EOF", "TT_LOP", "TT_WORD", "4");
             /*16*/      tipo_test("¿Con cuál de los siguientes métodos obtendremos una lista de los nodos en XPATH?", "ShowNodes()", "Compile() y evaluate()", "Clear()", "Load()", "2");
-            /*17*/      tipo_test("¿Cuántos tipos de drivers JDBC existen?", "1", "3", "4", "8", "3");
+            /*17*/      tipo_test("En la clase RandomAccessFile el modo de acceso \"rw\" ...", "Hace referencia al modo escritura.", "Hace referencia al modo lectura.", "Hace referencia al modo lectura escritura.", "Hace referencia al modo lectura escritura síncrona.", "3");
             /*18*/      tipo_test("Una base de datos independiente:", "Usa la misma JVM de la aplicación.", "Está embebida en el aplicativo.", "Es menos potente que una embebida.", "Todas son falsas.", "4");
             /*19*/      tipo_test("Selecciona el comando por medio del cual eliminaremos filas en nuestra base de\n        datos:", "DROP TABLE", "DELETE", "CLEAN", "INSERT", "2");
             /*20*/      tipo_test("¿De qué principio Java hace uso el Framework Hibernate?", "Reflexión.", "Multiplataforma.", "Autoensamblaje.", "Todas son falsas.", "1");
+            
             /*21*/      tipo_test("Hibernate:", "Está disponible solo para Java.", "Establece las relaciones en muchos ficheros XML diferentes, lo que lo hace más complicado.", "Es muy utilizado por ser muy básico, sin contemplar muchas de las características de Java\n    (colecciones, herencia, abstracción, orientación a objetos, etc.)", "Ofrece una propia de consultas SQL, llamada HQL.", "4");
             /*22*/      tipo_test("XPATH ...", "Se utiliza para configurar en java la ruta (path) de los ficheros XML.", "Es la recomendación del W3C para el trabajo con XML.", "No permite utilizar expresiones para seleccionar nodos en ficheros XML.", "No tiene las funcionalidades estándar de manipulación de Strings o valores numéricos.", "2");
             /*23*/      tipo_test("Utilizando SAX puedo modificar un fichero XML ...", "Con DataOutputStream.", "Con PrintStream.", "Primero lo tengo que leer con DataInputStream.", "Las demás respuestas son incorrectas.", "4");
@@ -311,9 +313,90 @@ public class Test_AccesoDatos {
             /*25*/      tipo_test("Una tubería en java ...", "Se usa para permitir comunicarse a dos procesos ejecutándose en lugares distintos de la memoria.", "Se puede usar para permitir comunicarse a dos hilos diferentes, siempre que sean del mismo proceso.", "Se crea instanciando objetos Streams.", "Se puede usar para permitir comunicarse a dos hilos diferentes, siempre que no sean\n    del mismo proceso.", "2");
             /*26*/      tipo_test("En la clase RandomAccessFile el modo de acceso \"r\" ...", "Hace referencia al modo escritura.", "Hace referencia al modo lectura.", "Hace referencia al modo lectura escritura.", "Todas con correctas.", "2");
             /*27*/      tipo_test("La clase DataInputStream leerá ...", "Solo tipos de datos String.", "Tipos de datos String e Integer.", "Tipos de datos primitivos de java.", "Todas son correctas.", "3");
-            /*28*/      tipo_test("¿Qué sentencia usamos en las excepciones para identificarlas y tratarlas?", "Try/catch.", "Throw.", "Call.", "Take.", "1");
+            /*28*/      tipo_test("¿Que nos indica el método TT_WORN de la clase StreamTokenizer?", "Inicio del fichero.", "Fin de línea.", "Fin del fichero.", "Un token es de tipo palabra.", "4");
             /*29*/      tipo_test("Elige el protocolo de conexión más usado con bases de datos con lenguaje SQL.", "JDBC.", "LDAP.", "OBDC.", "ORACLE.", "1");
-            /*30*/      tipo_test("¿Qué método es el que usaremos para realizer consultas con un objeto Statement?", "executeQuery().", "executeSelect().", "executeUpdate().", "Todas son verdaderas.", "1");
+            /*30*/      tipo_test("En la clase RandomAccessFile el modo de acceso \"rws\" ...", "Hace referencia al modo escritura.", "Hace referencia al modo lectura.", "Hace referencia al modo lectura escritura.", "Hace referencia al modo lectura escritura síncrona.", "4");
+            
+            /*31*/      tipo_test("¿Qué método nos indica que un token es de tipo final del fichero?", "TT_EOL", "TT_EOF", "TT_LOP", "TT_WORD", "2");
+            /*32*/      tipo_test("La conexión con JDBC ...", "Puede ser en una arquitectura de 2 capas.", "Puede ser en una arquitectura de 3 capas.", "Puede ser de un tipo que incluya la traducción de llamadas de JDBC a ODBC.", "Todas las respuestas son correctas.", "4");
+            /*33*/      tipo_test("El método read() de FileInputStream ...", "Devuelve el contenido de todo el fichero.", "Devuelve el primer Byte representado en número entero.", "No devuelve nada.", "Ninguna es correcta.", "2");
+            /*34*/      tipo_test("¿Qué método es el encargado de cargar el fichero en memoria en los analizadores?", "El método unparse.", "El método load.", "El método parse.", "El metodo execute.", "3");
+            /*35*/      tipo_test("Antes de escribir el código necesario para gestionar la conexión desde Java hay que ...", "Compilar nuestro proyecto.", "Añadir nuestro fichero de driver (normalmente .jar) al classpath del proyecto.", "Ejecutar un comando para crear base de datos.", "Todas son falsas.", "2");
+            /*36*/      tipo_test("Spring boot nos ayuda en:", "Despliegue de la aplicación entre otras cosas.", "Sintaxis.", "Variables de entorno.", "Todas son falsas.", "1");
+            /*37*/      tipo_test("Necesitaremos tener el permiso DROP para ejecutar ...", "DROP TABLE.", "CREATE INDEX.", "ALTER TABLE.", "ALTER DATABASE.", "1");
+            /*38*/      tipo_test("El principio de reflexión hace referencia a:", "Todos los objetos se pueden sobrescribir.", "Los objetos no son manipulables.", "Permite el análisis y la modificación de los distintos atributos y características de las\n    distintas clases en tiempo de ejecución.", "Todas son verdaderas.", "3");
+            /*39*/      tipo_test("¿Qué método nos indica que un token es de tipo final de la línea?", "TT_EOL", "TT_EOF", "TT_LOP", "TT_WORD", "1");
+            /*40*/      tipo_test("En bases de datos, es ejemplo de sentencias de manipulación de datos:", "Alter database.", "Select.", "Insert.", "Alter table.", "3");
+            
+            /*41*/      tipo_test("Java DB", "Está construida sobre el motor de base de datos Derby.", "Es la base sobre la que se construyó el motor de la base de datos Derby.", "Solo se puede desplegar en modo simple embebido.", "Solo soporta funcionalidades de bases de datos orientadas a objetos.", "1");
+            /*42*/      tipo_test("¿Cuántos tipos de drivers JDBC existen?", "1", "3", "4", "8", "3");
+            /*43*/      tipo_test("¿Qué método es el que usaremos para realizer consultas con un objeto Statement?", "executeQuery().", "executeSelect().", "executeUpdate().", "Todas son verdaderas.", "1");
+            /*44*/      tipo_test("¿Qué nos devuelve el método getParent()?", "Devuelve el fichero anterior.", "No devuelve es de tipo void().", "Devuelve el directorio superior.", "Devuelve el nombre del fichero.", "3");
+            /*45*/      tipo_test("¿Que nos indica el método TT_EOL de la clase StreamTokenizer?", "Inicio del fichero.", "Fin de línea.", "Fin del fichero.", "Error.", "2");
+            /*46*/      tipo_test("¿De qué clase heredan todas las excepciones en Java?", "THROWABLE.", "ERROR.", "EXCEPTION.", "FILEEXCEPTION.", "1");
+            /*47*/      tipo_test("El comando que nos permite cambiar las condiciones generales de una tabla de una\n        base de datos es ...", "ALTER TABLE.", "ALTER DATABASE.", "ALTER BASE.", "ALTER INDEX.", "1");
+            /*48*/      tipo_test("Un conector o driver para el acceso a base de datos ...", "Es una API para facilitar la conexión a dicha base de datos.", "Si es JDBC, es un protocolo desarrollado por Microsoft.", "Si es ODBC, es un protocolo desarrollado por Sun.", "Todas las respuestas son correctas.", "1");
+            /*49*/      tipo_test("La librería Java que se usará para la gestión de archivos, lectura, escritura y más\n        funcionalidades es", "Java.io", "Io.java", "Lio.java", "Java.tio", "1");
+            /*50*/      tipo_test("¿Qué clase fue desarrollada para leer datos primitivos de Java?", "DataInputStream.", "DataStream.", "Data", "Date.", "1");
+            
+            /*51*/      tipo_test("Con la anotación @Before ...", "Ejecutamos dicho código después del test ejecutado.", "Ejecutamos algunos tests.", "Ejecutamos dicho código antes del test ejecutado.", "Todas son falsas.", "3");
+            /*52*/      tipo_test("ObjectDB ...", "Más que una base de datos relacional es una base de datos orientada a objetos.", "Es relacional pura.", "Es independiente.", "Todas son falsas.", "1");
+            /*53*/      tipo_test("El comando que nos permite cambiar las condiciones generales de la base de datos\n        es ...", "ALTER TABLE", "ALTER DATABASE.", "ALTER BASE.", "ALTER INDEX.", "2");
+            /*54*/      tipo_test("Mejorar la eficiencia en el desarrollo ...","Es una ventaja de usar un ORM."," No debe influir a la hora de usar un ORM.","Influye al usar depende qué tipo de base de datos relacional.","Todas son falsas.","1");
+            /*55*/      tipo_test("¿Qué componente es el encargado de realizar la conexión entre nuestro aplicativo y el\n        driver apropiado JDBC?", "El T driver.", "El gestor JDBC.", "RJK driver.", "Java driver.", "2");
+            /*56*/      tipo_test("¿En qué fichero podremos introducir nuestras configuraciones de Hibernate?", "Application.properties.", "App.zip.", "Configuration.config.", "Todas son falsas.", "1");
+            /*57*/      tipo_test("Un fichero genérico está compuesto por ...", "Nombre.", "Tipo de fichero.", "Nombre y extensión.", "Nombre y acceso.", "3");
+            /*58*/      tipo_test("Para instanciar un nuevo hilo de ejecución usaremos la clase ...", "FileInput.", "FileOutput.", "Stream.", "Thread.", "4");
+            /*59*/      tipo_test("Una base de datos independiente:", "No se ejecutará bajo la misma JVM.", "No tiene por qué ser más potente que una embebida.", "No realiza procedimientos.", "Todas son verdaderas.", "1");
+            /*60*/      tipo_test("¿Con qué comando podremos renombrar una o más tablas?", "DROP TABLE.", "RENAME TABLE.", "DROP INDEX.", "NAME TABLE.", "2");
+            
+            /*61*/      tipo_test("¿Que nos indica el método TT_EOF de la clase StreamTokenizer?", "Inicio del fichero.", "Fin de línea.", "Fin del fichero.", "Error.", "3");
+            /*62*/      tipo_test("El parser SAX es un analizador basado en ...", "Listas.", "Eventos.", "La edición.", "La escritura.", "2");
+            /*63*/      tipo_test("Definimos el desfase objeto-relacional a ...", "Al tiempo de conexión.", "Las dificultades que surgen cuando trabajamos con un aplicativo y una base de\n    datos relacional.", "Nombre de base de datos.", "Tipo de base de datos.", "2");
+            /*64*/      tipo_test("Con la clave: spring.datasource.username ...", "Accederemos a una table de base de datos.", "Indicaremos el nombre de usuario de acceso al panel de control.", "Accedemos al aplicativo.", "Todas son verdaderas.", "2");
+            /*65*/      tipo_test("¿Qué conocido método devuelve el byte al stream de datos?", "Read()", "Unread()", "Re-read()", "Unreadeable()", "2");
+            /*66*/      tipo_test("¿Qué sentencia usamos en las excepciones para identificarlas y tratarlas?", "Try/catch.", "Throw.", "Call.", "Take.", "1");
+            /*67*/      tipo_test("En java, para crear el fichero \"prueba.txt\", usaremos:", "File fichero = new File(\"prueba.txt\");", "File fichero = new File(\"prueba.txt\");\n    fichero.createNewFile();", "File fichero = new File(\"prueba.txt\");\n    fichero.mkdirs();", "File fichero = new File(\"prueba.txt\");\n    fichero.exists();", "2");
+            
+            /*68*/      //tipo_test("", "", "", "", "", "");
+            /*69*/      //tipo_test("", "", "", "", "", "");
+            /*70*/      //tipo_test("", "", "", "", "", "");
+            
+            /*71*/      //tipo_test("", "", "", "", "", "");
+            /*72*/      //tipo_test("", "", "", "", "", "");
+            /*73*/      //tipo_test("", "", "", "", "", "");
+            /*74*/      //tipo_test("", "", "", "", "", "");
+            /*75*/      //tipo_test("", "", "", "", "", "");
+            /*76*/      //tipo_test("", "", "", "", "", "");
+            /*77*/      //tipo_test("", "", "", "", "", "");
+            /*78*/      //tipo_test("", "", "", "", "", "");
+            /*79*/      //tipo_test("", "", "", "", "", "");
+            /*80*/      //tipo_test("", "", "", "", "", "");
+            
+            /*81*/      //tipo_test("", "", "", "", "", "");
+            /*82*/      //tipo_test("", "", "", "", "", "");
+            /*83*/      //tipo_test("", "", "", "", "", "");
+            /*84*/      //tipo_test("", "", "", "", "", "");
+            /*85*/      //tipo_test("", "", "", "", "", "");
+            /*86*/      //tipo_test("", "", "", "", "", "");
+            /*87*/      //tipo_test("", "", "", "", "", "");
+            /*88*/      //tipo_test("", "", "", "", "", "");
+            /*89*/      //tipo_test("", "", "", "", "", "");
+            /*90*/      //tipo_test("", "", "", "", "", "");
+            
+            /*91*/      //tipo_test("", "", "", "", "", "");
+            /*92*/      //tipo_test("", "", "", "", "", "");
+            /*93*/      //tipo_test("", "", "", "", "", "");
+            /*94*/      //tipo_test("", "", "", "", "", "");
+            /*95*/      //tipo_test("", "", "", "", "", "");
+            /*96*/      //tipo_test("", "", "", "", "", "");
+            /*97*/      //tipo_test("", "", "", "", "", "");
+            /*98*/      //tipo_test("", "", "", "", "", "");
+            /*99*/      //tipo_test("", "", "", "", "", "");
+           /*100*/      //tipo_test("", "", "", "", "", "");
+           
+           /*101*/      //tipo_test("", "", "", "", "", "");
+            
                     }
                     
                     case "0" -> {}
