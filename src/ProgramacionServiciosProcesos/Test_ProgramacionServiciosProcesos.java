@@ -20,6 +20,7 @@ public class Test_ProgramacionServiciosProcesos {
             Principal.setFallos(0);
             Principal.setAciertos(0);
             Principal.setContador(0);
+            Principal.setEn_blanco(0);
             
             Scanner teclaStr = new Scanner(System.in, "UTF-8");
             System.out.println("""                          

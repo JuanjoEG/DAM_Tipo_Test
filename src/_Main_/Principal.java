@@ -9,22 +9,24 @@ import java.util.Scanner;
 public class Principal {
     
     static boolean salida = false;
-    static int fallos = 0;
-    static int aciertos = 0;
-    static int contador = 0;
+    static double fallos = 0;
+    static double aciertos = 0;
+    static double contador = 0;
+    static double en_blanco = 0;
     static String tema = "0";
     static String asignatura =" ";
-    static int lentitud =12;       // RANGO ACONSEJADO:  ( 5-> MUY RÁPIDO  -  20-> MUY LENTO )
+    static double nota = 0;
+    
 
-    public static void setFallos(int fallos) {
+    public static void setFallos(double fallos) {
         Principal.fallos = fallos;
     }
 
-    public static void setAciertos(int aciertos) {
+    public static void setAciertos(double aciertos) {
         Principal.aciertos = aciertos;
     }
 
-    public static void setContador(int contador) {
+    public static void setContador(double contador) {
         Principal.contador = contador;
     }
 
@@ -35,6 +37,10 @@ public class Principal {
     public static void setAsignatura(String asignatura) {
         Principal.asignatura = asignatura;
     }    
+
+    public static void setEn_blanco(double en_blanco) {
+        Principal.en_blanco = en_blanco;
+    }
     
     public static void tipo_test (String pregunta, String resp_1, String resp_2, String resp_3, String resp_4, String solucion) {
         
@@ -53,13 +59,12 @@ public class Principal {
             System.out.println("\nC.- " + resp_3);
             System.out.println("\nD.- " + resp_4);
             System.out.println("\n*************************************************************************************************");
-            System.out.println("RESPONDE CON:               -  A  B  C  D  -  a  b  c  d  -  1  2  3  4  -");
+            System.out.println("RESPONDE CON:               -  A  B  C  D  -  a  b  c  d  -  1  2  3  4  -  0  -");
             System.out.println("*************************************************************************************************\n");
             System.out.print("Indica tu respuesta: ");
             miRespuesta = teclaStr.nextLine();
             
-            for (int i=0; i<20; i++) {
-                //esperar(2);
+            for (int i=0; i<35; i++) {
                 System.out.println("");
             }
             
@@ -91,9 +96,9 @@ public class Principal {
                 System.out.println("¡ ¡ ¡   L A  O P C I Ó N   S E L E C C I O N A D A   N O   E X I S T E   ! ! ! ");
                 salida = false;
             } else if (miRespuesta.equals("0")) {
-                fallos = (1 + fallos);
-                aciertos = (-1 + aciertos);
-                salida = false;
+                System.out.println("¡ ¡ ¡   R E S P U E S T A   E N   B L A N C O   ! ! ! ");
+                en_blanco = (1 + en_blanco);
+                salida = true;
             } else {                    
                 System.out.println("\n***   ***   ***          ¡ ¡ ¡  E R R O R  ! ! !          ***   ***   ***");
                 fallos = (1 + fallos);
@@ -101,15 +106,13 @@ public class Principal {
                 salida = false;
             }
             
-            for (int i=0; i<20; i++) {
-                //esperar(2);
+            for (int i=0; i<15; i++) {
                 System.out.println("");
             }
             
-            esperar(250);
+            esperar(3000);
             
-            for (int i=0; i<20; i++) {
-                //esperar(2);
+            for (int i=0; i<35; i++) {
                 System.out.println("");
             }
             
@@ -120,7 +123,14 @@ public class Principal {
     }
     
     public static void ver_notas() {
-        System.out.println("\n" + asignatura + "       TEMA: " + tema + "       ACIERTOS  = " + aciertos + "       FALLOS    = " + fallos);       
+        nota = ( 10* (aciertos - (fallos/3)) ) / contador;
+        nota = (Math.round(nota*100.00))/100.00;
+        aciertos = (Math.round(aciertos*100.00))/100.00;
+        fallos = (Math.round(fallos*100.00))/100.00;
+        en_blanco = (Math.round(en_blanco*100.00))/100.00;
+        
+        System.out.println("\n" + asignatura + "       TEMA: " + tema + "     NOTA = " + nota);
+        System.out.println("     ACIERTOS  = " + aciertos + "     FALLOS = " + fallos + "     EN BLANCO = " + en_blanco);
     }
 
     public static void main(String[] args) {
@@ -174,7 +184,7 @@ public class Principal {
 
     private static void esperar(int segundos) {
         try {            
-            Thread.sleep(segundos*lentitud);
+            Thread.sleep(segundos);
         } catch (Exception e) {
             System.out.println(e);
         }

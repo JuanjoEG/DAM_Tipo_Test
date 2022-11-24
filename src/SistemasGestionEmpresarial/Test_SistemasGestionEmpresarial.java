@@ -19,6 +19,7 @@ public class Test_SistemasGestionEmpresarial {
             Principal.setFallos(0);
             Principal.setAciertos(0);
             Principal.setContador(0);
+            Principal.setEn_blanco(0);
             
             Scanner teclaStr = new Scanner(System.in, "UTF-8");
             System.out.println("""                          
@@ -315,16 +316,16 @@ public class Test_SistemasGestionEmpresarial {
             /*27*/      tipo_test("Odoo tiene como requisito software en todas las opciones de instalación disponer\n        de ...", "Un servidor de base de datos MySQL.", "Java Runtime Environment (JRE) 8 o superior.", "Docker.", "Ninguna respuesta es correcta.", "4");
             /*28*/      tipo_test("La versión Express Edition de SAP es ...", "Siempre de pago.", "Siempre gratuita.", "Gratuita hasta los 32GB.", "Ninguna respuesta es correcta.", "3");
             /*29*/      tipo_test("Cuando creamos por primera vez un producto ...", "Podremos indicarle el stock que tenemos durante la creación.", "Éste se crea con cantidad 0.", "Éste se crea con cantidad 1.", "Ninguna respuesta es correcta.", "2");
-            /*30*/      //tipo_test("", "", "", "", "", "");
+            /*30*/      tipo_test("En la fase de Consultoría de implantación de un ERP se elaboran ...", "Esquemas de la lógica del negocio.", "Mapas conceptuales de la estructura del negocio.", "Diagramas de flujo de los procesos y procedimientos.", "Las demás respuestas son incorrectas.", "3");
             
-            /*31*/      //tipo_test("", "", "", "", "", "");
-            /*32*/      //tipo_test("", "", "", "", "", "");
-            /*33*/      //tipo_test("", "", "", "", "", "");
-            /*34*/      //tipo_test("", "", "", "", "", "");
-            /*35*/      //tipo_test("", "", "", "", "", "");
-            /*36*/      //tipo_test("", "", "", "", "", "");
-            /*37*/      //tipo_test("", "", "", "", "", "");
-            /*38*/      //tipo_test("", "", "", "", "", "");
+            /*31*/      tipo_test("Un CRM ...", "Ayuda en la gestión de la relación con los clientes.", "Gestiona los procesos de producción de una empresa.", "Planifica los procesos de compra de materiales.", "Las demás respuestas son incorrectas.", "1");
+            /*32*/      tipo_test("Para la fase de implantación de un ERP es necesario disponer de una metodología\n        para ...", "El antes.", "El durante.", "El después.", "Todas las respuestas son correctas.", "4");
+            /*33*/      tipo_test("El ERP surgió ...", "En la década de los 90 y el término lo bautizó el grupo Gartner.", "En la década de los 90 y el término lo bautizó el SAP.", "En la década de los 80 y el término lo bautizó el grupo Gartner.", "En la década de los 80 y el término lo bautizó el SAP.", "1");
+            /*34*/      tipo_test("Entre las desventajas del software propietario encontramos ...", "La dependencia. La implantación y personalización del ERP con un proveedor dificulta un\n    posible futuro cambio de ERP.", "Es poco fiable.", "No suelen ofrecer garantías.", "Ninguna respuesta es correcta.", "1");
+            /*35*/      tipo_test("Entre los módulos logísticos de SAP nos encontramos con los módulos de ...", "Gestión de materiales.", "Ventas y distribución.", "Planificación de la producción.", "Todas las respuestas son correctas.", "4");
+            /*36*/      tipo_test("La formación ...", "Se realiza al cliente final justo después del arranque en producción.", "Se realiza el cliente final justo después de la fase de soporte.", "Se realiza al cliente final justo antes del arranque en producción.", "No es necesario formar al cliente final.", "3");
+            /*37*/      tipo_test("El software copyleft ...", "Permite al redistribuidor agregar restricciones adicionales.", "No permite al redistribuidor agregar restricciones adicionales.", "Hace que el código sea privado.", "Ninguna respuesta es correcta.", "2");
+            /*38*/      tipo_test("Para confirmar la recepción de un producto ...", "Se puede hacer desde el módulo de inventario.", "Se puede hacer desde la sección \"recepciones\" del módulo de inventario.", "Antes, se debe indicar en la columna \"Hecho\" la cantidad que se ha recibido.", "Todas las respuestas son correctas.", "4");
             /*39*/      //tipo_test("", "", "", "", "", "");
             /*40*/      //tipo_test("", "", "", "", "", "");
             
