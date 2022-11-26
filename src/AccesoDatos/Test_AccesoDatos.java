@@ -35,7 +35,7 @@ public class Test_AccesoDatos {
         *  5. TEMA: MANEJO DE CONECTORES II                                    *
         *  6. TEMA: MANEJO DE CONECTORES III: SENTENCIAS                       *
         *  7. TEMA: EL MAPEO OBJETO RELACIONAL                                 *
-        *  8. TEMA:                                                            *
+        *  8. TEMA: EXPLORACIÓN DEL MAPEO OBJETO-RELACIONAL                    *
         *  9. TEMA:                                                            *
         * 10. TEMA:                                                            *
         * 11. TEMA:                                                            *
@@ -165,16 +165,16 @@ public class Test_AccesoDatos {
                         _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Una de las características de una clase persistente sería:", "Tener al menos un constructor por defecto.", "Tener mínimo 4 atributos.", "Mínimo deber contener 50 líneas de código.", "Todas son falsas.", "1");
+            /*02*/      tipo_test("Que todas las clases deban contener un atributo ID para mejorar la identificación de\n        los objetos es una característica principal de:", "Las clases POJO.", "Clases persistentes.", "Clases Service.", "Clases DAO.", "2");
+            /*03*/      tipo_test("En la construcción de clases persistentes es importante tener:", "Los métodos getter y setter definidos.", "Una instancia de un servicio dentro de la clase.", "Un atributo que se llame \"name\" cuyo nombre sea la clase.", "Todas son falsas.", "1");
+            /*04*/      tipo_test("Con la etiqueta <hibernate-mapping> ...", "Podremos colocar la configuración básica de hibernate.", "Configuraremos algunos aspectos de mapeo generales.", "Almacenaremos las clases definidas que queramos persistir.", "Todas son verdaderas.", "3");
+            /*05*/      tipo_test("Con los elementos <meta> del archivo de mapeo podremos ...", "Establecer la descripción de la clase que estamos definiendo.", "Definir los atributos principales de la clase.", "Establecer el contenido de una columna.", "Todas son falsas.", "1");
+            /*06*/      tipo_test("¿Con qué elemento mapearemos los atributos o propiedades Java y los\n        transformaremos en columnas de base de datos?", "<attributes>", "<property>", "<set>", "<get>", "2");
+            /*07*/      tipo_test("¿Qué estado tendría un objeto persistente que fuese una nueva instancia, que no está\n        aún asociada a un objeto de sesión y no tiene representación en la base de datos ni\n        identificador según Hibernate?", "Persistent.", "Transient.", "Detached.", "Labeled.", "2");
+            /*08*/      tipo_test("El método clear() del objeto session ...", "Cerrará la session.", "Eliminará completamente la sesión.", "Borrará la caché Hibernate.", "Todas son verdaderas.", "2");
+            /*09*/      tipo_test("El método createCriteria() que se ejecuta desde un objeto de session devolverá:", "Un objeto Query.", "Un objeto Criteria.", "Un objeto Transaction.", "Un objeto Session.", "2");
+            /*10*/      tipo_test("¿Con qué método comprobamos si la session está actualmente conectada?", "isOpen().", "isConnected().", "refresh().", "getSessionFactory().", "2");                        
                     }
                     case "9" -> {
                         _Main_.Principal.setTema(menu);
