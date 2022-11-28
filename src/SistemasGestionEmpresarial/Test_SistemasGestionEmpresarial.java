@@ -28,14 +28,14 @@ public class Test_SistemasGestionEmpresarial {
         *  TEST SISTEMAS DE GESTIÓN EMPRESARIAL                                *
         ************************************************************************
         *                                                                      *
-        *  1. TEMA: LA GESTIÓN EMPRESARIAL                                     *
-        *  2. TEMA: ERP-CRM ACTUALES LIBRES Y PROPIETARIOS                     *
-        *  3. TEMA: LOS MÓDULOS DE UN ERP                                      *
-        *  4. TEMA: EL PROYECTO DE IMPLANTACIÓN DE UN ERP                      *
-        *  5. TEMA: EL ENTORNO DE INSTALACIÓN DE ERP-CRM                       *
-        *  6. TEMA: TIPOS DE INSTALACIONES DE SISTEMAS ERP-CRM                 *
-        *  7. TEMA: EL FLUJO DE COMPRA-VENTA                                   *
-        *  8. TEMA:                                                            *
+        *  1. TEMA: LA GESTIÓN EMPRESARIAL.                                    *
+        *  2. TEMA: ERP-CRM ACTUALES LIBRES Y PROPIETARIOS.                    *
+        *  3. TEMA: LOS MÓDULOS DE UN ERP.                                     *
+        *  4. TEMA: EL PROYECTO DE IMPLANTACIÓN DE UN ERP.                     *
+        *  5. TEMA: EL ENTORNO DE INSTALACIÓN DE ERP-CRM.                      *
+        *  6. TEMA: TIPOS DE INSTALACIONES DE SISTEMAS ERP-CRM.                *
+        *  7. TEMA: EL FLUJO DE COMPRA-VENTA.                                  *
+        *  8. TEMA: GESTIÓN DE LA FABRICACIÓN Y PUNTO DE VENTA.                *
         *  9. TEMA:                                                            *
         * 10. TEMA:                                                            *
         * 11. TEMA:                                                            *
@@ -165,16 +165,16 @@ public class Test_SistemasGestionEmpresarial {
                          _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Los productos que se venden en el punto de venta ...", "Pueden ser cargados de forma masiva desde un fichero.", "No pueden ser cargados de forma masiva desde un fichero.", "Pueden ser cargados de forma masiva desde un fichero, pero solo de los que tengamos stock.", "Pueden ser cargados de forma masiva desde un fichero, pero solo los que haya fabricado\n    nuestra empresa.", "1");
+            /*02*/      tipo_test("Para poder vender un producto en un punto de ventas ...", "Éste debe tener marcado el flag de \"disponible en PdV\".", "Éste debe tener marcado el flag de \"disponible en TPV\".", "Éste debe tener marcado el flag de \"disponible en ITV\".", "Ninguna respuesta es correcta.", "1");
+            /*03*/      tipo_test("En Odoo, si tenemos varios PdV con conexión a internet para centralizar las\n        transacciones y perdemos la conexión a internet ...", "No podremos hacer uso del PdV.", "Podremos hacer uso del PdV, almacenándose las transacciones en memoria y\n    sincronizándose una vez que volvamos a tener conexión.", "Podremos hacer uso del PdV, pero tendremos que anotarlas en un documento para luego\n    cargarlas manualmente.", "Ninguna respuesta es correcta.", "2");
+            /*04*/      tipo_test("En el módulo de Odoo de punto de ventas ...", "No hay modo de controlar el dinero en efectivo de la caja.", "El único modo de controlar el dinero en efectivo de la caja es contándolo antes de la\n    apertura del PdV y después del cierre del mismo y amontándolo en un documento para\n    compararlo al día siguiente.", "Se puede controlar siempre y cuando tengamos un cajón de monedas y billetes que\n    disponga de un contador de efectivo.", "Ninguna respuesta es correcta.", "4");
+            /*05*/      tipo_test("Para devolver un producto ...", "Se recomienda hacerlo en el back-end, es decir, mediante una cancelación de la venta en\n    el módulo de venta.", "Se recomienda hacerlo en el front-end, es decir, creando una venta en negativo en el\n    módulo de Punto de venta.", "Se recomienda hacerlo en el back-end, es decir, mediante una cancelación de la venta en\n    el módulo de contabilidad.", "Ninguna respuesta es correcta.", "2");
+            /*06*/      tipo_test("Para hacer uso del módulo de fabricación ...", "Es necesario tener el módulo de Calidad.", "Es necesario tener el módulo de Inventario.", "Es necesario tener el módulo de Punto de venta.", "Ninguna respuesta es correcta.", "2");
+            /*07*/      tipo_test("Para fabricar un producto ...", "Es necesario crear su lista de materiales.", "Es necesario marcar el flag de \"Fabricar\".", "Es necesario tener stock de los materiales necesarios.", "Todas las respuestas son correctas.", "4");
+            /*08*/      tipo_test("Las rutas de producción ...", "Permiten fabricar un producto en una cadena de producción con diferentes equipos y\n    hacer un seguimiento de la fabricación.", "Nos aseguran que siempre habrá stock de materiales para fabricar un producto.", "Permiten enviar los pedidos fabricados a los clientes por diferentes rutas.", "Ninguna respuesta es correcta.", "1");
+            /*09*/      tipo_test("Las rutas de producción ...", "No tienen por qué tener centros de producción.", "Deben tener centros de producción.", "Deben tener centros de tareas.", "No tienen por qué tener centros de tareas.", "2");
+            /*10*/      tipo_test("Las operaciones ...", "Se realizan en centros de producción y una ruta puede tener varias operaciones.", "Se realizan en centros de tareas y una ruta puede tener varias operaciones.", "Se realizan en centros de producción y una ruta puede tener solo una operación.", "Se realizan en centros de tareas y una ruta puede tener solo una operación.", "1");                        
                     }
                     case "9" -> {
                          _Main_.Principal.setTema(menu);

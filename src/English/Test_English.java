@@ -28,14 +28,14 @@ public class Test_English {
         *  ENGLISH TEST                                                        *
         ************************************************************************
         *                                                                      *
-        *  1. TEMA: INTRODUCTIONS                                              *
-        *  2. TEMA: AT PRESENT                                                 *
-        *  3. TEMA: DATE AND TIME                                              *
-        *  4. TEMA: ON THE PHONE                                               *
-        *  5. TEMA: LIKES AND DISLIKES                                         *
-        *  6. TEMA: PAST ACTIVITIES                                            *
-        *  7. TEMA: FUTURE                                                     *
-        *  8. TEMA:                                                            *
+        *  1. TEMA: INTRODUCTIONS.                                             *
+        *  2. TEMA: AT PRESENT.                                                *
+        *  3. TEMA: DATE AND TIME.                                             *
+        *  4. TEMA: ON THE PHONE.                                              *
+        *  5. TEMA: LIKES AND DISLIKES.                                        *
+        *  6. TEMA: PAST ACTIVITIES.                                           *
+        *  7. TEMA: FUTURE.                                                    *
+        *  8. TEMA: SUGGESTIONS AND COMPLAINTS.                                *
         *  9. TEMA:                                                            *
         * 10. TEMA:                                                            *
         * 11. TEMA:                                                            *
@@ -165,16 +165,16 @@ public class Test_English {
                         _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Which of the following is not a good piece of advice to provide a good customer care\n        service?", "Raise your voice when dealing with aggressive customers.", "Make sure you listen to the customer carefully.", "Make sure to fully understand what the customer needs.", "Apologise for the inconvenience caused.", "1");
+            /*02*/      tipo_test("Which of the following statements is true?", "Only what you say matters in customer care.", "Body language is important when dealing with customers.", "You only need you pretend you?re listening to customers.", "Customers don't need your full attention. You have more important things to do.", "2");
+            /*03*/      tipo_test("Which of the following statements is a suggestion?", "Will I have to call Mr Smith?", "Do I have to call Mr Smith?", "Shall I call Mr Smith?", "May I call Mr Smith?", "3");
+            /*04*/      tipo_test("Choose the right option to complete the sentence:\n        How about ... to replace the product instead of reimbursing the money?", "offer.", "offering.", "to offer.", "offered.", "2");
+            /*05*/      tipo_test("Which of the following statements is refusing a suggestion?", "I think I'd rather have my money back.", "That sounds good, thanks.", "That's fine.", "I think it?s a good idea.", "1");
+            /*06*/      tipo_test("Which of the following is not a good piece of advice when dealing with an angry\n        customer?", "Get irritated.", "Show empathy.", "Sound positive.", "Sound helpful.", "1");
+            /*07*/      tipo_test("Which of the following expressions is used to welcome a customer?", "You're welcome.", "Sorry about that.", "What can I help you with today?", "Help!", "3");
+            /*08*/      tipo_test("Which of the following expressions is used to politely express disagreement with a\n        customer?", "I appreciate your situation.", "I understand your position.", "I regret to inform you that this is not our responsibility.", "If I understood you correctly, the problem has to do with a missing piece.", "3");
+            /*09*/      tipo_test("Which of the following sentences is incorrect?", "Thanks for wait.", "Please, accept my apologies.", "Could you provide more information please?", "All the sentences are incorrect.", "1");
+            /*10*/      tipo_test("Choose the right option to complete the sentence:\n        I ... you that we are doing everything we can to solve this issue.", "Welcome.", "Accept.", "Understand.", "Assure.", "4");                        
                     }
                     case "9" -> {
                         _Main_.Principal.setTema(menu);

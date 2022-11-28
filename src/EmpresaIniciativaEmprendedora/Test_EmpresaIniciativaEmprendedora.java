@@ -24,33 +24,32 @@ public class Test_EmpresaIniciativaEmprendedora {
             Scanner teclaStr = new Scanner(System.in, "UTF-8");
             System.out.println("""                          
                                
-        ************************************************************************
-        *  TEST EMPRESA E INICIATIVA EMPRENDEDORA                              *
-        ************************************************************************
-        *                                                                      *
-        *  1. TEMA: LA INICIATIVA EMPRENDEDORA                                 *
-        *  2. TEMA: FACTORES CLAVES EN EL EMPRENDIMIENTO                       *
-        *  3. TEMA: EL EMPRESARIO                                              *
-        *  4. TEMA: PLAN DE EMPRESA Y CULTURA EMPRESARIAL                      *
-        *  5. TEMA: LA EMPRESA: ANÁLISIS DEL ENTORNO Y MERCADO                 *
-        *  6. TEMA: MARKETING Y SU PLAN EN LA EMPRESA                          *
-        *  7. TEMA: FORMULAS JURÍDICAS DE LAS EMPRESAS.                        *
-        *           TRÁMITES DE CONSTITUCIÓN Y DE ACTIVIDAD.                   *
-        *  8. TEMA:                                                            *
-        *  9. TEMA:                                                            *
-        * 10. TEMA:                                                            *
-        * 11. TEMA:                                                            *
-        * 12. TEMA:                                                            *
-        * 13. TEMA:                                                            *
-        * 14. TEMA:                                                            *
-        * 15. TEMA:                                                            *
-        *                                                                      *
-        * 40. TEST DE REPASO I                                                 *
-        * 50. TEST DE REPASO II                                                *
-        *                                                                      *
-        ************************************************************************
-        *  0. ATRÁS.                                                           *
-        ************************************************************************
+        *********************************************************************************************
+        *  TEST EMPRESA E INICIATIVA EMPRENDEDORA                                                   *
+        *********************************************************************************************
+        *                                                                                           *
+        *  1. TEMA: LA INICIATIVA EMPRENDEDORA.                                                     *
+        *  2. TEMA: FACTORES CLAVES EN EL EMPRENDIMIENTO.                                           *
+        *  3. TEMA: EL EMPRESARIO.                                                                  *
+        *  4. TEMA: PLAN DE EMPRESA Y CULTURA EMPRESARIAL.                                          *
+        *  5. TEMA: LA EMPRESA: ANÁLISIS DEL ENTORNO Y MERCADO.                                     *
+        *  6. TEMA: MARKETING Y SU PLAN EN LA EMPRESA.                                              *
+        *  7. TEMA: FORMULAS JURÍDICAS DE LAS EMPRESAS. TRÁMITES DE CONSTITUCIÓN Y DE ACTIVIDAD.    *
+        *  8. TEMA: PLAN DE ORGANIZACIÓN: ACTIVIDADES Y RECURSOS.                                   *
+        *  9. TEMA:                                                                                 *
+        * 10. TEMA:                                                                                 *
+        * 11. TEMA:                                                                                 *
+        * 12. TEMA:                                                                                 *
+        * 13. TEMA:                                                                                 *
+        * 14. TEMA:                                                                                 *
+        * 15. TEMA:                                                                                 *
+        *                                                                                           *
+        * 40. TEST DE REPASO I                                                                      *
+        * 50. TEST DE REPASO II                                                                     *
+        *                                                                                           *
+        *********************************************************************************************
+        *  0. ATRÁS.                                                                                *
+        *********************************************************************************************
                                
                                """);
             try {
@@ -168,16 +167,16 @@ public class Test_EmpresaIniciativaEmprendedora {
                         _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Es una afirmación incorrecta sobre la organización de la empresa:", "No es importante saber qué la disposición y orden de espacio.", "Las tareas más complicadas llevarán más tiempo.", "Es importante saber de qué recursos materiales disponemos.", "Ninguna de las anteriores es correcta.", "1");
+            /*02*/      tipo_test("Es una función del departamento de recursos humanos:", "Previsión del personal.", "Reclutamiento y proceso de selección.", "Fomento de la satisfacción de la plantilla.", "Todas son correctas.", "4");
+            /*03*/      tipo_test("Dentro de la ficha de descripción de puesto de trabajo la experiencia que debe tener\n        el trabajador pertenece al apartado:", "Descripción del puesto de trabajo.", "Condiciones laborales.", "Perfil profesional.", "Ninguna de las anteriores es correcta.", "3");
+            /*04*/      tipo_test("Las fichas de descripción de puesto de trabajo deberemos hacerlas:", "Después de hacer la entrevista de trabajo.", "Después del reclutamiento.", "Después de la preselección.", "Antes del reclutamiento.", "4");
+            /*05*/      tipo_test("Es cuando captamos a varios trabajadores de la empresa para hacerles un proceso de\n        selección sobre un puesto que ha quedado vacante:", "Reclutamiento externo.", "Reclutamiento interno.", "Reclutamiento laboral.", "Reclutamiento empresarial.", "2");
+            /*06*/      tipo_test("Es una fuente de reclutamiento externo:", "Portales de empleo.", "Curriculums de autocandidaturas.", "Referencias de empleados.", "Todas son correctas.", "4");
+            /*07*/      tipo_test("El test de aptitud pertenece a la siguiente fase del proceso de selección:", "Entrevista.", "Pruebas.", "Preselección.", "Ninguna de las anteriores es correcta.", "2");
+            /*08*/      tipo_test("Cuando hablamos de la cualificación de un trabajador a corto plazo, nos referimos a:", "Desarrollo.", "Curso.", "Formación.", "Prueba de selección.", "3");
+            /*09*/      tipo_test("Cuando un trabajador comunica a su coordinador algo relacionado con el día\n        a día en la empresa, la comunicación es:", "Vertical ascendente", "Horizontal.", "Vertical descendente.", "Diagonal.", "1");
+            /*10*/      tipo_test("Que otras herramientas además de la formación y desarrollo profesional contribuyen a\n        la productividad y motivación en la empresa:", "La temporalidad de los salarios.", "La conciliación de la vida laboral y familiar.", "Las barreras comunicativas.", "Ninguna es correcta.", "2");                        
                     }
                     case "9" -> {
                         _Main_.Principal.setTema(menu);

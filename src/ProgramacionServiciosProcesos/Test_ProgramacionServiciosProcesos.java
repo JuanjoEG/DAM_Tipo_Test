@@ -29,14 +29,14 @@ public class Test_ProgramacionServiciosProcesos {
         *  TEST PROGRAMACIÓN DE SERVICIOS Y PROCESOS                           *
         ************************************************************************
         *                                                                      *
-        *  1. TEMA: TIPOS DE PROGRAMACIÓN                                      *
-        *  2. TEMA: PROCESOS                                                   *
-        *  3. TEMA: GESTIÓN DE PROCESOS                                        *
-        *  4. TEMA: INTRODUCCIÓN A LA PROGRAMACIÓN PARALELA O MULTIHILO        *
-        *  5. TEMA: GESTIÓN DE HILOS                                           *
-        *  6. TEMA: SINCRONIZACIÓN DE VARIOS HILOS                             *
-        *  7. TEMA: INTRODUCCIÓN A LA COMUNICACIÓN ENTRE APLICACIONES          *
-        *  8. TEMA:                                                            *
+        *  1. TEMA: TIPOS DE PROGRAMACIÓN.                                     *
+        *  2. TEMA: PROCESOS.                                                  *
+        *  3. TEMA: GESTIÓN DE PROCESOS.                                       *
+        *  4. TEMA: INTRODUCCIÓN A LA PROGRAMACIÓN PARALELA O MULTIHILO.       *
+        *  5. TEMA: GESTIÓN DE HILOS.                                          *
+        *  6. TEMA: SINCRONIZACIÓN DE VARIOS HILOS.                            *
+        *  7. TEMA: INTRODUCCIÓN A LA COMUNICACIÓN ENTRE APLICACIONES.         *
+        *  8. TEMA: MODELOS DE COMUNICACIONES.                                 *
         *  9. TEMA:                                                            *
         * 10. TEMA:                                                            *
         * 11. TEMA:                                                            *
@@ -166,16 +166,16 @@ public class Test_ProgramacionServiciosProcesos {
                         _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("¿Cuál de las siguientes operaciones no la realiza un cliente?", "Realizar validaciones de datos.", "Interactuar con el usuario.", "Procesar todas las peticiones para comprobar que sean válidas.", "Recibir los resultados que le envía el servidor.", "1");
+            /*02*/      tipo_test("¿Quién es el encargado de atender las peticiones de varios usuarios de forma\n        concurrente?", "El propio cliente.", "El servidor.", "Tanto el cliente como el servidor.", "El administrador del sistema.", "2");
+            /*03*/      tipo_test("¿En qué año apareció el modelo Cliente/Servidor?", "70.", "80.", "60.", "55.", "2");
+            /*04*/      tipo_test("La comunicación en el modelo Cliente/Servidor se basa en:", "Intercambio de paquetes.", "Intercambio de datagramas.", "Intercambio de mensajes.", "Intercambio de ACK.", "3");
+            /*05*/      tipo_test("¿Cuál de las siguientes operaciones no la realiza un servidor?", "Recibir peticiones del cliente.", "Procesar las peticiones del cliente.", "Mostrar los resultados al usuario.", "Encargarse de que el sistema sea seguro.", "3");
+            /*06*/      tipo_test("¿Cuál de las siguientes configuraciones del modelo Cliente/Servidor no es correcta?", "1 cliente - 1 servidor.", "3 clientes - 1 servidor.", "2 clientes - 2 servidores.", "Todas las configuraciones son correctas.", "4");
+            /*07*/      tipo_test("Señala la afirmación incorrecta del modelo Cliente/Servidor:", "El desarrollo y mantenimiento de este tipo de aplicaciones es relativamente sencillo.", "Utiliza clientes que son ligeros.", "Este modelo no es modular.", "Tiene que garantizar una buena seguridad en el sistema.", "3");
+            /*08*/      tipo_test("¿Cuál de los siguientes modelos son válidos en el modelo Cliente/Servidor?", "Modelo de 1 capa.", "Modelo de 3 capas.", "Modelo de 2 capas.", "Todos los modelos anteriores son válidos.", "4");
+            /*09*/      tipo_test("¿Cómo se denomina a los mensajes de confirmación de llegada de datos?", "ACKP.", "APK.", "ACK.", "MRC (Mensaje de Recepción Correcta).", "3");
+            /*10*/      tipo_test("¿Cuántos servidores de datos podremos tener en un modelo de 3 capas?", "Únicamente uno.", "Podremos ampliar como máximo a dos.", "Podremos ampliar a todos los que necesitemos.", "No existen los servidores de datos en los modelos de 3 capas, eso es de los modelos de\n    n capas.", "3");                        
                     }
                     case "9" -> {
                         _Main_.Principal.setTema(menu);

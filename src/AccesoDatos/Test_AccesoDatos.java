@@ -28,14 +28,14 @@ public class Test_AccesoDatos {
         *  TEST ACCESO A DATOS                                                 *
         ************************************************************************
         *                                                                      *
-        *  1. TEMA: INTRODUCCIÓN AL MANEJO DE FICHEROS                         *
-        *  2. TEMA: FLUJOS                                                     *
-        *  3. TEMA: TRABAJO CON FICHEROS XML                                   *
-        *  4. TEMA: MANEJO DE CONECTORES I                                     *
-        *  5. TEMA: MANEJO DE CONECTORES II                                    *
-        *  6. TEMA: MANEJO DE CONECTORES III: SENTENCIAS                       *
-        *  7. TEMA: EL MAPEO OBJETO RELACIONAL                                 *
-        *  8. TEMA: EXPLORACIÓN DEL MAPEO OBJETO-RELACIONAL                    *
+        *  1. TEMA: INTRODUCCIÓN AL MANEJO DE FICHEROS.                        *
+        *  2. TEMA: FLUJOS.                                                    *
+        *  3. TEMA: TRABAJO CON FICHEROS XML.                                  *
+        *  4. TEMA: MANEJO DE CONECTORES I.                                    *
+        *  5. TEMA: MANEJO DE CONECTORES II.                                   *
+        *  6. TEMA: MANEJO DE CONECTORES III: SENTENCIAS.                      *
+        *  7. TEMA: EL MAPEO OBJETO RELACIONAL.                                *
+        *  8. TEMA: EXPLORACIÓN DEL MAPEO OBJETO-RELACIONAL.                   *
         *  9. TEMA:                                                            *
         * 10. TEMA:                                                            *
         * 11. TEMA:                                                            *

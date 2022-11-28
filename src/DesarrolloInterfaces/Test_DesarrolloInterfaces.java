@@ -28,14 +28,14 @@ public class Test_DesarrolloInterfaces {
         *  TEST DESARROLLO DE INTERFACES                                       *
         ************************************************************************
         *                                                                      *
-        *  1. TEMA: INTRODUCCIÓN A LA CONFECCIÓN DE INTERFACES                 *
-        *  2. TEMA: CLASES Y COMPONENTES                                       *
-        *  3. TEMA: GENERACIÓN DE INTERFACES A PARTIR DE DOCUMENTOS XML        *
-        *  4. TEMA: CREACIÓN DE COMPONENTES                                    *
-        *  5. TEMA: EXPLOTACIÓN DE COMPONENTES VISUALES                        *
-        *  6. TEMA: USABILIDAD I: CONCEPTO Y NORMATIVA                         *
-        *  7. TEMA: USABILIDAD II: PAUTAS DE DISEÑO                            *
-        *  8. TEMA:                                                            *
+        *  1. TEMA: INTRODUCCIÓN A LA CONFECCIÓN DE INTERFACES.                *
+        *  2. TEMA: CLASES Y COMPONENTES.                                      *
+        *  3. TEMA: GENERACIÓN DE INTERFACES A PARTIR DE DOCUMENTOS XML.       *
+        *  4. TEMA: CREACIÓN DE COMPONENTES.                                   *
+        *  5. TEMA: EXPLOTACIÓN DE COMPONENTES VISUALES.                       *
+        *  6. TEMA: USABILIDAD I: CONCEPTO Y NORMATIVA.                        *
+        *  7. TEMA: USABILIDAD II: PAUTAS DE DISEÑO.                           *
+        *  8. TEMA: CONFECCIÓN DE INFORMES I.                                  *
         *  9. TEMA:                                                            *
         * 10. TEMA:                                                            *
         * 11. TEMA:                                                            *
@@ -165,16 +165,16 @@ public class Test_DesarrolloInterfaces {
                         _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("¿Cuál de las siguientes afirmaciones es falsa en cuanto a la confección de informes\n        para aplicaciones?", "Existen dos tipos de informes atendiendo a la forma en la que estos quedan vinculados\n    con la aplicación: incrustados y no incrustado.", "Un informe es un documento que recopila y muestra diferente tipo de información\n    procedente de fuentes de datos a los usuarios, en función de las consultas realizadas.", "La creación de los informes es estática.", "Es posible seleccionar entre múltiples elementos y distribuciones de diseño.", "3");
+            /*02*/      tipo_test("¿Cuál de las siguientes no es una herramienta gráfica para la creación de informes?", "iReport.", "JasperReport.", "XCode.", "Eclipse Birt.", "3");
+            /*03*/      tipo_test("¿Cuál de las siguientes herramientas modela la encapsulación relativa a la generación\n        de informes?", "Eclipse Pro.", "XCode.", "JasperReport.", "iReport.", "3");
+            /*04*/      tipo_test("¿Qué herramienta de código abierto permite la creación de informes de forma\n        dinámica para entornos de inteligencia empresarial?", "JasperReport.", "Eclipse Pro.", "Eclipse Birt.", "iReport.", "3");
+            /*05*/      tipo_test("¿Qué herramienta de inteligencia empresarial se utiliza para crear informes de forma\n        dinámica sobre todo en el entorno de desarrollo de Microsoft Visual Studio?", "iReport.", "Eclipse Pro.", "Eclipse Birt.", "Crystal Reports.", "4");
+            /*06*/      tipo_test("¿Qué afirmación es correcta en cuanto a las variables de usuario y variables\n    predefinidas?", "Las variables predefinidas suelen corresponder con el nombre de los campos del origen\n    de datos vinculado al informe.", "Las variables de usuario no pueden corresponder con el nombre de los campos del\n    origen de datos vinculado al informe.", "Las variables predefinidas aparecen por defecto en la herramienta, por lo que siempre\n    van a estar presentes y modelan elementos habituales en la generación de cualquier\n    informe.", "Las variables de usuario aparecen por defecto en la herramienta, por lo que siempre van\n    a estar presentes y modelan elementos habituales en la generación de cualquier informe.", "3");
+            /*07*/      tipo_test("¿Qué tipo de operaciones se utilizan sobre los valores contenidos en una columna?", "Recuentos y totales.", "Selecciones.", "Anulaciones.", "Ninguna de las anteriores.", "1");
+            /*08*/      tipo_test("¿Qué variable devuelve el número de registros mostrados en cada página?", "PAGE_NUMBER.", "COLUMN_NUMBER.", "REPORT_COUNT.", "PAGE_COUNT.", "4");
+            /*09*/      tipo_test("¿Qué variable devuelve el número de columnas del informe?", "PAGE_NUMBER.", "COLUMN_NUMBER.", "REPORT_COUNT.", "PAGE_COUNT.", "2");
+            /*10*/      tipo_test("¿Qué tipo de objeto java devuelve la operación SUM?", "java.lang.Number.", "java.lang.Double.", "java.lang.Boolean.", "java.lang.Integer.", "1");                        
                     }
                     case "9" -> {
                         _Main_.Principal.setTema(menu);

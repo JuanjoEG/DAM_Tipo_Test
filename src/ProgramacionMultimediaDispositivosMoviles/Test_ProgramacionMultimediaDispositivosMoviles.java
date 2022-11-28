@@ -28,14 +28,14 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
         *  TEST PROGRAMACIÓN MULTIMEDIA Y DISPOSITIVOS MÓVILES                 *
         ************************************************************************
         *                                                                      *
-        *  1. TEMA: FUNDAMENTOS DE APLICACIONES MÓVILES                        *
-        *  2. TEMA: CONSTRUCCIÓN DE PROYECTOS ANDROID                          *
-        *  3. TEMA: PROGRAMACIÓN EN ANDROID I                                  *
-        *  4. TEMA: PROGRAMACIÓN EN ANDROIS II: LAYOUTS                        *
-        *  5. TEMA: PROGRAMACIÓN EN ANDROIS III: BOTONES Y LISTAS              *
-        *  6. TEMA: PROGRAMACIÓN EN ANDROID IV: MULTIPANTALLA                  *
-        *  7. TEMA: MULTIMEDIA Y BASES DE DATOS                                *
-        *  8. TEMA:                                                            *
+        *  1. TEMA: FUNDAMENTOS DE APLICACIONES MÓVILES.                       *
+        *  2. TEMA: CONSTRUCCIÓN DE PROYECTOS ANDROID.                         *
+        *  3. TEMA: PROGRAMACIÓN EN ANDROID I.                                 *
+        *  4. TEMA: PROGRAMACIÓN EN ANDROIS II: LAYOUTS.                       *
+        *  5. TEMA: PROGRAMACIÓN EN ANDROIS III: BOTONES Y LISTAS.             *
+        *  6. TEMA: PROGRAMACIÓN EN ANDROID IV: MULTIPANTALLA.                 *
+        *  7. TEMA: MULTIMEDIA Y BASES DE DATOS.                               *
+        *  8. TEMA: SERVICIOS EN RED I.                                        *
         *  9. TEMA:                                                            *
         * 10. TEMA:                                                            *
         * 11. TEMA:                                                            *
@@ -165,16 +165,16 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
                         _Main_.Principal.setTema(menu);
                         System.out.println("\nTEMA " + menu + "\n");
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("La etiqueta de cierre de php es:", "php?", "¿>", "?>", "php/>", "3");
+            /*02*/      tipo_test("¿Cuál es la instrucción que permite mostrar datos por pantalla en PHP?", "System.out.println.", "echo.", "cout.", "print.", "2");
+            /*03*/      tipo_test("PHP es un lenguaje que se ejecuta en:", "En la parte backend del proyecto.", "En la parte frontend del proyecto.", "Ambas respuestas son correctas.", "Ninguna de las respuestas es correcta.", "1");
+            /*04*/      tipo_test("¿Cuál de las siguientes variables de tipo numérico está declarada de forma correcta?", "$total = 3;", "$total = \"3\";", "total = 3;", "total = \"3\";", "1");
+            /*05*/      tipo_test("¿En qué debe terminar cada sentencia de php?", "Punto y coma.", "Punto.", "No hace falta nada.", "Una llave }.", "1");
+            /*06*/      tipo_test("¿Con qué podemos realizar las comunicaciones en una aplicación?", "JSON.", "XML.", "JSON y XML.", "PHP.", "3");
+            /*07*/      tipo_test("¿Con cuál de estos caracteres marca una línea como comentario?", "@", "//", ";", "Ninguna de las opciones es correcta.", "2");
+            /*08*/      tipo_test("¿Cuál de los siguientes tipos de datos no los soporta JSON?", "Enteros.", "Boolean.", "Array.", "Pilas.", "4");
+            /*09*/      tipo_test("Los arrays en JSON se delimitan mediante:", "{ }", "\" \"", "[ ]", "< >", "3");
+            /*10*/      tipo_test("Para poder trabajar con nuestro servidor local en XAMPP deberemos activar las\n        casillas de:", "Únicamente Apache.", "Apache y MySQL.", "Únicamente MySQL.", "Tomcat y MySQL.", "2");                        
                     }
                     case "9" -> {
                         _Main_.Principal.setTema(menu);
