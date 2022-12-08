@@ -1,6 +1,8 @@
 package English;
 
-import _Main_.Principal;
+import _Main_.Menu_Temas;
+import static _Main_.Principal.esperar;
+import static _Main_.Principal.meterEspacios;
 import java.util.Scanner;
 import static _Main_.Principal.tipo_test;
 
@@ -8,57 +10,43 @@ import static _Main_.Principal.tipo_test;
  *
  * @author Juan José Estévez González
  */
+
 public class Test_English {
     
-        public static void main(String[] args) {
-            
-            _Main_.Principal.setAsignatura("ENGLISH");
+    public static void Eng() {
         
-                String menu="";
-        do {
-            Principal.setFallos(0);
-            Principal.setAciertos(0);
-            Principal.setContador(0);
-            Principal.setEn_blanco(0);
+        Menu_Temas.setTema_01("INTRODUCTIONS.");
+        Menu_Temas.setTema_02("AT PRESENT.");
+        Menu_Temas.setTema_03("DATE AND TIME.");
+        Menu_Temas.setTema_04("ON THE PHONE.");
+        Menu_Temas.setTema_05("LIKES AND DISLIKES.");
+        Menu_Temas.setTema_06("PAST ACTIVITIES.");
+        Menu_Temas.setTema_07("FUTURE.");
+        Menu_Temas.setTema_08("SUGGESTIONS AND COMPLAINTS.");
+        Menu_Temas.setTema_09("EVENTS.");
+        Menu_Temas.setTema_10("");
+        Menu_Temas.setTema_11("");
+        Menu_Temas.setTema_12("");
+        Menu_Temas.setTema_13("");
+        Menu_Temas.setTema_14("");
+        Menu_Temas.setTema_15("");
+        Menu_Temas.setTema_r1("TEST DE REPASO I.");
+        Menu_Temas.setTema_r2("TEST DE REPASO II.");
             
+        _Main_.Principal.setAsignatura("ENGLISH");
+        
+            String menu="";
+        do {
+            _Main_.Principal.reseteaNotas();
             Scanner teclaStr = new Scanner(System.in, "UTF-8");
-            System.out.println("""                          
-                               
-        ************************************************************************
-        *  ENGLISH TEST                                                        *
-        ************************************************************************
-        *                                                                      *
-        *  1. TEMA: INTRODUCTIONS.                                             *
-        *  2. TEMA: AT PRESENT.                                                *
-        *  3. TEMA: DATE AND TIME.                                             *
-        *  4. TEMA: ON THE PHONE.                                              *
-        *  5. TEMA: LIKES AND DISLIKES.                                        *
-        *  6. TEMA: PAST ACTIVITIES.                                           *
-        *  7. TEMA: FUTURE.                                                    *
-        *  8. TEMA: SUGGESTIONS AND COMPLAINTS.                                *
-        *  9. TEMA:                                                            *
-        * 10. TEMA:                                                            *
-        * 11. TEMA:                                                            *
-        * 12. TEMA:                                                            *
-        * 13. TEMA:                                                            *
-        * 14. TEMA:                                                            *
-        * 15. TEMA:                                                            *
-        *                                                                      *
-        * 40. TEST DE REPASO I                                                 *
-        * 50. TEST DE REPASO II                                                *
-        *                                                                      *
-        ************************************************************************
-        *  0. ATRÁS.                                                           *
-        ************************************************************************
-                               
-                               """);
+            Menu_Temas.menu_temas();
+            
             try {
                 System.out.print("Seleccione una opción: ");
                 menu = teclaStr.nextLine();
                 switch (menu) {
                     case "1" -> {
-                        _Main_.Principal.setTema(menu);                        
-                        System.out.println("\nTEMA " + menu + "\n");
+                        _Main_.Principal.setTema(menu); 
         
             /*01*/      tipo_test("Which of the following greetings is formal?", "Good morning, Mr. Smith", "Hi, Fred", "Good morning, Alice.", "What's up?", "1");
             /*02*/      tipo_test("Which of the following introductions is informal?", "It's a pleasure to meet you.", "May I introduce you to Ms Granger?", "This is Harry.", "Pleased to meet you. ", "3");
@@ -73,7 +61,6 @@ public class Test_English {
                     }
                     case "2" -> {
                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
         
             /*01*/      tipo_test("Right after waking up you usually ...", "Go to bed", "Do homework", "Get up", "Go home", "3");
             /*02*/      tipo_test("Which part of speech is used to replace nouns?", "Pronouns", "Names", "Adverbs", "Prepositions ", "1");
@@ -88,7 +75,6 @@ public class Test_English {
                     }
                     case "3" -> {
                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("Which of the following times is midnight?", "1:00", "0:00", "Both options are correct.", "None of the options is correct.", "2");
             /*02*/      tipo_test("Which of the following expressions is used to tell this time: 1:30 pm", "Half past one in the morning", "Half past one in the afternoon", "Thirty minutes to one in the afternoon", "Thirty minutes to one in the morning", "2");
@@ -102,8 +88,7 @@ public class Test_English {
             /*10*/      tipo_test("Choose the right preposition to complete the sentence:\n        We are closed ... July for holidays.", "At", "On", "In", "Over", "3");                        
                     }
                     case "4" -> {
-                        _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");                       
+                        _Main_.Principal.setTema(menu);                      
                         
             /*01*/      tipo_test("Which of the following is not a good tip when receiving a phone call?", "Smile.", "Ask the caller their name.", "Speak fast so that the call is shorter.", "Don't be afraid to ask the caller to repeat something.", "3");
             /*02*/      tipo_test("Choose the right option to complete the sentence:\n        Hold on a minute, please. I'll ... Mr Smith.", "Hang on you", "Put you through", "Put you through to", "Hang up", "3");
@@ -118,7 +103,6 @@ public class Test_English {
                     }
                     case "5" -> {
                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("Which of the following expressions is the most formal?", "I love watching series on Netflix.", "She has a genuine liking for detective stories.", "I hate loud noises.", "I like working in a hospital.", "2");
             /*02*/      tipo_test("If you take offence at something, it means:", "That you like that.", "That you feel upset about it.", "That you have insulted someone.", "That you don't care about it.", "2");
@@ -133,7 +117,6 @@ public class Test_English {
                     }
                     case "6" -> {
                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("Which of the following expressions is incorrect:", "At weekends, we didn't visited our grandparents.", "At weekends, we always visited our grandparents.", "Did you visit your grandparents at weekends?", "At weekends, we never visited our grandparents.", "1");
             /*02*/      tipo_test("Choose the right option to complete the sentence:\n        I ... football at school. I was very good!", "Played.", "Playd.", "Plaied.", "Playt.", "1");
@@ -148,7 +131,6 @@ public class Test_English {
                     }
                     case "7" -> {
                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("Which of the following is not a use of the future simple?", "Predictions based on present evidence.", "Requests.", "Promises.", "Decisions made at the moment of speaking.", "1");
             /*02*/      tipo_test("Which of the following is not a use of the future with GOING TO?", "Plans.", "Offers.", "Intentions.", "Decisions made before the moment of speaking.", "2");
@@ -163,7 +145,6 @@ public class Test_English {
                     }
                     case "8" -> {
                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("Which of the following is not a good piece of advice to provide a good customer care\n        service?", "Raise your voice when dealing with aggressive customers.", "Make sure you listen to the customer carefully.", "Make sure to fully understand what the customer needs.", "Apologise for the inconvenience caused.", "1");
             /*02*/      tipo_test("Which of the following statements is true?", "Only what you say matters in customer care.", "Body language is important when dealing with customers.", "You only need you pretend you?re listening to customers.", "Customers don't need your full attention. You have more important things to do.", "2");
@@ -178,22 +159,20 @@ public class Test_English {
                     }
                     case "9" -> {
                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
                         
-             /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Which of the following is not in present perfect?", "She's just told her parents about her plans.", "He's never careful with his words.", "She's never been to Ireland.", "He's just returned from his holiday in Barbados.", "2");
+            /*02*/      tipo_test("Which of the following sentences is incorrect?", "We have always played football with the local team.", "Mary have always played football with the local team.", "You have always played football with the local team.", "John and Tim have always played football with the local team.", "2");
+            /*03*/      tipo_test("Which of the following sentences is correct?", "Have you watched the latest Star Wars movie?", "Do you have watched the latest Star Wars movie?", "You have watch the latest Star Wars movie?", "Did you have watched the latest Star Wars movie?", "1");
+            /*04*/      tipo_test("Which of the following sentences is incorrect?", "Sally has worked at the Council of Europe since a very long time.", "We have got on really well since we met.", "I think he's lived in Manchester for three years.", "He didn't withstand that level of pressure for long.", "1");
+            /*05*/      tipo_test("Choose the right option to complete the sentence:\n        They have worked together ...", "For the moment the company was founded.", "Since the company headquarters was moved to Liverpool.", "None of the options is correct.", "Both options are correct.", "2");
+            /*06*/      tipo_test("Choose the right option to complete the sentence:\n        I haven't spoken to him ...", "Since three years ago.", "For three years.", "Since three years.", "For he left Spain.", "2");
+            /*07*/      tipo_test("Choose the right option to complete the sentence:\n        The meeting is due to start in 5 minutes, but Kevin hasn't arrived in the office ...", "Already.", "Never.", "Just.", "Yet.", "4");
+            /*08*/      tipo_test("Choose the right option to complete the sentence:\n        I have ... finished the report you asked me to do. Can I go home, now?", "Already.", "Yet.", "Never.", "Ever.", "1");
+            /*09*/      tipo_test("Choose the right option to complete the sentence:\n        After making many calls, I ... managed to get through to the person in charge.", "After that.", "As soon as.", "Eventfully.", "Eventually.", "4");
+            /*10*/      tipo_test("Choose the right option to complete the sentence:\n        It was important, so I decided to call ... I got the message.", "Finally.", "As soon as.", "Suddenly.", "Finally.", "2");                        
                     }
                     case "10" -> {
                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
             /*02*/      tipo_test("", "", "", "", "", "");
@@ -208,7 +187,6 @@ public class Test_English {
                     }
                     case "11" -> {
                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
             /*02*/      tipo_test("", "", "", "", "", "");
@@ -223,7 +201,6 @@ public class Test_English {
                     }
                     case "12" -> {
                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
             /*02*/      tipo_test("", "", "", "", "", "");
@@ -238,7 +215,6 @@ public class Test_English {
                     }
                     case "13" -> {
                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
             /*02*/      tipo_test("", "", "", "", "", "");
@@ -253,7 +229,6 @@ public class Test_English {
                     }
                     case "14" -> {
                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
             /*02*/      tipo_test("", "", "", "", "", "");
@@ -268,7 +243,6 @@ public class Test_English {
                     }
                     case "15" -> {
                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("", "", "", "", "", "");
             /*02*/      tipo_test("", "", "", "", "", "");
@@ -283,7 +257,12 @@ public class Test_English {
                     }
                     
                     case "0" -> {}
-                    default -> System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
+                    default -> {
+                            meterEspacios(25);
+                            System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
+                            meterEspacios(15);
+                            esperar(1500);
+                            }
                 }
             }  catch (Exception e) {
                 System.out.println("Error: " + e.toString());

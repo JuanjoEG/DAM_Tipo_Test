@@ -1,6 +1,8 @@
 package SistemasGestionEmpresarial;
 
-import _Main_.Principal;
+import _Main_.Menu_Temas;
+import static _Main_.Principal.esperar;
+import static _Main_.Principal.meterEspacios;
 import java.util.Scanner;
 import static _Main_.Principal.tipo_test;
 
@@ -8,57 +10,42 @@ import static _Main_.Principal.tipo_test;
  *
  * @author Juan José Estévez González
  */
+
 public class Test_SistemasGestionEmpresarial { 
 
-    public static void main(String[] args) {
+    public static void Sis_Ges_Emp() {
+        
+        Menu_Temas.setTema_01("LA GESTIÓN EMPRESARIAL.");
+        Menu_Temas.setTema_02("ERP-CRM ACTUALES LIBRES Y PROPIETARIOS.");
+        Menu_Temas.setTema_03("LOS MÓDULOS DE UN ERP.");
+        Menu_Temas.setTema_04("EL PROYECTO DE IMPLANTACIÓN DE UN ERP.");
+        Menu_Temas.setTema_05("EL ENTORNO DE INSTALACIÓN DE ERP-CRM.");
+        Menu_Temas.setTema_06("TIPOS DE INSTALACIONES DE SISTEMAS ERP-CRM.");
+        Menu_Temas.setTema_07("EL FLUJO DE COMPRA-VENTA.");
+        Menu_Temas.setTema_08("GESTIÓN DE LA FABRICACIÓN Y PUNTO DE VENTA.");
+        Menu_Temas.setTema_09("ORGANIZACIÓN DE LA INFORMACIÓN. BASES DE DATOS.");
+        Menu_Temas.setTema_10("");
+        Menu_Temas.setTema_11("");
+        Menu_Temas.setTema_12("");
+        Menu_Temas.setTema_13("");
+        Menu_Temas.setTema_14("");
+        Menu_Temas.setTema_15("");
+        Menu_Temas.setTema_r1("TEST DE REPASO I.");
+        Menu_Temas.setTema_r2("TEST DE REPASO II.");
         
         _Main_.Principal.setAsignatura("SISTEMAS DE GESTIÓN EMPRESARIAL");
         
-                String menu="";
-        do {
-            Principal.setFallos(0);
-            Principal.setAciertos(0);
-            Principal.setContador(0);
-            Principal.setEn_blanco(0);
-            
+            String menu="";
+        do {            
+            _Main_.Principal.reseteaNotas();
             Scanner teclaStr = new Scanner(System.in, "UTF-8");
-            System.out.println("""                          
-                               
-        ************************************************************************
-        *  TEST SISTEMAS DE GESTIÓN EMPRESARIAL                                *
-        ************************************************************************
-        *                                                                      *
-        *  1. TEMA: LA GESTIÓN EMPRESARIAL.                                    *
-        *  2. TEMA: ERP-CRM ACTUALES LIBRES Y PROPIETARIOS.                    *
-        *  3. TEMA: LOS MÓDULOS DE UN ERP.                                     *
-        *  4. TEMA: EL PROYECTO DE IMPLANTACIÓN DE UN ERP.                     *
-        *  5. TEMA: EL ENTORNO DE INSTALACIÓN DE ERP-CRM.                      *
-        *  6. TEMA: TIPOS DE INSTALACIONES DE SISTEMAS ERP-CRM.                *
-        *  7. TEMA: EL FLUJO DE COMPRA-VENTA.                                  *
-        *  8. TEMA: GESTIÓN DE LA FABRICACIÓN Y PUNTO DE VENTA.                *
-        *  9. TEMA:                                                            *
-        * 10. TEMA:                                                            *
-        * 11. TEMA:                                                            *
-        * 12. TEMA:                                                            *
-        * 13. TEMA:                                                            *
-        * 14. TEMA:                                                            *
-        * 15. TEMA:                                                            *
-        *                                                                      *
-        * 40. TEST DE REPASO I                                                 *
-        * 50. TEST DE REPASO II                                                *
-        *                                                                      *
-        ************************************************************************
-        *  0. ATRÁS.                                                           *
-        ************************************************************************
-                               
-                               """);
+            Menu_Temas.menu_temas();
             try {
                 System.out.print("Seleccione una opción: ");
                 menu = teclaStr.nextLine();
                 switch (menu) {
                     case "1" -> {
                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
         
             /*01*/      tipo_test("Según la evolución histórica de los programas enfocados a la gestión empresarial,\n        el orden de aparición es ...", "Gestión de inventario > MRP > MRP II > ERP.", "MRP > MRP II > Gestión de inventario > ERP.", "ERP > MRP > MRP II > Gestión de inventario.", "Ninguna respuesta es correcta.", "1");
             /*02*/      tipo_test("Entre los departamentos más comunes de una empresa se encuentran ...", "Logísticas.", "Finanzas.", "Ventas.", "Todas las respuestas son correctas.", "4");
@@ -73,7 +60,6 @@ public class Test_SistemasGestionEmpresarial {
                     }
                     case "2" -> {
                          _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
         
             /*01*/      tipo_test("El código abierto (open source) ...", "Es lo mismo que software libre (free software).", "Suele confundirse con el software libre (free software).", "Ambos movimientos tienen los mismos valores.", "Todas las respuestas son correctas.", "2");
             /*02*/      tipo_test("El código abierto ...", "Se trata de un modelo de desarrollo software basado en la colaboración abierta.", "Se trata de un modelo de desarrollo software basado en la colaboración cerrada.", "Implica que cualquier software que parta de él sea gratuito.", "Ninguna respuesta es correcta.", "1");
@@ -88,7 +74,6 @@ public class Test_SistemasGestionEmpresarial {
                     }
                     case "3" -> {
                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
                         
             /*01*/      tipo_test("Podríamos definir un módulo ...", "Como el conjunto de departamentos en los que divide el ERP a una empresa.", "Como el conjunto de clientes con los que se relaciona una empresa.", "Como el conjunto de sistemas gestores de bases de datos dentro de un ERP.", "Ninguna respuesta es correcta.", "1");
             /*02*/      tipo_test("Entre los módulos financieros de SAP nos encontramos con los módulos de ...", "Finanzas y contabilidad.", "Finanzas y recursos humanos.", "Finanzas y ventas.", "Finanzas y calidad.", "1");
@@ -102,8 +87,7 @@ public class Test_SistemasGestionEmpresarial {
             /*10*/      tipo_test("Con el módulo de creador de sitios web de Odoo ...", "Se pueden crear sitios web amigables sin necesidad de tener conocimientos de\n    programación", "Se pueden crear sitios web amigables, pero es necesario tener conocimientos de\n    programación.", "Se pueden crear sitios web amigables, pero solo para uso interno de la empresa.", "Ninguna respuesta es correcta.", "1");                        
                     }
                     case "4" -> {
-                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");                       
+                        _Main_.Principal.setTema(menu);                      
                         
             /*01*/      tipo_test("El proyecto de implantación de un ERP ...", "No tiene ninguna fase.", "Se puede dividir en 8 fases.", "Se puede dividir en 5 fases.", "Ninguna de las anteriores es correcta.", "2");
             /*02*/      tipo_test("La primera fase del proyecto de implantación de un ERP ...", "Es la fase de análisis o consultoría.", "Es la fase de parametrización y diseño.", "Es la fase de planificación.", "Ninguna respuesta es correcta.", "3");
@@ -117,8 +101,7 @@ public class Test_SistemasGestionEmpresarial {
             /*10*/      tipo_test("La fase de soporte y seguimiento ...", "Dura el tiempo necesario para que la herramienta esté funcionando correctamente en el\n    entorno de producción.", "Dura 1 mes.", "Dura el tiempo que se estipule en el contrato que se creó en la primera fase\n    (planificación).", "Siempre va seguida de la fase de mantenimiento, puesto que ambas pertenecen siempre\n    al mismo proyecto.", "3");                       
                     }
                     case "5" -> {
-                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
+                        _Main_.Principal.setTema(menu);
                         
             /*01*/      tipo_test("SAP S/4 HANA ...", "Se trata de una plataforma de \"datos en memoria\".", "Se trata de una plataforma de \"datos en disco duro\".", "Ofrece peores rendimientos que SAP R/3 en aplicaciones analísticas como puede ser el\n    Big Data.", "Ninguna respuesta es correcta.", "1");
             /*02*/      tipo_test("En SAP S/4 HANA ...", "Los módulos siguen denominándose módulos.", "Los módulos han pasado a denominarse LoB (Line of Business).", "Los módulos han pasado a denominarse HLM (High Level Module).", "Ninguna respuesta es correcta.", "2");
@@ -132,8 +115,7 @@ public class Test_SistemasGestionEmpresarial {
             /*10*/      tipo_test("Los módulos de Odoo están implementados en ...", "Python.", "Java.", "C++.", "Ninguna respuesta es correcta.", "1");                        
                     }
                     case "6" -> {
-                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
+                        _Main_.Principal.setTema(menu);
                         
             /*01*/      tipo_test("Para realizar hacer uso de un ERP mediante SaaS ...", "Es necesario instalarse algún software en local.", "Es necesario instalar algún plugin en el navegador.", "No es necesario instalar nada, simplemente conectarse a través de un navegador.", "Ninguna de las anteriores es correcta.", "3");
             /*02*/      tipo_test("La instalación de un ERP en un hosting puede ser ...", "En un hosting del proveedor oficial.", "En un hosting de un tercero.", "En un hosting propio.", "Todas las respuestas son correctas.", "4");
@@ -147,8 +129,7 @@ public class Test_SistemasGestionEmpresarial {
             /*10*/      tipo_test("La versión de instalación con el código fuente ...", "Es la modalidad más conveniente para los usuarios desarrolladores.", "Es la modalidad más conveniente para los usuarios que no necesiten desarrollar.", "No es especialmente conveniente para ningún grupo de usuarios.", "Ninguna respuesta es correcta.", "1");                       
                     }
                     case "7" -> {
-                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
+                        _Main_.Principal.setTema(menu);
                         
             /*01*/      tipo_test("Para realizar un flujo de compra-venta es necesario hacer uso ...", "De los módulos de compra y de venta.", "Del módulo de inventario.", "Del módulo de contabilidad.", "Todas las respuestas son correctas.", "4");
             /*02*/      tipo_test("Cuando creamos por primera vez un producto ...", "Podremos indicarle el stock que tenemos durante la creación.", "Éste se crea con cantidad 0.", "Éste se crea con cantidad 1.", "Ninguna respuesta es correcta.", "2");
@@ -162,8 +143,7 @@ public class Test_SistemasGestionEmpresarial {
             /*10*/      tipo_test("El análisis de los beneficios ...", "Puede hacerse en cualquier momento.", "Puede hacerse solo una vez al mes.", "Puede hacerse solo una vez al año.", "Puede hacerse solo 4 veces al año (una por trimestre).", "1");                       
                     }
                     case "8" -> {
-                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
+                        _Main_.Principal.setTema(menu);
                         
             /*01*/      tipo_test("Los productos que se venden en el punto de venta ...", "Pueden ser cargados de forma masiva desde un fichero.", "No pueden ser cargados de forma masiva desde un fichero.", "Pueden ser cargados de forma masiva desde un fichero, pero solo de los que tengamos stock.", "Pueden ser cargados de forma masiva desde un fichero, pero solo los que haya fabricado\n    nuestra empresa.", "1");
             /*02*/      tipo_test("Para poder vender un producto en un punto de ventas ...", "Éste debe tener marcado el flag de \"disponible en PdV\".", "Éste debe tener marcado el flag de \"disponible en TPV\".", "Éste debe tener marcado el flag de \"disponible en ITV\".", "Ninguna respuesta es correcta.", "1");
@@ -177,23 +157,21 @@ public class Test_SistemasGestionEmpresarial {
             /*10*/      tipo_test("Las operaciones ...", "Se realizan en centros de producción y una ruta puede tener varias operaciones.", "Se realizan en centros de tareas y una ruta puede tener varias operaciones.", "Se realizan en centros de producción y una ruta puede tener solo una operación.", "Se realizan en centros de tareas y una ruta puede tener solo una operación.", "1");                        
                     }
                     case "9" -> {
-                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
+                        _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                       
+            /*01*/      tipo_test("El sistema gestor de base de datos que usa Odoo es ...", "MySQL.", "PostgreSQL.", "SQL Server.", "MongoDB.", "2");
+            /*02*/      tipo_test("En el archivo odoo.conf, entre otros datos, podemos encontrar ...", "El usuario de la base de datos.", "La contraseña de la base de datos.", "El puerto al que se conecta la base de datos.", "Todas las respuestas son correctas.", "4");
+            /*03*/      tipo_test("PgAdmin ...", "Es una aplicación que se usa para gestionar, administrar y desarrollar la base de datos de\n    PostgreSQL.", "Es un módulo de Odoo que se usa para gestionar, administrar y desarrollar la base de\n    datos de PostgreSQL.", "Es un apartado de los ajustes de Odoo, que se habilita al entrar en modo desarrollador y\n    que se usa para gestionar, administrar y desarrollar la base de datos de PostgreSQL.", "Ninguna respuesta es correcta.", "1");
+            /*04*/      tipo_test("Al realizar un cambio en la base de datos con PgAdmin ...", "Éste no se refleja en Odoo.", "Éste no se refleja en Odoo hasta que no naveguemos a la ventana concreta donde\n    hemos realizado el cambio.", "Éste se refleja en Odoo.", "Ninguna respuesta es correcta.", "3");
+            /*05*/      tipo_test("Para ver las tablas en PgAdmin deberemos desplegar la siguiente ruta del árbol:", "servidor / base de datos / schemas / public / tables.", "base de datos / servidor / schemas / public / tables.", "tables / public / schemas / base de datos / Servidor.", "schemas / servidor / base de datos / public / tables.", "1");
+            /*06*/      tipo_test("En PgAdmin podremos realizar una monitorización en tiempo real del estado del\n        servidor de la base de datos haciendo uso ...", "Del Open Developer Tools.", "Del Query Tool.", "Del dashboard.", "Ninguna respuesta es correcta.", "3");
+            /*07*/      tipo_test("Para ver las opciones técnicas y otras ayudas para los desarrolladores en Odoo ...", "Es necesario entrar en el modo funcional.", "Es necesario entrar en el modo técnico.", "Es necesario entrar en el modo programador.", "Ninguna respuesta es correcta.", "4");
+            /*08*/      tipo_test("Desde la herramienta 'Query Tool' de PgAdmin es posible ...", "Modificar un dato de la base de datos.", "Insertar un dato en la base de datos.", "Visualizar un dato en la base de datos.", "Todas las respuestas son correctas.", "4");
+            /*09*/      tipo_test("En Odoo podemos encontrarnos con relaciones entre tablas ...", "Many2one: tipo de campo que almacena una relación de muchos (n) a uno (1).", "One2Many: tipo de campo que almacena una relación de uno (1) a muchos (m).", "Many2many: tipo de campo que almacena una relación de muchos (m) a muchos (n).", "Todas las respuestas son correctas.", "4");
+            /*10*/      tipo_test("Cuando la base de datos es muy grande, no se recomienda realiza backups con ...", "El propio gestor de bases de datos de la interface que nos proporciona Odoo.", "El comando pg_dump que ofrece PostgreSQL.", "PgAdmin.", "La herramienta de terceros 'Database auto-backup'.", "1");                       
                     }
                     case "10" -> {
-                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
+                        _Main_.Principal.setTema(menu);
                         
             /*01*/      tipo_test("", "", "", "", "", "");
             /*02*/      tipo_test("", "", "", "", "", "");
@@ -207,8 +185,7 @@ public class Test_SistemasGestionEmpresarial {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "11" -> {
-                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
+                        _Main_.Principal.setTema(menu);
                         
             /*01*/      tipo_test("", "", "", "", "", "");
             /*02*/      tipo_test("", "", "", "", "", "");
@@ -222,8 +199,7 @@ public class Test_SistemasGestionEmpresarial {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "12" -> {
-                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
+                        _Main_.Principal.setTema(menu);
                         
             /*01*/      tipo_test("", "", "", "", "", "");
             /*02*/      tipo_test("", "", "", "", "", "");
@@ -237,8 +213,7 @@ public class Test_SistemasGestionEmpresarial {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "13" -> {
-                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
+                        _Main_.Principal.setTema(menu);
                         
             /*01*/      tipo_test("", "", "", "", "", "");
             /*02*/      tipo_test("", "", "", "", "", "");
@@ -252,8 +227,7 @@ public class Test_SistemasGestionEmpresarial {
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
                     case "14" -> {
-                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
+                        _Main_.Principal.setTema(menu);
                         
             /*01*/      tipo_test("", "", "", "", "", "");
             /*02*/      tipo_test("", "", "", "", "", "");
@@ -267,8 +241,7 @@ public class Test_SistemasGestionEmpresarial {
             /*10*/      tipo_test("", "", "", "", "", "");                       
                     }
                     case "15" -> {
-                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
+                        _Main_.Principal.setTema(menu);
                         
             /*01*/      tipo_test("", "", "", "", "", "");
             /*02*/      tipo_test("", "", "", "", "", "");
@@ -281,124 +254,16 @@ public class Test_SistemasGestionEmpresarial {
             /*09*/      tipo_test("", "", "", "", "", "");
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
-                    case "40" -> {
-                         _Main_.Principal.setTema(menu);
-                        System.out.println("\nTEMA " + menu + "\n");
-                        
-            /*01*/      tipo_test("Para la instalación de SAP S/4 HANA en local ...", "No influye la versión del producto SAP.", "SAP no tiene socios certificados del hardware necesario.", "Los requisitos hardware son a voluntad del cliente.", "Los requisitos hardware y software dependen de muchísimos factores.", "4");
-            /*02*/      tipo_test("Los módulos logísticos se encargan de realizar las tareas de ...", "Gestión de materiales.", "Ventas y distribución.", "Planificación de la producción.", "Todas las respuestas son correctas.", "4");
-            /*03*/      tipo_test("El control de facturación supone ...", "Imprimir todos los documentos disponibles.", "Tener ya un pedido de nuestros clientes.", "Que el producto aún no lo ha enviado el proveedor.", "Registrar la factura que nos ha enviado el proveedor.", "4");
-            /*04*/      tipo_test("En la fase de implantación de un ERP se realizan estimaciones de ...", "Objetivo.", "Recursos.", "Tiempos.", "Todas las respuestas son correctas.", "4");
-            /*05*/      tipo_test("El desarrollo de programas de código abierto está basado en ...", "Su registro de la propiedad intelectual.", "La colaboración abierta.", "El pago del coste de desarrollo.", "Todas las respuestas son correctas.", "2");
-            /*06*/      tipo_test("Para instalar Odoo se puede realizar ...", "Online.", "Con Instalador.", "Con Docker.", "Todas las respuestas son correctas.", "4");
-            /*07*/      tipo_test("El ERP Odoo tiene módulos que permiten ...", "Chatear en privado con los empleados.", "Gestionar la Contabilidad.", "Controlar el Inventario.", "Todas las respuestas son correctas.", "1");
-            /*08*/      tipo_test("En los años 70 aparecieron los ...", "MRP.", "ERP.", "MRP II.", "CRM.", "1");
-            /*09*/      tipo_test("Un software comercial es aquel que es desarrollado por una empresa que pretende\n        ganar dinero por ...", "Su modificación.", "Su uso.", "Su desarrollo.", "Las demás respuestas son incorrectas.", "2");
-            /*10*/      tipo_test("Dentro de los pasos para completar el flujo de compra-venta en Odoo tenemos ...", "Facturación y Atención al cliente.", "Facturación y Recibir producto.", "Analizar los beneficios y publicitar el producto.", "Publicitar y vender el producto.", "2");
-            
-            /*11*/      tipo_test("Entre las desventajas del código abierto está que ...", "No se puede hacer cambios en el código, pero sí mostrarlo.", "La garantía suele estar limitada.", "Los fabricantes del software no tienen soporte técnico.", "Las demás respuestas son incorrectas.", "2");
-            /*12*/      tipo_test("SAP permite la instalación de SAP S/4 HANA mediante ...", "Un instalable en Linux.", "Un instalable en windows.", "Un instalable en Java.", "Todas las respuestas son correctas.", "1");
-            /*13*/      tipo_test("Entre las ventajas del código propietario está que ...", "Es más barato que el libre.", "Se puede distribuir mostrando su código.", "Las comunidades incorporan los cambios rápidamente.", "Son desarrollados por grandes fabricantes de software.", "4");
-            /*14*/      tipo_test("Un CRM permite gestionar ...", "Contactos.", "Campañas de marketing.", "Nuevas oportunidades de negocio.", "Todas las respuestas son correctas.", "4");
-            /*15*/      tipo_test("Entre las ventajas del código abierto encontramos que ...", "La evolución del software no depende de un proveedor, sino de la comunidad.", "La evolución del software se hace de forma genérica y depende de la comunidad.", "Es un software muy especializado y puede evolucionar en áreas específicas.", "Ninguna respuesta es correcta.", "1");
-            /*16*/      tipo_test("En el módulo de Empleados de Odoo nos permiten ...", "Gestionar gastos del empleado.", "Gestionar vacaciones del empleado.", "Gestionar evaluaciones del empleado.", "Todas las respuestas con correctas.", "4");
-            /*17*/      tipo_test("El diseño técnico ...", "Es creado por los analistas en la fase de análisis.", "Es creado por los técnicos en la fase de análisis.", "Es creado por los analistas en la fase de parametrización y diseño.", "Es creado por los técnicos en la fase de parametrización y diseño.", "4");
-            /*18*/      tipo_test("Para la instalación de SAP HANA 2.0 Express Edition en local haciendo uso de una\n        máquina virtual preconfigurada es necesario:", "Disponer de, al menos, 16GB de memoria RAM.", "Tener instalado Java Runtime Enviroment (JRE) 7.", "Tener, al menos 100GB de espacio libre en el disco duro.", "Ninguna respuesta es correcta.", "4");
-            /*19*/      tipo_test("La versión de instalación con el instalador ...", "Instalará en Windows todo lo necesario para ejecutar Odoo (no requiere instalar nada más).", "Instalará en distribuciones Debian todo lo necesario para ejecutar Odoo (no requiere\n    instalar nada más)", "Instalará en distribuciones RPM todo lo necesario para ejecutar Odoo (no requiere\n    instalar nada más)", "Ninguna respuesta es correcta.", "1");
-            /*20*/      tipo_test("El análisis de los beneficios ...", "Puede hacerse en cualquier momento.", "Puede hacerse solo una vez al mes.", "Puede hacerse solo una vez al año.", "Puede hacerse solo 4 veces al año (una por trimestre).", "1");
-            
-            /*21*/      tipo_test("Los tipos de licencias software son ...", "Libre y cerrado.", "Software libre, código abierto y código propietario.", "Código cerrado y software público.", "Todas las respuestas son correctas.", "2");
-            /*22*/      tipo_test("Una licencia software es ...", "Un contrato entre el desarrollador del software y el usuario.", "Un archivo que viene con la aplicación y no vincula a las partes.", "Un requisito que no es necesario cumplir al adquirir el software.", "Las demás respuestas son incorrectas.", "1");
-            /*23*/      tipo_test("Recibir un producto en el flujo de compra-venta supone que ...", "Debemos enviar la orden compra al fabricante.", "Hay que emitir la factura de compra.", "El fabricante del producto ya nos ha hecho llegar el material.", "Todas las respuestas son correctas.", "3");
-            /*24*/      tipo_test("Los módulos financieros ...", "No son críticos.", "Solo se emplean en contadas ocasiones.", "Son muy importantes ya que casi cualquier operación acaba relacionandose con este.", "Todas las respuestas son correctas.", "3");
-            /*25*/      tipo_test("Según la evolución histórica de los programas enfocados a la gestión empresarial, el\n        orden de aparición es ...", "Gestión de inventario > MRP > MRP II > ERP.", "MRP > MRP II > Gestión de inventario > ERP.", "ERP > MRP > MRP II > Gestión de inventario.", "Ninguna respuesta es correcta.", "1");
-            /*26*/      tipo_test("Las pruebas unitarias ...", "Se realizan en integración por los técnicos.", "Se realizan en desarrollo por los técnicos.", "Se realizan en desarrollo por los analistas.", "Se realizan en integración por los analistas.", "2");
-            /*27*/      tipo_test("Odoo tiene como requisito software en todas las opciones de instalación disponer\n        de ...", "Un servidor de base de datos MySQL.", "Java Runtime Environment (JRE) 8 o superior.", "Docker.", "Ninguna respuesta es correcta.", "4");
-            /*28*/      tipo_test("La versión Express Edition de SAP es ...", "Siempre de pago.", "Siempre gratuita.", "Gratuita hasta los 32GB.", "Ninguna respuesta es correcta.", "3");
-            /*29*/      tipo_test("Cuando creamos por primera vez un producto ...", "Podremos indicarle el stock que tenemos durante la creación.", "Éste se crea con cantidad 0.", "Éste se crea con cantidad 1.", "Ninguna respuesta es correcta.", "2");
-            /*30*/      tipo_test("En la fase de Consultoría de implantación de un ERP se elaboran ...", "Esquemas de la lógica del negocio.", "Mapas conceptuales de la estructura del negocio.", "Diagramas de flujo de los procesos y procedimientos.", "Las demás respuestas son incorrectas.", "3");
-            
-            /*31*/      tipo_test("Un CRM ...", "Ayuda en la gestión de la relación con los clientes.", "Gestiona los procesos de producción de una empresa.", "Planifica los procesos de compra de materiales.", "Las demás respuestas son incorrectas.", "1");
-            /*32*/      tipo_test("Para la fase de implantación de un ERP es necesario disponer de una metodología\n        para ...", "El antes.", "El durante.", "El después.", "Todas las respuestas son correctas.", "4");
-            /*33*/      tipo_test("El ERP surgió ...", "En la década de los 90 y el término lo bautizó el grupo Gartner.", "En la década de los 90 y el término lo bautizó el SAP.", "En la década de los 80 y el término lo bautizó el grupo Gartner.", "En la década de los 80 y el término lo bautizó el SAP.", "1");
-            /*34*/      tipo_test("Entre las desventajas del software propietario encontramos ...", "La dependencia. La implantación y personalización del ERP con un proveedor dificulta un\n    posible futuro cambio de ERP.", "Es poco fiable.", "No suelen ofrecer garantías.", "Ninguna respuesta es correcta.", "1");
-            /*35*/      tipo_test("Entre los módulos logísticos de SAP nos encontramos con los módulos de ...", "Gestión de materiales.", "Ventas y distribución.", "Planificación de la producción.", "Todas las respuestas son correctas.", "4");
-            /*36*/      tipo_test("La formación ...", "Se realiza al cliente final justo después del arranque en producción.", "Se realiza el cliente final justo después de la fase de soporte.", "Se realiza al cliente final justo antes del arranque en producción.", "No es necesario formar al cliente final.", "3");
-            /*37*/      tipo_test("El software copyleft ...", "Permite al redistribuidor agregar restricciones adicionales.", "No permite al redistribuidor agregar restricciones adicionales.", "Hace que el código sea privado.", "Ninguna respuesta es correcta.", "2");
-            /*38*/      tipo_test("Para confirmar la recepción de un producto ...", "Se puede hacer desde el módulo de inventario.", "Se puede hacer desde la sección \"recepciones\" del módulo de inventario.", "Antes, se debe indicar en la columna \"Hecho\" la cantidad que se ha recibido.", "Todas las respuestas son correctas.", "4");
-            /*39*/      //tipo_test("", "", "", "", "", "");
-            /*40*/      //tipo_test("", "", "", "", "", "");
-            
-            /*41*/      //tipo_test("", "", "", "", "", "");
-            /*42*/      //tipo_test("", "", "", "", "", "");
-            /*43*/      //tipo_test("", "", "", "", "", "");
-            /*44*/      //tipo_test("", "", "", "", "", "");
-            /*45*/      //tipo_test("", "", "", "", "", "");
-            /*46*/      //tipo_test("", "", "", "", "", "");
-            /*47*/      //tipo_test("", "", "", "", "", "");
-            /*48*/      //tipo_test("", "", "", "", "", "");
-            /*49*/      //tipo_test("", "", "", "", "", "");
-            /*50*/      //tipo_test("", "", "", "", "", "");
-            
-            /*51*/      //tipo_test("", "", "", "", "", "");
-            /*52*/      //tipo_test("", "", "", "", "", "");
-            /*53*/      //tipo_test("", "", "", "", "", "");
-            /*54*/      //tipo_test("", "", "", "", "", "");
-            /*55*/      //tipo_test("", "", "", "", "", "");
-            /*56*/      //tipo_test("", "", "", "", "", "");
-            /*57*/      //tipo_test("", "", "", "", "", "");
-            /*58*/      //tipo_test("", "", "", "", "", "");
-            /*59*/      //tipo_test("", "", "", "", "", "");
-            /*60*/      //tipo_test("", "", "", "", "", "");
-            
-            /*61*/      //tipo_test("", "", "", "", "", "");
-            /*62*/      //tipo_test("", "", "", "", "", "");
-            /*63*/      //tipo_test("", "", "", "", "", "");
-            /*64*/      //tipo_test("", "", "", "", "", "");
-            /*65*/      //tipo_test("", "", "", "", "", "");
-            /*66*/      //tipo_test("", "", "", "", "", "");
-            /*67*/      //tipo_test("", "", "", "", "", "");
-            /*68*/      //tipo_test("", "", "", "", "", "");
-            /*69*/      //tipo_test("", "", "", "", "", "");
-            /*70*/      //tipo_test("", "", "", "", "", "");
-            
-            /*71*/      //tipo_test("", "", "", "", "", "");
-            /*72*/      //tipo_test("", "", "", "", "", "");
-            /*73*/      //tipo_test("", "", "", "", "", "");
-            /*74*/      //tipo_test("", "", "", "", "", "");
-            /*75*/      //tipo_test("", "", "", "", "", "");
-            /*76*/      //tipo_test("", "", "", "", "", "");
-            /*77*/      //tipo_test("", "", "", "", "", "");
-            /*78*/      //tipo_test("", "", "", "", "", "");
-            /*79*/      //tipo_test("", "", "", "", "", "");
-            /*80*/      //tipo_test("", "", "", "", "", "");
-            
-            /*81*/      //tipo_test("", "", "", "", "", "");
-            /*82*/      //tipo_test("", "", "", "", "", "");
-            /*83*/      //tipo_test("", "", "", "", "", "");
-            /*84*/      //tipo_test("", "", "", "", "", "");
-            /*85*/      //tipo_test("", "", "", "", "", "");
-            /*86*/      //tipo_test("", "", "", "", "", "");
-            /*87*/      //tipo_test("", "", "", "", "", "");
-            /*88*/      //tipo_test("", "", "", "", "", "");
-            /*89*/      //tipo_test("", "", "", "", "", "");
-            /*90*/      //tipo_test("", "", "", "", "", "");
-            
-            /*91*/      //tipo_test("", "", "", "", "", "");
-            /*92*/      //tipo_test("", "", "", "", "", "");
-            /*93*/      //tipo_test("", "", "", "", "", "");
-            /*94*/      //tipo_test("", "", "", "", "", "");
-            /*95*/      //tipo_test("", "", "", "", "", "");
-            /*96*/      //tipo_test("", "", "", "", "", "");
-            /*97*/      //tipo_test("", "", "", "", "", "");
-            /*98*/      //tipo_test("", "", "", "", "", "");
-            /*99*/      //tipo_test("", "", "", "", "", "");
-           /*100*/      //tipo_test("", "", "", "", "", "");
-           
-           /*101*/      //tipo_test("", "", "", "", "", "");
+                    case "40" -> {                        
+                        SistemasGestionEmpresarial.Test_Rep_I_Sis_Ges_Emp.Sis_Ges_Emp();
                     }
                     case "0" -> {}
-                    default -> System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
+                    default -> {
+                            meterEspacios(25);
+                            System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
+                            meterEspacios(15);
+                            esperar(1500);
+                            }
                 }
             }  catch (Exception e) {
                 System.out.println("Error: " + e.toString());
