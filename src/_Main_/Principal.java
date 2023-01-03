@@ -15,6 +15,7 @@ public class Principal {
     private static String tema, asignatura;
     private static long inicio, fin, milisegundos;
     private static int horas, minutos, segundos, resto_horas;
+    
         
     public static void main(String[] args) {
         
@@ -127,13 +128,128 @@ public class Principal {
     
     
     
-    public static void tipo_test (String pregunta, String resp_1, String resp_2, String resp_3, String resp_4, String solucion) {
+    public static void tipo_test (String pregunta, String resp_1, String resp_2, String resp_3, String resp_4, String soluc) {
         
+        // DESORDENAMOS LAS RESPUESTAS PARA NO GENERAR VICIOS REPETITIVOS
+        int[] arr = new int[] {1,2,3,4};
+        int aleatorio[] = generarOrden(arr);  
+        String respuesta_1 = " ", respuesta_2 = " ", respuesta_3 = " ", respuesta_4 = " ", solucion = " ";
+                
+        int ale_01 = aleatorio[0];
+        int ale_02 = aleatorio[1];
+        int ale_03 = aleatorio[2];
+        int ale_04 = aleatorio[3];
+        // DEPENDIENDO DE COMO SE DESORDENEN LAS RESPUESTAS, TAMBIÉN HAY QUE REORGANIZAR LA SOLUCIÓN
+       switch (ale_01) {       
+           case 1 -> {
+               respuesta_1 = resp_1;               
+               switch (soluc) {       
+                    case "1" -> solucion = "1";
+               }
+           }
+           case 2 -> {
+               respuesta_1 = resp_2;
+               switch (soluc) {       
+                    case "2" -> solucion = "1";
+               }
+           }
+           case 3 -> {
+               respuesta_1 = resp_3;
+               switch (soluc) {       
+                    case "3" -> solucion = "1";
+               }
+           }           
+           case 4 -> {
+               respuesta_1 = resp_4;
+               switch (soluc) {       
+                    case "4" -> solucion = "1";
+               }
+           }           
+       }
+       switch (ale_02) {       
+           case 1 -> {
+               respuesta_2 = resp_1;
+               switch (soluc) {       
+                    case "1" -> solucion = "2";
+               }
+           }
+           case 2 -> {
+               respuesta_2 = resp_2;
+               switch (soluc) {       
+                    case "2" -> solucion = "2";
+               }
+           }
+           case 3 -> {
+               respuesta_2 = resp_3;
+               switch (soluc) {       
+                    case "3" -> solucion = "2";
+               }
+           }
+           case 4 -> {
+               respuesta_2 = resp_4;
+               switch (soluc) {       
+                    case "4" -> solucion = "2";
+               }
+           }        
+       }
+       switch (ale_03) {       
+           case 1 -> {
+               respuesta_3 = resp_1;
+               switch (soluc) {       
+                    case "1" -> solucion = "3";
+               }
+           }
+           case 2 -> {
+               respuesta_3 = resp_2;
+               switch (soluc) {       
+                    case "2" -> solucion = "3";
+               }
+           }
+           case 3 -> {
+               respuesta_3 = resp_3;
+               switch (soluc) {       
+                    case "3" -> solucion = "3";
+               }
+           }
+           case 4 -> {
+               respuesta_3 = resp_4;
+               switch (soluc) {       
+                    case "4" -> solucion = "3";
+               }
+           }
+       }
+       switch (ale_04) {       
+           case 1 -> {
+               respuesta_4 = resp_1;
+               switch (soluc) {       
+                    case "1" -> solucion = "4";
+               }
+           }
+           case 2 -> {
+               respuesta_4 = resp_2;
+               switch (soluc) {       
+                    case "2" -> solucion = "4";
+               }
+           }
+           case 3 -> {
+               respuesta_4 = resp_3;
+               switch (soluc) {       
+                    case "3" -> solucion = "4";
+               }
+           }           
+           case 4 -> {
+               respuesta_4 = resp_4;
+               switch (soluc) {       
+                    case "4" -> solucion = "4";
+               }
+           }
+       }
+       
         String miRespuesta;
         String resp_correcta;
         cont = (int) contador;
     
-        do {            
+        do { 
             Scanner teclaStr = new Scanner(System.in, "UTF-8");
             meterEspacios(20);
             ver_notas();
@@ -141,10 +257,10 @@ public class Principal {
             System.out.println("*************************************************************************************************\n");
             System.out.println("  " + cont+ ".- : " + pregunta);
             System.out.println("\n*************************************************************************************************");
-            System.out.println("\nA.- " + resp_1);
-            System.out.println("\nB.- " + resp_2);
-            System.out.println("\nC.- " + resp_3);
-            System.out.println("\nD.- " + resp_4);
+            System.out.println("\nA.- " + respuesta_1);
+            System.out.println("\nB.- " + respuesta_2);
+            System.out.println("\nC.- " + respuesta_3);
+            System.out.println("\nD.- " + respuesta_4);
             System.out.println("\n*************************************************************************************************");
             System.out.println("RESPONDE CON:               -  A  B  C  D  -  a  b  c  d  -  1  2  3  4  -  0  -");
             System.out.println("*************************************************************************************************\n");
@@ -160,16 +276,14 @@ public class Principal {
                 case "D", "d", "4" -> miRespuesta = "4";
                 case "0" -> salida = true;
                 default ->  miRespuesta = "no_existe";               
-            }
-            
+            }            
             switch (solucion) {
-                case "1" -> resp_correcta = resp_1;
-                case "2" -> resp_correcta = resp_2;
-                case "3" -> resp_correcta = resp_3;
-                case "4" -> resp_correcta = resp_4;
+                case "1" -> resp_correcta = respuesta_1;
+                case "2" -> resp_correcta = respuesta_2;
+                case "3" -> resp_correcta = respuesta_3;
+                case "4" -> resp_correcta = respuesta_4;
                 default -> resp_correcta = " ";
-            }
-            
+            }            
             if (miRespuesta.equals(solucion)) {
                 System.out.println("*************************************************************************************************");
                 System.out.println("***   ***   ***   ***             ¡ ¡ ¡  C O R R E C T O  ! ! !             ***   ***   ***   ***");
@@ -202,8 +316,7 @@ public class Principal {
             meterEspacios(15);
             esperar(1500);
             
-        } while ( !salida );       
-                
+        } while ( !salida );
     }
     
     public static void ver_notas() {
@@ -232,8 +345,7 @@ public class Principal {
         
         if ((aciert != 0) || (fall != 0) || (en_bl != 0)) {
             ver_notas();
-        }
-        
+        }        
         setFall(0);
         setFallos(0);
         setAciert(0);
@@ -241,8 +353,7 @@ public class Principal {
         setCont(1);
         setContador(1);
         setEn_bl(0);
-        setEn_blanco(0);
-        
+        setEn_blanco(0);        
         setNota(0);
     }
     
@@ -258,8 +369,25 @@ public class Principal {
     
         for (int i=0; i<espacios; i++) {
                 System.out.println("");
-            }
-    
+            }    
     }
     
+    public static int[] generarOrden(int arr[]) {
+    
+        for(int i=0;i<arr.length;i++){
+            boolean encontrado = false;
+            int ale=(int)(Math.random()*4)+1;
+            for (int j=0;j<i ;j++){
+                if(arr[j]==ale){
+                    encontrado=true;
+                }
+            }
+            if(!encontrado){
+                arr[i]=ale;
+            }else{
+                i--;
+            }
+        }
+        return arr;
+    }    
 }

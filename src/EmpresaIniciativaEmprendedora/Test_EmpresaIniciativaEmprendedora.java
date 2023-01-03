@@ -24,7 +24,7 @@ public class Test_EmpresaIniciativaEmprendedora {
         Menu_Temas.setTema_07("FORMULAS JURÍDICAS DE LAS EMPRESAS. TRÁMITES DE CONSTITUCIÓN Y DE ACTIVIDAD.");
         Menu_Temas.setTema_08("PLAN DE ORGANIZACIÓN: ACTIVIDADES Y RECURSOS.");
         Menu_Temas.setTema_09("LA FUNCIÓN DE PRODUCCIÓN Y ANÁLISIS DE COSTES.");
-        Menu_Temas.setTema_10("");
+        Menu_Temas.setTema_10("CONTABILIDAD FINANCIERA.");
         Menu_Temas.setTema_11("");
         Menu_Temas.setTema_12("");
         Menu_Temas.setTema_13("");
@@ -175,16 +175,16 @@ public class Test_EmpresaIniciativaEmprendedora {
                     case "10" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("La Contabilidad Financiera:", "Permite interpretar, representar y medir los hechos económicos susceptibles de ser\n    registrados en un periodo de tiempo determinado.", "Muestra las relaciones económicas de la empresa con el mundo exterior.", "Ambas son correctas.", "Ninguna es correcta.", "3");
+            /*02*/      tipo_test("La estructura económica de la empresa:", "Está formada por el conjunto de bienes y derechos que la empresa necesita para su\n    funcionamiento.", "Pone de manifiesto la inversión de la compañía.", "Ambas son correctas.", "Ninguna es correcta.", "3");
+            /*03*/      tipo_test("La estructura financiera de la empresa:", "Refleja el origen de los recursos de capital y con ellos las fuentes de financiación de la empresa.", "Refleja el destino de los recursos de capital y con ellos las fuentes de financiación de la empresa.", "Refleja el origen de los recursos de capital y con ellos las fuentes de inversión de la empresa.", "Refleja el destino de los recursos de capital y con ellos las fuentes de inversión de la empresa.", "1");
+            /*04*/      tipo_test("Los estados financieros o cuentas anuales son:", "Balance, cuenta de pérdidas y ganancias, estado de cambios de patrimonio, estado de\n    flujos de efectivo y memoria.", "Marco conceptual de la contabilidad, normas de registro y valoración, cuentas anuales,\n    cuadro de cuentas, definiciones y relaciones contables.", "Activo, pasivo y patrimonio neto.", "Debe y haber.", "1");
+            /*05*/      tipo_test("El cuadro de cuentas se subdivide en:", "Debe y haber.", "Balance, cuenta de pérdidas y ganancias, estado de cambios de patrimonio, estado de\n    flujos de efectivo y memoria.", "Grupo, subgrupo, cuenta y subcuenta.", "Activo, pasivo y patrimonio neto.", "3");
+            /*06*/      tipo_test("Las partes del balance son:", "Balance, cuenta de pérdidas y ganancias, estado de cambios de patrimonio, estado de\n    flujos de efectivo y memoria.", "Marco conceptual de la contabilidad, normas de registro y valoración, cuentas anuales,\n    cuadro de cuentas, definiciones y relaciones contables.", "Activo, pasivo y patrimonio neto.", "Ninguna es correcta.", "3");
+            /*07*/      tipo_test("En la cuenta de pérdidas y ganancias se recogen:", "Las ventas y los costes que ha tenido la organización durante un periodo de tiempo y\n    refleja cómo las ventas se van convirtiendo en beneficios a medida que le vamos\n    restando los costes.", "Las ventas y los pagos que ha tenido la organización durante un periodo de tiempo y\n    refleja cómo las ventas se van convirtiendo en beneficios a medida que le vamos\n    restando los pagos.", "Los ingresos y los gastos que ha tenido la organización durante un periodo de tiempo y\n    refleja cómo los ingresos se van convirtiendo en beneficios a medida que le vamos\n    restando los gastos.", "Los cobros y los pagos que ha tenido la organización durante un periodo de tiempo y\n    refleja cómo los cobros se van convirtiendo en beneficios a medida que le vamos\n    restando los pagos.", "3");
+            /*08*/      tipo_test("Las Pymes y los empresarios individuales están obligados a presentar:", "Como mínimo, las cuentas anuales abreviadas.", "Como máximo, las cuentas anuales abreviadas.", "No están obligados a presentar ninguna cuenta anual o estado financiero.", "No pueden presentar las cuentas anuales abreviadas.", "1");
+            /*09*/      tipo_test("En el asiento contable se representa:", "El debe va a la izquierda y el haber a la derecha en el asiento contable.", "El debe va a la derecha y el haber a la izquierda en el asiento contable.", "Depende del hecho económico que se esté representando.", "No existe ninguna representación gráfica establecida para el asiento contable.", "1");
+            /*10*/      tipo_test("Los libros contables obligatorios son:", "Libro diario y libro de inventarios.", "Libro diario y libro mayor.", "Libro de inventarios y libro mayor.", "Libro diario y libros auxiliares.", "1");                        
                     }
                     case "11" -> {
                         _Main_.Principal.setTema(menu);

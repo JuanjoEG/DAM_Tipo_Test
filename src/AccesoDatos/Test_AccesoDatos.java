@@ -24,7 +24,7 @@ public class Test_AccesoDatos {
         Menu_Temas.setTema_07("EL MAPEO OBJETO RELACIONAL.");
         Menu_Temas.setTema_08("EXPLORACIÓN DEL MAPEO OBJETO-RELACIONAL.");
         Menu_Temas.setTema_09("BASES DE DATOS ORIENTADAS A OBJETOS.");
-        Menu_Temas.setTema_10("");
+        Menu_Temas.setTema_10("BASES DE DATOS OBJETO RELACIONALES.");
         Menu_Temas.setTema_11("");
         Menu_Temas.setTema_12("");
         Menu_Temas.setTema_13("");
@@ -45,7 +45,7 @@ public class Test_AccesoDatos {
                 menu = teclaStr.nextLine();
                 switch (menu) {
                     case "1" -> {
-                        _Main_.Principal.setTema(menu);
+                        _Main_.Principal.setTema(menu); // encargada de realizar la conexión
         
             /*01*/      tipo_test("La librería Java que se usará para la gestión de archivos, lectura, escritura y más\n        funcionalidades es:", "Java.io", "Io.java", "Lio.java", "Java.tio", "1");
             /*02*/      tipo_test("Un fichero genérico está compuesto por ...", "Nombre.", "Tipo de fichero.", "Nombre y extensión.", "Nombre y acceso.", "3");
@@ -173,16 +173,16 @@ public class Test_AccesoDatos {
                     case "10" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Una combinación de una base de datos relacional y una orientada a objetos\n        es lo que llamamos como:", "Una base de datos relacional objeto.", "Base de datos objeto relacional.", "Base de datos segmentada.", "Todas son falsas.", "2");
+            /*02*/      tipo_test("Usaremos la clave objet type :", "Para crear tipos del sistema.", "Para crear tipos de objeto de usuario.", "Para crear tablas.", "Para definir atributos.", "2");
+            /*03*/      tipo_test("Un objeto representa una entidad en el mundo real y se compone de:", "Nombre, atributos y métodos.", "Definición y columnas.", "Tablas y columnas.", "Todas son falsas.", "1");
+            /*04*/      tipo_test("Una vez definido un tipo ¿Qué objetivos podremos tener?", "Definir nuevos tipos.", "Almacenamiento en tablas de esos tipos.", "Definir distintos atributos de una tabla.", "Todas son verdaderas.", "4");
+            /*05*/      tipo_test("¿Qué es un VARRAY?", "Concurrencia.", "Un tipo de colección en Oracle.", "Un objeto de sistema.", "Todas son falsas.", "2");
+            /*06*/      tipo_test("Elige entre las opciones una de los objetivos que tendríamos después de crear\n        un VARRAY:", "Definir la tipología de una columna de una tabla relacional.", "Crear listas de tablas.", "Definir un atributo.", "Todas son falsas.", "1");
+            /*07*/      tipo_test("A una lista de elementos no ordenados y todos ellos con la misma tipología podremos\n        definirlo como tipo de colección:", "VARRAY.", "Lista.", "PL/SQL.", "Tabla anidada.", "4");
+            /*08*/      tipo_test("Una referencia en Oracle es:", "Un enlace a un objeto de la tipología definida y que a su vez genera una relación entre ambos.", "Un Id que se le asigna a un atributo.", "Un atributo cualquiera.", "Todas son falsas.", "1");
+            /*09*/      tipo_test("La sintaxis que tenemos en Oracle para las referencias es:", "REFER.", "R.", "REF.", "REFERENCE.", "3");
+            /*10*/      tipo_test("A través de la herencia de tipos podremos:", "Ser mucho más eficientes escribiendo código.", "Añadir directamente características de los elementos padres a los hijos.", "Ahorrar tiempo.", "Todas son verdaderas.", "4");                        
                     }
                     case "11" -> {
                         _Main_.Principal.setTema(menu);

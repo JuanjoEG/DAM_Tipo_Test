@@ -24,7 +24,7 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
         Menu_Temas.setTema_07("MULTIMEDIA Y BASES DE DATOS.");
         Menu_Temas.setTema_08("SERVICIOS EN RED I.");
         Menu_Temas.setTema_09("SERVICIOS EN RED II.");
-        Menu_Temas.setTema_10("");
+        Menu_Temas.setTema_10("SERVICIOS EN RED III.");
         Menu_Temas.setTema_11("");
         Menu_Temas.setTema_12("");
         Menu_Temas.setTema_13("");
@@ -173,16 +173,16 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
                     case "10" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                       
+            /*01*/      tipo_test("Si queremos que nuestro mapa muestre normal con carreteras, debemos configurarlo con:", "GoogleMap.MAP_TYPE_NORMAL.", "GoogleMap.MAP_TYPE_SATELLITE.", "GoogleMap.MAP_TYPE_HYBRID.", "GoogleMap.MAP_TYPE_TERRAIN.", "1");
+            /*02*/      tipo_test("¿En qué año creó Google Google Maps?", "2003.", "2004.", "2005.", "2006.", "2");
+            /*03*/      tipo_test("La API que nos permitirá utilizar Google Maps en Android es:", "Maps SKD for iOS.", "Maps SKD for Android.", "Maps JavaScript API.", "Directions API.", "2");
+            /*04*/      tipo_test("Si queremos que nuestro mapa muestre imágenes por satélite, debemos configurarlo con:", "GoogleMap.MAP_TYPE_NORMAL.", "GoogleMap.MAP_TYPE_SATELLITE.", "GoogleMap.MAP_TYPE_HYBRID.", "GoogleMap.MAP_TYPE_TERRAIN.", "2");
+            /*05*/      tipo_test("¿Cuál es el precio de una licencia de desarrollador de aplicaciones de Google?", "25 dólares de por vida.", "25 dólares al mes.", "25 dólares cada seis meses.", "25 dólares al año.", "1");
+            /*06*/      tipo_test("La API que nos permitirá utilizar Gmail es:", "Gmail API.", "API for Gmail.", "Gmail for Android.", "Google no nos permite utilizar su servicio de Gmail.", "1");
+            /*07*/      tipo_test("Si queremos que nuestro mapa muestre un mapa topográfico, debemos configurarlo con:", "GoogleMap.MAP_TYPE_NORMAL.", "GoogleMap.MAP_TYPE_SATELLITE.", "GoogleMap.MAP_TYPE_HYBRID.", "GoogleMap.MAP_TYPE_TERRAIN.", "4");
+            /*08*/      tipo_test("La API que nos permitirá utilizar Google Maps en iOS es:", "Maps SKD for iOS.", "Maps SKD for Android.", "Maps JavaScript API.", "Directions API.", "1");
+            /*09*/      tipo_test("Si queremos que nuestro mapa muestre una mezcla de imágenes por satélite y\n        carretera, debemos configurarlo con:", "GoogleMap.MAP_TYPE_NORMAL.", "GoogleMap.MAP_TYPE_SATELLITE.", "GoogleMap.MAP_TYPE_HYBRID.", "GoogleMap.MAP_TYPE_TERRAIN.", "3");
+            /*10*/      tipo_test("¿Cuál de los siguientes no es un servicio que nos ofrece Google mediante una API?", "Google Maps.", "YouTube.", "Chrome.", "FireBase.", "3");                       
                     }
                     case "11" -> {
                         _Main_.Principal.setTema(menu);

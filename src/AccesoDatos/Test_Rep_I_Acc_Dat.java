@@ -10,7 +10,7 @@ public class Test_Rep_I_Acc_Dat {
     
     public static void Rep_I_Acc_Dat() {
         
-                        _Main_.Principal.setAsignatura("ACCESO A DATOS");
+                        _Main_.Principal.setAsignatura("ACCESO A DATOS"); // 
                         _Main_.Principal.setTema("REPASO I");
                         
             /*01*/      tipo_test("El método unread() aplicado sobre un objeto PushbackReader ...", "Vacía el buffer de lectura.", "Se utiliza para eliminar bytes de los streams.", "Devuelve al stream de datos el byte que hemos leído con anterioridad.", "Es un método que no existe.", "3");
@@ -71,7 +71,7 @@ public class Test_Rep_I_Acc_Dat {
             /*51*/      tipo_test("Con la anotación @Before ...", "Ejecutamos dicho código después del test ejecutado.", "Ejecutamos algunos tests.", "Ejecutamos dicho código antes del test ejecutado.", "Todas son falsas.", "3");
             /*52*/      tipo_test("ObjectDB ...", "Más que una base de datos relacional es una base de datos orientada a objetos.", "Es relacional pura.", "Es independiente.", "Todas son falsas.", "1");
             /*53*/      tipo_test("El comando que nos permite cambiar las condiciones generales de la base de datos\n        es ...", "ALTER TABLE", "ALTER DATABASE.", "ALTER BASE.", "ALTER INDEX.", "2");
-            /*54*/      tipo_test("Mejorar la eficiencia en el desarrollo ...","Es una ventaja de usar un ORM."," No debe influir a la hora de usar un ORM.","Influye al usar depende qué tipo de base de datos relacional.","Todas son falsas.","1");
+            /*54*/      tipo_test("Mejorar la eficiencia en el desarrollo ...","Es una ventaja de usar un ORM.","No debe influir a la hora de usar un ORM.","Influye al usar depende qué tipo de base de datos relacional.","Todas son falsas.","1");
             /*55*/      tipo_test("¿Qué componente es el encargado de realizar la conexión entre nuestro aplicativo y el\n        driver apropiado JDBC?", "El T driver.", "El gestor JDBC.", "RJK driver.", "Java driver.", "2");
             /*56*/      tipo_test("¿En qué fichero podremos introducir nuestras configuraciones de Hibernate?", "Application.properties.", "App.zip.", "Configuration.config.", "Todas son falsas.", "1");
             /*57*/      tipo_test("Un fichero genérico está compuesto por ...", "Nombre.", "Tipo de fichero.", "Nombre y extensión.", "Nombre y acceso.", "3");
@@ -134,16 +134,45 @@ public class Test_Rep_I_Acc_Dat {
            /*109*/      tipo_test("Las bases de datos cliente/servidor:", "Son embebidas", "Son independientes.", "Son bases de datos en memoria.", "Son bases de datos gestoras.", "2");
            /*110*/      tipo_test("¿Qué método es el que usaremos para realizer consultas con un objeto Statement?", "executeQuery()", "executeSelect()", "executeUpdate()", "Todas son verdaderas.", "1");
            
-           /*111*/      //tipo_test("", "", "", "", "", "");
-           /*112*/      //tipo_test("", "", "", "", "", "");
-           /*113*/      //tipo_test("", "", "", "", "", "");
-           /*114*/      //tipo_test("", "", "", "", "", "");
-           /*115*/      //tipo_test("", "", "", "", "", "");
-           /*116*/      //tipo_test("", "", "", "", "", "");
-           /*117*/      //tipo_test("", "", "", "", "", "");
-           /*118*/      //tipo_test("", "", "", "", "", "");
-           /*119*/      //tipo_test("", "", "", "", "", "");
-           /*120*/      //tipo_test("", "", "", "", "", "");
+           /*111*/      tipo_test("¿En Hibernate podemos habilitar o deshabilitar las trazas SQL?", "No, porque Hibernate está pensado para aplicaciones web.", "No, porque Hibernate no trabaja con SQL.", "Sí, en el fichero pom.xml.", "Sí, en el fichero application.properties.", "4");
+           /*112*/      tipo_test("La forma más eficiente para leer desde un punto específico de nuestro fichero será:", "Es indiferente, no habrá diferncia.", "Usar un modo de acceso aleatorio o directo.", "Elegir para nuestro aplicativo un modo de acceso secuencial hasta llegar al\n    punto específico del fichero.", "No usar un modo de acceso aleatorio o directo.", "2");
+           /*113*/      tipo_test("¿Qué método hemos visto para establecer la posición, posicionarnos, en un\n        fichero de acceso aleatorio y basado en bytes?", "setFilePointer().", "No es posible realizar esa operación en un fichero aleatorio.", "seek().", "getFilePointer()", "3");
+           /*114*/      tipo_test("Es una sentencia de manipulación de datos (DML):", "ALTER DATABASE.", "UPDATE.", "ALTER TABLE.", "RENAME TABLE.", "2");
+           /*115*/      tipo_test("Entenderemos una transacción como:", "Unidades o conjuntos de acciones que se realizan en serie y de forma ordenada\n    en el sistema gestor de base de datos.", "Un comando aislado que puede ejecutarse en cualquier momento.", "Como su nombre indica, una operación cualquiera en base de datos.", "Todas son falsas.", "1");
+           /*116*/      tipo_test("¿Cómo lanzaremos una excepción a un nivel superior?", "Acotaremos la sentencia en un bloque try.", "Acotaremos la sentencia en un bloque catch.", "Añadiremos la execepción con throws a la definición del método.", "Todas son falsas.", "3");
+           /*117*/      tipo_test("¿Cuál es la ubicación de las librerías encargadas de realizar conexiones\n        con bases de datos?", "java.io", "java.sql y javax.sql", "java.exception", "Todas son falsas.", "2");
+           /*118*/      tipo_test("El flujo del mapeo del Objeto Relacional va de la aplicación java\n        a la Base de Datos Relaconal ...", "Sin capas, fases ni pasos intermedios.", "El orden es al revés: De la Base de Datos a la aplicación Java.", "Pasando por el Ojeto y el ORM, en ese orden.", "Pasando por el ORM y el Ojeto, en ese orden.", "3");
+           /*119*/      tipo_test("Usaremos la cláusula BETWEEN ...", "Cuando vayamos a establecer un rango de valores.", "Cuando vayamos a realizar algún tipo de comparación.", "Cuando queramos realizar algún tipo de ordenación.", "Todas son falsas.", "1");
+           /*120*/      tipo_test("Un Flujo de Datos o 'Stream' es una secuencia ordenada de información ...", "Para leer y para escribir, pudiendo ser a la vez.", "Únicamente de salida.", "Para leer o para escribir, pero no ambas a la vez.", "Únicamente de entrada.", "3");
+           
+           /*121*/      tipo_test("¿Qué método hemos visto para devolver al Stream los datos leídos?", "unread() usando getBackReader.", "Todas son correctas.", "getInputStream usando pushBackInputStream.", "unread() usando PushBackReader", "4");
+           /*122*/      tipo_test("Si el objetivo en nuestra implementación es manipular un fichero de caracteres:", "Utilizaremos la clase FileReader.", "Usaremos FileOutputStream.", "Todas son falsas.", "Todas son correctas.", "1");
+           /*123*/      tipo_test("Si tengo una aplicación de Java desarrollada con applets.\n        ¿Qué tipo de driver JDBC hemos visto que no sería recomendable utilizar?", "Tipo 4 (Protocolo Nativo).", "Tipo 3 (Middleware)", "Tipo 1 (Puente ODBC).", "Tipo 2 (API Mativo).", "3");
+           /*124*/      tipo_test("La anotación @Include de Junit, sobre la cabecera de un método,\n        establece que dicho método ...", "Forma parte de un test.", "Todas son falsas.", "Se ejecutará antes de cualquier test.", "Se ejecutará siempre al finalizar cualquier test.", "2");
+           /*125*/      tipo_test("Con la configuración 'org.hibernate.dialect' estaremos ...", "Estableciendo más de una base de datos a utilizar.", "Especificando que queremos usar Hibernate en nuestro aplicativo.", "Estableciendo un nexo de unión entre nuestro framework Hibernate y la base de datos.", "Todas son falsas.", "3");
+           /*126*/      tipo_test("Si estoy utilizando Maven para desarrollar una aplicación Java,\n        estableceré las dependencias de la misma en el fichero ...", "dependencies.xml", "application.properties", "properties.xml", "pom.xml", "4");
+           /*127*/      tipo_test("Con el comando DROP TABLE conseguiremos:", "Realizar un borrado total de la base de datos.", "Realizar el borrado de una tabla.", "Realizar un borrado parcial de la base de datos.", "Realizar el borrado de una fila de una tabla.", "2");
+           /*128*/      tipo_test("Si tenemos que leer un fichero XML de muchos megabytes,\n        y queremos reducir el uso de memoria, usaremos:", "DocumentBuilderFactory o DucumentBuilder, de DOM.", "DocumentBuilderFactory o DucumentBuilder, de SAX.", "Cualquier objeto de DOM o SAX, indistintamente.", "SAXParserFactory o SAXParser, de SAX.", "4");
+           /*129*/      tipo_test("LineNumberReader se utiliza para ...", "Acceso basado en bytes, para Arrays.", "Acceso basado en bytes, para tuberías.", "Acceso basado en caracteres, para análisis (lectura) de Streams.", "Acceso basado en caracteres, para salida (escritura) de Stream.", "3");
+           /*130*/      tipo_test("¿Cuál de los siguientes métodos es el primero que utilizaremos para escribir en un fichero?", "newFile().", "createNewFile().", "write().", "getName().", "1");
+           
+           /*131*/      tipo_test("¿Con qué línea de código estaremos dando de alta un driver\n        o registrándolo para más tarde hacer la conexión?", "Con el método getConnection().", "Class.forName('Nombre del Driver').", "Simplemente, añadiéndolo al classpath.", "Todas son falsas.", "2");
+           /*132*/      tipo_test("Hemos visto que en la arquitectura funcional de un framework ORM,\n        la fase que contiene el cargador JPA (JPAloader) es ...", "Fase 2.", "Fase 1.", "Fase 3.", "El JPAloader puede estar en cualquiera de las fases.", "1");
+           /*133*/      tipo_test("El método que podemos usar para realizar consultas en SQL,\n        independientemente si son de manipulación o consulta de datos es ...", "executeSQL().", "executeQuery().", "executeUpdate().", "execute().", "4");
+           /*134*/      tipo_test("Al utilizar XPATH para el procesamiento de XML, haremos ...", "Todas son falsas.", "xpath.evaluate() para obtener una lista de los nodos.", "xpath.getNodes() para obtener una lista de los nodos.", "xpath.compile() para obtener una lista de los nodos.", "2");
+           /*135*/      tipo_test("Para la ejecución de una tubería de lectura y otra de escritura:", "Se creará un proceso con 2 hilos independientes.", "Se crean 2 procesos independientes.", "Se crea todo dentro del mismo hilo o thread.", "Se creará en 2 hilos de procesos independientes.", "1");
+           /*136*/      tipo_test("Sobre la fase 1 del funcionamiento de un ORM podemos afirmar que ...", "Es el lugar donde se realizan los diferentes mapeos.", "Es la salida y contacto con la base de datos.", "Se definen los servicios, POJO, clases de servicio, etc...", "Es la fase que contiene el cargador JPA (JPAloader).", "3");
+           /*137*/      tipo_test("El tipo de driver JDBC que mejor rendimiento proporciona en internet,\n        es el ...", "Tipo 3 (Middleware).", "Tipo 1 (Puente ODBC).", "Tipo 2 (API Nativo).", "Tipo 4 (Protocolo Nativo).", "1");
+           /*138*/      tipo_test("¿Cuál de las siguientes bases de datos independiente hemos visto\n        que soporta driver ODBC?", "Dervy", "HyperSQL.", "Todas son falsas.", "H2.", "3");
+           /*139*/      tipo_test("No puede funcionar como Base de Datos embebida:", "H2.", "Apache Derby.", "HyperSQL.", "MySQL.", "4");
+           /*140*/      tipo_test("En la arquitectura Hibernate, los objetos de persistencia ...", "Une la capa 'Hibernate' y la capa 'Base de Datos'.", "Une '.properties' y 'Base de Datos'.", "Une 'Mapeo XML' y 'Base de Datos'.", "Une la capa 'Aplicación' y la capa 'Hibernate'.", "4");
+           
+           /*141*/      tipo_test("El princio de reflexión hace referencia a:", "permitir el análisis y la modificación de los distintos atributos y\n    características de las distintas clases en tiempo de ejecución.", "Todos los objetos se pueden sobrescribir.", "Todas son verdaderas.", "Los objetos no son manipulables.", "1");
+           /*142*/      tipo_test("¿Cuál de los siguientes hemos visto que es un componente de un conector JDBC?", "Paquete de pruebas.", "Todas son verdaderas.", "Gestor.", "API.", "2");
+           /*143*/      //tipo_test("", "", "", "", "", "");
+           /*144*/      //tipo_test("", "", "", "", "", "");
+           /*145*/      //tipo_test("", "", "", "", "", ""); 
+           /*146*/      //tipo_test("", "", "", "", "", "");*****************************************************************************
     }
     
 }

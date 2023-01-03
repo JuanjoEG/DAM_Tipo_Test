@@ -10,7 +10,7 @@ public class Test_Rep_I_Pro_Ser_Pro {
     
     public static void Rep_I_Pro_Ser_Pro() {
         
-                                _Main_.Principal.setAsignatura("PROGRAMACIÓN DE SERVICIOS Y PROCESOS");
+                                _Main_.Principal.setAsignatura("PROGRAMACIÓN DE SERVICIOS Y PROCESOS"); // 
                         _Main_.Principal.setTema("REPASO I");
                         
             /*01*/      tipo_test("El protocolo TCP ...", "También se conoce como modelo TCP/IP.", "Crea un flujo de transmisión de datos entre origen y destino, partiendo el mensaje que\n    se quiere enviar en paquetes, y enviándolo por el canal de comunicación.", "Es el Protocolo Central de Transmisión.", "Las demás respuestas son incorrectas.", "2");
@@ -36,7 +36,7 @@ public class Test_Rep_I_Pro_Ser_Pro {
             /*20*/      tipo_test("El protocolo NFS:", "Este protocolo es el encargado de traducir a direcciones IP los nombres de los\n    dispositivos que se encuentra en la red.", "Este protocolo es el encargado de efectuar las transferencias de ficheros.", "Este protocolo es el que va a permitir que podamos compartir ficheros en diferentes\n    ordenadores de una red.", "Este protocolo es el que va a permitir que sea posible la conexión remota de terminales.", "3");
             
             /*21*/      tipo_test("Dentro de la clase Thread, para empezar a ejecutar un hilo de forma paralela,\n        utilizaremos el método:", "new()", "start()", "run()", "exec()", "3");
-            /*22*/      tipo_test("Para conseguir que un hilo esté bloqueado durante una cantidad de tiempo\n        determinada, usaremos ...", "sleep()", "wait()", "stop()", "destroy()", "1");
+            /*22*/      tipo_test("Los Supercomputadores:", "Son sistemas computacionales muy potentes y que se utilizan para tareas que necesitan\n    una enorme capacidad de cálculo.", "Son sistemas donde podremos tener varios recursos, por ejemplo, espacio en disco.", "En este tipo de computación distribuida van a poder usarse ordenadores muy potentes\n    conectados en red entre sí.", "Ninguna de las respuestas anteriores es correcta.", "1");
             /*23*/      tipo_test("A la hora de establecer comunicaciones entre los procesos, si queremos redireccionar\n        a la entrada/salida estándar, deberemos utilizar ...", "OutputStream", "InputStream", "ErrorStream", "Redirect.INHERIT", "4");
             /*24*/      tipo_test("Si tenemos un único procesador, podremos realizar tareas de programación\n        concurrente en ...", "Solo en multiprogramación, pero no en multitarea.", "Solo en multitarea, pero no en multiprogramación.", "Tanto en multiprogramación como en multitarea.", "Únicamente en programación paralela.", "3");
             /*25*/      tipo_test("A la hora de crear hilos que se ejecutan concurrentemente, con el método join() ...", "Podemos unir la ejecución de hilos diferentes.", "Podemos hacer que una acción espere a que un hilo acabe.", "Unimos los flujos de entrada y de salida de los hilos.", "Conseguimos que todos los hilos terminen a la vez.", "2");
@@ -60,7 +60,7 @@ public class Test_Rep_I_Pro_Ser_Pro {
             /*41*/      tipo_test("Para lanzar un proceso tendremos que indicar:", "El sistema operativo en el que estamos trabajando.", "La ruta del ejecutable del proceso.", "Si lo queremos ejecutar en primer o segundo plano.", "La ruta del ejecutable del proceso y sus parámetros.", "4");
             /*42*/      tipo_test("¿Qué método se utiliza para iniciar la ejecución de una hebra?", "start().", "run().", "stop().", "suspend().", "4");
             /*43*/      tipo_test("¿Cuál de las siguientes prioridades es correcta?", "Thread.MAX_PRIORITY.", "11", "3", "Thread.NORMAL_PRIORITY.", "1");
-            /*44*/      tipo_test("¿Qué protocolo es el que se usa en aplicaciones de transmisión de voz?", "TCP.", "UDP.", "Ambos son adecuados para este tipo de aplicación.", "Se utiliza una mezcla de ambos.", "2");
+            /*44*/      tipo_test("Las Redes Clúster:", "Son sistemas computacionales muy potentes y que se utilizan para tareas que necesitan\n    una enorme capacidad de cálculo.", "Son sistemas donde podremos tener varios recursos, por ejemplo, espacio en disco.", "En este tipo de computación distribuida van a poder usarse ordenadores muy potentes\n    conectados en red entre sí.", "Ninguna de las respuestas anteriores es correcta.", "4");
             /*45*/      tipo_test("Los supercomputadores:", "Son sistemas computacionales muy potentes y que se utilizan para tareas que\n    necesitan una enorme capacidad de cálculo.", "Son sistemas donde podremos tener varios recursos, por ejemplo, espacio en disco.", "En este tipo de computación distribuida van a poder usarse ordenadores muy\n    potentes conectados en red entre sí.", "Ninguna de las respuestas anteriores es correcta.", "1");
             /*46*/      tipo_test("¿A qué estado no podemos pasar si estamos en el estado En ejecución?", "Terminado.", "Nuevo.", "Bloqueado.", "Listo.", "2");
             /*47*/      tipo_test("¿Cuál de los siguientes comandos permite ejecutar un proceso?", "ProcessBuilder.start().", "Runtime.exec().", "Ambas respuestas son correctas.", "Ambas respuestas son incorrectas.", "3");
@@ -82,7 +82,7 @@ public class Test_Rep_I_Pro_Ser_Pro {
             /*61*/      tipo_test("Indica cuál de las siguientes respuestas es falsa:", "Los procesos son independientes y tienen su propio espacio de memoria asignado.", "El sistema operativo se refiere a los procesos que gestiona mediante su PID.", "Dos procesos diferentes pueden tener el mismo PID.", "El algoritmo FIFO no puede sufrir inanición.", "3");
             /*62*/      tipo_test("El fujo InputStream:", "Será el flujo de entrada. Está conectado a la entrada estándar del proceso hijo.", "Será el flujo de salida. Está conectado a la salida estándar del proceso hijo.", "Será el flujo de salida para los errores. Está conectado a la salida estándar de errores del\n    proceso hijo.", "Ninguna de las respuestas es correcta.", "1");
             /*63*/      tipo_test("El método acquire de los semáforos:", "Permite adquirir todos los hilos que permitamos acceder a la sección crítica.", "Nos va a permitir cerrar la sección crítica y que ningún otro hilo pueda acceder a ella.", "Nos va a permitir abrir la sección crítica y que otro hilo pueda acceder a ella.", "Nos va a permitir liberar los recursos del semáforo.", "2");
-            /*64*/      tipo_test("El sistema operativo es el encargado de ...", "Poner en ejecución los procesos.", "Gestionar los procesos.", "Poner en ejecución y gestionar los procesos bloqueados.", "Poner en ejecución y gestionar los procesos.", "4");
+            /*64*/      tipo_test("Cuando dos hilos estén esperando a que suceda un evento, que a su vez solo puede generar\n        un hilo que se encuentra bloqueado:", "Condición de carrera.", "Inanición.", "Inconsistencia de memoria.", "Interbloqueo o Deadlock.", "4");
             /*65*/      tipo_test("El fujo ErrorStream:", "Será el flujo de entrada. Está conectado a la entrada estándar del proceso hijo.", "Será el flujo de salida. Está conectado a la salida estándar del proceso hijo.", "Será el flujo de salida para los errores. Está conectado a la salida estándar de errores del\n    proceso hijo.", "Ninguna de las respuestas es correcta.", "3");
             /*66*/      tipo_test("Los hilos están compuestos de:", "Un identificador único, registros de salto y pila.", "Un identificador único, contador de programa, registros asociados y pila.", "Un identificador único, registros asociados y pila.", "Un identificador único, contador de pila y registros.", "2");
             /*67*/      tipo_test("¿Qué método deberemos usar si queremos que cuando todos los hilos tengan la\n        misma prioridad se ejecuten de manera equilibrada?", "wait.", "notifyAll.", "yield.", "join.", "3");
@@ -97,7 +97,7 @@ public class Test_Rep_I_Pro_Ser_Pro {
             /*75*/      tipo_test("Si tenemos una situación en la que diferentes hilos que tienen una visión diferente de\n        un mismo dato, tenemos un problema de:", "Inanición.", "Interbloqueo.", "Bloqueo activo.", "Inconsistencia de memoria.", "4");
             /*76*/      tipo_test("En el modelo TCP/IP, la capa de transporte:", "Esta capa está compuesta por todos aquellos elementos hardware de comunicaciones.", "Esta capa está compuesta por todos aquellos elementos software encargados de dirigir\n    los paquetes por la red.", "Esta capa está compuesta por todos aquellos elementos software cuya función es crear\n    el canal de comunicación.", "Esta capa está compuesta por aplicaciones de red.", "3");
             /*77*/      tipo_test("Señala la opción correcta. Un hilo puede compartir con otros:", "Código y pila de llamadas.", "Código, datos y registros.", "Registros y pila de llamadas.", "Código, datos y ficheros.", "4");
-            /*78*/      tipo_test("¿Qué método usamos para reactivar un hilo bloqueado\n        antes de que se cumpla su tiempo de bloqueo?", "sleep", "wait", "join", "interrupt", "4");
+            /*78*/      tipo_test("Cuando el resultado de ejecutar el programa dependa del orden en que se realicen\n        los accesos a los recurso:", "Condición de carrera.", "Inanición.", "Inconsistencia de memoria.", "Interbloqueo o Deadlock.", "1");
             /*79*/      tipo_test("La zona de exclusión mutua es:", "El código de cada hilo.", "El código que ejecuta cada hilo de forma independente.", "El código que engloba los recursos críticos.", "Ninguna de las respuestas anteriores es correcta.", "3");
             /*80*/      tipo_test("El protocolo UDP es más rápido que el TCP porque:", "No es más rápido.", "Porque su implementación es más compleja.", "Porque no realiza control del flujo ni de errores.", "Porque lo ejecutan equipos más potentes.", "3");
             
@@ -114,8 +114,16 @@ public class Test_Rep_I_Pro_Ser_Pro {
             
             /*91*/      tipo_test("El Grid Computing:", "Son sistemas computacionales muy potentes y que se utilizan para tareas que necesitan\n    una enorme capacidad de cálculo.", "Son sistemas donde podremos tener varios recursos, por ejemplo, espacio en disco.", "En este tipo de computación distribuida van a poder usarse ordenadores muy potentes\n    conectados en red entre sí.", "Ninguna de las respuestas anteriores es correcta.", "3");
             /*92*/      tipo_test("¿Cuándo devolverá verdadero el método isAlive()?", "Si un hilo no está vivo.", "Si un hilo está muerto.", "Si un hilo está en estado finalizado.", "Las demás opciones son incorrectas.", "4");
-            /*93*/      //tipo_test("", "", "", "", "", "");
-            /*94*/      //tipo_test("", "", "", "", "", "");
+            /*93*/      tipo_test("¿Qué protocolo es el que se usa en aplicaciones de transmisión de voz?", "TCP.", "UDP.", "Ambos son adecuados para este tipo de aplicación.", "Se utiliza una mezcla de ambos.", "2");
+            /*94*/      tipo_test("Para conseguir que un hilo esté bloqueado durante una cantidad de tiempo\n        determinada, usaremos ...", "sleep()", "wait()", "stop()", "destroy()", "1");
+            /*95*/      tipo_test("El sistema operativo es el encargado de ...", "Poner en ejecución los procesos.", "Gestionar los procesos.", "Poner en ejecución y gestionar los procesos bloqueados.", "Poner en ejecución y gestionar los procesos.", "4");
+            /*96*/      tipo_test("¿Qué método usamos para reactivar un hilo bloqueado\n        antes de que se cumpla su tiempo de bloqueo?", "sleep", "wait", "join", "interrupt", "4");
+            /*97*/      //tipo_test("", "", "", "", "", "");
+            /*98*/      //tipo_test("", "", "", "", "", "");
+            /*99*/      //tipo_test("", "", "", "", "", "");
+           /*100*/      //tipo_test("", "", "", "", "", "");
+           
+           /*101*/      //tipo_test("", "", "", "", "", "");
             /*95*/      //tipo_test("", "", "", "", "", "");
             /*96*/      //tipo_test("", "", "", "", "", "");
             /*97*/      //tipo_test("", "", "", "", "", "");
@@ -124,6 +132,74 @@ public class Test_Rep_I_Pro_Ser_Pro {
            /*100*/      //tipo_test("", "", "", "", "", "");
            
            /*101*/      //tipo_test("", "", "", "", "", "");
+           /*102*/      //tipo_test("", "", "", "", "", "");
+           /*103*/      //tipo_test("", "", "", "", "", "");
+           /*104*/      //tipo_test("", "", "", "", "", "");
+           /*105*/      //tipo_test("", "", "", "", "", "");
+           /*106*/      //tipo_test("", "", "", "", "", "");
+           /*107*/      //tipo_test("", "", "", "", "", "");
+           /*108*/      //tipo_test("", "", "", "", "", "");
+           /*109*/      //tipo_test("", "", "", "", "", "");
+           /*110*/      //tipo_test("", "", "", "", "", "");
+           
+           /*111*/      //tipo_test("", "", "", "", "", "");
+           /*112*/      //tipo_test("", "", "", "", "", "");
+           /*113*/      //tipo_test("", "", "", "", "", "");
+           /*114*/      //tipo_test("", "", "", "", "", "");
+           /*115*/      //tipo_test("", "", "", "", "", "");
+           /*116*/      //tipo_test("", "", "", "", "", "");
+           /*117*/      //tipo_test("", "", "", "", "", "");
+           /*118*/      //tipo_test("", "", "", "", "", "");
+           /*119*/      //tipo_test("", "", "", "", "", "");
+           /*120*/      //tipo_test("", "", "", "", "", "");
+           
+           /*121*/      //tipo_test("", "", "", "", "", "");
+           /*122*/      //tipo_test("", "", "", "", "", "");
+           /*123*/      //tipo_test("", "", "", "", "", "");
+           /*124*/      //tipo_test("", "", "", "", "", "");
+           /*125*/      //tipo_test("", "", "", "", "", "");
+           /*126*/      //tipo_test("", "", "", "", "", "");
+           /*127*/      //tipo_test("", "", "", "", "", "");
+           /*128*/      //tipo_test("", "", "", "", "", "");
+           /*129*/      //tipo_test("", "", "", "", "", "");
+           /*130*/      //tipo_test("", "", "", "", "", "");
+           
+           /*131*/      //tipo_test("", "", "", "", "", "");
+           /*132*/      //tipo_test("", "", "", "", "", "");
+           /*133*/      //tipo_test("", "", "", "", "", "");
+           /*134*/      //tipo_test("", "", "", "", "", "");
+           /*135*/      //tipo_test("", "", "", "", "", "");
+           /*136*/      //tipo_test("", "", "", "", "", "");
+           /*137*/      //tipo_test("", "", "", "", "", "");
+           /*138*/      //tipo_test("", "", "", "", "", "");
+           /*139*/      //tipo_test("", "", "", "", "", "");
+           /*140*/      //tipo_test("", "", "", "", "", "");
+           
+           /*141*/      //tipo_test("", "", "", "", "", "");
+           /*142*/      //tipo_test("", "", "", "", "", "");
+           /*143*/      //tipo_test("", "", "", "", "", "");
+           /*144*/      //tipo_test("", "", "", "", "", "");
+           /*145*/      //tipo_test("", "", "", "", "", "");
+           /*146*/      //tipo_test("", "", "", "", "", "");
+           /*147*/      //tipo_test("", "", "", "", "", "");
+           /*148*/      //tipo_test("", "", "", "", "", "");
+           /*149*/      //tipo_test("", "", "", "", "", "");
+           /*150*/      //tipo_test("", "", "", "", "", "");
+           
+           /*151*/      //tipo_test("", "", "", "", "", "");
+           /*152*/      //tipo_test("", "", "", "", "", "");
+           /*153*/      //tipo_test("", "", "", "", "", "");
+           /*154*/      //tipo_test("", "", "", "", "", "");
+           /*155*/      //tipo_test("", "", "", "", "", "");
+           /*156*/      //tipo_test("", "", "", "", "", "");
+           /*157*/      //tipo_test("", "", "", "", "", "");
+           /*158*/      //tipo_test("", "", "", "", "", "");
+           /*159*/      //tipo_test("", "", "", "", "", "");
+           /*160*/      //tipo_test("", "", "", "", "", "");
+           
+           
+           
+           /*161*/      //tipo_test("", "", "", "", "", "");*****************************************************************************
     }
     
 }

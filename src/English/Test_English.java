@@ -24,7 +24,7 @@ public class Test_English {
         Menu_Temas.setTema_07("FUTURE.");
         Menu_Temas.setTema_08("SUGGESTIONS AND COMPLAINTS.");
         Menu_Temas.setTema_09("EVENTS.");
-        Menu_Temas.setTema_10("");
+        Menu_Temas.setTema_10("ADJECTIVES.");
         Menu_Temas.setTema_11("");
         Menu_Temas.setTema_12("");
         Menu_Temas.setTema_13("");
@@ -174,16 +174,16 @@ public class Test_English {
                     case "10" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Which of the following is incorrect?", "She'd just told me he was coming when he showed up.", "Did you have said to her tell her about the trip?", "I hadn't thought about it.", "All sentences are correct.", "2");
+            /*02*/      tipo_test("Choose the right option to complete the sentence:\n        When they arrived at the airport, they realised ...", "They had forgotten their passports at home.", "They forgot to take their passports.", "They have forgotten to take their passports.", "They forget to take their passports.", "1");
+            /*03*/      tipo_test("Which of the following sentences is correct?", "Had you finished the report before the meeting?", "Did you finished the report before the meeting?", "Had you finish the report before the meeting?", "Did you have finished the report before the meeting?", "1");
+            /*04*/      tipo_test("Which of the following is the right adjective order?", "Age, opinion, size.", "Opinion, size, age.", "Size, age, opinion.", "Size, opinion, age.", "2");
+            /*05*/      tipo_test("Which of the following is the right adjective order?", "Nice, old, black man.", "Old, black, nice man.", "Black, old, nice man.", "Black, nice, old man.", "1");
+            /*06*/      tipo_test("Choose the right option to complete the sentence:\n        The Eiffel Tower is ... than the tower in Pisa.", "Higher.", "More high.", "As high.", "Highest.", "1");
+            /*07*/      tipo_test("Choose the right option to complete the sentence:\n        The meeting on Monday was ... of the year", "The longest.", "Longest.", "Longer.", "The longer.", "1");
+            /*08*/      tipo_test("Choose the right option to complete the sentence:\n        I think you look ... with short hair.", "Beautifuller.", "More beautiful.", "Both options are correct.", "None of the options is correct.", "2");
+            /*09*/      tipo_test("Which of the following superlatives is correct?", "Happiest.", "Happyest.", "Happyiest.", "Happest.", "1");
+            /*10*/      tipo_test("Choose the right option to complete the sentence:\n        It was their ... match ever; they lost 10-0!", "Baddest.", "Worse.", "Badder.", "Worst.", "4");                        
                     }
                     case "11" -> {
                         _Main_.Principal.setTema(menu);

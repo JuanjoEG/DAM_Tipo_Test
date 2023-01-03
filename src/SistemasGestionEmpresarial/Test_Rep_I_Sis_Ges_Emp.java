@@ -11,7 +11,7 @@ public class Test_Rep_I_Sis_Ges_Emp {
     
     public static void Sis_Ges_Emp() {
     
-        _Main_.Principal.setAsignatura("SISTEMAS DE GESTIÓN EMPRESARIAL");
+        _Main_.Principal.setAsignatura("SISTEMAS DE GESTIÓN EMPRESARIAL");// 
         _Main_.Principal.setTema("REPASO I");
                         
             /*01*/      tipo_test("Para la instalación de SAP S/4 HANA en local ...", "No influye la versión del producto SAP.", "SAP no tiene socios certificados del hardware necesario.", "Los requisitos hardware son a voluntad del cliente.", "Los requisitos hardware y software dependen de muchísimos factores.", "4");
@@ -20,7 +20,7 @@ public class Test_Rep_I_Sis_Ges_Emp {
             /*04*/      tipo_test("En la fase de implantación de un ERP se realizan estimaciones de ...", "Objetivo.", "Recursos.", "Tiempos.", "Todas las respuestas son correctas.", "4");
             /*05*/      tipo_test("El desarrollo de programas de código abierto está basado en ...", "Su registro de la propiedad intelectual.", "La colaboración abierta.", "El pago del coste de desarrollo.", "Todas las respuestas son correctas.", "2");
             /*06*/      tipo_test("Para instalar Odoo se puede realizar ...", "Online.", "Con Instalador.", "Con Docker.", "Todas las respuestas son correctas.", "4");
-            /*07*/      tipo_test("El ERP Odoo tiene módulos que permiten ...", "Chatear en privado con los empleados.", "Gestionar la Contabilidad.", "Controlar el Inventario.", "Todas las respuestas son correctas.", "1");
+            /*07*/      tipo_test("El ERP Odoo tiene módulos que permiten ...", "Chatear en privado con los empleados.", "Gestionar la Contabilidad.", "Controlar el Inventario.", "Todas las respuestas son correctas.", "4");
             /*08*/      tipo_test("En los años 70 aparecieron los ...", "MRP.", "ERP.", "MRP II.", "CRM.", "1");
             /*09*/      tipo_test("Un software comercial es aquel que es desarrollado por una empresa que pretende\n        ganar dinero por ...", "Su modificación.", "Su uso.", "Su desarrollo.", "Las demás respuestas son incorrectas.", "2");
             /*10*/      tipo_test("Dentro de los pasos para completar el flujo de compra-venta en Odoo tenemos ...", "Facturación y Atención al cliente.", "Facturación y Recibir producto.", "Analizar los beneficios y publicitar el producto.", "Publicitar y vender el producto.", "2");
@@ -32,7 +32,7 @@ public class Test_Rep_I_Sis_Ges_Emp {
             /*15*/      tipo_test("Entre las ventajas del código abierto encontramos que ...", "La evolución del software no depende de un proveedor, sino de la comunidad.", "La evolución del software se hace de forma genérica y depende de la comunidad.", "Es un software muy especializado y puede evolucionar en áreas específicas.", "Ninguna respuesta es correcta.", "1");
             /*16*/      tipo_test("En el módulo de Empleados de Odoo nos permiten ...", "Gestionar gastos del empleado.", "Gestionar vacaciones del empleado.", "Gestionar evaluaciones del empleado.", "Todas las respuestas con correctas.", "4");
             /*17*/      tipo_test("El diseño técnico ...", "Es creado por los analistas en la fase de análisis.", "Es creado por los técnicos en la fase de análisis.", "Es creado por los analistas en la fase de parametrización y diseño.", "Es creado por los técnicos en la fase de parametrización y diseño.", "4");
-            /*18*/      tipo_test("Para la instalación de SAP HANA 2.0 Express Edition en local haciendo uso de una\n        máquina virtual preconfigurada es necesario:", "Disponer de, al menos, 16GB de memoria RAM.", "Tener instalado Java Runtime Enviroment (JRE) 7.", "Tener, al menos 100GB de espacio libre en el disco duro.", "Ninguna respuesta es correcta.", "4");
+            /*18*/      tipo_test("Para la instalación de SAP HANA 2.0 Express Edition en local haciendo uso de una\n        máquina virtual preconfigurada es necesario:", "Disponer de al menos 4GB de memoria RAM para la máquina virtual.", "Tener instalado Java Runtime Enviroment (JRE) 7.", "Tener, al menos 100GB de espacio libre en el disco duro.", "Ninguna respuesta es correcta.", "4");
             /*19*/      tipo_test("La versión de instalación con el instalador ...", "Instalará en Windows todo lo necesario para ejecutar Odoo (no requiere instalar nada más).", "Instalará en distribuciones Debian todo lo necesario para ejecutar Odoo (no requiere\n    instalar nada más)", "Instalará en distribuciones RPM todo lo necesario para ejecutar Odoo (no requiere\n    instalar nada más)", "Ninguna respuesta es correcta.", "1");
             /*20*/      tipo_test("El análisis de los beneficios ...", "Puede hacerse en cualquier momento.", "Puede hacerse solo una vez al mes.", "Puede hacerse solo una vez al año.", "Puede hacerse solo 4 veces al año (una por trimestre).", "1");
             
@@ -125,6 +125,82 @@ public class Test_Rep_I_Sis_Ges_Emp {
            /*100*/      //tipo_test("", "", "", "", "", "");
            
            /*101*/      //tipo_test("", "", "", "", "", "");
+            /*95*/      //tipo_test("", "", "", "", "", "");
+            /*96*/      //tipo_test("", "", "", "", "", "");
+            /*97*/      //tipo_test("", "", "", "", "", "");
+            /*98*/      //tipo_test("", "", "", "", "", "");
+            /*99*/      //tipo_test("", "", "", "", "", "");
+           /*100*/      //tipo_test("", "", "", "", "", "");
+           
+           /*101*/      //tipo_test("", "", "", "", "", "");
+           /*102*/      //tipo_test("", "", "", "", "", "");
+           /*103*/      //tipo_test("", "", "", "", "", "");
+           /*104*/      //tipo_test("", "", "", "", "", "");
+           /*105*/      //tipo_test("", "", "", "", "", "");
+           /*106*/      //tipo_test("", "", "", "", "", "");
+           /*107*/      //tipo_test("", "", "", "", "", "");
+           /*108*/      //tipo_test("", "", "", "", "", "");
+           /*109*/      //tipo_test("", "", "", "", "", "");
+           /*110*/      //tipo_test("", "", "", "", "", "");
+           
+           /*111*/      //tipo_test("", "", "", "", "", "");
+           /*112*/      //tipo_test("", "", "", "", "", "");
+           /*113*/      //tipo_test("", "", "", "", "", "");
+           /*114*/      //tipo_test("", "", "", "", "", "");
+           /*115*/      //tipo_test("", "", "", "", "", "");
+           /*116*/      //tipo_test("", "", "", "", "", "");
+           /*117*/      //tipo_test("", "", "", "", "", "");
+           /*118*/      //tipo_test("", "", "", "", "", "");
+           /*119*/      //tipo_test("", "", "", "", "", "");
+           /*120*/      //tipo_test("", "", "", "", "", "");
+           
+           /*121*/      //tipo_test("", "", "", "", "", "");
+           /*122*/      //tipo_test("", "", "", "", "", "");
+           /*123*/      //tipo_test("", "", "", "", "", "");
+           /*124*/      //tipo_test("", "", "", "", "", "");
+           /*125*/      //tipo_test("", "", "", "", "", "");
+           /*126*/      //tipo_test("", "", "", "", "", "");
+           /*127*/      //tipo_test("", "", "", "", "", "");
+           /*128*/      //tipo_test("", "", "", "", "", "");
+           /*129*/      //tipo_test("", "", "", "", "", "");
+           /*130*/      //tipo_test("", "", "", "", "", "");
+           
+           /*131*/      //tipo_test("", "", "", "", "", "");
+           /*132*/      //tipo_test("", "", "", "", "", "");
+           /*133*/      //tipo_test("", "", "", "", "", "");
+           /*134*/      //tipo_test("", "", "", "", "", "");
+           /*135*/      //tipo_test("", "", "", "", "", "");
+           /*136*/      //tipo_test("", "", "", "", "", "");
+           /*137*/      //tipo_test("", "", "", "", "", "");
+           /*138*/      //tipo_test("", "", "", "", "", "");
+           /*139*/      //tipo_test("", "", "", "", "", "");
+           /*140*/      //tipo_test("", "", "", "", "", "");
+           
+           /*141*/      //tipo_test("", "", "", "", "", "");
+           /*142*/      //tipo_test("", "", "", "", "", "");
+           /*143*/      //tipo_test("", "", "", "", "", "");
+           /*144*/      //tipo_test("", "", "", "", "", "");
+           /*145*/      //tipo_test("", "", "", "", "", "");
+           /*146*/      //tipo_test("", "", "", "", "", "");
+           /*147*/      //tipo_test("", "", "", "", "", "");
+           /*148*/      //tipo_test("", "", "", "", "", "");
+           /*149*/      //tipo_test("", "", "", "", "", "");
+           /*150*/      //tipo_test("", "", "", "", "", "");
+           
+           /*151*/      //tipo_test("", "", "", "", "", "");
+           /*152*/      //tipo_test("", "", "", "", "", "");
+           /*153*/      //tipo_test("", "", "", "", "", "");
+           /*154*/      //tipo_test("", "", "", "", "", "");
+           /*155*/      //tipo_test("", "", "", "", "", "");
+           /*156*/      //tipo_test("", "", "", "", "", "");
+           /*157*/      //tipo_test("", "", "", "", "", "");
+           /*158*/      //tipo_test("", "", "", "", "", "");
+           /*159*/      //tipo_test("", "", "", "", "", "");
+           /*160*/      //tipo_test("", "", "", "", "", "");
+           
+           
+           
+           /*161*/      //tipo_test("", "", "", "", "", "");*****************************************************************************
     }
     
 }

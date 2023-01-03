@@ -24,7 +24,7 @@ public class Test_SistemasGestionEmpresarial {
         Menu_Temas.setTema_07("EL FLUJO DE COMPRA-VENTA.");
         Menu_Temas.setTema_08("GESTIÓN DE LA FABRICACIÓN Y PUNTO DE VENTA.");
         Menu_Temas.setTema_09("ORGANIZACIÓN DE LA INFORMACIÓN. BASES DE DATOS.");
-        Menu_Temas.setTema_10("");
+        Menu_Temas.setTema_10("ADECUACIÓN DE UN SISTEMA ERP-CRM A UNA EMPRESA.");
         Menu_Temas.setTema_11("");
         Menu_Temas.setTema_12("");
         Menu_Temas.setTema_13("");
@@ -41,7 +41,7 @@ public class Test_SistemasGestionEmpresarial {
             Scanner teclaStr = new Scanner(System.in, "UTF-8");
             Menu_Temas.menu_temas();
             try {
-                System.out.print("Seleccione una opción: ");
+                System.out.print("Seleccione una opción: "); // El ERP Odoo tiene módulos que permiten
                 menu = teclaStr.nextLine();
                 switch (menu) {
                     case "1" -> {
@@ -173,16 +173,16 @@ public class Test_SistemasGestionEmpresarial {
                     case "10" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Al actualizar Odoo con el instalador descargable desde la página oficial de Odoo ...", "Se actualiza Odoo y su base de datos.", "Se actualiza Odoo, su base de datos y el servidor.", "Se actualiza solo Odoo.", "Ninguna respuesta es correcta.", "3");
+            /*02*/      tipo_test("Odoo se puede actualizar ...", "Con un instalador descargable desde la web oficial de Odoo.", "Con Docker.", "Con Github.", "Todas las respuestas son correctas.", "4");
+            /*03*/      tipo_test("Desde las opciones generales de los ajustes de Odoo podremos ...", "Cambiar el logo de nuestra empresa.", "Cambiar las plantillas de los textos que se envían en el cuerpo del mail.", "Cambiar las plantillas de los documentos pdf que se adjuntan en los mails.", "Todas las respuestas son correctas.", "4");
+            /*04*/      tipo_test("Odoo Studio ...", "Es Open Source.", "Solo se puede usar en la versión Enterprise.", "Es una aplicación creada por terceros.", "Ninguna respuesta es correcta.", "2");
+            /*05*/      tipo_test("Desde Odoo Studio se puede ...", "Eliminar un módulo existente.", "Modificar un módulo existente.", "Copiar un módulo existente.", "Todas las respuestas son correctas.", "2");
+            /*06*/      tipo_test("Al modificar un informe existente desde Odoo Studio ...", "Se pueden agregar campos nuevos que no apunten a ningún valor de la base de datos.", "Se pueden eliminar campos existentes.", "Se pueden agregar campos nuevos que si apunten a algún valor de la base de datos.", "Todas las respuestas son correctas.", "4");
+            /*07*/      tipo_test("Desde Odoo Studio ...", "Se puede indicar que un campo aparezca solo si se cumple una condición.", "Se puede indicar que un campo sea invisible.", "Se puede indicar que un campo sea obligatorio.", "Todas las respuestas son correctas.", "4");
+            /*08*/      tipo_test("Al crear un nuevo módulo con Odoo Studio ...", "Se creará en el panel principal con el resto de los módulos.", "Se le podrá crear formularios.", "Se le podrá crear informes.", "Todas las respuestas son correctas.", "4");
+            /*09*/      tipo_test("Al crear una vista Kanban en nuestro nuevo módulo con Odoo Studio ...", "Debemos crear antes una vista de lista.", "Podremos indicarle por qué campo se agrupa de manera predeterminada.", "No será posible agrupar los campos de manera predeterminada.", "Ninguna respuesta es correcta.", "2");
+            /*10*/      tipo_test("Odoo Studio nos permitirá ...", "Crear informes estadísticos.", "Diseñar plantillas para informes.", "Agregar campos a la lista de vistas.", "Todas las respuestas son correctas.", "4");                        
                     }
                     case "11" -> {
                         _Main_.Principal.setTema(menu);

@@ -24,7 +24,7 @@ public class Test_DesarrolloInterfaces {
         Menu_Temas.setTema_07("USABILIDAD II: PAUTAS DE DISEÑO.");
         Menu_Temas.setTema_08("CONFECCIÓN DE INFORMES I.");
         Menu_Temas.setTema_09("CONFECCIÓN DE INFORMES II.");
-        Menu_Temas.setTema_10("");
+        Menu_Temas.setTema_10("DOCUMENTACIÓN DE APLICACIONES: AYUDAS.");
         Menu_Temas.setTema_11("");
         Menu_Temas.setTema_12("");
         Menu_Temas.setTema_13("");
@@ -173,16 +173,16 @@ public class Test_DesarrolloInterfaces {
                     case "10" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("La parte del fichero de ayuda que se muestra al usuario, habitualmente en forma de\n    índice, glosario, tabla de contenido e incluso buscador de temas es:", "La guía de inicio.", "El mapa de navegación.", "El mapa de fichero.", "La vista de información.", "4");
+            /*02*/      tipo_test("Este tipo de formato de fichero de ayuda actualmente se encuentra en desuso:", "HPJ.", "CHM.", "HLP.", "IPF.", "3");
+            /*03*/      tipo_test("Este tipo de formato de fichero de ayuda incluía ciertas mejoras sobre HLP:", "CHM.", "HPJ.", "IPF.", "JavaHelp.", "1");
+            /*04*/      tipo_test("Este tipo de formato de fichero de ayuda utiliza para la representación de gráficos\n        ficheros de tipo .shg:", "HPJ.", "CHM.", "IPF.", "JavaHelp.", "1");
+            /*05*/      tipo_test("La herramienta Shalom Help Maker:", "Permite la creación de ficheros de ayuda para Windows y tras su descarga es necesario\n    ejecutar el software htmlhelp.exe para instalarla.", "Toda la información queda contenida en un único fichero por lo que es posible exportar\n    toda la ayuda en un solo documento PDF.", "Es una herramienta de pago.", "Permite creación de índices, contenidos enlazados a otras páginas, links externos,\n    así como la creación de imágenes que enriquecen el contenido del documento final.", "4");
+            /*06*/      tipo_test("Indica cuál de las siguientes afirmaciones es falsa respecto a las tablas de contenidos:", "Las tablas de contenido se sitúan al final de cualquier documento,\n    como si de un índice de libro se tratara.", "Pueden mostrar el número de página o no, en función del diseño.", "Casi siempre incluye un enlace directo en cada uno de los títulos o subtítulos\n    por los que aparece compuesta.", "No debe duplicarse la información.", "1");
+            /*07*/      tipo_test("La documentación técnica:", "Sirve para documentar las pruebas realizadas sobre un programa determinado.", "Se trata de los informes resultantes de aplicar las pruebas sobre los programas.", "Es la documentación en la que especifican los escenarios de prueba\n    y se detallan los procedimientos de las mismas.", "Son las guías, hojas de especificaciones, manuales, etc.", "4");
+            /*08*/      tipo_test("¿Qué tipo de manual o guía contiene la información necesaria para poner en uso\n        una aplicación?", "El manual de usuario.", "El manual de explotación.", "La guía rápida.", "La guía de referencia.", "2");
+            /*09*/      tipo_test("JavaHelp requiere del uso de diferentes ficheros y de diferentes tipos de estos para el\n        diseño de cada una de las partes que forman la ayuda final, como el fichero Helpset que:", "Incluye la distribución del sistema de ayuda.", "Asocia elementos del fichero HTML con un identificador.", "Contiene la información necesaria para que el sistema de ayuda se ejecute.", "Contiene la información de ayuda como tal, debiéndose realizar uno por cada tema.", "3");
+            /*10*/      tipo_test("La clase HelpBroker permite visualizar el contenido de la ayuda desde la aplicación,\n        ¿Cuál de los siguientes no es uno de sus principales métodos?", "enableHelpKey.", "enableHelpOnButton.", "enableHelp.", "findHelpSet.", "4");                        
                     }
                     case "11" -> {
                         _Main_.Principal.setTema(menu);

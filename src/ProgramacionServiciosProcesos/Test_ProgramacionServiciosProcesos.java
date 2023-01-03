@@ -24,7 +24,7 @@ public class Test_ProgramacionServiciosProcesos {
         Menu_Temas.setTema_07("INTRODUCCIÓN A LA COMUNICACIÓN ENTRE APLICACIONES.");
         Menu_Temas.setTema_08("MODELOS DE COMUNICACIONES.");
         Menu_Temas.setTema_09("PROTOCOLOS A NIVEL DE APLICACIÓN.");
-        Menu_Temas.setTema_10("");
+        Menu_Temas.setTema_10("LOS SERVICIOS DE RED. SOCKETS I.");
         Menu_Temas.setTema_11("");
         Menu_Temas.setTema_12("");
         Menu_Temas.setTema_13("");
@@ -174,16 +174,16 @@ public class Test_ProgramacionServiciosProcesos {
                     case "10" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                       
+            /*01*/      tipo_test("La forma de transmitir información en una conexión con Sockets TCP será en:", "Bits.", "Bytes.", "Datagramas.", "Paquetes.", "2");
+            /*02*/      tipo_test("El método readUTF() nos permitirá:", "Enviar mensajes a través de un Socket.", "Recibir mensajes a través de un Socket.", "Enviar y recibir mensajes a través de un Socket.", "Este método no permite realizar ninguna acción con Sockets.", "2");
+            /*03*/      tipo_test("¿Por qué hacemos un bucle infinito en el servidor?", "No se hará ningún bucle infinito.", "Para esperar constantemente peticiones de clientes.", "Porque tarda mucho en iniciar y así aseguramos que no termina su hilo.", "Todas las opciones son correctas.", "2");
+            /*04*/      tipo_test("La clase ServerSocket implementa:", "Un servidor TCP.", "Un cliente TCP.", "Un servidor UDP.", "Un cliente UDP.", "1");
+            /*05*/      tipo_test("La clase Socket se utiliza para realizar conexiones:", "UDP.", "TCP.", "Para realizar conexiones tanto TCP como UDP.", "Ninguna de las respuestas anteriores es correcta.", "2");
+            /*06*/      tipo_test("Las clases principales para poder crear servidores UDP son:", "DatagramPacket y DatagramSocket.", "Sockets y PacketDatagram.", "Datagram y Sockets.", "Datagram y PacketSocket.", "1");
+            /*07*/      tipo_test("Los Sockets UDP son:", "Más lentos que los TCP, pero más seguros.", "Más rápidos que los TCP, pero menos seguros.", "Más rápidos que los TCP y más seguros.", "Más lentos que los TCP y menos seguros.", "2");
+            /*08*/      tipo_test("El método writeUTF() nos permitirá:", "Enviar mensajes a través de un Socket.", "Recibir mensajes a través de un Socket.", "Enviar y recibir mensajes a través de un Socket.", "Este método no permite realizar ninguna acción con Sockets.", "1");
+            /*09*/      tipo_test("¿Qué hace el método getPort()?", "Devuelve el puerto de envío/recepción del paquete.", "Devuelve el puerto de donde procede el Socket.", "Devuelve la dirección del host remoto de envío/recepción.", "Depende de la clase.", "4");
+            /*10*/      tipo_test("¿Con qué tipo de Socket deberíamos empezar a trabajar?", "Con UDP.", "Con TCP.", "Con cualquiera de ellos.", "Con el más rápido.", "2");                       
                     }
                     case "11" -> {
                         _Main_.Principal.setTema(menu);

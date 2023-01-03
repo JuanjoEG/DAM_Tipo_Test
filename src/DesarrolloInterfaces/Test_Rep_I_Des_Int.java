@@ -10,7 +10,7 @@ public class Test_Rep_I_Des_Int {
     
     public static void Rep_I_Des_Int() {
         
-                        _Main_.Principal.setAsignatura("DESARROLLO DE INTERFACES");
+                        _Main_.Principal.setAsignatura("DESARROLLO DE INTERFACES"); // 
                         _Main_.Principal.setTema("REPASO I");
                         
             /*01*/      tipo_test("XML es ...", "Es un lenguaje utilizado para estructurar, almacenar e intercambiar datos entre distintas\n    plataformas.", "Un lenguaje de programación estandarizado.", "El estándar más empleado en la programación orientada a objetos.", "Un lenguaje de programación para almacenar los atributos de una clase en Java.", "1");
@@ -97,7 +97,7 @@ public class Test_Rep_I_Des_Int {
             /*75*/      tipo_test("¿Qué significa XML?", "X-Markup Language", "eXtensible Markup Language", "Example Markup Language", "eXtra Modern Link", "2");
             /*76*/      tipo_test("¿Qué ventaja supone la reutilización de componentes?", "Reducción de los costes del proyecto.", "Simplificación de pruebas de software.", "Mejora de la calidad del software.", "Todas las anteriores son ciertas.", "4");
             /*77*/      tipo_test("¿Cuál de las siguientes no es una característica de las pruebas unitarias?", "Rápida ejecución.", "Independencia respecto a otros tests.", "Un único uso.", "Cada test debe poder comprobar si es válido por si mismo.", "3");
-            /*78*/      tipo_test("¿Cuál de las siguientes no es una característica de las pruebas unitarias?", "Rápida ejecución.", "Independencia respecto a otros tests.", "Un único uso.", "Cada test debe poder comprobar si es válido por si mismo.", "3");
+            /*78*/      tipo_test("La programación de tipo modular pertenece al paradigma de programación del\n        modelo delarativo:", "Falso.", "Verdadero.", " ", " ", "1");
             /*79*/      tipo_test("¿En cuál de los siguientes casos se está realizando una mala selección de diseño\n        de ventanas?", "Las ventanas pueden ser cerradas en todo momento por el usuario.", "La modificación del tamaño puede realizarla el propio usuario.", "Las ventanas se despliegan constantemente y no se pueden cerrar.", "El usuario controlar las ventanas abriéndolas cuando desee.", "3");
             /*80*/      tipo_test("¿Cuál de los siguientes tipos de eventos son los producidos por el usuario,\n        habitualmente a través del teclado o del puntero del ratón?", "Eventos internos.", "Eventos propios.", "Eventos externos.", "Eventos impropios.", "3");
             
@@ -124,6 +124,74 @@ public class Test_Rep_I_Des_Int {
            /*100*/      //tipo_test("", "", "", "", "", "");
            
            /*101*/      //tipo_test("", "", "", "", "", "");
+           /*102*/      //tipo_test("", "", "", "", "", "");
+           /*103*/      //tipo_test("", "", "", "", "", "");
+           /*104*/      //tipo_test("", "", "", "", "", "");
+           /*105*/      //tipo_test("", "", "", "", "", "");
+           /*106*/      //tipo_test("", "", "", "", "", "");
+           /*107*/      //tipo_test("", "", "", "", "", "");
+           /*108*/      //tipo_test("", "", "", "", "", "");
+           /*109*/      //tipo_test("", "", "", "", "", "");
+           /*110*/      //tipo_test("", "", "", "", "", "");
+           
+           /*111*/      //tipo_test("", "", "", "", "", "");
+           /*112*/      //tipo_test("", "", "", "", "", "");
+           /*113*/      //tipo_test("", "", "", "", "", "");
+           /*114*/      //tipo_test("", "", "", "", "", "");
+           /*115*/      //tipo_test("", "", "", "", "", "");
+           /*116*/      //tipo_test("", "", "", "", "", "");
+           /*117*/      //tipo_test("", "", "", "", "", "");
+           /*118*/      //tipo_test("", "", "", "", "", "");
+           /*119*/      //tipo_test("", "", "", "", "", "");
+           /*120*/      //tipo_test("", "", "", "", "", "");
+           
+           /*121*/      //tipo_test("", "", "", "", "", "");
+           /*122*/      //tipo_test("", "", "", "", "", "");
+           /*123*/      //tipo_test("", "", "", "", "", "");
+           /*124*/      //tipo_test("", "", "", "", "", "");
+           /*125*/      //tipo_test("", "", "", "", "", "");
+           /*126*/      //tipo_test("", "", "", "", "", "");
+           /*127*/      //tipo_test("", "", "", "", "", "");
+           /*128*/      //tipo_test("", "", "", "", "", "");
+           /*129*/      //tipo_test("", "", "", "", "", "");
+           /*130*/      //tipo_test("", "", "", "", "", "");
+           
+           /*131*/      //tipo_test("", "", "", "", "", "");
+           /*132*/      //tipo_test("", "", "", "", "", "");
+           /*133*/      //tipo_test("", "", "", "", "", "");
+           /*134*/      //tipo_test("", "", "", "", "", "");
+           /*135*/      //tipo_test("", "", "", "", "", "");
+           /*136*/      //tipo_test("", "", "", "", "", "");
+           /*137*/      //tipo_test("", "", "", "", "", "");
+           /*138*/      //tipo_test("", "", "", "", "", "");
+           /*139*/      //tipo_test("", "", "", "", "", "");
+           /*140*/      //tipo_test("", "", "", "", "", "");
+           
+           /*141*/      //tipo_test("", "", "", "", "", "");
+           /*142*/      //tipo_test("", "", "", "", "", "");
+           /*143*/      //tipo_test("", "", "", "", "", "");
+           /*144*/      //tipo_test("", "", "", "", "", "");
+           /*145*/      //tipo_test("", "", "", "", "", "");
+           /*146*/      //tipo_test("", "", "", "", "", "");
+           /*147*/      //tipo_test("", "", "", "", "", "");
+           /*148*/      //tipo_test("", "", "", "", "", "");
+           /*149*/      //tipo_test("", "", "", "", "", "");
+           /*150*/      //tipo_test("", "", "", "", "", "");
+           
+           /*151*/      //tipo_test("", "", "", "", "", "");
+           /*152*/      //tipo_test("", "", "", "", "", "");
+           /*153*/      //tipo_test("", "", "", "", "", "");
+           /*154*/      //tipo_test("", "", "", "", "", "");
+           /*155*/      //tipo_test("", "", "", "", "", "");
+           /*156*/      //tipo_test("", "", "", "", "", "");
+           /*157*/      //tipo_test("", "", "", "", "", "");
+           /*158*/      //tipo_test("", "", "", "", "", "");
+           /*159*/      //tipo_test("", "", "", "", "", "");
+           /*160*/      //tipo_test("", "", "", "", "", "");
+           
+           
+           
+           /*161*/      //tipo_test("", "", "", "", "", "");*****************************************************************************
     }
     
 }
