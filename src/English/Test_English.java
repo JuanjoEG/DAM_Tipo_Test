@@ -25,7 +25,7 @@ public class Test_English {
         Menu_Temas.setTema_08("SUGGESTIONS AND COMPLAINTS.");
         Menu_Temas.setTema_09("EVENTS.");
         Menu_Temas.setTema_10("ADJECTIVES.");
-        Menu_Temas.setTema_11("");
+        Menu_Temas.setTema_11("TEXTS.");
         Menu_Temas.setTema_12("");
         Menu_Temas.setTema_13("");
         Menu_Temas.setTema_14("");
@@ -188,16 +188,16 @@ public class Test_English {
                     case "11" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("What is a unit of thought that communicates complete meaning, with an internal and\n        external structure?", "An idea.", "A paragraph.", "A text.", "A narrative.", "2");
+            /*02*/      tipo_test("Which of the following is not a type of paragraph according to their main function?", "Deductive.", "Inductive.", "All the options are types of paragraph according to their main function.", "Introductory.", "4");
+            /*03*/      tipo_test("What type of paragraph is a short paragraph that contributes to the cohesion of the text?", "Transitional.", "Summary.", "Ending.", "Introductory.", "1");
+            /*04*/      tipo_test("Which of the following is not a commercial letter?", "Quote.", "Order.", "Letter of complaint.", "Grades.", "4");
+            /*05*/      tipo_test("In a cover letter, what information should you include at the top-right corner?", "Your contact details.", "The contact details of the company.", "The salutation.", "Your signature.", "1");
+            /*06*/      tipo_test("What type of language should you use in a cover letter?", "Formal.", "Informal.", "Casual.", "It doesn't matter.", "1");
+            /*07*/      tipo_test("Choose the correct tip to write a cover letter:", "Don't make it personal, it is best not to address the letter to anyone in particular.", "Don't be too specific so that you can use the same letter to different companies.", "Explain why you chose to write to this company in particular.", "Show them you're strict to prove your professionalism.", "3");
+            /*08*/      tipo_test("Which of the following expressions you shouldn't use in a cover letter?", "Dear Mr. Smith ...", "Yours sincerely ...", "I am writing to apply ...", "What's up?", "4");
+            /*09*/      tipo_test("Hey! Long time no see! - This expression is used:", "To start a conversation about the weather.", "To say goodbye.", "When you see someone every day at work.", "When you haven't seen someone for a long time.", "4");
+            /*10*/      tipo_test("Which expression should you use to ask someone how they're doing in informal language?", "How's it going?", "Nice day, isn't it?", "I look forward to hearing from you soon.", "Have you been waiting long?", "1");                        
                     }
                     case "12" -> {
                         _Main_.Principal.setTema(menu);

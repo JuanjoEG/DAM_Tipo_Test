@@ -25,7 +25,7 @@ public class Test_AccesoDatos {
         Menu_Temas.setTema_08("EXPLORACIÓN DEL MAPEO OBJETO-RELACIONAL.");
         Menu_Temas.setTema_09("BASES DE DATOS ORIENTADAS A OBJETOS.");
         Menu_Temas.setTema_10("BASES DE DATOS OBJETO RELACIONALES.");
-        Menu_Temas.setTema_11("");
+        Menu_Temas.setTema_11("INTRODUCCIÓN A LAS BASES DE DATOS NO-SQL.");
         Menu_Temas.setTema_12("");
         Menu_Temas.setTema_13("");
         Menu_Temas.setTema_14("");
@@ -187,16 +187,16 @@ public class Test_AccesoDatos {
                     case "11" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Definimos a un conjunto de máquinas definidas como servidores de procesamiento paralelo:", "Servidores en paralelo.", "Servidores en serie.", "Cluster.", "Windows server.", "3");
+            /*02*/      tipo_test("¿Qué entendemos como ausencia de Schemaless?", "Opción de un sistema.", "Característica muy flexible, se puede almacenar información no uniforme\n    y se facilita la evolución.", "Sirve para crear tablas.", "Todas son falsas.", "2");
+            /*03*/      tipo_test("Identifica el tipo de base de datos NoSQL:", "Base de datos clave/valor.", "Base de datos relacional.", "Base de datos de objetos.", "Todas son falsas.", "1");
+            /*04*/      tipo_test("Las bases de datos basadas en gráficos:", "Son menos eficientes que las relacionales.", "Es un tipo de base de datos NoSQL.", "Son mucho más rápidas.", "Todas son verdaderas.", "2");
+            /*05*/      tipo_test("La base de datos Cassandra es un tipo de base de datos:", "Clave/valor.", "Basado en columnas.", "Basada en gráficos.", "No existe.", "2");
+            /*06*/      tipo_test("Identifica uno de los beneficios de las bases datos NOSQL:", "Facilidad de montaje.", "Extensión múltiple.", "Disponibilidad continua.", "Todas son verdaderas.", "3");
+            /*07*/      tipo_test("Uno de los beneficios y características más notorios de las bases de datos NoSQL es:", "Capacidad Big Data.", "Extensión múltiple.", "Fácil transferencia.", "Todas son falsas.", "1");
+            /*08*/      tipo_test("Múltiples centros de datos sin preocuparse de la cantidad de operaciones de lectura y\n        escritura atienden al beneficio:", "Capacidad de mostrar toda la información.", "Capacidad de tener múltiples centros de datos.", "Fácil acceso.", "Todas son falsas.", "2");
+            /*09*/      tipo_test("Infogrid es una base de datos NoSQL basada en:", "Gráficos.", "Columnas.", "Clave/valor.", "Documentos.", "1");
+            /*10*/      tipo_test("Identifica el que no es un tipo de Big Data:", "Estructurado.", "No estructurado.", "Semiestructurado.", "Norelacional.", "4");                        
                     }
                     case "12" -> {
                         _Main_.Principal.setTema(menu);
