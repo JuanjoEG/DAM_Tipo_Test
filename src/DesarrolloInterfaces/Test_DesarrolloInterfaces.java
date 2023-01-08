@@ -25,7 +25,7 @@ public class Test_DesarrolloInterfaces {
         Menu_Temas.setTema_08("CONFECCIÓN DE INFORMES I.");
         Menu_Temas.setTema_09("CONFECCIÓN DE INFORMES II.");
         Menu_Temas.setTema_10("DOCUMENTACIÓN DE APLICACIONES: AYUDAS.");
-        Menu_Temas.setTema_11("");
+        Menu_Temas.setTema_11("DISTRIBUCIÓN DE APLICACIONES.");
         Menu_Temas.setTema_12("");
         Menu_Temas.setTema_13("");
         Menu_Temas.setTema_14("");
@@ -187,16 +187,16 @@ public class Test_DesarrolloInterfaces {
                     case "11" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Los sistemas de gestión de paquetes permiten automatizar los procesos relativos a:", "La instalación de paquetes software", "La configuración de paquetes software.", "El borrado de los paquetes software.", "Todas las anteriores son correctas.", "4");
+            /*02*/      tipo_test("¿Cuál de los siguientes tipos de paquetes pueden ser instalados directamente sin\n        necesidad de ser extraídos previamente?", "RPM.", "TGZ.", "deb.", "TAR.", "3");
+            /*03*/      tipo_test("¿Qué diferencia existen entre los formatos para la creación de paquetes TAR y TGZ?", "TAR es un formato utilizado para la creación de paquetes sin compresión.", "TGZ es un formato utilizado para la creación de paquetes sin compresión.", "TAR es un formato utilizado para la creación de paquetes con compresión a través de\n    gunzip.", "TGZ es un formato utilizado para la creación de paquetes con compresión a través de\n    Redhat Package Manager.", "1");
+            /*04*/      tipo_test("¿Qué paquetes podemos encontrar para el empaquetado de aplicaciones\n        en Windows?", "MSI y AppX.", "MSI y DEB.", "DEB y AppX.", "TGZ y TAR.", "1");
+            /*05*/      tipo_test("¿Qué tipo de empaquetado suele realizarse de las aplicaciones en Java?", ".net", ".java", ".bean", ".jar", "4");
+            /*06*/      tipo_test("¿Cuál de los siguientes es un instalador muy utilizado?", "InstallBuilder.", "Windows Installer.", "MSI Studio.", "Todas son correctas.", "4");
+            /*07*/      tipo_test("Este instalador de Windows permite realizar la instalación de forma predefinida:", "AppX.", "DEB.", "EXE.", "MSI.", "4");
+            /*08*/      tipo_test("Para la distribución de aplicaciones software puede realizarse desde un servidor web.\n        Una de las herramientas que permite la descarga e instalación de paquetes alojados\n        en un servidor web es:", "AptWeb.", "AptUrl.", "WebDeb.", "UrlExe.", "2");
+            /*09*/      tipo_test("¿Qué herramienta podemos utilizar para crear un tipo EXE a través de un paquete JAR?", "EnableSplash.", "AptUrl.", "Launch4j.", "Dpkg.", "3");
+            /*10*/      tipo_test("¿Cuál de los siguientes organismos emite certificados de firma digital?", "FNMT.", "TNN.", "TNT.", "FETA.", "1");                        
                     }
                     case "12" -> {
                         _Main_.Principal.setTema(menu);
