@@ -25,7 +25,7 @@ public class Test_EmpresaIniciativaEmprendedora {
         Menu_Temas.setTema_08("PLAN DE ORGANIZACIÓN: ACTIVIDADES Y RECURSOS.");
         Menu_Temas.setTema_09("LA FUNCIÓN DE PRODUCCIÓN Y ANÁLISIS DE COSTES.");
         Menu_Temas.setTema_10("CONTABILIDAD FINANCIERA.");
-        Menu_Temas.setTema_11("");
+        Menu_Temas.setTema_11("INVERSIÓN Y FINANCIACIÓN. ANÁLISIS VIABILIDAD ECONÓMICO-FINANCIERA DE LA EMPRESA.");
         Menu_Temas.setTema_12("");
         Menu_Temas.setTema_13("");
         Menu_Temas.setTema_14("");
@@ -189,16 +189,16 @@ public class Test_EmpresaIniciativaEmprendedora {
                     case "11" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Se considera inversión:", "Aquella actividad dirigida a destinar recursos con el fin de conseguir beneficios.", "Asume un coste de oportunidad.", "Asume un riesgo.", "Todas las respuestas son correctas.", "4");
+            /*02*/      tipo_test("Según el horizonte temporal las inversiones se clasifican en:", "Corto plazo.", "Medio plazo.", "Largo plazo.", "Todas las respuestas son correctas.", "4");
+            /*03*/      tipo_test("Según la finalidad las inversiones se clasifican en:", "No es un criterio de clasificación.", "Corto, medio y largo plazo.", "Renovación, Expansión y Estratégica.", "Complementaria, Sustitutiva e Independiente.", "3");
+            /*04*/      tipo_test("Los factores fundamentales por los que se rige la inversión son:", "Rentabilidad y riesgo.", "Liquidez y plazo.", "Rentabilidad, riesgo, liquidez y plazo.", "Ninguna de las respuestas son correctas.", "3");
+            /*05*/      tipo_test("Las clases de financiación según su procedencia son:", "Fondos propios: aportación de socios y autofinanciación.", "Financiación ajena: préstamo, crédito y créditos a proveedores.", "Tanto los fondos propios como la financiación ajena.", "Ninguna de las anteriores.", "3");
+            /*06*/      tipo_test("El alquiler de una empresa a otra de un bien mueble o inmueble con opción de compra se llama:", "Leasing.", "Renting.", "Factoring.", "Confirming.", "1");
+            /*07*/      tipo_test("El plan de inversión y de financiación:", "Están dirigidos a establecer los recursos necesarios para renovar elementos obsoletos y\n    aprovechar las oportunidades de ampliar el negocio.", "Están dirigidos únicamente a establecer los recursos necesarios para renovar elementos obsoletos.", "Están dirigidos únicamente a aprovechar las oportunidades de ampliar el negocio.", "Todas las respuestas son incorrectas.", "1");
+            /*08*/      tipo_test("Los ratios financieros son:", "Única y exclusivamente: liquidez, tesorería y disponibilidad.", "Únicamente: endeudamiento y calidad de la deuda.", "Todos los mencionados anteriormente son los ratios financieros más habituales de estudio.", "Ninguna de las anteriores.", "3");
+            /*09*/      tipo_test("El análisis económico-financiero es:", "Un informe de los directivos.", "Permite detectar riesgos.", "Ayuda a tomar decisiones.", "Todas son correctas.", "4");
+            /*10*/      tipo_test("El plan de tesorería es un documento que refleja:", "Entradas y salidas de dinero, por tanto, cobros y pagos.", "sólo pagos.", "sólo gastos.", "Todas las respuestas son correctas.", "1");                        
                     }
                     case "12" -> {
                         _Main_.Principal.setTema(menu);
@@ -258,6 +258,9 @@ public class Test_EmpresaIniciativaEmprendedora {
                     }
                     case "40" -> {                        
                         EmpresaIniciativaEmprendedora.Test_Rep_I_Emp_Inc_Emp.Rep_I_Emp_Inc_Emp();
+                    }
+                    case "50" -> {                        
+                        EmpresaIniciativaEmprendedora.Test_Rep_II_Emp_Inc_Emp.Rep_II_Emp_Inc_Emp();
                     }
                     case "0" -> {}
                     default -> {
