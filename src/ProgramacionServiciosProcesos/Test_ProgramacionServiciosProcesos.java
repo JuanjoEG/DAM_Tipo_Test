@@ -25,7 +25,7 @@ public class Test_ProgramacionServiciosProcesos {
         Menu_Temas.setTema_08("MODELOS DE COMUNICACIONES.");
         Menu_Temas.setTema_09("PROTOCOLOS A NIVEL DE APLICACIÓN.");
         Menu_Temas.setTema_10("LOS SERVICIOS DE RED. SOCKETS I.");
-        Menu_Temas.setTema_11("");
+        Menu_Temas.setTema_11("LOS SERVICIOS DE RED. SOCKETS II.");
         Menu_Temas.setTema_12("");
         Menu_Temas.setTema_13("");
         Menu_Temas.setTema_14("");
@@ -188,16 +188,16 @@ public class Test_ProgramacionServiciosProcesos {
                     case "11" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                       
+            /*01*/      tipo_test("La clase URLConection:", "Esta es la clase que nos va a permitir operar con los valores devueltos por las consultas\n    FTP del servidor.", "Esta clase es la que nos va a permitir realizar operaciones con la dirección web que\n    hemos creado mediante URL. Podremos lanzar operaciones tipo GET y obtener las\n    respuestas de estas de una forma muy sencilla.", "Esta clase nos va a permitir realizar las configuraciones oportunas de los clientes FTP\n    de una forma sencilla.", "Esta clase nos va a permitir representar una dirección de una página web, por ejemplo,\n    https://www.google.es.", "2");
+            /*02*/      tipo_test("¿Cuál de las siguientes excepciones no es lanzada cuando realizamos operaciones FTP?", "SocketException.", "IndexOfBoundException.", "IOException.", "Ninguna de las anteriores excepciones se lanza.", "2");
+            /*03*/      tipo_test("Las hebras que atienden de forma concurrente a los clientes se ejecutan en:", "El cliente.", "El servidor.", "Se deberá ejecutar una hebra tanto en el cliente como en el servidor.", "Cuando usamos sockets no podemos usar hebras, ya que son incompatibles entre si.", "2");
+            /*04*/      tipo_test("El tiempo de respuesta del servidor:", "Nos indica lo que tarda en arrancar el servidor.", "Nos indica lo que tarda en arranca el cliente.", "Nos indica lo que tardan en arrancar el cliente y el servidor.", "Nos indica lo que tarda en ejecutar el servicio la aplicación.", "4");
+            /*05*/      tipo_test("La clase FTP:", "Hereda de la clase Client.", "Hereda de la clase FTPClient.", "Hereda de la clase SocketClient.", "Hereda de la clase ServerClient.", "3");
+            /*06*/      tipo_test("La biblioteca para enviar correos electrónicos en Java es:", "javax.mail.", "java.mail.", "javax.email.", "java.email.", "1");
+            /*07*/      tipo_test("¿A cuántos clientes podremos dar servicio en una aplicación cliente/servidor\n        concurrente?", "Como máximo a 10 a la vez.", "Deberemos atender a los clientes de uno en uno en orden de llegada.", "Podremos dar servicio a todos los clientes que queramos al mismo tiempo.", "Podremos dar servicio a todos los clientes que queramos al mismo tiempo,\n    pero es conveniente establecer un máximo.", "4");
+            /*08*/      tipo_test("La clase FTPSClient:", "Hereda de la clase Client.", "Hereda de la clase FTPClient.", "Hereda de la clase SocketClient.", "Hereda de la clase ServerClient.", "2");
+            /*09*/      tipo_test("Para monitorizar el tiempo de respuesta del servidor:", "Basta con controlar el tiempo de proceso del servidor.", "Solo interesa realizar esta tarea si hay sobrecarga.", "Solo depende del tiempo de transmisión.", "Se debe tener en cuenta el tiempo de proceso del servidor y el tiempo de transmisión.", "4");
+            /*10*/      tipo_test("La clase URL:", "Esta es la clase que nos va a permitir operar con los valores devueltos por las consultas\n    FTP del servidor.", "Esta clase es la que nos va a permitir realizar operaciones con la dirección web que\n    hemos creado mediante URL. Podremos lanzar operaciones tipo GET y obtener las\n    respuestas de estas de una forma muy sencilla.", "Esta clase nos va a permitir realizar las configuraciones oportunas de los clientes FTP\n    de una forma sencilla.", "Esta clase nos va a permitir representar una dirección de una página web, por ejemplo,\n    https://www.google.es.", "4");                       
                     }
                     case "12" -> {
                         _Main_.Principal.setTema(menu);
