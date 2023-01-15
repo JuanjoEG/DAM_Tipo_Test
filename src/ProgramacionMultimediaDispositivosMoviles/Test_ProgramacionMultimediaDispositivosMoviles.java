@@ -25,7 +25,7 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
         Menu_Temas.setTema_08("SERVICIOS EN RED I.");
         Menu_Temas.setTema_09("SERVICIOS EN RED II.");
         Menu_Temas.setTema_10("SERVICIOS EN RED III.");
-        Menu_Temas.setTema_11("");
+        Menu_Temas.setTema_11("INTRODUCCIÓN A LOS VIDEOJUEGOS.");
         Menu_Temas.setTema_12("");
         Menu_Temas.setTema_13("");
         Menu_Temas.setTema_14("");
@@ -187,16 +187,16 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
                     case "11" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                       
+            /*01*/      tipo_test("¿En qué año se lanzó la primera PlayStation?", "1990.", "1991.", "1992.", "1994.", "4");
+            /*02*/      tipo_test("¿Cuál de los siguientes problemas podría resolver el motor de físicas?", "Dibujar un círculo en la pantalla.", "Producir un sonido cuando el personaje muere.", "Detectar una colisión entre nuestro personaje y un enemigo.", "Cambiar la dirección de movimiento de nuestro personaje.", "3");
+            /*03*/      tipo_test("¿Cuál de las siguientes características no es apropiada que la ofrezca un videojuego?", "Debe ser divertido.", "No debe informar al usuario de las consecuencias de sus acciones.", "Debe haber al menos un jugador.", "Debe ofrecer un sistema de movimiento fluido.", "2");
+            /*04*/      tipo_test("¿Qué es un NPC en un videojuego?", "Es el jefe final del videojuego.", "Otro jugador que juega con nosotros en modo online.", "Un personaje del videojuego con el que podremos interactuar, pero no jugar.", "Son los enemigos básicos de un videojuego.", "3");
+            /*05*/      tipo_test("¿Cuál de las siguientes partes no pertenece a un videojuego?", "El motor.", "El controlador gráfico.", "El código del videojuego.", "Los recursos.", "2");
+            /*06*/      tipo_test("¿Cuál de los siguientes juegos es 2D?", "Plants vs Zombies.", "Uncharted.", "Darksiders.", "GTA V.", "1");
+            /*07*/      tipo_test("¿Cuál de las siguientes crees que es una ventaja de desarrollar videojuegos para\n        videoconsolas frente a PC?", "Suelen tener una gran cantidad de memoria RAM.", "Su hardware no se puede ampliar.", "Se pueden jugar a juegos multijugador.", "Podemos ampliar su memoria RAM de una forma muy sencilla.", "2");
+            /*08*/      tipo_test("¿Cuál de los siguientes no es una categoría válida de videojuegos?", "Videojuegos de rol.", "Videojuegos de acción.", "Videojuegos de estrategia.", "Videojuegos de organización.", "4");
+            /*09*/      tipo_test("¿A partir de qué se ha podido desarrollar un motor de videojuegos?", "DirectX.", "DirectY.", "DirectZ.", "DirectW.", "1");
+            /*10*/      tipo_test("¿Qué son los Sprites?", "Son la forma de representación de los personajes que utilizan los motores 2D.", "Son la forma de representación de los personajes que utilizan los motores 3D.", "Las dos respuestas son correctas.", "Las dos respuestas son incorrectas.", "1");                       
                     }
                     case "12" -> {
                         _Main_.Principal.setTema(menu);
