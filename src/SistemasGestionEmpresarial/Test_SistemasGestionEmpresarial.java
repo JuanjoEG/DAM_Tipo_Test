@@ -26,7 +26,7 @@ public class Test_SistemasGestionEmpresarial {
         Menu_Temas.setTema_09("ORGANIZACIÓN DE LA INFORMACIÓN. BASES DE DATOS.");
         Menu_Temas.setTema_10("ADECUACIÓN DE UN SISTEMA ERP-CRM A UNA EMPRESA.");
         Menu_Temas.setTema_11("LENGUAJE DE PROGRAMACIÓN DE UN SISTEMA ERP-CRM: PYTHON.");
-        Menu_Temas.setTema_12("");
+        Menu_Temas.setTema_12("PROGRAMANDO EN PYTHON.");
         Menu_Temas.setTema_13("");
         Menu_Temas.setTema_14("");
         Menu_Temas.setTema_15("");
@@ -201,16 +201,16 @@ public class Test_SistemasGestionEmpresarial {
                     case "12" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("La Indentación es ...", "Innecesaria en Python\n    y consiste en un desfase de una o varias líneas de código hacia la derecha.", "Imprescindible en Python\n    y consiste en un desfase de una o varias líneas de código hacia la derecha.", "Innecesaria en Python\n    y consiste en introducir líneas en blanco entre diferentes instrucciones.", "Imprescindible en Python\n    y consiste en introducir líneas en blanco entre diferentes instrucciones.", "2");
+            /*02*/      tipo_test("La sentencia IF ...", "No puede contener en su interior otra sentencia IF.", "Si no se cumple la condición del IF,\n    comprueba si se cumple la condición del ELIF y sino realiza el ELSE.", "Si se cumple la condición del IF,\n    comprueba si se cumple la condición del ELIF y sino realiza el ELSE.", "Ninguna respuesta es correcta.", "2");
+            /*03*/      tipo_test("El bucle WHILE ...", "Repite la instrucción un número par de veces.", "No termina hasta que no se encuentra con la instrucción break.", "Requiere del símbolo ':' tras la condición.", "Ninguna respuesta es correcta.", "3");
+            /*04*/      tipo_test("El bucle FOR ...", "No termina hasta que no se encuentra con la instrucción break.", "Se usa solo para iterar sobre secuencias (lista, tupla, diccionario, cadena, ...)\n    en el orden en el que aparecen los elementos en la secuencia.", "Se usa solo para iterar sobre secuencias (lista, tupla, diccionario, cadena, ...)\n    en un orden aleatorio.", "Ninguna respuesta es correcta.", "2");
+            /*05*/      tipo_test("En el control de errores de Python ...", "Si existe bloque 'finally', éste siempre se ejecuta al final.", "Si existe bloque 'except', éste siempre se ejecuta al final.", "No es necesario indicar 'try' para capturar el error.", "Ninguna respuesta es correcta.", "1");
+            /*06*/      tipo_test("Python estructura el código de la siguiente manera ...", "Las funciones están incluidas en módulos y éstos a su vez incluidos en paquetes o librerías.", "Los módulos están incluidos en funciones y éstos a su vez incluidos en paquetes o librerías.", "Los paquetes o librerías están incluidas en módulos y éstos a su vez incluidos en funciones.", "Ninguna respuesta es correcta.", "1");
+            /*07*/      tipo_test("Si tenemos la cadena cad = 'Esto es una prueba' ¿Qué imprimirá print(cad[-7:-1])?", "'prueb'.", "' prueb'.", "'a prueb'.", "'na prueb'.", "2");
+            /*08*/      tipo_test("Al abrir un fichero con el modo 'w' ...", "Si existe,\n    al escribir en él con write() agrega la información al final.", "Si existe,\n    al escribir en él con write() machaca todo el contenido del fichero con la nueva información.", "El modo 'w' no existe.", "Ninguna respuesta es correcta.", "2");
+            /*09*/      tipo_test("Al crear una clase en Python ...", "Es recomendable definir su método __init__().", "Es obligatorio definir su método __init__().", "No se debe definir su método __init__().", "Los criterios elevados de seguridad.", "1");
+            /*10*/      tipo_test("Al crear un método ...", "Siempre debe crearse un parámetro, como primer parámetro, que haga referencia a la\n    instancia actual de la clase que se está llamando.", "No es necesario crear un parámetro que haga referencia a la instancia actual de la clase\n    que se está llamando.", "Siempre debe crearse un parámetro, en cualquier posición del método, que haga\n    referencia a la instancia actual de la clase que se está llamando.", "Ninguna respuesta es correcta.", "1");                        
                     }
                     case "13" -> {
                         _Main_.Principal.setTema(menu);

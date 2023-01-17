@@ -26,7 +26,7 @@ public class Test_AccesoDatos {
         Menu_Temas.setTema_09("BASES DE DATOS ORIENTADAS A OBJETOS.");
         Menu_Temas.setTema_10("BASES DE DATOS OBJETO RELACIONALES.");
         Menu_Temas.setTema_11("INTRODUCCIÓN A LAS BASES DE DATOS NO-SQL.");
-        Menu_Temas.setTema_12("");
+        Menu_Temas.setTema_12("OPERACIONES CON BASES DE DATOS NO-SQL.");
         Menu_Temas.setTema_13("");
         Menu_Temas.setTema_14("");
         Menu_Temas.setTema_15("");
@@ -201,16 +201,16 @@ public class Test_AccesoDatos {
                     case "12" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("MongoDb es:", "Una base de datos relacional.", "Una base de datos orientada a objetos basada en grafos.", "Una base de datos basada en documentos.", "Todas son falsas.", "3");
+            /*02*/      tipo_test("La estructura de los documentos en MonboDB:", "Es en formato Json e internamente son almacenado en Bson.", "Formato .doc", "Formato .txt", "Sin formato.", "1");
+            /*03*/      tipo_test("Una de las características principales de MongoDB:", "La mayoría de los datos residen en memoria. Lecturas y escrituras muy rápidas.", "La mayoría de los datos residen en disco duro. Almacenamientos seguros.", "La mayoría de los datos se almacenan a través de la red.", "Todas son falsas.", "1");
+            /*04*/      tipo_test("¿Cuál es el término para denominar a la tabla del mundo relacional en MongoDB?", "Documento.", "Colección.", "Bases de datos.", "JSON.", "2");
+            /*05*/      tipo_test("Alguno de los motores de almacenamiento puede ser:", "Sharding.", "MVC.", "WiredTiger.", "Sofield.", "3");
+            /*06*/      tipo_test("Cuáles son las 3 características que se evalúan en el teorema de CAP:", "Tolerancia, Consistencia y Datos.", "Tolerancia, Disponibilidad y Certeza.", "Tolerancia, Disposición y Certeza.", "Tolerancia, Disponibilidad y Consistencia.", "4");
+            /*07*/      tipo_test("¿Qué es Mongod?", "Servicio principal de la base de datos. Maneja los accesos a datos.", "Es un fichero de configuración .conf.", "Es un fichero de documentación para la base de datos.", "Todas son falsas.", "1");
+            /*08*/      tipo_test("Selecciona el servicio que se utiliza en Mongo para realizar Shard:", "Mongod.", "Mongo.", "Mongos.", "mongodump.", "3");
+            /*09*/      tipo_test("¿Qué herramienta usamos en MongoDB para convertir ficheros Bson a otros formatos?", "Mongos.", "Bsondump.", "Mongoexport.", "mongoimport.", "2");
+            /*10*/      tipo_test("¿Qué comando usaremos en la Shell de mongo para recibir ayuda sobre los comandos\n        ejecutables sobre la base de datos?", "Show dbs", "db", "use db", "db.help()", "4");                        
                     }
                     case "13" -> {
                         _Main_.Principal.setTema(menu);

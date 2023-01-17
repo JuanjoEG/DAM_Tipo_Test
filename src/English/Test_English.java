@@ -26,7 +26,7 @@ public class Test_English {
         Menu_Temas.setTema_09("EVENTS.");
         Menu_Temas.setTema_10("ADJECTIVES.");
         Menu_Temas.setTema_11("TEXTS.");
-        Menu_Temas.setTema_12("");
+        Menu_Temas.setTema_12("CONDITIONALS");
         Menu_Temas.setTema_13("");
         Menu_Temas.setTema_14("");
         Menu_Temas.setTema_15("");
@@ -202,16 +202,16 @@ public class Test_English {
                     case "12" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                       
+            /*01*/      tipo_test("Zero conditionals are used to convey ...", "General truths.", "Wishes.", "Advice.", "Complaints.", "1");
+            /*02*/      tipo_test("First conditionals have the following structure:", "If + present simple / Future simple (will).", "If + would / Future simple (will).", "If + present simple / Future perfect (have).", "If + present simple / present simple.", "1");
+            /*03*/      tipo_test("Choose the right option to complete the sentence:\n        If you don't try, you ...", "Will never know if you?re ready.", "Can never know if you?re ready.", "Both options are correct.", "None of the options is correct.", "3");
+            /*04*/      tipo_test("Choose the right option to complete the sentence:\n        If you are caught drunk driving ...", "You are fined.", "You were fined.", "You would be fined.", "You had to be fined.", "1");
+            /*05*/      tipo_test("Choose the right option to complete the sentence:\n        ... if you need help.", "Call me.", "Called me.", "If you call me.", "Would you call me.", "1");
+            /*06*/      tipo_test("Choose the right option to complete the sentence:\n        If you work out a little every day, ...", "You will lose weight.", "You lost weight.", "You would lose weight.", "You would have lost.", "1");
+            /*07*/      tipo_test("Choose the correct tip to write a successful CV:", "Adapt it to the company you are applying for.", "Include general skills so that you can use it for different positions.", "Always use a very particular layout to stand up.", "Lie about your professional qualifications to make your CV more interesting.", "1");
+            /*08*/      tipo_test("Under 'qualifications' in your CV you must include:", "Your professional experience.", "Your studies.", "Your hobbies.", "Your skills.", "2");
+            /*09*/      tipo_test("What type of information should not be included in a CV?", "Name.", "Email address.", "Marital status.", "Additional training.", "3");
+            /*10*/      tipo_test("A successful CV is the one that ...", "Gets you a job interview.", "Shows you have a lot of work experience.", "Makes you look better qualified than you really are.", "Shows that you are a very strict and demanding person.", "1");                       
                     }
                     case "13" -> {
                         _Main_.Principal.setTema(menu);
