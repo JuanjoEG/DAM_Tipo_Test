@@ -26,7 +26,7 @@ public class Test_DesarrolloInterfaces {
         Menu_Temas.setTema_09("CONFECCIÓN DE INFORMES II.");
         Menu_Temas.setTema_10("DOCUMENTACIÓN DE APLICACIONES: AYUDAS.");
         Menu_Temas.setTema_11("DISTRIBUCIÓN DE APLICACIONES.");
-        Menu_Temas.setTema_12("");
+        Menu_Temas.setTema_12("REALIZACIÓN DE PRUEBAS.");
         Menu_Temas.setTema_13("");
         Menu_Temas.setTema_14("");
         Menu_Temas.setTema_15("");
@@ -201,16 +201,16 @@ public class Test_DesarrolloInterfaces {
                     case "12" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Las pruebas de caja blanca:", "Se basan en la evaluación del código interno del software, un buen diseño para estas\n    pruebas implica la evaluación de todos los posibles caminos que se han implementado\n    en el diseño de un programa.", "Evalúa la aplicación desde un punto de vista externo, es decir, sin preocuparnos del\n    'interior', son las habituales para la prueba de interfaces.", "No permiten validar el funcionamiento del software en base a las especificaciones de diseño.", "Ninguna es correcta.", "1");
+            /*02*/      tipo_test("¿Cuál de los siguientes tipos de pruebas de software no es habitual?", "Pruebas unitarias.", "Pruebas de integración.", "Pruebas de inmersión.", "Pruebas de seguridad.", "3");
+            /*03*/      tipo_test("¿Qué prueba se centra sobre todo en la evaluación de los sistemas de protección y\n        autenticación de una aplicación?", "Pruebas de seguridad.", "Pruebas de integración.", "Pruebas de volumen y carga.", "Pruebas unitarias.", "1");
+            /*04*/      tipo_test("La depuración de código sirve para:", "La revisión del código para la detección de posibles errores y la corrección de los mismos.", "Crear errores de sintaxis.", "Producir fallos de diseño.", "Interpretar las instrucciones correctas.", "1");
+            /*05*/      tipo_test("Las pruebas de integración ascendente:", "Suele tener una integración primero en profundidad y otra integración primero en anchura.", "Se realiza desde el módulo principal hasta los subordinados.", "Comienzan con la evaluación de los niveles más altos.", "Comienzan con la evaluación de los niveles más bajos.", "4");
+            /*06*/      tipo_test("Las pruebas de regresión:", "Son los errores producidos cuando al realizar la integración de las diferentes partes de un\n    programa se producen errores que de forma individual no ocurrían.", "Sólo se producen cuando la introducción de cambios muestra errores que nada tiene que\n    ver con las modificaciones realizadas.", "Sólo localizan errores que se han producido por la introducción de cambios.", "Es la nueva ejecución de un conjunto de pruebas que ya había sido ejecutado con\n    anterioridad.", "4");
+            /*07*/      tipo_test("Las pruebas de capacidad:", "Se utilizan para la evaluación de la capacidad de procesamiento del software ante la\n    llegada de una cantidad grande de datos.", "Se utilizan para la evaluación de la capacidad de recuperación del software ante una\n    sobrecarga de datos.", "Se utilizan para la evaluación del tiempo de respuesta y la velocidad de procesamiento\n    del software.", "Se utilizan para la evaluación del software y su comportamiento ante un aumento de\n    peticiones, es decir, ante un incremento de la carga de trabajo.", "4");
+            /*08*/      tipo_test("Las pruebas de rendimiento:", "Se utilizan para la evaluación de la capacidad de procesamiento del software ante la\n    llegada de una cantidad grande de datos.", "Se utilizan para la evaluación de la capacidad de recuperación del software ante una\n    sobrecarga de datos.", "Se utilizan para la evaluación del tiempo de respuesta y la velocidad de procesamiento\n    del software.", "Se utilizan para la evaluación del software y su comportamiento ante un aumento de\n    peticiones, es decir, ante un incremento de la carga de trabajo.", "3");
+            /*09*/      tipo_test("Los test de usuario se basan en pruebas que observan la forma de interacción de los\n        usuarios con el producto objeto del test según el:", "Diseño Directo en la Herramienta (DDH).", "Diseño Centrado en la Yuxtaposición (DCU).", "Diseño Centrado en el Usuario (DCU).", "Diseño Centrado en el Experto (DCE).", "3");
+            /*10*/      tipo_test("La versión alfa de un producto:", "Consiste en la primera versión de la aplicación.", "Consiste en la última versión de la aplicación.", "Consiste en la versión casi definitiva de la aplicación.", "Se testea por los usuarios de tipo beta tester.", "1");                        
                     }
                     case "13" -> {
                         _Main_.Principal.setTema(menu);
