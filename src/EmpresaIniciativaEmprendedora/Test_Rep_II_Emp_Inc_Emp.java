@@ -19,7 +19,7 @@ public class Test_Rep_II_Emp_Inc_Emp {
             /*03*/      tipo_test("", "", "", "", "", "");
             /*04*/      tipo_test("Acción que produce efecto sobre la estructura o el valor patrimonial\n        de la empresa:", "Elemento financiero.", "Resultado económico.", "Hecho económico.", "Ninguna es correcta.", "3");
             /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
+            /*06*/      tipo_test("¿Qué Administración representa al sistema tributario español?", "Estado.", "Comunidades Autónomas.", "Entidades locales.", "Todas son correctas.", "4");
             /*07*/      tipo_test("", "", "", "", "", "");
             /*08*/      tipo_test("Redes que establece la empresa de forma oficial, respetando la jerarquía organizacional:", "Redes horizontales.", "Redes informales.", "Redes formales.", "Ninguna es correcta.", "3");
             /*09*/      tipo_test("", "", "", "", "", "");
@@ -30,7 +30,7 @@ public class Test_Rep_II_Emp_Inc_Emp {
             /*13*/      tipo_test("", "", "", "", "", "");
             /*14*/      tipo_test("Bienes y derechos que se vinculan a la empresa durante varios\n        ejercicios económicos:", "Activo fijo.", "Activo circulante.", "Fondos propios.", "Ninguna es correcta.", "1");
             /*15*/      tipo_test("", "", "", "", "", "");
-            /*16*/      tipo_test("", "", "", "", "", "");
+            /*16*/      tipo_test("Impuesto imprescindible para dotar de validez la escritura de constitución\n        de la empresa ante notario.", "Impuesto sobre Actividades Económicas.", "Impuesto de Sociedades.", "Contribución especial.", "Impuesto de Transmisiones Patrimoniales y Actos Jurídicos Documentados.", "4");
             /*17*/      tipo_test("", "", "", "", "", "");
             /*18*/      tipo_test("Señala la fuente de reclutamiento que, de forma habitual,\n        selecciona a personas de categorías altas e intermedias:", "Portales de empleo.", "Headhunter.", "Autocandidatura.", "Referencias familiares.", "2");
             /*19*/      tipo_test("", "", "", "", "", "");
@@ -41,7 +41,7 @@ public class Test_Rep_II_Emp_Inc_Emp {
             /*23*/      tipo_test("", "", "", "", "", "");
             /*24*/      tipo_test("Capitales aportados a la empresa por sus propietarios:", "Activo fijo.", "Activo circulante.", "Fondos propios.", "Ninguna es correcta.", "3");
             /*25*/      tipo_test("", "", "", "", "", "");
-            /*26*/      tipo_test("", "", "", "", "", "");
+            /*26*/      tipo_test("La domiciliación del pago del impuesto implica que se haga efectivo el pago\n        1 día antes de la fecha límite.", "Verdadero.", "Falso, son 5 días.", "Falso, son 10 días.", "Falso, son 15 días.", "2");
             /*27*/      tipo_test("", "", "", "", "", "");
             /*28*/      tipo_test("La dinámica de grupo: ¿A qué fase del proceso de selección corresponde?", "Preselección.", "Pruebas.", "Entrevista.", "Contratación.", "2");
             /*29*/      tipo_test("", "", "", "", "", "");
@@ -52,7 +52,7 @@ public class Test_Rep_II_Emp_Inc_Emp {
             /*33*/      tipo_test("", "", "", "", "", "");
             /*34*/      tipo_test("Bienes y derechos que se vinculan a la empresa por un periodo inferior\n        al ejercicio económico:", "Activo circulante.", "Pasivo circulante.", "Pasivo fijo.", "Ninguna es correcta.", "1");
             /*35*/      tipo_test("", "", "", "", "", "");
-            /*36*/      tipo_test("", "", "", "", "", "");
+            /*36*/      tipo_test("Tributos que hay que pagar al recibir algún tipo de beneficio o\n        contraprestación por parte de la administración Pública.", "Impuesto directo.", "Contribuciones especiales.", "Tasas.", "Impuesto indirecto.", "3");
             /*37*/      tipo_test("", "", "", "", "", "");
             /*38*/      tipo_test("", "", "", "", "", "");
             /*39*/      tipo_test("", "", "", "", "", "");
@@ -63,7 +63,7 @@ public class Test_Rep_II_Emp_Inc_Emp {
             /*43*/      tipo_test("", "", "", "", "", "");
             /*44*/      tipo_test("El pasivo fijo son fondos recibidos de terceras personas ajenas a la propiedad\n        de la empresa y se deben devolver:", "Verdadero.", "Falso.", "Depende.", "Ninguna es correcta.", "1");
             /*45*/      tipo_test("", "", "", "", "", "");
-            /*46*/      tipo_test("", "", "", "", "", "");
+            /*46*/      tipo_test("Aquello que debe suceder para que el ciudadano o la empresa\n        estén obligados a pagar el impuesto.", "Hecho imponible.", "Exención.", "Tributo.", "Devengo.", "1");
             /*47*/      tipo_test("", "", "", "", "", "");
             /*48*/      tipo_test("", "", "", "", "", "");
             /*49*/      tipo_test("", "", "", "", "", "");
@@ -74,7 +74,7 @@ public class Test_Rep_II_Emp_Inc_Emp {
             /*53*/      tipo_test("", "", "", "", "", "");
             /*54*/      tipo_test("En el cuadro de cuentas, aquella subdivisión codificada con tres dígitos:", "Grupo.", "Subgrupo.", "Cuenta.", "Subcuenta.", "3");
             /*55*/      tipo_test("", "", "", "", "", "");
-            /*56*/      tipo_test("", "", "", "", "", "");
+            /*56*/      tipo_test("La cantidad a pagar del tributo depende del tipo de producto\n        o servicio que se compre o demande.", "Impuesto directo.", "Contribuciones especiales.", "Tasas.", "Impuesto indirecto.", "4");
             /*57*/      tipo_test("", "", "", "", "", "");
             /*58*/      tipo_test("", "", "", "", "", "");
             /*59*/      tipo_test("", "", "", "", "", "");
@@ -85,7 +85,7 @@ public class Test_Rep_II_Emp_Inc_Emp {
             /*63*/      tipo_test("", "", "", "", "", "");
             /*64*/      tipo_test("Estado financiero que indica en un momento determinado la información económica\n        y financiera de la empresa:", "Balance de situación.", "Cuenta de pérdidas y ganancias.", "Memoria.", "Ninguna es correcta.", "1");
             /*65*/      tipo_test("", "", "", "", "", "");
-            /*66*/      tipo_test("", "", "", "", "", "");
+            /*66*/      tipo_test("Momento en el que contraemos la deuda con la administración Pública,\n        estando en ese momento ya obligados a pagar el tributo.", "Hecho imponible.", "Exención.", "Tributo.", "Devengo.", "4");
             /*67*/      tipo_test("", "", "", "", "", "");
             /*68*/      tipo_test("", "", "", "", "", "");
             /*69*/      tipo_test("", "", "", "", "", "");
@@ -96,7 +96,7 @@ public class Test_Rep_II_Emp_Inc_Emp {
             /*73*/      tipo_test("", "", "", "", "", "");
             /*74*/      tipo_test("En el primer control de calidad ...", "Los trabajadores deben indicar el día de fabricación, la MP utilizada ...", "Comprobar que el producto es adecuado para la venta.", "Se verifica que las materias primas son óptimas para la fabricación.", "Ninguna es correcta.", "3");
             /*75*/      tipo_test("", "", "", "", "", "");
-            /*76*/      tipo_test("", "", "", "", "", "");
+            /*76*/      tipo_test("Tributos exigidos cuando un colectivo en concreto se va a beneficiar\n        de alguna mejora en su zona.", "Impuesto directo.", "Contribuciones especiales.", "Tasas.", "Impuesto indirecto.", "2");
             /*77*/      tipo_test("", "", "", "", "", "");
             /*78*/      tipo_test("", "", "", "", "", "");
             /*79*/      tipo_test("", "", "", "", "", "");
@@ -107,7 +107,7 @@ public class Test_Rep_II_Emp_Inc_Emp {
             /*83*/      tipo_test("", "", "", "", "", "");
             /*84*/      tipo_test("", "", "", "", "", "");
             /*85*/      tipo_test("Recoge los movimientos de efectivo, es decir, cobros y pagos:", "Libro de caja.", "Libro diario.", "Libro de vencimiento.", "Ninguna es correcta.", "1");
-            /*86*/      tipo_test("", "", "", "", "", "");
+            /*86*/      tipo_test("Aunque exista hecho imponible, la norma determina que en ciertos casos\n        no hay que pagar ese tributo.", "Hecho imponible.", "Exención.", "Tributo.", "Devengo.", "2");
             /*87*/      tipo_test("", "", "", "", "", "");
             /*88*/      tipo_test("", "", "", "", "", "");
             /*89*/      tipo_test("", "", "", "", "", "");
@@ -118,7 +118,7 @@ public class Test_Rep_II_Emp_Inc_Emp {
             /*93*/      tipo_test("", "", "", "", "", "");
             /*94*/      tipo_test("", "", "", "", "", "");
             /*95*/      tipo_test("¿Qué elementos afectan a la organización de la empresa?", "Recursos humanos disponibles.", "De qúe equipo material disponemos.", "Disposición y orden del espacio.", "Todas son correctas.", "4");
-            /*96*/      tipo_test("", "", "", "", "", "");
+            /*96*/      tipo_test("Tributo que se aplica a todo aquel que realice una actividad empresarial,\n        profesional o artística en España.", "Impuesto sobre Actividades Económicas.", "Impuesto de Sociedades.", "Contribución especial.", "Impuesto de Transmisiones Patrimoniales y Actos Jurídicos Documentados.", "1");
             /*97*/      tipo_test("", "", "", "", "", "");
             /*98*/      tipo_test("", "", "", "", "", "");
             /*99*/      tipo_test("", "", "", "", "", "");
@@ -129,7 +129,7 @@ public class Test_Rep_II_Emp_Inc_Emp {
            /*103*/      tipo_test("", "", "", "", "", "");
            /*104*/      tipo_test("", "", "", "", "", "");
            /*105*/      tipo_test("", "", "", "", "", "");
-           /*106*/      tipo_test("", "", "", "", "", "");
+           /*106*/      tipo_test("Las principales ventajas que conlleva la gestión online de los impuestos son:", "Ahorro de tiempo.", "Reducción de errores.", "Comodidad.", "Todas son correctas.", "4");
            /*107*/      tipo_test("", "", "", "", "", "");
            /*108*/      tipo_test("", "", "", "", "", "");
            /*109*/      tipo_test("", "", "", "", "", "");

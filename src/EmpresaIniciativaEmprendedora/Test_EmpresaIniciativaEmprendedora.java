@@ -26,7 +26,7 @@ public class Test_EmpresaIniciativaEmprendedora {
         Menu_Temas.setTema_09("LA FUNCIÓN DE PRODUCCIÓN Y ANÁLISIS DE COSTES.");
         Menu_Temas.setTema_10("CONTABILIDAD FINANCIERA.");
         Menu_Temas.setTema_11("INVERSIÓN Y FINANCIACIÓN. ANÁLISIS VIABILIDAD ECONÓMICO-FINANCIERA DE LA EMPRESA.");
-        Menu_Temas.setTema_12("");
+        Menu_Temas.setTema_12("GESTIÓN FISCAL: OBLIGACIONES INICIALES.");
         Menu_Temas.setTema_13("");
         Menu_Temas.setTema_14("");
         Menu_Temas.setTema_15("");
@@ -203,16 +203,16 @@ public class Test_EmpresaIniciativaEmprendedora {
                     case "12" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Tienen la capacidad de establecer tributos.", "El Estado.", "Las Comunidades Autónomas.", "Los Ayuntamientos.", "Todas son correctas.", "4");
+            /*02*/      tipo_test("Es un tributo en el que hay que pagar más,\n        conforme más capacidad económica tiene el sujeto:", "Tasa.", "Impuesto directo.", "Impuesto indirecto.", "Contribución especial.", "2");
+            /*03*/      tipo_test("Es aquello que debe suceder para que el ciudadano\n        o la empresa esté obligado a pagar el impuesto:", "Exención.", "Devengo.", "Hecho imponible.", "Ninguna respuesta es correcta.", "3");
+            /*04*/      tipo_test("Si tengo que pagar dinero a la administración porque me he retrasado en el pago de\n        un impuesto, esa obligación es:", "Material principal.", "Formal.", "Exenta.", "Material accesoria.", "4");
+            /*05*/      tipo_test("Es una obligación fiscal inicial que no tiene que realizar el autónomo:", "El alta en el Impuesto de Actividades Económicas.", "La liquidación del Impuesto de Transmisiones Patrimoniales y Actos Jurídicos\n    Documentados.", "La declaración censal.", "Todas las respuestas son correctas.", "2");
+            /*06*/      tipo_test("¿Qué plazo máximo hay para presentar, tras el pago, el modelo 600 correspondiente al\n        impuesto de Transmisiones Patrimoniales y Actos Jurídicos Documentados?", "Un mes tras la expedición de la escritura de constitución.", "Un mes antes de la expedición de la escritura de constitución.", "Quince días tras la expedición de la escritura de constitución.", "Quince días antes de la expedición de la escritura de constitución.", "1");
+            /*07*/      tipo_test("¿Quién debe de darse de alta en el Impuesto de Actividades Económicas?", "Todo aquel que realice una actividad empresarial.", "Todas las empresas menos los autónomos.", "Todas las empresas que facturen como mínimo 1.000.000? anuales.", "Ninguna de las anteriores respuestas es correcta.", "1");
+            /*08*/      tipo_test("Si no eres autónomo es el número del modelo que hay que rellenar para darse de alta\n        en el IAE:", "480.", "37.", "840.", "600.", "3");
+            /*09*/      tipo_test("Es una ventaja de la gestión telemática de pago de tributos.", "Ahorro de tiempo.", "Comodidad.", "Reducción de errores.", "Todas las respuestas son correctas.", "4");
+            /*10*/      tipo_test("¿Es obligatorio para las empresas gestionar los tributos telemáticamente?", "Si.", "No.", "Sí, en el caso de las empresas societarias.", "Sí, en el caso de los autónomos.", "3");                        
                     }
                     case "13" -> {
                         _Main_.Principal.setTema(menu);
