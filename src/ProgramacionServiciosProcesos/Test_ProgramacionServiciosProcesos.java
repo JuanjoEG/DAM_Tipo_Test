@@ -26,7 +26,7 @@ public class Test_ProgramacionServiciosProcesos {
         Menu_Temas.setTema_09("PROTOCOLOS A NIVEL DE APLICACIÓN.");
         Menu_Temas.setTema_10("LOS SERVICIOS DE RED. SOCKETS I.");
         Menu_Temas.setTema_11("LOS SERVICIOS DE RED. SOCKETS II.");
-        Menu_Temas.setTema_12("");
+        Menu_Temas.setTema_12("LOS SERVICIOS WEB.");
         Menu_Temas.setTema_13("");
         Menu_Temas.setTema_14("");
         Menu_Temas.setTema_15("");
@@ -202,16 +202,16 @@ public class Test_ProgramacionServiciosProcesos {
                     case "12" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Sobre los servicios web:", "No deben poder localizarse.", "Deben ser accesibles a través de la web.", "Actúan como un sistema completo.", "Ninguna de las respuestas es cierta.", "2");
+            /*02*/      tipo_test("La organización JPC:", "Es una organización con ánimo de lucro.", "Es una organización sin ánimo de lucro.", "Fue la que ideó el estándar JSP.", "Trabaja con las versiones de Java.", "4");
+            /*03*/      tipo_test("El estándar XML lo propuso:", "W3C.", "OASIS.", "JPC.", "Google.", "1");
+            /*04*/      tipo_test("¿Qué es OASIS?", "Una organización sin fines de lucro.", "Han producido una serie de normas para la arquitectura orientada a servicios.", "Una organización que impulsa la adopción de estándares para los servicios web.", "Todas las respuestas son correctas.", "4");
+            /*05*/      tipo_test("Para la creación de un web service en Java:", "Debemos crear solo una aplicación que se ejecute en el servidor.", "Debemos crear un servicio de servidor, y según el navegador se ejecutará o no.", "Debemos crear la aplicación servidor y la aplicación cliente que use dicho servicio.", "Ninguna de las respuestas es correcta.", "3");
+            /*06*/      tipo_test("¿Cuál de las siguientes es una arquitectura orientada a objetos?", "Arquitectura Orientada a Servicios Tradicional.", "Arquitectura Orientada a Servicios Convencional.", "Arquitectura Orientada a Servicios Miltihilo.", "Arquitectura Orientada a Servicios de tercera generación.", "1");
+            /*07*/      tipo_test("La arquitectura SOA es una tecnología que nos permite el diseño de aplicaciones:", "Basándose en un servicio determinado.", "Basándose en peticiones a un servicio.", "Basándose en la plataforma del cliente.", "Basándose en el tráfico de red que haya en el momento.", "2");
+            /*08*/      tipo_test("¿Cuál de las siguientes no es una característica de un servicio web?", "Interoperabilidad.", "Independencia de la plataforma.", "Dependencia del navegador.", "Son componentes independientes que se pueden integrar.", "3");
+            /*09*/      tipo_test("¿Los Web Services permiten que distintos softwares se comuniquen entre sí?", "No.", "Si pero no funcionan con todos los navegadores.", "Si.", "Sólo si se ejecutan en la misma red.", "3");
+            /*10*/      tipo_test("La organización OASIS:", "Es una organización con ánimo de lucro.", "Es una organización sin ánimo de lucro.", "Fue la que ideó el estándar JSP.", "Trabaja con las versiones de Java.", "2");                        
                     }
                     case "13" -> {
                         _Main_.Principal.setTema(menu);
