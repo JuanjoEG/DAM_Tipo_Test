@@ -26,7 +26,7 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
         Menu_Temas.setTema_09("SERVICIOS EN RED II.");
         Menu_Temas.setTema_10("SERVICIOS EN RED III.");
         Menu_Temas.setTema_11("INTRODUCCIÓN A LOS VIDEOJUEGOS.");
-        Menu_Temas.setTema_12("");
+        Menu_Temas.setTema_12("DESARROLLO DE VIDEOJUEGOS.");
         Menu_Temas.setTema_13("");
         Menu_Temas.setTema_14("");
         Menu_Temas.setTema_15("");
@@ -201,16 +201,16 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
                     case "12" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("¿De qué clase tendremos que hacer que herede nuestra pantalla del videojuego?", "Canvas.", "CanvasDraw.", "SurfaceView.", "CanvasView.", "3");
+            /*02*/      tipo_test("¿Cuántas coordenadas tienen los vectores que se necesitan en un videojuego 3D?", "2.", "3.", "4.", "1.", "2");
+            /*03*/      tipo_test("En un videojuego 2D, ¿cómo se representan los personajes?", "Mediante Sprites.", "Mediante imágenes individuales de cada movimiento del personaje.", "Mediante modelos.", "Todas las respuestas son correctas.", "1");
+            /*04*/      tipo_test("¿Qué significa FPS?", "File Per Sprite.", "Fichero Para Sprite.", "Frames Por Segundo.", "Ninguna de las respuestas es correcta.", "3");
+            /*05*/      tipo_test("¿Hacia dónde podremos mover nuestro personaje en un videojuego 2D?", "Hacia arriba y hacia abajo.", "Hacia la derecha y hacia la izquierda.", "Las dos respuestas son falsas.", "Las dos respuestas son ciertas.", "4");
+            /*06*/      tipo_test("El Mundo en los videojuegos 3D se refiere a:", "Es la representación de un personaje creado con polígonos, vértices y mallas de polígonos.", "Es el escenario en sí mismo donde se podrán mover los personajes.", "Es el árbol que representa a los personajes.", "Ninguna de las respuestas es correcta.", "2");
+            /*07*/      tipo_test("En un videojuego 3D, ¿cómo se representan los personajes?", "Mediante Sprites.", "Mediante imágenes individuales de cada movimiento del personaje.", "Mediante modelos.", "Todas las respuestas son correctas.", "3");
+            /*08*/      tipo_test("¿Qué se producen cuando 2 Sprites en un videojuego 2D se cruzan?", "Se producirá un error NullPointerException.", "Se producirá una colisión.", "No se producirá nada, se pintará uno encima de otro.", "Se producirá un error IllegalMovimientException.", "2");
+            /*09*/      tipo_test("¿Es posible utilizar una imagen para un fondo de un videojuego 2D\n        que no ocupe toda la pantalla del dispositivo?", "No, el motor mostrará un error BackgrounException.", "Si, pero solo se pintará en el trozo que ocupe.", "Si, podemos pintar la imagen tantas veces como necesitemos hasta rellenar toda la pantalla.", "No, las imágenes de fondo deberán medir exactamente lo mismo que la pantalla,\n    por lo que tendremos que tener la misma imagen para varios tamaños de pantallas.", "3");
+            /*10*/      tipo_test("¿Cuál es la forma correcta de pausar un videojuego 2D?", "Pausando el motor, ya que será el encargado de que se actualice la pantalla.", "Parando elemento a elemento del videojuego.", "Parando solamente a los personajes y a los enemigos,\n    ya que el fondo puede seguir pintándose porque no va a cambiar.", "Ninguna de las respuestas es correcta.", "1");                        
                     }
                     case "13" -> {
                         _Main_.Principal.setTema(menu);
