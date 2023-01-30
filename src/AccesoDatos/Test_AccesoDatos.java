@@ -27,7 +27,7 @@ public class Test_AccesoDatos {
         Menu_Temas.setTema_10("BASES DE DATOS OBJETO RELACIONALES.");
         Menu_Temas.setTema_11("INTRODUCCIÓN A LAS BASES DE DATOS NO-SQL.");
         Menu_Temas.setTema_12("OPERACIONES CON BASES DE DATOS NO-SQL.");
-        Menu_Temas.setTema_13("");
+        Menu_Temas.setTema_13("EXPLOTACIÓN DE LAS BASES DE DATOS NO-SQL.");
         Menu_Temas.setTema_14("");
         Menu_Temas.setTema_15("");
         Menu_Temas.setTema_r1("TEST DE REPASO I.");
@@ -215,16 +215,16 @@ public class Test_AccesoDatos {
                     case "13" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Una característica de un índice es:", "Se almacerna en memoria.", "Se almacena en disco duro.", "No se almacena.", "Todas son falsas.", "1");
+            /*02*/      tipo_test("Los operadores de negación:", "Utilizan índices siempre.", "No utilizan índices.", "Usan índices cuando es necesario.", "Todas son falsas.", "2");
+            /*03*/      tipo_test("Los índices monoclave:", "Indexan por dos campos.", "Indexan por dos o más campos.", "Solo indexan por un campo de los documentos de la colección.", "Todas son falsas.", "3");
+            /*04*/      tipo_test("Los índices monoclave:", "No son eficientes.", "Solo afectan a un campo de búsqueda.", "Son índices de texto.", "Se les llama también geoespaciales.", "2");
+            /*05*/      tipo_test("Los índices Hashed:", "Indexan por coordenadas.", "Solo puede haber una correspondencia entre entrada del índice y documento.", "Son poco eficientes.", "Indexan de forma clave/valor.", "4");
+            /*06*/      tipo_test("Una covered query:", "Es una consulta normal a base de datos.", "Es una consulta a base de datos compleja.", "Es una consulta que se resuelve contra un índice sin consultar datos de la colección.", "Todas son falsas.", "3");
+            /*07*/      tipo_test("Utilizamos la regeneración de índice para:", "Borrar un índice.", "Crear uno nuevo.", "Volver a crear un índice ya creado previamente.", "Listar los índices asociados a una colección.", "3");
+            /*08*/      tipo_test("¿Con qué comando crearemos un usuario en MongoDB?", "Db.create().", "Db.createUser().", "Créate.user.", "User.create().", "2");
+            /*09*/      tipo_test("¿Para qué usaremos el campo 'roles' de nuestro comando db.createUser()?", "Array donde indicaremos los permisos del nuevo usuario.", "Permisos que no tendrá el nuevo usuario.", "Permisos de más alto nivel.", "Todas son falsas.", "1");
+            /*10*/      tipo_test("¿Cuál es la herramienta oficial que propone MongoDB para gestionar visualmente\n        la base de datos (importar, exportar, etc)?", "Generate app.", "showData.", "removeData.", "Compass.", "4");                        
                     }
                     case "14" -> {
                         _Main_.Principal.setTema(menu);

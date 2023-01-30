@@ -27,7 +27,7 @@ public class Test_ProgramacionServiciosProcesos {
         Menu_Temas.setTema_10("LOS SERVICIOS DE RED. SOCKETS I.");
         Menu_Temas.setTema_11("LOS SERVICIOS DE RED. SOCKETS II.");
         Menu_Temas.setTema_12("LOS SERVICIOS WEB.");
-        Menu_Temas.setTema_13("");
+        Menu_Temas.setTema_13("LA PROGRAMACIÓN SEGURA.");
         Menu_Temas.setTema_14("");
         Menu_Temas.setTema_15("");
         Menu_Temas.setTema_r1("TEST DE REPASO I.");
@@ -216,16 +216,16 @@ public class Test_ProgramacionServiciosProcesos {
                     case "13" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("La confidencialidad:", "Esta característica requiere que únicamente las personas autorizadas puedan modificar\n    la información existente en el sistema.", "Esta característica va a requerir que únicamente las personas autorizadas accedan al sistema.", "Esta característica hace que un usuario no pueda negar que ha enviado un mensaje.", "Esta característica requiere que todos los recursos del sistema estén siempre disponibles\n    para el uso de los usuarios autorizados.", "2");
+            /*02*/      tipo_test("¿Qué permiten las políticas de acceso?", "Indicar los recursos a los que puede acceder una determinada aplicación.", "Gestionar los usuarios del sistema de forma segura.", "Permiten el acceso del usuario al sistema de forma segura.", "Ninguna de las respuestas anteriores es correcta.", "1");
+            /*03*/      tipo_test("El organismo oficial encargado de la seguridad informática en España es:", "El Instituto Nacional de Seguridad.", "El Instituto Nacional de Ciberseguridad.", "El Colegio Nacional de Seguridad.", "El Colegio Nacional de Ciberseguridad.", "2");
+            /*04*/      tipo_test("La disponibilidad:", "Esta característica requiere que únicamente las personas autorizadas puedan modificar\n    la información existente en el sistema.", "Esta característica va a requerir que únicamente las personas autorizadas accedan al sistema.", "Esta característica hace que un usuario no pueda negar que ha enviado un mensaje.", "Esta característica requiere que todos los recursos del sistema estén siempre disponibles\n    para el uso de los usuarios autorizados.", "4");
+            /*05*/      tipo_test("¿En qué categoría de amenaza se clasifica un programa para escuchar el tráfico de la red?", "Interrupción.", "Intercepción.", "Modificación.", "Fabricación.", "3");
+            /*06*/      tipo_test("Indica la afirmación correcta sobre las excepciones:", "Se pueden utilizar todas las cláusulas catch para gestionar todas las excepciones que\n    consideremos necesarias.", "Error, Exception y RuntimeException.", "El código que hay en el bloque finally se ejecuta siempre. ", "Todas las afirmaciones anteriores son correctas.", "4");
+            /*07*/      tipo_test("La integridad:", "Esta característica requiere que únicamente las personas autorizadas puedan modificar\n    la información existente en el sistema.", "Esta característica va a requerir que únicamente las personas autorizadas accedan al\n    sistema.", "Esta característica hace que un usuario no pueda negar que ha enviado un mensaje.", "Esta característica requiere que todos los recursos del sistema estén siempre disponibles\n    para el uso de los usuarios autorizados.", "1");
+            /*08*/      tipo_test("Las políticas de acceso:", "Son las reglas que hay que seguir para crear una contraseña segura.", "Son las reglas que hay que seguir a la hora de crear grupos seguros en el sistema.", "Se refieren a que hay que utilizar try-catch para gestionar los posibles errores en Java.", "Ninguna de las respuestas anteriores es correcta.", "4");
+            /*09*/      tipo_test("El no repudio:", "Esta característica requiere que únicamente las personas autorizadas puedan modificar\n    la información existente en el sistema.", "Esta característica va a requerir que únicamente las personas autorizadas accedan al sistema.", "Esta característica hace que un usuario no pueda negar que ha enviado un mensaje.", "Esta característica requiere que todos los recursos del sistema estén siempre disponibles\n    para el uso de los usuarios autorizados.", "3");
+            /*10*/      tipo_test("Indica el patrón que permite validar un DNI con la letra en minúscula:", "Pattern.compile(\"[0-9]{9}-[a-zA-Z]\");", "Pattern.compile(\"[0-9]-[a-zA-Z]\");", "Pattern.compile(\"[0-9]{8}-[a-zA-Z]\");", "Pattern.compile(\"[0-9]{8}-[a-z]\");", "4");                        
                     }
                     case "14" -> {
                         _Main_.Principal.setTema(menu);

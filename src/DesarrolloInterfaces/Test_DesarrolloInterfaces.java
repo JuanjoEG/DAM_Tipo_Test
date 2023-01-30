@@ -27,7 +27,7 @@ public class Test_DesarrolloInterfaces {
         Menu_Temas.setTema_10("DOCUMENTACIÓN DE APLICACIONES: AYUDAS.");
         Menu_Temas.setTema_11("DISTRIBUCIÓN DE APLICACIONES.");
         Menu_Temas.setTema_12("REALIZACIÓN DE PRUEBAS.");
-        Menu_Temas.setTema_13("");
+        Menu_Temas.setTema_13("DESARROLLO DE INTERFACES EN ANDROID I.");
         Menu_Temas.setTema_14("");
         Menu_Temas.setTema_15("");
         Menu_Temas.setTema_r1("TEST DE REPASO I.");
@@ -215,16 +215,16 @@ public class Test_DesarrolloInterfaces {
                     case "13" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Por defecto, cuando se accede por primera vez a un proyecto creado con Android\n        Studio, el fichero que se muestra al desarrollador es el llamado:", "InitProyect.kt.", "InitActivity.kt.", "MainProyect.kt.", "MainActivity.kt.", "4");
+            /*02*/      tipo_test("¿Desde que fichero será necesario acceder para que esté disponible la pantalla de\n        diseño y el código asociado a la creación de cada nuevo componente?", "Main_activity.xml.", "Activity_proyect.xml.", "Activity_main.xml.", "Content_main.xml.", "3");
+            /*03*/      tipo_test("¿Cuál de las siguientes no corresponde con una de las posibles formas de visualizar el\n        entorno de desarrollo Android Studio?", "Zoom.", "Code.", "Design.", "Split.", "1");
+            /*04*/      tipo_test("¿Con qué forma de visualización del entorno Android Studio se obtiene la división de\n        la zona de interacción en explorador, zona de desarrollo y zona de diseño?", "Zoom.", "Code.", "Design.", "Split.", "4");
+            /*05*/      tipo_test("En el desarrollo de interfaces Android el elemento layout permite definir la\n        característica:", "Posición de los elementos.", "Dimensión de los elementos.", "Distribución de los elementos.", "Todas son correctas.", "4");
+            /*06*/      tipo_test("¿Qué grupo de elementos son de tipo botón o con un comportamiento similar\n        (checkbox, togglebutton, radiobutton, ...)?", "Common.", "Containers.", "Layouts.", "Buttons.", "4");
+            /*07*/      tipo_test("¿Qué elementos extras permiten personalizar la interfaz de desarrollo\n        (calendarios, barras de progreso ...)?", "Common.", "Containers.", "Layouts.", "Widgets.", "4");
+            /*08*/      tipo_test("¿Qué elemento es utilizado para modelar los menús desplegables en una aplicación Android?", "ToggleButton.", "Spinner.", "Checkbox.", "TextField.", "2");
+            /*09*/      tipo_test("¿Cuál de los siguientes elementos permite añadir un conmutador entre estados en el\n        desarrollo de una aplicación?", "CheckBox.", "Spinner.", "ToggleButton.", "Ninguno de los anteriores.", "3");
+            /*10*/      tipo_test("¿Cuál de los siguientes elementos determina el valor de la altura del elemento o\n        componente insertado en la interfaz de la aplicación?", "layout_width.", "layout_height", "layout_margin.", "layout_gravity.", "2");                        
                     }
                     case "14" -> {
                         _Main_.Principal.setTema(menu);

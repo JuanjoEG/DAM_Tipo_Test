@@ -27,7 +27,7 @@ public class Test_SistemasGestionEmpresarial {
         Menu_Temas.setTema_10("ADECUACIÓN DE UN SISTEMA ERP-CRM A UNA EMPRESA.");
         Menu_Temas.setTema_11("LENGUAJE DE PROGRAMACIÓN DE UN SISTEMA ERP-CRM: PYTHON.");
         Menu_Temas.setTema_12("PROGRAMANDO EN PYTHON.");
-        Menu_Temas.setTema_13("");
+        Menu_Temas.setTema_13("LOS MECANISMOS INTERNOS DE UN SISTEMA ERP-CRM.");
         Menu_Temas.setTema_14("");
         Menu_Temas.setTema_15("");
         Menu_Temas.setTema_r1("TEST DE REPASO I.");
@@ -215,16 +215,16 @@ public class Test_SistemasGestionEmpresarial {
                     case "13" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Odoo utiliza una arquitectura ...", "Cliente/servidor en la que los servidores son navegadores web que acceden al cliente\n    Odoo a través de RPC.", "En capas en la que los clientes son navegadores web que acceden al servidor Odoo\n    a través de RPC.", "Cliente/servidor en la que los clientes son navegadores web que acceden al servidor\n    Odoo a través de RPC.", "En capas en la que los servidores son navegadores web que acceden al cliente Odoo\n    a través de RPC.", "3");
+            /*02*/      tipo_test("Un módulo, requiere tener en su interior al menos ...", "Los archivos '__manifest__.py' e '__init__.py'. ", "El archivo '__manifest__.py'.", "El archivo '__init__.py'.", "Ninguna respuesta es correcta.", "1");
+            /*03*/      tipo_test("El archivo '__manifest__.py' sirve para ...", "Declarar un paquete de Python como un módulo Odoo.", "Especificar metadatos del módulo.", "Mostrar el módulo dentro de la lista de aplicaciones Odoo.", "Todas las respuestas son correctas.", "4");
+            /*04*/      tipo_test("Los módulos con los que trabajará nuestro Odoo ...", "Se encuentran en el directorio que se especifique en el 'modules_path' del archivo de\n    configuración de odoo (odoo.conf) y solo puede ser un directorio.", "Se encuentran en el directorio que se especifique en el 'addons_path' del archivo de\n    configuración de odoo (odoo.conf) y pueden ser varios directorios.", "No es necesario especificar donde se encuentra en el archivo de configuración de odoo,\n    simplemente bastará con incluirlos en la carpeta addons.", "No es necesario especificar donde se encuentra en el archivo de configuración de odoo,\n    simplemente bastará con incluirlos en la carpeta modules.", "2");
+            /*05*/      tipo_test("Los modelos ...", "Son las tablas de la base de dato de un módulo.", "Son una manera de relacionar el programa con la base de datos.", "Son archivos XML.", "Ninguna respuesta es correcta.", "2");
+            /*06*/      tipo_test("Los archivos de datos ...", "Son archivos Python que se almacenan en al base de datos.", "Son archivos XML con elementos <record>, siendo cada elemento <record> un registro\n    de base de datos.", "No pueden tener formato CSV.", "Ninguna respuesta es correcta.", "2");
+            /*07*/      tipo_test("Las vistas en Odoo ...", "Son la forma en la que se representan los registros de los modelos para ser mostradas\n    a los usuarios finales.", "Se especifican en XML.", "Pueden ser Kanban.", "Todas las respuestas son correctas.", "4");
+            /*08*/      tipo_test("Los modelos pueden relacionarse entre sí ...", "Con relaciones many2one, one2many y many2many.", "Con relaciones m2o, o2m y m2m.", "Con relaciones ManyToOne, OneToMany y ManyToMany.", "Con relaciones mto, otm y mtm.", "1");
+            /*09*/      tipo_test("El motor de informes o reports de Odoo utiliza ...", "Qweb.", "Twitter Bootstrap.", "Wkhtmltopdf.", "Todas las respuestas son correctas.", "4");
+            /*10*/      tipo_test("Los campos calculados, al declararlos ...", "Necesitan de un atributo 'calculate' con el nombre del método.", "Necesitan de un atributo 'calculated_field' con el nombre del método.", "Necesitan de un atributo 'compute' con el nombre del método.", "Ninguna respuesta es correcta.", "3");                        
                     }
                     case "14" -> {
                         _Main_.Principal.setTema(menu);

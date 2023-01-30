@@ -12,11 +12,10 @@ public class Principal {
     private static boolean salida = false;
     private static double fallos, aciertos, contador, en_blanco, nota;
     private static int cont, aciert, fall, en_bl;
-    private static String tema, asignatura;
+    private static String tema, asignatura, espacio;
     private static long inicio, fin, milisegundos;
     private static int horas, minutos, segundos, resto_horas;
     
-        
     public static void main(String[] args) {
         
         Menu_Asignaturas.setTitulo("---   ENCODING PROJECT ISO-8859-1   ---   2ºDAM   ---   TEST   ---");
@@ -248,6 +247,10 @@ public class Principal {
         String miRespuesta;
         String resp_correcta;
         cont = (int) contador;
+        
+        if (contador < 10){        
+            espacio = "   ";
+        } else espacio = "  ";
     
         do { 
             Scanner teclaStr = new Scanner(System.in, "UTF-8");
@@ -255,7 +258,7 @@ public class Principal {
             ver_notas();
                         
             System.out.println("*************************************************************************************************\n");
-            System.out.println("  " + cont+ ".- : " + pregunta);
+            System.out.println(espacio + cont+ ".-  " + pregunta);
             System.out.println("\n*************************************************************************************************");
             System.out.println("\nA.- " + respuesta_1);
             System.out.println("\nB.- " + respuesta_2);
@@ -387,6 +390,10 @@ public class Principal {
             }else{
                 i--;
             }
+        }
+        System.out.print("Orden: ");
+        for(int i=0;i<arr.length;i++){
+            System.out.print(" " + arr[i]);
         }
         return arr;
     }    

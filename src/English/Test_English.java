@@ -26,8 +26,8 @@ public class Test_English {
         Menu_Temas.setTema_09("EVENTS.");
         Menu_Temas.setTema_10("ADJECTIVES.");
         Menu_Temas.setTema_11("TEXTS.");
-        Menu_Temas.setTema_12("CONDITIONALS");
-        Menu_Temas.setTema_13("");
+        Menu_Temas.setTema_12("CONDITIONALS.");
+        Menu_Temas.setTema_13("CONDITIONALS II.");
         Menu_Temas.setTema_14("");
         Menu_Temas.setTema_15("");
         Menu_Temas.setTema_r1("TEST DE REPASO I.");
@@ -216,16 +216,16 @@ public class Test_English {
                     case "13" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Second conditionals are used to convey ...", "General truths.", "Possible, although not real situations.", "Impossible situations in the past.", "Real conditions.", "2");
+            /*02*/      tipo_test("Third conditionals have the following structure:", "If + past perfect / Would have.", "If + would / Future simple (will).", "If + past perfect / Would.", "If + past perfect / present simple.", "1");
+            /*03*/      tipo_test("Choose the right option to complete the sentence:\n        If he hadn't driven so fast, ...", "The accident wouldn't have happened.", "The accident haven't happened.", "The accident hadn't happened.", "The accident doesn't happen.", "1");
+            /*04*/      tipo_test("Choose the right option to complete the sentence:\n        You might still pass the subject, ...", "If you had studied hard.", "If you studied hard.", "If you would study hard.", "If you would have studied hard.", "2");
+            /*05*/      tipo_test("Choose the right option to complete the sentence:\n        ... you listened to the radio in English every day,\n        your pronunciation would be much better.", "Unless.", "Provided that.", "Maybe.", "Could.", "2");
+            /*06*/      tipo_test("Which of the following sentences is incorrect?", "If I saw that coming, I would have made a different decision.", "If I had known what would happen, I would have acted differently.", "Both sentences are correct.", "Both sentences are incorrect.", "1");
+            /*07*/      tipo_test("Which of the following expressions is used to thank somebody?", "I appreciate that.", "I'm sorry.", "That sounds great.", "Never mind.", "1");
+            /*08*/      tipo_test("Which of the following expressions means the same as 'Just forget it':", "It doesn't matter.", "I'm sorry.", "Please, call me back.", "What do you think?", "1");
+            /*09*/      tipo_test("Choose the right option to complete the sentence:\n        I'm so ...! We're going to Ireland in the summer.", "Excited.", "Exciting.", "None of the options is correct.", "Both options are correct.", "1");
+            /*10*/      tipo_test("Choose the right option to complete the sentence:\n        You didn't seem to like the film. You looked so ...", "Bored.", "Boring.", "None of the options is correct.", "Both options are correct.", "1");                        
                     }
                     case "14" -> {
                         _Main_.Principal.setTema(menu);

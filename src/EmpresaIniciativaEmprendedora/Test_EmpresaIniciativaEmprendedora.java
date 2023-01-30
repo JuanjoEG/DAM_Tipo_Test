@@ -27,7 +27,7 @@ public class Test_EmpresaIniciativaEmprendedora {
         Menu_Temas.setTema_10("CONTABILIDAD FINANCIERA.");
         Menu_Temas.setTema_11("INVERSIÓN Y FINANCIACIÓN. ANÁLISIS VIABILIDAD ECONÓMICO-FINANCIERA DE LA EMPRESA.");
         Menu_Temas.setTema_12("GESTIÓN FISCAL: OBLIGACIONES INICIALES.");
-        Menu_Temas.setTema_13("");
+        Menu_Temas.setTema_13("GESTIÓN FISCAL: OBLIGACIONES PERIÓDICAS Y EVENTUALES.");
         Menu_Temas.setTema_14("");
         Menu_Temas.setTema_15("");
         Menu_Temas.setTema_r1("TEST DE REPASO I.");
@@ -217,16 +217,16 @@ public class Test_EmpresaIniciativaEmprendedora {
                     case "13" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("El tipo general del IVA es del:", "21%", "4%", "1%", "7%", "1");
+            /*02*/      tipo_test("El IVA que la empresa tiene que pagar se calcula:", "Sumando el IVA repercutido y el IVA soportado.", "Restando el IVA repercutido y el IVA soportado.", "Depende del patrimonio de la empresa.", "Todas las respuestas son incorrectas.", "2");
+            /*03*/      tipo_test("El trabajador autónomo podrá pagar un 7% del IRPF:", "Durante el primer año.", "Durante los dos primeros años.", "Durante el año en el que inicia la actividad y los dos siguientes.", "Durante el año en el que inicia la actividad.", "3");
+            /*04*/      tipo_test("El IVA y el IRPF de los autónomos:", "Se declaran únicamente de forma trimestral.", "Se declaran únicamente anualmente.", "Se declaran tanto trimestralmente como anualmente.", "Se declaran mensualmente y anualmente.", "3");
+            /*05*/      tipo_test("Es el número de modelo a rellenar al declarar el Impuesto de Sociedades:", "250.", "300.", "150.", "200.", "4");
+            /*06*/      tipo_test("Las sociedades cooperativas tienen que pagar un porcentaje sobre sus beneficios del:", "20%", "15%", "25%", "1%", "1");
+            /*07*/      tipo_test("¿Quién debe de pagar el Impuesto sobre Bienes Inmuebles?", "El propietario de un inmueble el 1 de junio de ese año.", "Todos los que hayan sido propietarios del inmueble ese año.", "El propietario de un inmueble el 1 de enero de ese año.", "Ninguna es correctas.", "3");
+            /*08*/      tipo_test("Es el Impuesto que debes pagar si vendes un inmueble:", "ICIO.", "IVTM.", "IIVTNU.", "IBI.", "3");
+            /*09*/      tipo_test("Es un impuesto municipal:", "ICIO.", "IVTM.", "IBI.", "Todas las respuestas son correctas.",  "4");
+            /*10*/      tipo_test("Es un impuesto que se declara en enero:", "IS.", "IVA.", "IRPF.", "Todas las respuestas son correctas.", "2");                        
                     }
                     case "14" -> {
                         _Main_.Principal.setTema(menu);
