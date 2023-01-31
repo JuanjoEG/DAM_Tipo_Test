@@ -27,7 +27,7 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
         Menu_Temas.setTema_10("SERVICIOS EN RED III.");
         Menu_Temas.setTema_11("INTRODUCCIÓN A LOS VIDEOJUEGOS.");
         Menu_Temas.setTema_12("DESARROLLO DE VIDEOJUEGOS.");
-        Menu_Temas.setTema_13("");
+        Menu_Temas.setTema_13("INTRODUCCIÓN AL LENGUAJE SWIFT.");
         Menu_Temas.setTema_14("");
         Menu_Temas.setTema_15("");
         Menu_Temas.setTema_r1("TEST DE REPASO I.");
@@ -215,16 +215,16 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
                     case "13" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Dado el siguiente código, ¿Qué tipo tendrá número?\n        let numero = 8.2", "Bool.", "Double.", "El código no compila.", "Decimal.", "2");
+            /*02*/      tipo_test("Al ejecutar el siguiente código, ¿qué valor contendrá tercera?\n        let primera = [\"A\",\"B\"]\n        let segunda = [\"C\",\"D\"]\n        let tercera = primera + segunda", "\"A\",\"B\"", "\"A\",\"B\",\"C\",\"D\"", "\"A\",\"C\",\"B\",\"D\"", "No es posible sumar dos arrays.", "2");
+            /*03*/      tipo_test("¿Qué contendrá miTexto al ejecutar este código?\n        let miTexto: String\n        miTexto = \"hola\"", "Al ejecutar la aplicación se lanzará un error.", "nil.", "\"hola\".", "El código no compila.", "3");
+            /*04*/      tipo_test("¿Cuántos elementos tendrá el array de números al ejecutar el código?\n        var numeros = [1, 2, 3]\n        numeros += [4]", "4.", "3.", "1.", "El código dará error.", "1");
+            /*05*/      tipo_test("Al ejecutar el siguiente código, ¿Cuántos elementos contendrá el array?\n        let nombres: [String] = [ ]\n        nombres.append(\"Mabel\")\n        nombres.append(\"Clara\")\n        nombres.append(\"Rodrigo\")", "1", "3", "El código dará un error de compilación.", "0.", "3");
+            /*06*/      tipo_test("¿Es posible incrementar en una sola unidad una variable en Swift utilizando un\n        operador de Incremento clásico?", "Si, utilizando ++1.", "No, es necesario utilizar +=1.", "Solo si activamos el modo de compatibilidad con C.", "Si, Swift viene de C y podemos utilizar ++.", "2");
+            /*07*/      tipo_test("En un caso en el que desconocemos el valor de una variable opcional.\n        ¿Qué debemos hacer para acceder a dicho valor?", "Utilizar el operador '!'.", "Forzar el desempaquetado.", "Comprobamos que sea distinto de nil antes de utilizarlo.", "Utilizar el operador de coalescencia nula.", "1");
+            /*08*/      tipo_test("¿Qué aparecerá en consola al ejecutar el siguiente código?\n        var elementos: [String] = []\n        elementos.append(\"Serenity\")\n        elementos.append(\"Enterprise\")\n        elementos.append(\"TARDIS\")\n        elementos.append(\"Serenity\")\n        print(elementos.count)", "4", "0", "3", "1", "1");
+            /*09*/      tipo_test("¿Qué empresa creó el lenguaje Swift?", "Microsoft.", "Oracle.", "Apple.", "Sony.", "3");
+            /*10*/      tipo_test("¿Cuál es la extensión de los ficheros que tienen código Swift?", ".java", ".python", ".apple", ".swift", "4");                        
                     }
                     case "14" -> {
                         _Main_.Principal.setTema(menu);

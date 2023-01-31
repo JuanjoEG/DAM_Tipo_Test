@@ -28,7 +28,7 @@ public class Test_English {
         Menu_Temas.setTema_11("TEXTS.");
         Menu_Temas.setTema_12("CONDITIONALS.");
         Menu_Temas.setTema_13("CONDITIONALS II.");
-        Menu_Temas.setTema_14("");
+        Menu_Temas.setTema_14("JOB INTERVIEW.");
         Menu_Temas.setTema_15("");
         Menu_Temas.setTema_r1("TEST DE REPASO I.");
         Menu_Temas.setTema_r2("TEST DE REPASO II.");
@@ -230,16 +230,16 @@ public class Test_English {
                     case "14" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Which of the following is not a piece of information usually provided by employers\n        during a job interview?", "Next stage in the selection process.", "The company financial statement.", "Complementary information on the job.", "Additional information on the company.", "2");
+            /*02*/      tipo_test("Which is the recruiter's main objective of a job interview?", "Establish the person's salary.", "Fix their holidays.", "Make a judgement about the candidate.", "Design the company strategy.", "3");
+            /*03*/      tipo_test("Choose the right option to complete the sentence:\n        In addition to your strengths, employers also want to know about your ...", "Weaknesses.", "Hair colour.", "Music tastes.", "Food habits.", "1");
+            /*04*/      tipo_test("Choose the right option to complete the sentence:\n        In a job interview, you should show you ... overwork.", "Are tolerant about.", "Are not keen on.", "Will not.", "Refuse to.", "1");
+            /*05*/      tipo_test("Broadly speaking, a general tip for an interview is not to show you are too:", "Efficient.", "Clean.", "Self-confident.", "Hard-working.", "3");
+            /*06*/      tipo_test("Which of the following is not a typical question at a job interview?", "Shall we go for lunch?", "Tell me about yourself.", "What are your salary expectations?", "Do you have any question for us?", "1");
+            /*07*/      tipo_test("Choose the right option to complete the sentence:\n        Which of the job ... can I fulfill better?", "Colleagues.", "Wages.", "Requirements.", "Errors.", "3");
+            /*08*/      tipo_test("While doing a job interview on the phone it is a good idea to be:", "In the kitchen.", "In a signal reception area.", "In the park.", "In bed.", "2");
+            /*09*/      tipo_test("Choose the right option to complete the sentence:\n        Which are your long-term ... ?", "Achievings.", "Goals.", "Expects.", "All the options are incorrect.", "2");
+            /*10*/      tipo_test("Which of the following words is a synonym of 'job' in Why are you applying for this job?", "Position.", "Place.", "Location.", "Office.", "1");                        
                     }
                     case "15" -> {
                         _Main_.Principal.setTema(menu);

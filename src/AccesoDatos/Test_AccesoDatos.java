@@ -28,7 +28,7 @@ public class Test_AccesoDatos {
         Menu_Temas.setTema_11("INTRODUCCIÓN A LAS BASES DE DATOS NO-SQL.");
         Menu_Temas.setTema_12("OPERACIONES CON BASES DE DATOS NO-SQL.");
         Menu_Temas.setTema_13("EXPLOTACIÓN DE LAS BASES DE DATOS NO-SQL.");
-        Menu_Temas.setTema_14("");
+        Menu_Temas.setTema_14("GESTIÓN DE BASES DE DATOS NATIVAS XML.");
         Menu_Temas.setTema_15("");
         Menu_Temas.setTema_r1("TEST DE REPASO I.");
         Menu_Temas.setTema_r2("TEST DE REPASO II.");
@@ -229,16 +229,16 @@ public class Test_AccesoDatos {
                     case "14" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Las bases de datos XML nativas son bases de datos que:", "Almacenan documentos y datos XML de una forma eficiente.", "No realizan consultas.", "No son integrables.", "Todas son falsas.", "1");
+            /*02*/      tipo_test("Las bases de datos XML nativas:", "Se basan en tablas.", "Tienen consultas SQL.", "Se basan en los llamados contenedores.", "Todas son verdaderas.", "3");
+            /*03*/      tipo_test("Un sistema XML de base de datos de código abierto sería:", "Excelon.", "GoXML.", "ExistDB.", "Todos son de código abierto.", "3");
+            /*04*/      tipo_test("Las bases de datos XML se consultan con:", "Consultas SQL.", "Consultas Mish.", "Expresiones regulares.", "Expresiones XPath.", "4");
+            /*05*/      tipo_test("En la instalación de ExistDB, ¿Qué caché es recomendado asignar?", "128MB.", "200TB.", "20MB.", "1TB.", "1");
+            /*06*/      tipo_test("En la instalación de ExistDB ¿Cuánta RAM es recomendable asignar?", "5000MB.", "200MB.", "1024MB.", "Todas son falsas.", "3");
+            /*07*/      tipo_test("¿Qué paquete es esencial a la hora de instalar ExistDB y estaremos forzados a integrar?", "El paquete APP.", "Sources.", "Core.", "Core y Sources.", "3");
+            /*08*/      tipo_test("¿A qué ruta del navegador accederemos para ir a nuestro Dashboard en ExistDB?", "https://localhost", "http://localhost", "http://localhost:8080/exist/", "Todas son falsas.", "3");
+            /*09*/      tipo_test("¿Cuál no es una estrategia de almacenamiento en bases de datos xml nativas?", "Basado en texto.", "Basado en modelo.", "Almacenando en local.", "Almacenando en la nube.", "4");
+            /*10*/      tipo_test("¿Qué paquetería nos habilitará la clase DatabaseManager?", "Org.xmldb.api", "Api.xmldb", "Org.api", "Todas son falsas.", "1");                        
                     }
                     case "15" -> {
                         _Main_.Principal.setTema(menu);
