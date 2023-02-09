@@ -8,7 +8,7 @@ import static _Main_.Principal.tipo_test;
  */
 public class Test_Rep_I_Des_Int {
     
-    public static void Rep_I_Des_Int() {
+    public static void test_Repaso() {
         
                         _Main_.Principal.setAsignatura("DESARROLLO DE INTERFACES"); // 
                         _Main_.Principal.setTema("REPASO I");

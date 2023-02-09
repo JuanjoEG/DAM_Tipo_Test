@@ -8,7 +8,7 @@ import static _Main_.Principal.tipo_test;
  */
 public class Test_Rep_I_Pro_Mul_Dis_Mov {
     
-    public static void Rep_I_Pro_Mul_Dis_Mov() {
+    public static void test_Repaso() {
         
                         _Main_.Principal.setAsignatura("PROGRAMACIÓN MULTIMEDIA Y DISPOSITIVOS MÓVILES"); // 
                         _Main_.Principal.setTema("REPASO I");

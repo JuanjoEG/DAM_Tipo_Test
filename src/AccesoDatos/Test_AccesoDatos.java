@@ -29,7 +29,7 @@ public class Test_AccesoDatos {
         Menu_Temas.setTema_12("OPERACIONES CON BASES DE DATOS NO-SQL.");
         Menu_Temas.setTema_13("EXPLOTACIÓN DE LAS BASES DE DATOS NO-SQL.");
         Menu_Temas.setTema_14("GESTIÓN DE BASES DE DATOS NATIVAS XML.");
-        Menu_Temas.setTema_15("");
+        Menu_Temas.setTema_15("PROGRAMACIÓN DE COMPONENTES DE ACCESO A DATOS");
         Menu_Temas.setTema_r1("TEST DE REPASO I.");
         Menu_Temas.setTema_r2("TEST DE REPASO II.");
             
@@ -45,7 +45,7 @@ public class Test_AccesoDatos {
                 menu = teclaStr.nextLine();
                 switch (menu) {
                     case "1" -> {
-                        _Main_.Principal.setTema(menu); // encargada de realizar la conexión
+                        _Main_.Principal.setTema(menu); // JPA
         
             /*01*/      tipo_test("La librería Java que se usará para la gestión de archivos, lectura, escritura y más\n        funcionalidades es:", "Java.io", "Io.java", "Lio.java", "Java.tio", "1");
             /*02*/      tipo_test("Un fichero genérico está compuesto por ...", "Nombre.", "Tipo de fichero.", "Nombre y extensión.", "Nombre y acceso.", "3");
@@ -243,20 +243,19 @@ public class Test_AccesoDatos {
                     case "15" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Una unidad de software que encapsula un segmento de código con ciertas funciones\n        lo definimos como:", "Componente.", "Función.", "Método.", "Todas son falsas.", "1");
+            /*02*/      tipo_test("Elige la opción falsa. Un componente está formado por:", "Atributos.", "Propiedades.", "Eventos.", "EndPoint.", "4");
+            /*03*/      tipo_test("Elige la opción válida de escribir un método get():", "getNombreX().", "getNombreDeLaPropiedad().", "setNombre().", "getNombre().", "2");
+            /*04*/      tipo_test("Los componentes tienen los siguientes tipos de atributos:", "Compartidos.", "Indexados.", "Simples.", "Todas son correctas.", "4");
+            /*05*/      tipo_test("Para que un componente acepte propiedades compartidas, ¿Qué métodos debe\n        integrar?", "addPropertyChangeListener.", "removePropertyChangeListener.", "oldremove.", "Hay dos opciones correctas.", "4");
+            /*06*/      tipo_test("Cuando un componente se activa mediante el funcionamiento de otro lo\n        denominamos:", "Retroceso.", "Control activo.", "Control pasivo.", "Todas son falsas.", "2");
+            /*07*/      tipo_test("¿Con qué clase usamos la introspección con EJBs?", "Instrospection.", "Api.Javax.", "Core.", "Introspector.", "4");
+            /*08*/      tipo_test("¿Con qué biblioteca usamos la persistencia de los componentes?", "JPA.", "HPA.", "RPA.", "SPA.", "1");
+            /*09*/      tipo_test("¿Qué clase ayuda a crear objetos EntityManager utilizando el patrón de diseño\n        Factory?", "Entity.", "EntityManagerFactory.", "Factory.", "Todas son falsas.", "2");
+            /*10*/      tipo_test("¿Con qué objeto realizamos las consultas en JPA?", "Query.", "Transaction.", "EntityManager.", "Entity.", "1");                        
                     }
-                    case "40" -> {
-                        AccesoDatos.Test_Rep_I_Acc_Dat.Rep_I_Acc_Dat();
-                    }
+                    case "40" -> AccesoDatos.Test_Rep_I_Acc_Dat.test_Repaso();
+                    case "50" -> AccesoDatos.Test_Rep_II_Acc_Dat.test_Repaso();
                     
                     case "0" -> {}
                     default -> {

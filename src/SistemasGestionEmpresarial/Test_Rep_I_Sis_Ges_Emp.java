@@ -1,4 +1,3 @@
-
 package SistemasGestionEmpresarial;
 
 import static _Main_.Principal.tipo_test;
@@ -9,7 +8,7 @@ import static _Main_.Principal.tipo_test;
  */
 public class Test_Rep_I_Sis_Ges_Emp {
     
-    public static void Sis_Ges_Emp() {
+    public static void test_Repaso() {
     
         _Main_.Principal.setAsignatura("SISTEMAS DE GESTIÓN EMPRESARIAL");// 
         _Main_.Principal.setTema("REPASO I");

@@ -29,7 +29,7 @@ public class Test_English {
         Menu_Temas.setTema_12("CONDITIONALS.");
         Menu_Temas.setTema_13("CONDITIONALS II.");
         Menu_Temas.setTema_14("JOB INTERVIEW.");
-        Menu_Temas.setTema_15("");
+        Menu_Temas.setTema_15("SEE YOU.");
         Menu_Temas.setTema_r1("TEST DE REPASO I.");
         Menu_Temas.setTema_r2("TEST DE REPASO II.");
             
@@ -244,16 +244,16 @@ public class Test_English {
                     case "15" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("What does ASAP mean?", "As soon as possible.", "As sober as possible.", "As soon as permitted.", "As sober as permitted.", "1");
+            /*02*/      tipo_test("What does i.e mean?", "Impossible execution.", "That is.", "Is excellent.", "All of the options are incorrect.", "2");
+            /*03*/      tipo_test("What does NRN mean?", "No return necessary.", "No reply necessary.", "Needed return by noon.", "Needed reply by noon.", "2");
+            /*04*/      tipo_test("What does the following text message mean?: CU@3", "See you at three.", "It doesn?t mean anything.", "See you all three.", "Come you at three.", "1");
+            /*05*/      tipo_test("Which of the following words is synonymous with 'profession'?", "Occupation.", "Action.", "Studies.", "Creed.", "1");
+            /*06*/      tipo_test("If I asked someone 'What do you do for a living?', I want to know ... :", "Where that person lives.", "What is that person's work.", "What that person's ambitions are.", "Which expectations that person has in life.", "2");
+            /*07*/      tipo_test("To quit your job means:", "You've been fired.", "You've decided to leave that job.", "All options are incorrect.", "You've been promoted.", "2");
+            /*08*/      tipo_test("To be on the dole means:", "To be unemployed.", "To be happy.", "To be rich.", "To have a fulfilling job.", "1");
+            /*09*/      tipo_test("Which expression would you use to say that you are very tired?", "Cheers!", "I'm gutted.", "I'm rubbish.", "I'm knackered.", "4");
+            /*10*/      tipo_test("Which expression would you use to say that you are very happy?", "I'm knackered.", "I'm gutted.", "Budge up.", "I'm over the moon.", "4");                        
                     }
                     
                     case "0" -> {}

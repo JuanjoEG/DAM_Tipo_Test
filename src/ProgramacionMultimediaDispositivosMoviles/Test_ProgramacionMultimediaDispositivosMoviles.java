@@ -28,7 +28,7 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
         Menu_Temas.setTema_11("INTRODUCCIÓN A LOS VIDEOJUEGOS.");
         Menu_Temas.setTema_12("DESARROLLO DE VIDEOJUEGOS.");
         Menu_Temas.setTema_13("INTRODUCCIÓN AL LENGUAJE SWIFT.");
-        Menu_Temas.setTema_14("");
+        Menu_Temas.setTema_14("PROGRAMACIÓN EN SWIFT.");
         Menu_Temas.setTema_15("");
         Menu_Temas.setTema_r1("TEST DE REPASO I.");
         Menu_Temas.setTema_r2("TEST DE REPASO II.");
@@ -229,16 +229,16 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
                     case "14" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("¿Cuántos inicializadores podremos crear en una clase en Swift?", "Solo uno.", "Podremos crear dos, uno principal y otro auxiliar.", "Podremos crear tantos como necesitemos y todos serán inicializadores normales.", "Podremos crear tantos como necesitemos, pero solo uno será inicializador, los demás\n    serán inicializadores especiales que invocarán al principal.", "4");
+            /*02*/      tipo_test("¿Con cuántos valores podremos crear una tupla?", "1.", "2.", "3.", "Todos los que necesitemos.", "4");
+            /*03*/      tipo_test("¿Qué ocurrirá al ejecutar el siguiente código?\n        let i = 3\n        switch i {\n            case 1:\n                print(\"Es 1\")\n            case 2:\n                print(\"Es 2\")\n            case 3:\n                print(\"Es 3\")\n        }", "Al ejecutar la aplicación se lanzará un error.", " Se mostrará por pantalla el mensaje \"Es 3\".", "El código no compila.", "Se mostrará por pantalla el mensaje \"Es 2\".", "3");
+            /*04*/      tipo_test("¿Cuál de los siguientes rangos está bien declarado?", "3...10", "3..<=10", "..10", "3..10", "1");
+            /*05*/      tipo_test("¿Con qué palabra definimos las funciones en Swift?", "function.", "funcion.", "func.", "Swift no soporta funciones.", "3");
+            /*06*/      tipo_test("¿Cuál es el resultado de ejecutar este código?\n        var tripulacion = [\"Capitan\": \"Luis\", \"Carlos\": \"Simon\"]\n        tripulacion = [:]\n        print(tripulacion.count)", "9", "5", "0", "12", "3");
+            /*07*/      tipo_test("¿Cuál será el resultado al ejecutar el siguiente código?\n        let nombres = [\"Luis\", \"Isabel\", \"David\", \"María\"]\n        if let nombre = nombres[1] {\n            print(\"Hola (nombre)\")\n        }", "El código no compila.", "Se mostrará por pantalla el mensaje \"Hola Isabel\".", "Se mostrará por pantalla el mensaje \"Hola Luís\".", "Al ejecutar la aplicación se lanzará un error.", "4");
+            /*08*/      tipo_test("¿Cuál es el resultado al ejecutar este código?\n        func decirHola(a nombre: String) -> String {\n            return \"Hola (nombre)!\"\n        }\n        print(\"(decirHola(a: \"Francis\"))\")", "Se mostrará por pantalla el mensaje \"Hola (Francis)\".", "El código no compila.", "Se mostrará por pantalla el mensaje \"Hola Francis\".", "Al ejecutar la aplicación se lanzará un error.", "4");
+            /*09*/      tipo_test("¿Qué ocurrirá al ejecutar este código?\n        class Caballero {\n            var nombre: String\n            override init(nombre: String) {\n                nombre = nombreInicial\n            }\n        }\n        let caballero = Caballero(nombre: \"Artorias\")\n        print(caballero.nombre)", "El código no compila.", "Mostrará por pantalla el mensaje \"\".", "Mostrará por pantalla el mensaje \"Artorias\".", "nil.", "1");
+            /*10*/      tipo_test("func suma(numeros: Int...) -> Int {\n            var resultado = 0\n            for numero in numeros {\n                result += numero\n            }\n            return resultado\n        }\n        let resultado = suma(numbers: [1, 2, 3, 4, 5])", "15", "1,2,3,4,5", "0", "El código no compila.", "4");                        
                     }
                     case "15" -> {
                         _Main_.Principal.setTema(menu);
@@ -254,9 +254,9 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
             /*09*/      tipo_test("", "", "", "", "", "");
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
-                    case "40" -> {                        
-                        ProgramacionMultimediaDispositivosMoviles.Test_Rep_I_Pro_Mul_Dis_Mov.Rep_I_Pro_Mul_Dis_Mov();
-                    }
+                    case "40" -> ProgramacionMultimediaDispositivosMoviles.Test_Rep_I_Pro_Mul_Dis_Mov.test_Repaso();
+                    case "50" -> ProgramacionMultimediaDispositivosMoviles.Test_Rep_II_Pro_Mul_Dis_Mov.test_Repaso();
+                    
                     case "0" -> {}
                     default -> {
                             meterEspacios(25);

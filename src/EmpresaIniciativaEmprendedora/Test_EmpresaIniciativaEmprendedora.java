@@ -28,7 +28,7 @@ public class Test_EmpresaIniciativaEmprendedora {
         Menu_Temas.setTema_11("INVERSIÓN Y FINANCIACIÓN. ANÁLISIS VIABILIDAD ECONÓMICO-FINANCIERA DE LA EMPRESA.");
         Menu_Temas.setTema_12("GESTIÓN FISCAL: OBLIGACIONES INICIALES.");
         Menu_Temas.setTema_13("GESTIÓN FISCAL: OBLIGACIONES PERIÓDICAS Y EVENTUALES.");
-        Menu_Temas.setTema_14("");
+        Menu_Temas.setTema_14("GESTIÓN ADMINISTRATIVA. DOCUMENTACIÓN DEL PROCESO DE COMPRAVENTA.");
         Menu_Temas.setTema_15("");
         Menu_Temas.setTema_r1("TEST DE REPASO I.");
         Menu_Temas.setTema_r2("TEST DE REPASO II.");
@@ -231,16 +231,16 @@ public class Test_EmpresaIniciativaEmprendedora {
                     case "14" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Es un objetivo de la gestión documental administrativa:", "La conservación de los documentos de forma eficiente.", "Tener un formato estándar para todos los documentos de la empresa.", "Evitar hacer el mismo documento dos veces.", " Todas son correctas.", "4");
+            /*02*/      tipo_test("Es el año en el que se promulgó la última Ley Orgánica de Protección de Datos:", "2017.", "2018.", "2019.", "2000.", "2");
+            /*03*/      tipo_test("Según los elementos que hemos estudiado que por ley debe tener una compraventa,\n        ¿cuál de ellos hace mención a la cantidad económica que el comprador paga\n        para recibir el producto?", "El objeto.", "El precio.", "Las partes.", "El consentimiento.", "2");
+            /*04*/      tipo_test("En el caso en el que se den todas las fases del proceso de compraventa, la primera es:", "Hacer el pedido.", "Recibir la mercancía.", "Solicitar el presupuesto.", "Ninguna de las respuestas anteriores son correctas.", "3");
+            /*05*/      tipo_test("No es un elemento que deba figurar en el presupuesto:", "Fecha en la que se emite.", "Plazo máximo para aceptar el presupuesto.", "Firma y sello de la empresa.", "Todos son elementos que deben aparecer.", "4");
+            /*06*/      tipo_test("La aceptación del pedido debe hacerse:", "Por escrito o de forma implícita si se entrega la mercancía.", "Cuando se entrega la mercancía.", "Cuando se hace la factura.", "De forma implícita.", "1");
+            /*07*/      tipo_test("Podríamos decir que el albarán es:", "Un justificante de pago.", "Un justificante de entrega de mercancía.", "Un formulario para la declaración ante la Agencia Tributaria.", "Ninguna de las respuestas anteriores son correctas.", "2");
+            /*08*/      tipo_test("No es un elemento que deba figurar en el albarán:", "Precio pagado.", "Número de albarán.", "Condiciones de pago.", "Lugar y fecha en la que se emite el albarán.", "3");
+            /*09*/      tipo_test("Están obligados a expedir la factura.", "Los autónomos.", "Todas las empresas con unos ingresos superiores a 100.000 Euros.", "Las empresas societarias.", "Todo aquel que realice una actividad económica.", "4");
+            /*10*/      tipo_test("En relación al número de la factura:", "Puede ponerse sin tener en cuenta el orden en el que se ha expedido.", "Debe de ir de forma correlativa a la anterior y a la posterior factura.", "Debe de tener el año en el que se ha emitido.", "Todas las respuestas son correctas.", "2");                        
                     }
                     case "15" -> {
                         _Main_.Principal.setTema(menu);
@@ -256,12 +256,9 @@ public class Test_EmpresaIniciativaEmprendedora {
             /*09*/      tipo_test("", "", "", "", "", "");
             /*10*/      tipo_test("", "", "", "", "", "");                       
                     }
-                    case "40" -> {                        
-                        EmpresaIniciativaEmprendedora.Test_Rep_I_Emp_Inc_Emp.Rep_I_Emp_Inc_Emp();
-                    }
-                    case "50" -> {                        
-                        EmpresaIniciativaEmprendedora.Test_Rep_II_Emp_Inc_Emp.Rep_II_Emp_Inc_Emp();
-                    }
+                    case "40" -> EmpresaIniciativaEmprendedora.Test_Rep_I_Emp_Inc_Emp.test_Repaso();
+                    case "50" -> EmpresaIniciativaEmprendedora.Test_Rep_II_Emp_Inc_Emp.test_Repaso();
+                   
                     case "0" -> {}
                     default -> {
                             meterEspacios(25);

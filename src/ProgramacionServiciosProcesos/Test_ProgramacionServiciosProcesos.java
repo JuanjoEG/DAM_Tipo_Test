@@ -28,7 +28,7 @@ public class Test_ProgramacionServiciosProcesos {
         Menu_Temas.setTema_11("LOS SERVICIOS DE RED. SOCKETS II.");
         Menu_Temas.setTema_12("LOS SERVICIOS WEB.");
         Menu_Temas.setTema_13("LA PROGRAMACIÓN SEGURA.");
-        Menu_Temas.setTema_14("");
+        Menu_Temas.setTema_14("LA CRIPTOGRAFÍA.");
         Menu_Temas.setTema_15("");
         Menu_Temas.setTema_r1("TEST DE REPASO I.");
         Menu_Temas.setTema_r2("TEST DE REPASO II.");
@@ -230,16 +230,16 @@ public class Test_ProgramacionServiciosProcesos {
                     case "14" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("La autenticación:", "Consiste en poder garantizar de una forma segura que los datos que se están\n    transmitiendo en una comunicación solo los podrán ver las personas a las que están\n    destinados.", "Consiste en garantizar que quien envía los datos de la comunicación es quien dice ser\n    en realidad.", "Esto garantiza que la persona que ha enviado el mensaje es quien dice ser.", "Esto garantiza que la persona que ha recibido el mensaje no puede negar su recepción.", "2");
+            /*02*/      tipo_test("En la criptografía pública, las claves de cifrado y descifrado son:", "Iguales.", "Diferentes.", "Son la misma clave, pero la de cifrado está en mayúsculas y la de descifrado está en minúscula.", "Son diferentes y además deben ser números obligatoriamente.", "2");
+            /*03*/      tipo_test("¿Qué significa la palabra criptografía?", "Escritura remota.", "Escritura automática.", "Escritura ininteligible.", "Escritura secreta.", "4");
+            /*04*/      tipo_test("¿Cuál de los siguientes no es un tipo de criptografía?", "Criptografía asimétrica.", "Criptografía avanzada.", "Criptografía con umbral.", "Criptografía basada en identidad.", "2");
+            /*05*/      tipo_test("Uno de los principios criptográficos es:", "El algoritmo de encriptación debe ser complejo y no conocido.", "La clave es conocida.", "La seguridad del sistema depende de la complejidad del algoritmo.", "El diseño del sistema puede ser público.", "4");
+            /*06*/      tipo_test("Las firmas digitales utilizan:", "Criptografía de clave privada y resumen de mensajes MD5.", "Criptografía de clave pública y resumen de mensajes MD5.", "Criptografía de clave privada y resumen de mensajes HASH.", "Criptografía de clave pública y resumen de mensajes HASH.", "4");
+            /*07*/      tipo_test("En la criptografía de privada, las claves de cifrado y descifrado son:", "Iguales.", "Diferentes.", "Son la misma clave, pero la de cifrado está en mayúsculas y la de descifrado está\n    en minúscula.", "Son iguales y además deben ser números obligatoriamente.", "1");
+            /*08*/      tipo_test("El certificado digital:", "Consiste en poder garantizar de una forma segura que los datos que se están\n    transmitiendo en una comunicación solo los podrán ver las personas a las que están\n    destinados.", "Garantiza que el envío de la comunicación se hace de forma segura.", "Esto garantiza que la persona que ha enviado el mensaje es quien dice ser.", "Esto garantiza que la persona que ha recibido el mensaje no puede negar su recepción.", "3");
+            /*09*/      tipo_test("La confidencialidad:", "Consiste en poder garantizar de una forma segura que los datos que se están\n    transmitiendo en una comunicación solo los podrán ver las personas a las que están\n    destinados.", "Consiste en garantizar que quien envía los datos de la comunicación es quien dice ser\n    en realidad.", "Esto garantiza que la persona que ha enviado el mensaje es quien dice ser.", "Esto garantiza que la persona que ha recibido el mensaje no puede negar su recepción.", "1");
+            /*10*/      tipo_test("Lo más óptimo en cuando a criptografía es usar:", "Criptografía de clave pública.", "Criptografía de clave privada.", "Criptografía híbrida.", "La criptografía no sirve para proteger la información.", "3");                        
                     }
                     case "15" -> {
                         _Main_.Principal.setTema(menu);
@@ -255,9 +255,9 @@ public class Test_ProgramacionServiciosProcesos {
             /*09*/      tipo_test("", "", "", "", "", "");
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
-                    case "40" -> {                        
-                        ProgramacionServiciosProcesos.Test_Rep_I_Pro_Ser_Pro.Rep_I_Pro_Ser_Pro();
-                    }
+                    case "40" -> ProgramacionServiciosProcesos.Test_Rep_I_Pro_Ser_Pro.test_Repaso();
+                    case "50" -> ProgramacionServiciosProcesos.Test_Rep_II_Pro_Ser_Pro.test_Repaso();
+                    
                     case "0" -> {}
                     default -> {
                             meterEspacios(25);

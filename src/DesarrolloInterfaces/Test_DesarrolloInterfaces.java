@@ -28,7 +28,7 @@ public class Test_DesarrolloInterfaces {
         Menu_Temas.setTema_11("DISTRIBUCIÓN DE APLICACIONES.");
         Menu_Temas.setTema_12("REALIZACIÓN DE PRUEBAS.");
         Menu_Temas.setTema_13("DESARROLLO DE INTERFACES EN ANDROID I.");
-        Menu_Temas.setTema_14("");
+        Menu_Temas.setTema_14("DESARROLLO DE INTERFACES EN ANDROID II.");
         Menu_Temas.setTema_15("");
         Menu_Temas.setTema_r1("TEST DE REPASO I.");
         Menu_Temas.setTema_r2("TEST DE REPASO II.");
@@ -229,16 +229,16 @@ public class Test_DesarrolloInterfaces {
                     case "14" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                       
+            /*01*/      tipo_test("En la implementación para la detección de eventos, en primer lugar, es necesario\n        implementar el método:", "setOnClickListener.", "ClickListener.", "onClick.", "setOnActivity.", "1");
+            /*02*/      tipo_test("Si el evento que se desea tratar es relativo a hacer click sobre un elemento,\n        necesitaremos utilizar el escuchador:", "OnTouch.", "OnClickTouch.", "OnClickButton.", "OnClickListener.", "4");
+            /*03*/      tipo_test("El método que se invoca cuando se pulsa sobre un botón físico y el foco está situado\n        sobre un elemento que implementa este método en su escucha es:", "onKey.", "onTouch.", "onLongClick.", "onClick.", "1");
+            /*04*/      tipo_test("El método que se debe invocar cuando se mantiene pulsado un elemento de la\n        interfaz es:", "onKey.", "onTouch.", "onLongClick.", "onClick.", "3");
+            /*05*/      tipo_test("El evento asociado a los elementos 'extra' que permiten personalizar la interfaz de\n        desarrollo (calendarios, barras de progreso, ...) es:", "onKeyListener.", "onClickListener.", "onTouchListener.", "onLongClickListener.", "3");
+            /*06*/      tipo_test("A través de este componente es posible implementar cualquier tipo de diseño de\n        navegación por una aplicación, aportando un alto grado de personalización al diseño\n        de la interfaz:", "Graphics.", "Navigation.", "Illustrate.", "Entertain.", "2");
+            /*07*/      tipo_test("Se trata de un contenedor vacío utilizado para colocar los destinos hacia los que\n        apunta el gráfico de navegación. Este elemento permite que los destinos vayan\n        modificándose según el usuario navegada a través de la aplicación:", "Gráfico de navegación.", "Nav_version.", "NavController.", "NavHost.", "4");
+            /*08*/      tipo_test("¿De qué tipo es el elemento que representa cada una de las pantallas colocadas en el\n        editor?", "enterAnim.", "Fragment.", "Action.", "Destination.", "2");
+            /*09*/      tipo_test("¿Cuál de los siguientes valores para el atributo showAsAction permite indicar que si\n        hay sitio en la barra de la aplicación se coloca el icono del botón y si no lo hay se\n        ubica en el menú ampliado (los 3 puntos verticales)?", "never.", "little.", "asAction.", "ifRoom.", "4");
+            /*10*/      tipo_test("¿Qué tipo de animación está asociada a la entrada en una pantalla a través de una\n        acción emergente?", "enterAnim.", "popEnterAnim.", "exitAnim.", "popExistAnim.", "2");                       
                     }
                     case "15" -> {
                         _Main_.Principal.setTema(menu);
@@ -254,9 +254,9 @@ public class Test_DesarrolloInterfaces {
             /*09*/      tipo_test("", "", "", "", "", "");
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
-                    case "40" -> {                        
-                        DesarrolloInterfaces.Test_Rep_I_Des_Int.Rep_I_Des_Int();
-                    }
+                    case "40" -> DesarrolloInterfaces.Test_Rep_I_Des_Int.test_Repaso();
+                    case "50" -> DesarrolloInterfaces.Test_Rep_II_Des_Int.test_Repaso();
+                    
                     case "0" -> {}
                     default -> {
                             meterEspacios(25);

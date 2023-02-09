@@ -8,7 +8,7 @@ import static _Main_.Principal.tipo_test;
  */
 public class Test_Rep_I_Pro_Ser_Pro {
     
-    public static void Rep_I_Pro_Ser_Pro() {
+    public static void test_Repaso() {
         
                                 _Main_.Principal.setAsignatura("PROGRAMACIÓN DE SERVICIOS Y PROCESOS"); // 
                         _Main_.Principal.setTema("REPASO I");

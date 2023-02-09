@@ -8,7 +8,7 @@ import static _Main_.Principal.tipo_test;
  */
 public class Test_Rep_I_Acc_Dat {
     
-    public static void Rep_I_Acc_Dat() {
+    public static void test_Repaso() {
         
                         _Main_.Principal.setAsignatura("ACCESO A DATOS"); // 
                         _Main_.Principal.setTema("REPASO I");

@@ -1,4 +1,3 @@
-
 package EmpresaIniciativaEmprendedora;
 
 import static _Main_.Principal.tipo_test;
@@ -9,7 +8,7 @@ import static _Main_.Principal.tipo_test;
  */
 public class Test_Rep_I_Emp_Inc_Emp {
     
-    public static void Rep_I_Emp_Inc_Emp() {
+    public static void test_Repaso() {
         
                         _Main_.Principal.setAsignatura("EMPRESA E INICIATIVA EMPRENDEDORA"); // 
                         _Main_.Principal.setTema("REPASO I");

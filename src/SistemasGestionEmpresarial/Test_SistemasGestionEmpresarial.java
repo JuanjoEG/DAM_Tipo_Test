@@ -28,7 +28,7 @@ public class Test_SistemasGestionEmpresarial {
         Menu_Temas.setTema_11("LENGUAJE DE PROGRAMACIÓN DE UN SISTEMA ERP-CRM: PYTHON.");
         Menu_Temas.setTema_12("PROGRAMANDO EN PYTHON.");
         Menu_Temas.setTema_13("LOS MECANISMOS INTERNOS DE UN SISTEMA ERP-CRM.");
-        Menu_Temas.setTema_14("");
+        Menu_Temas.setTema_14("DESARROLLO DE NUEVOS COMPONENTES I: CREACIÓN DE UN MÓDULO.");
         Menu_Temas.setTema_15("");
         Menu_Temas.setTema_r1("TEST DE REPASO I.");
         Menu_Temas.setTema_r2("TEST DE REPASO II.");
@@ -229,16 +229,16 @@ public class Test_SistemasGestionEmpresarial {
                     case "14" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                       
+            /*01*/      tipo_test("Al crear un repositorio nuevo para incluir todos los módulos personalizados ...", "Es recomendable agregar la ruta del nuevo repositorio al addons_path del fichero de\n    configuración 'odoo.conf'.", "Se debe agregar la ruta del nuevo repositorio al fichero manifest.", "Se debe agregar la ruta del nuevo repositorio al addons_path del fichero de\n    configuración 'odoo.conf'.", "Es recomendable agregar la ruta del nuevo repositorio al fichero manifest.", "3");
+            /*02*/      tipo_test("El comando scaffold ...", "Facilita la creación de un nuevo módulo y su uso es obligatorio en esos casos.", "Facilita la creación de un nuevo modelo y su uso no es obligatorio en esos casos.", "Facilita la creación de un nuevo módulo y su uso no es obligatorio en esos casos.", "Ninguna respuesta es correcta.", "3");
+            /*03*/      tipo_test("El campo 'depends' del fichero manifest.py en un módulo ...", "Se informa con los módulos que necesita el nuevo módulo para funcionar,\n    pudiendo tener uno o varios.", "Se informa con los modelos que necesita el nuevo módulo para funcionar,\n    pudiendo tener uno o varios.", "Se informa con los módulos que necesita el nuevo módulo para funcionar,\n    pudiendo estar vacío, tener uno o varios.", "Se informa con los modelos que necesita el nuevo módulo para funcionar,\n    pudiendo estar vacío, tener uno o varios.", "3");
+            /*04*/      tipo_test("Para que un nuevo módulo aparezca en la lista de aplicaciones de Odoo ...", "Bastará con crearlo, por ejemplo, con PyCharm, informar correctamente el manifest y ya\n    aparecerá en la lista.", "Deberemos crearlo, por ejemplo, con PyCharm, sin necesidad de informar el manifest y\n    actualizar la lista de aplicaciones.", "Deberemos crearlo, por ejemplo, con PyCharm, informar correctamente el manifest\n    y actualizar la lista de aplicaciones.", "Ninguna respuesta es correcta.", "3");
+            /*05*/      tipo_test("Con la herencia ...", "Modificamos directamente el código de un módulo existente.", "En lugar de modificar un módulo existente, creamos un nuevo módulo para realizar las\n    modificaciones oportunas (agregar o quitar funcionalidad) sobre el original.", "Creamos un módulo copia del original el cuál podemos editar sin necesidad de tocar el original.", "Ninguna respuesta es correcta.", "2");
+            /*06*/      tipo_test("Para heredar un modelo ...", "Se deberá crear la clase como en la declaración del objeto original sin informar el\n    atributo _inherit.", "Se deberá crear la clase como en la declaración del objeto original e informar el atributo\n    _inherit con el modelo del que se hereda.", "Se deberá crear la clase como en la declaración del objeto original e informar el atributo\n    _inherit con el modelo actual.", "Ninguna respuesta es correcta.", "2");
+            /*07*/      tipo_test("Para heredar una vista ...", "Se deberá informar la etiqueta 'inherit' del XML con el ID externo de la vista de la que\n    queremos heredar.", "Se deberá informar la etiqueta 'inherit_id' del XML con el ID externo de la vista de la que\n    queremos heredar.", "Se deberá informar la etiqueta 'inherit' del XML con el nombre de la vista de la que\n    queremos heredar.", "Ninguna respuesta es correcta.", "2");
+            /*08*/      tipo_test("El log de Odoo ...", "Se informa en el fichero que se encuentra en el parámetro logfile del archivo odoo.conf\n    si este parámetro está informado.", "Se informa en el stdout en PyCharm si el parámetro logfile del archivo odoo.conf no está\n    informado.", "Indicará la información de los logs que se produzcan en Odoo en el nivel que se indique\n    en el parámetro log_handler del archivo odoo.conf.", "Todas las respuestas son correctas.", "4");
+            /*09*/      tipo_test("Los niveles del log_handler pueden ser ...", "critical, error, warning, info, debug, notset.", "error, warning, info, debug, notset.", "critical, error, warning, info, debug.", "Ninguna respuesta es correcta.", "1");
+            /*10*/      tipo_test("PyCharm informa que hay un error sintáctico en el código ...", "Mediante una exclamación roja en la parte superior derecha del editor.", "Subrayando en rojo en la barra de desplazamiento vertical la línea errónea.", "Indicando una explicación del error en la línea roja ubicada en la barra de desplazamiento\n    vertical.", "Todas las respuestas son correctas.", "1");                       
                     }
                     case "15" -> {
                         _Main_.Principal.setTema(menu);
@@ -254,9 +254,9 @@ public class Test_SistemasGestionEmpresarial {
             /*09*/      tipo_test("", "", "", "", "", "");
             /*10*/      tipo_test("", "", "", "", "", "");                        
                     }
-                    case "40" -> {                        
-                        SistemasGestionEmpresarial.Test_Rep_I_Sis_Ges_Emp.Sis_Ges_Emp();
-                    }
+                    case "40" -> SistemasGestionEmpresarial.Test_Rep_I_Sis_Ges_Emp.test_Repaso();
+                    case "50" -> SistemasGestionEmpresarial.Test_Rep_II_Sis_Ges_Emp.test_Repaso();
+                    
                     case "0" -> {}
                     default -> {
                             meterEspacios(25);
