@@ -1,10 +1,8 @@
 package AccesoDatos;
 
 import _Main_.Menu_Temas;
-import static _Main_.Principal.esperar;
-import static _Main_.Principal.meterEspacios;
 import java.util.Scanner;
-import static _Main_.Principal.tipo_test;
+import static _Main_.Principal.*;
 
 /**
  *
@@ -258,19 +256,11 @@ public class Test_AccesoDatos {
                     case "50" -> AccesoDatos.Test_Rep_II_Acc_Dat.test_Repaso();
                     
                     case "0" -> {}
-                    default -> {
-                            meterEspacios(25);
-                            System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
-                            meterEspacios(15);
-                            esperar(1500);
-                            }
+                    default -> miDefault();
                 }
             }  catch (Exception e) {
-                System.out.println("Error: " + e.toString());
-                System.out.println("MENSAJE " + e.getMessage());
-                System.out.println("La Excepción es: " + e.getClass());
+                miError(e);
             }
         } while (!"0".equals(menu));
-    }
-    
+    }    
 }

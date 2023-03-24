@@ -1,10 +1,8 @@
 package EmpresaIniciativaEmprendedora;
 
 import _Main_.Menu_Temas;
-import static _Main_.Principal.esperar;
-import static _Main_.Principal.meterEspacios;
 import java.util.Scanner;
-import static _Main_.Principal.tipo_test;
+import static _Main_.Principal.*;
 
 /**
  *
@@ -29,7 +27,7 @@ public class Test_EmpresaIniciativaEmprendedora {
         Menu_Temas.setTema_12("GESTIÓN FISCAL: OBLIGACIONES INICIALES.");
         Menu_Temas.setTema_13("GESTIÓN FISCAL: OBLIGACIONES PERIÓDICAS Y EVENTUALES.");
         Menu_Temas.setTema_14("GESTIÓN ADMINISTRATIVA. DOCUMENTACIÓN DEL PROCESO DE COMPRAVENTA.");
-        Menu_Temas.setTema_15("");
+        Menu_Temas.setTema_15("GESTIÓN ADMINISTRATIVA. DOCUMENTACIÓN DEL PROCESO DE COBRO/PAGO.");
         Menu_Temas.setTema_r1("TEST DE REPASO I.");
         Menu_Temas.setTema_r2("TEST DE REPASO II.");
         
@@ -45,7 +43,7 @@ public class Test_EmpresaIniciativaEmprendedora {
                 menu = teclaStr.nextLine();
                 switch (menu) {
                     case "1" -> {
-                        _Main_.Principal.setTema(menu);
+                        _Main_.Principal.setTema(menu);  //  El Umbral de rentabilidad
         
             /*01*/      tipo_test("El conjunto de valores y actitudes que tiene una persona para mejorar un proyecto\n        profesional, personal o social se denomina:", "Idea de negocio.", "Cultura emprendedora.", "Innovación.", "Ninguna de las anteriores es correcta.", "2");
             /*02*/      tipo_test("Son aspectos que se ven beneficiados por la cultura emprendedora:", "Riqueza de un país.", "Fomento del desarrollo sostenible.", "Creación de empleo.", "Todas las anteriores son correctas.", "4");
@@ -170,7 +168,7 @@ public class Test_EmpresaIniciativaEmprendedora {
             /*07*/      tipo_test("Para ayudar a establecer el precio de venta:", "Se puede utilizar el Método de Contribución Marginal.", "Se puede aplicar el Método de Utilidad Bruta.", "No se puede aplicar ningún método.", "Las dos primeras respuestas son correctas.", "4");
             /*08*/      tipo_test("Los métodos para establecer el precio de venta arrojan:", "El precio de venta final.", "El precio de mercado.", "Un precio de venta sugerido.", "Ninguna es correcta.", "3");
             /*09*/      tipo_test("El Margen de contribución es:", "El número de unidades físicas que representan una ganancia sobre las ventas totales.", "El porcentaje que representa una ganancia sobre el precio de venta final.", "No está relacionado con el precio de venta.", "Todas son correctas.", "2");
-            /*10*/      tipo_test("El Umbral de rentabilidad refleja:", "El número de ventas, en unidades monetarias, que hace el beneficio operativo igual a cero.", "El número de costes, en unidades monetarias, que hace el beneficio operativo iguala cero.", "El volumen de ventas, en unidades físicas, que hace el beneficio operativo igual a cero.", "El volumen de ventas, en unidades físicas, que hace el beneficio operativo igual a cero.", "4");                        
+            /*10*/      tipo_test("El Umbral de rentabilidad refleja:", "El número de ventas, en unidades monetarias, que hace el beneficio operativo igual a cero.", "El número de costes, en unidades monetarias, que hace el beneficio operativo iguala cero.", "El número de compras, en unidades físicas, que hace el beneficio operativo igual a cero.", "El volumen de ventas, en unidades físicas, que hace el beneficio operativo igual a cero.", "4");                        
                     }
                     case "10" -> {
                         _Main_.Principal.setTema(menu);
@@ -245,34 +243,26 @@ public class Test_EmpresaIniciativaEmprendedora {
                     case "15" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                       
+            /*01*/      tipo_test("Es la forma de pago más frecuente en la compraventa por Internet:", "Pago anticipado.", "Pago aplazado.", "Pago al contado.", "Pago simultáneo.", "1");
+            /*02*/      tipo_test("Es un documento que el vendedor entrega al cliente una vez que ha pagado una parte\n        o toda la cantidad de dinero correspondiente a la compra.", "Cheque.", "Letra de cambio.", "Pagaré.", "Recibo de pago.", "4");
+            /*03*/      tipo_test("Es un documento que debe ser obligatoriamente nominativo:", "Cheque.", "Cheque y pagaré.", "Pagaré y letra de cambio.", "Cheque y letra de cambio.", "3");
+            /*04*/      tipo_test("En un cheque, el importe a pagar debe figurar:", "En número únicamente.", "En número y letra.", "En letra únicamente.", "La Ley no dice nada al respecto.", "2");
+            /*05*/      tipo_test("La persona que recibe el pago puede cobrar inmediatamente con este documento:", "Letra de cambio.", "Pagaré.", "Cheque.", "Ninguna de las respuestas es correcta.", "3");
+            /*06*/      tipo_test("La fecha en la que se puede cobrar el pagaré se denomina:", "Fecha de vencimiento.", "Fecha de emisión.", "Fecha de pago.", "Ninguna de las respuestas es correcta.", "1");
+            /*07*/      tipo_test("Es un documento que emite el acreedor (el que debe recibir el pago):", "Cheque.", "Letra de cambio.", "Pagaré.", "Ninguna de las respuestas anteriores es correcta.", "2");
+            /*08*/      tipo_test("Es como se denomina el poder pagar con tarjeta sin necesidad de insertar la tarjeta\n        en el datáfono:", "Paypal.", "Bizum.", "Contactless.", "Letra de cambio.", "3");
+            /*09*/      tipo_test("Es una ventaja del pago electrónico:", "Comodidad para el usuario y la empresa.", "Mayor control del flujo económico por parte del Estado .", "Es mucho más fácil demostrar que se ha hecho un pago o se ha recibido un cobro.", "Todas las respuestas son correctas.", "4");
+            /*10*/      tipo_test("Facilita la transferencia de dinero a cualquier país del mundo:", "SEPA.", "SWIFT.", "SAGE.", "QUIPU.", "2");                       
                     }
                     case "40" -> EmpresaIniciativaEmprendedora.Test_Rep_I_Emp_Inc_Emp.test_Repaso();
                     case "50" -> EmpresaIniciativaEmprendedora.Test_Rep_II_Emp_Inc_Emp.test_Repaso();
                    
                     case "0" -> {}
-                    default -> {
-                            meterEspacios(25);
-                            System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
-                            meterEspacios(15);
-                            esperar(1500);
-                            }
+                    default -> miDefault();
                 }
             }  catch (Exception e) {
-                System.out.println("Error: " + e.toString());
-                System.out.println("MENSAJE " + e.getMessage());
-                System.out.println("La Excepción es: " + e.getClass());
+                miError(e);
             }
         } while (!"0".equals(menu));
-    }
-    
+    }    
 }

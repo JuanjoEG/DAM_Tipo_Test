@@ -23,6 +23,7 @@ public class Menu_Asignaturas {
          System.out.println("*  6.  " + asig_06);
          System.out.println("*  7.  " + asig_07);
          System.out.println("*");
+         System.out.println("*  10.  " + "TEST FALLADOS.");
          System.out.println("*************************************************************************************************");
          System.out.println("*  0. SALIR.");
          System.out.println("*************************************************************************************************\n");
@@ -59,6 +60,5 @@ public class Menu_Asignaturas {
 
     public static void setTitulo(String titulo) {
         Menu_Asignaturas.titulo = titulo;
-    }
-    
+    }    
 }

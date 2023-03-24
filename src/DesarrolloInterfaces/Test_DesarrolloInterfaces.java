@@ -1,10 +1,8 @@
 package DesarrolloInterfaces;
 
 import _Main_.Menu_Temas;
-import static _Main_.Principal.esperar;
-import static _Main_.Principal.meterEspacios;
 import java.util.Scanner;
-import static _Main_.Principal.tipo_test;
+import static _Main_.Principal.*;
 
 /**
  *
@@ -29,7 +27,7 @@ public class Test_DesarrolloInterfaces {
         Menu_Temas.setTema_12("REALIZACIÓN DE PRUEBAS.");
         Menu_Temas.setTema_13("DESARROLLO DE INTERFACES EN ANDROID I.");
         Menu_Temas.setTema_14("DESARROLLO DE INTERFACES EN ANDROID II.");
-        Menu_Temas.setTema_15("");
+        Menu_Temas.setTema_15("DESARROLLO DE INTERFACES PARA IOS.");
         Menu_Temas.setTema_r1("TEST DE REPASO I.");
         Menu_Temas.setTema_r2("TEST DE REPASO II.");
         
@@ -243,34 +241,26 @@ public class Test_DesarrolloInterfaces {
                     case "15" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Indica cuál es el sistema operativo de los dispositivos móviles de Apple:", "iOS.", "Android.", "Mac OS.", "Firefox OS.", "1");
+            /*02*/      tipo_test("La herramienta que se utiliza para el desarrollo en el sistema operativo de dispositivos\n        móviles de Apple es:", "iApp.", "iCODE.", "Xmode.", "Xcode.", "4");
+            /*03*/      tipo_test("El lenguaje de programación utilizado para el desarrollo de las aplicaciones en iOS es:", "Swift.", "Java.", "Kotlin.", "JavaScript.", "1");
+            /*04*/      tipo_test("En la aplicación Xcode crear un 'playground' permite:", "Abrir un proyecto anterior.", "Implementar aplicaciones.", "Implementar ciertos bloques de código.", "Crear un nuevo proyecto.", "3");
+            /*05*/      tipo_test("Indica cuál de los siguientes sistemas operativos no se puede utilizar en la aplicación\n        Xcode:", "iOS.", "watchOS.", "iTV.", "macOS.", "3");
+            /*06*/      tipo_test("¿Cuál es la nueva interfaz de usuario utilizada para iOS?", "Storyboard.", "SwiftUI.", "Objective-C.", "Swift.", "2");
+            /*07*/      tipo_test("La función Navigator es una de las más importantes de la aplicación Xcode y se\n        encuentra situada en la:", "Zona inferior.", "Zona derecha.", "Zona de desarrollo.", "Zona izquierda.", "4");
+            /*08*/      tipo_test("El código que será necesario implementar para importar la librería SwiftUI es:", "import Swift.", "import SwiftUI.", "import UI.", "import View.", "2");
+            /*09*/      tipo_test("Para crear variables en el lenguaje Swift se utiliza:", "v.", "save.", "new.", "var.", "4");
+            /*10*/      tipo_test("Para comentar el Código se pueden utilizar delimitadores para líneas o fragmento\n        de código del tipo:", "// comentario", "/* comentario */ ", "*/ comentario /*", "//* comentario *//", "2");                        
                     }
                     case "40" -> DesarrolloInterfaces.Test_Rep_I_Des_Int.test_Repaso();
                     case "50" -> DesarrolloInterfaces.Test_Rep_II_Des_Int.test_Repaso();
                     
                     case "0" -> {}
-                    default -> {
-                            meterEspacios(25);
-                            System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
-                            meterEspacios(15);
-                            esperar(1500);
-                            }
+                    default -> miDefault();
                 }
             }  catch (Exception e) {
-                System.out.println("Error: " + e.toString());
-                System.out.println("MENSAJE " + e.getMessage());
-                System.out.println("La Excepción es: " + e.getClass());
+                miError(e);
             }
         } while (!"0".equals(menu));
-    }
-    
+    }    
 }

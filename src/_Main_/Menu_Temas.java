@@ -106,5 +106,5 @@ public class Menu_Temas {
 
     public static void setTema_r2(String tema_r2) {
         Menu_Temas.tema_r2 = tema_r2;
-    }   
+    }
 }

@@ -1,10 +1,8 @@
 package ProgramacionMultimediaDispositivosMoviles;
 
 import _Main_.Menu_Temas;
-import static _Main_.Principal.esperar;
-import static _Main_.Principal.meterEspacios;
 import java.util.Scanner;
-import static _Main_.Principal.tipo_test;
+import static _Main_.Principal.*;
 
 /**
  *
@@ -29,7 +27,7 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
         Menu_Temas.setTema_12("DESARROLLO DE VIDEOJUEGOS.");
         Menu_Temas.setTema_13("INTRODUCCIÓN AL LENGUAJE SWIFT.");
         Menu_Temas.setTema_14("PROGRAMACIÓN EN SWIFT.");
-        Menu_Temas.setTema_15("");
+        Menu_Temas.setTema_15("INTRODUCCIÓN A MACOS Y XCODE.");
         Menu_Temas.setTema_r1("TEST DE REPASO I.");
         Menu_Temas.setTema_r2("TEST DE REPASO II.");
         
@@ -243,34 +241,26 @@ public class Test_ProgramacionMultimediaDispositivosMoviles {
                     case "15" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("¿Cuál de los siguientes no fue uno de los fundadores de Apple?", "Steve Jobs.", "Steve Wozniak.", "Bill Gates.", "Ron Wayne.", "3");
+            /*02*/      tipo_test("¿Cuál de los siguientes no fue un ordenador desarrollado por Apple?", "Apple I.", "Apple II.", "Apple III.", "Apple X.", "4");
+            /*03*/      tipo_test("¿En qué fecha salió al mercado iOS 7?", "Septiembre 2012.", "Junio 2013.", "Septiembre 2014.", "Septiembre 2015.", "2");
+            /*04*/      tipo_test("¿Cuál es el número de versión de Mac OS X El Capitán?", "10.9", "10.10", "10.11", "10.12", "3");
+            /*05*/      tipo_test("¿Cuál de las siguientes no es una versión de Mac OS X válida?", "10.17", "10.15", "10.10", "10.8", "1");
+            /*06*/      tipo_test("¿Cuál de los siguientes no es un sistema operativo de Apple?", "Mac OS X Snow Leopard.", "Mac OS X Black Panter.", "Mac OS X Catalina.", "Mac OS X Lion.", "2");
+            /*07*/      tipo_test("¿Cuál es el número de versión de Mac OS X Lion?", "10.7", "10.10", "10.11", "10.12", "1");
+            /*08*/      tipo_test("¿En qué año apareció el primer Macintosh?", "1979.", "1980.", "1981.", "1990.", "2");
+            /*09*/      tipo_test("¿Cuál es la API de desarrollo interna del sistema operativo Mac?", "Cocoa Touch.", "Cocoa Untouch.", "Coffe Touch.", "Chocolat Touch.", "1");
+            /*10*/      tipo_test("¿Cuál es el número de versión de Mac OS X Mountain Lion?", "10.9", "10.10", "10.8", "10.12", "3");                        
                     }
                     case "40" -> ProgramacionMultimediaDispositivosMoviles.Test_Rep_I_Pro_Mul_Dis_Mov.test_Repaso();
                     case "50" -> ProgramacionMultimediaDispositivosMoviles.Test_Rep_II_Pro_Mul_Dis_Mov.test_Repaso();
                     
                     case "0" -> {}
-                    default -> {
-                            meterEspacios(25);
-                            System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
-                            meterEspacios(15);
-                            esperar(1500);
-                            }
+                    default -> miDefault();
                 }
             }  catch (Exception e) {
-                System.out.println("Error: " + e.toString());
-                System.out.println("MENSAJE " + e.getMessage());
-                System.out.println("La Excepción es: " + e.getClass());
+                miError(e);
             }
         } while (!"0".equals(menu));
-    }
-    
+    }    
 }

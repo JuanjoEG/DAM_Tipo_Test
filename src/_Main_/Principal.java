@@ -11,7 +11,7 @@ public class Principal {
     
     private static boolean salida = false;
     private static double fallos, aciertos, contador, en_blanco, nota;
-    private static int cont, aciert, fall, en_bl;
+    private static int cont, aciert, fall, en_bl, plusTiempo;
     private static String tema, asignatura, espacio;
     private static long inicio, fin, milisegundos;
     private static int horas, minutos, segundos, resto_horas;
@@ -49,21 +49,13 @@ public class Principal {
                     case "5" -> ProgramacionMultimediaDispositivosMoviles.Test_ProgramacionMultimediaDispositivosMoviles.Pro_Mul_Dis_Mov();
                     case "6" -> ProgramacionServiciosProcesos.Test_ProgramacionServiciosProcesos.Pro_Ser_Pro();
                     case "7" -> SistemasGestionEmpresarial.Test_SistemasGestionEmpresarial.Sis_Ges_Emp();
+                    case "10" -> _Main_.Test_Fallados.test_Repaso();
                     
                     case "0" -> {}
-                    default -> {
-                            meterEspacios(25);
-                            System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
-                            meterEspacios(15);
-                            esperar(1500);
-                            }
+                    default -> miDefault();
                 }
             }  catch (Exception e) {
-                System.out.println("Error: " + e.toString());
-                System.out.println("MENSAJE " + e.getMessage());
-                System.out.println("La Excepción es: " + e.getClass());
-            } finally {
-                
+                miError(e);
             }
         } while (!"0".equals(menu));
     }
@@ -248,25 +240,29 @@ public class Principal {
         String resp_correcta;
         cont = (int) contador;
         
-        if (contador < 10){        
+        if (contador < 10) {        
             espacio = "   ";
-        } else espacio = "  ";
+        } else if (contador < 100) {
+            espacio = "  ";
+        } else {
+            espacio = " ";
+        }
     
         do { 
             Scanner teclaStr = new Scanner(System.in, "UTF-8");
             meterEspacios(20);
             ver_notas();
                         
-            System.out.println("*************************************************************************************************\n");
+            System.out.println("***************************************************************************************************\n");
             System.out.println(espacio + cont+ ".-  " + pregunta);
-            System.out.println("\n*************************************************************************************************");
+            System.out.println("\n***************************************************************************************************");
             System.out.println("\nA.- " + respuesta_1);
             System.out.println("\nB.- " + respuesta_2);
             System.out.println("\nC.- " + respuesta_3);
             System.out.println("\nD.- " + respuesta_4);
-            System.out.println("\n*************************************************************************************************");
-            System.out.println("RESPONDE CON:               -  A  B  C  D  -  a  b  c  d  -  1  2  3  4  -  0  -");
-            System.out.println("*************************************************************************************************\n");
+            System.out.println("\n***************************************************************************************************");
+            System.out.println("   RESPONDE CON:  ---->  A  B  C  D  <---->  a  b  c  d  <---->  1  2  3  4  <---->  0  <----");
+            System.out.println("***************************************************************************************************\n");
             System.out.print("Indica tu respuesta: ");
             miRespuesta = teclaStr.nextLine();
             
@@ -286,38 +282,42 @@ public class Principal {
                 case "3" -> resp_correcta = respuesta_3;
                 case "4" -> resp_correcta = respuesta_4;
                 default -> resp_correcta = " ";
-            }            
+            } 
+            plusTiempo = 0;
             if (miRespuesta.equals(solucion)) {
-                System.out.println("*************************************************************************************************");
-                System.out.println("***   ***   ***   ***             ¡ ¡ ¡  C O R R E C T O  ! ! !             ***   ***   ***   ***");
-                System.out.println("*************************************************************************************************");
+                System.out.println("***************************************************************************************************");
+                System.out.println("***   ***   ***   ***              ¡ ¡ ¡  C O R R E C T O  ! ! !              ***   ***   ***   ***");
+                System.out.println("***************************************************************************************************");
+                System.out.println(espacio + cont+ ".-  " + pregunta);
+                System.out.println("***************************************************************************************************");
                 System.out.println("    " + resp_correcta);
-                System.out.println("*************************************************************************************************");
+                System.out.println("***************************************************************************************************");
                 aciertos = (1 + aciertos);
                 contador = (1 + contador);
                 salida = true;
+                plusTiempo = 1400;
             } else if (miRespuesta.equals("no_existe")) {
-                System.out.println("*************************************************************************************************");
-                System.out.println("* * *  ¡ ¡ ¡   L A   O P C I Ó N    S E L E C C I O N A D A    N O    E X I S T E   ! ! !   * * *");
-                System.out.println("*************************************************************************************************");
+                System.out.println("***************************************************************************************************");
+                System.out.println("* * *  ¡ ¡ ¡    L A   O P C I Ó N    S E L E C C I O N A D A    N O    E X I S T E    ! ! !   * * *");
+                System.out.println("***************************************************************************************************");
                 salida = false;
             } else if (miRespuesta.equals("0")) {
-                System.out.println("*************************************************************************************************");
-                System.out.println("* * *     * * *     ¡ ¡ ¡    R E S P U E S T A    E N    B L A N C O    ! ! !     * * *     * * *");
-                System.out.println("*************************************************************************************************");
+                System.out.println("***************************************************************************************************");
+                System.out.println("* * *     * * *      ¡ ¡ ¡    R E S P U E S T A    E N    B L A N C O    ! ! !      * * *     * * *");
+                System.out.println("***************************************************************************************************");
                 en_blanco = (1 + en_blanco);
                 contador = (1 + contador);
                 salida = true;
             } else {
-                System.out.println("*************************************************************************************************");
-                System.out.println("* * *    * * *    * * *          ¡ ¡ ¡    E  R  R  O  R    ! ! !          * * *    * * *    * * *");
-                System.out.println("*************************************************************************************************");
+                System.out.println("***************************************************************************************************");
+                System.out.println("* * *    * * *    * * *           ¡ ¡ ¡    E  R  R  O  R    ! ! !           * * *    * * *    * * *");
+                System.out.println("***************************************************************************************************");
                 fallos = (1 + fallos);
                 aciertos = (-1 + aciertos);
                 salida = false;
             }
             meterEspacios(15);
-            esperar(1500);
+            esperar(1200 + plusTiempo);
             
         } while ( !salida );
     }
@@ -338,7 +338,7 @@ public class Principal {
         minutos = (int) (resto_horas / 60000);
         segundos = (int) ((resto_horas % 60000)/1000);
         
-        System.out.println("*************************************************************************************************");
+        System.out.println("***************************************************************************************************");
         System.out.println("     " + asignatura + "       TEMA: " + tema + "     NOTA = " + nota);
         System.out.println("     ACIERTOS  = " + aciert + "     FALLOS = " + fall + "     EN BLANCO = " + en_bl);
         System.out.println("     TIEMPO = " + horas + " h : " + minutos + " m : " + segundos + " s");
@@ -396,5 +396,25 @@ public class Principal {
             System.out.print(" " + arr[i]);
         }
         return arr;
-    }    
+    }
+    
+    public static void miDefault() {
+    
+        meterEspacios(25);
+        System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
+        meterEspacios(15);
+        esperar(1500);
+        //meterEspacios(25);
+    }
+    
+    public static void miError(Exception e) {
+    
+        System.out.println("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n");
+        System.out.println("Error: " + e.toString());
+        System.out.println("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n");
+        System.out.println("MENSAJE " + e.getMessage());
+        System.out.println("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n");
+        System.out.println("La Excepción es: " + e.getClass());
+        System.out.println("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n");
+    }
 }

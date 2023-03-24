@@ -1,10 +1,8 @@
 package SistemasGestionEmpresarial;
 
 import _Main_.Menu_Temas;
-import static _Main_.Principal.esperar;
-import static _Main_.Principal.meterEspacios;
 import java.util.Scanner;
-import static _Main_.Principal.tipo_test;
+import static _Main_.Principal.*;
 
 /**
  *
@@ -13,7 +11,7 @@ import static _Main_.Principal.tipo_test;
 
 public class Test_SistemasGestionEmpresarial { 
 
-    public static void Sis_Ges_Emp() {
+    public static void Sis_Ges_Emp() {  //   
         
         Menu_Temas.setTema_01("LA GESTIÓN EMPRESARIAL.");
         Menu_Temas.setTema_02("ERP-CRM ACTUALES LIBRES Y PROPIETARIOS.");
@@ -29,7 +27,7 @@ public class Test_SistemasGestionEmpresarial {
         Menu_Temas.setTema_12("PROGRAMANDO EN PYTHON.");
         Menu_Temas.setTema_13("LOS MECANISMOS INTERNOS DE UN SISTEMA ERP-CRM.");
         Menu_Temas.setTema_14("DESARROLLO DE NUEVOS COMPONENTES I: CREACIÓN DE UN MÓDULO.");
-        Menu_Temas.setTema_15("");
+        Menu_Temas.setTema_15("DESARROLLO DE NUEVOS COMPONENTES II: ADMINISTRACIÓN E INFORMES.");
         Menu_Temas.setTema_r1("TEST DE REPASO I.");
         Menu_Temas.setTema_r2("TEST DE REPASO II.");
         
@@ -243,34 +241,26 @@ public class Test_SistemasGestionEmpresarial {
                     case "15" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("Una forma de ver qué modelo usa un formulario es ...", "Pulsando en el 'insecto' y en 'obtener campos de vista'.", "Pulsando en el 'insecto' y en 'comenzar recorrido'.", "Pulsando en el 'insecto' y en 'abrir vista'.", "Ninguna respuesta es correcta.", "4");
+            /*02*/      tipo_test("Para agregar un campo a la vista desde Odoo ...", "Pulsaremos en el 'insecto' y en 'obtener campos de vista'.", "Pulsaremos en el 'insecto' y en 'editar vista: formulario'.", "Pulsaremos en el 'insecto' y en 'abrir vista'.", "Ninguna respuesta es correcta.", "2");
+            /*03*/      tipo_test("La extracción de datos desde el botón 'Exportar' ...", "Puede exportar los datos solo en CSV.", "Puede exportar los datos solo en XLSX.", "Puede exportar los datos en XLSX y CSV.", "Ninguna respuesta es correcta.", "3");
+            /*04*/      tipo_test("Los grupos en Odoo ...", "Son módulos asignables a usuarios.", "Son bloques donde encapsular una serie de reglas y permisos para luego ser asignados a usuarios.", "Son un conjunto de usuarios que realizan la misma tarea.", "Ninguna respuesta es correcta.", "2");
+            /*05*/      tipo_test("En Odoo ...", "Ya existen una serie de grupos por defecto.", "Un usuario puede tener asignado varios grupos.", "Al instalar un módulo se crean unos grupos por defecto con permisos para dicho módulo.", "Todas las respuestas son correctas.", "4");
+            /*06*/      tipo_test("El tipo de usuario que nos permite gestionarle los permisos es ...", "Usuario interno.", "Portal.", "Público.", "Ninguna respuesta es correcta.", "1");
+            /*07*/      tipo_test("Los permisos sobre objetos de Odoo que podremos habilitar/deshabilitar son:", "Permiso para leer, escribir, crear y eliminar.", "Permiso para leer y escribir.", "Permiso para crear y eliminar.", "Ninguna respuesta es correcta.", "1");
+            /*08*/      tipo_test("Un informe QWeb ...", "Es un archivo Python que contiene una etiqueta report_type = 'qweb-pdf'.", "Es un archivo XML que contiene una etiqueta report_type = 'qweb-pdf'.", "Es un archivo CSV que contiene una etiqueta report_type = 'qweb-pdf'.", "Ninguna respuesta es correcta.", "2");
+            /*09*/      tipo_test("Para solventar el error de que no se creen las tablas en PostgreSQL al olvidarnos\n        importar los modelos de Python ...", "Bastará con importar en el fichero __init__.py de la raíz del módulo la carpeta models\n    que contiene todos los modelos.", "Bastará con importar en el fichero __init__.py de la carpeta models los modelos\n    que queremos que se carguen.", "Será necesario importar en el fichero __init__.py de la raíz del módulo la carpeta models\n    que contiene todos los modelos, y en el __init__.py de la carpeta models también se\n    deben importan los modelos que queremos que realmente se carguen.", "Ninguna respuesta es correcta.", "3");
+            /*10*/      tipo_test("Si al instalar o actualizar un módulo, éste se instala correctamente pero no se\n        visualizan los cambios de una nueva vista que hemos creado que hereda de otra,\n        puede ser debido a ...", "Que nos hayamos olvidado de indicar las dependencias en la sección 'depends'\n    del manifest.", "Que hayamos indicado las dependencias en la sección 'depends' del manifest.", "Que nos hayamos olvidado de agregar en el manifest, en la sección 'data', la vista\n    que hayamos creado nueva.", "Que hayamos agregado en el manifest, en la sección 'data', la vista que hayamos\n    creado nueva.", "3");                        
                     }
                     case "40" -> SistemasGestionEmpresarial.Test_Rep_I_Sis_Ges_Emp.test_Repaso();
                     case "50" -> SistemasGestionEmpresarial.Test_Rep_II_Sis_Ges_Emp.test_Repaso();
                     
                     case "0" -> {}
-                    default -> {
-                            meterEspacios(25);
-                            System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
-                            meterEspacios(15);
-                            esperar(1500);
-                            }
+                    default -> miDefault();
                 }
             }  catch (Exception e) {
-                System.out.println("Error: " + e.toString());
-                System.out.println("MENSAJE " + e.getMessage());
-                System.out.println("La Excepción es: " + e.getClass());
+                miError(e);
             }
         } while (!"0".equals(menu));
-    }
-    
+    }    
 }

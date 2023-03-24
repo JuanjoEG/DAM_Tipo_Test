@@ -1,10 +1,8 @@
 package ProgramacionServiciosProcesos;
 
 import _Main_.Menu_Temas;
-import static _Main_.Principal.esperar;
-import static _Main_.Principal.meterEspacios;
 import java.util.Scanner;
-import static _Main_.Principal.tipo_test;
+import static _Main_.Principal.*;
 
 /**
  *
@@ -29,7 +27,7 @@ public class Test_ProgramacionServiciosProcesos {
         Menu_Temas.setTema_12("LOS SERVICIOS WEB.");
         Menu_Temas.setTema_13("LA PROGRAMACIÓN SEGURA.");
         Menu_Temas.setTema_14("LA CRIPTOGRAFÍA.");
-        Menu_Temas.setTema_15("");
+        Menu_Temas.setTema_15("COMUNICACIONES SEGURAS.");
         Menu_Temas.setTema_r1("TEST DE REPASO I.");
         Menu_Temas.setTema_r2("TEST DE REPASO II.");
         
@@ -244,34 +242,26 @@ public class Test_ProgramacionServiciosProcesos {
                     case "15" -> {
                         _Main_.Principal.setTema(menu);
                         
-            /*01*/      tipo_test("", "", "", "", "", "");
-            /*02*/      tipo_test("", "", "", "", "", "");
-            /*03*/      tipo_test("", "", "", "", "", "");
-            /*04*/      tipo_test("", "", "", "", "", "");
-            /*05*/      tipo_test("", "", "", "", "", "");
-            /*06*/      tipo_test("", "", "", "", "", "");
-            /*07*/      tipo_test("", "", "", "", "", "");
-            /*08*/      tipo_test("", "", "", "", "", "");
-            /*09*/      tipo_test("", "", "", "", "", "");
-            /*10*/      tipo_test("", "", "", "", "", "");                        
+            /*01*/      tipo_test("La versión segura de Telnet es:", "FTPS.", "SSH.", "IMAP.", "POP3.", "2");
+            /*02*/      tipo_test("Con la opción javax.net.ssl.keyStore:", "Indicamos la clave para acceder a dicho almacén y para acceder al certificado dentro\n    del almacén.", "Indicamos el almacén donde están los certificados en los que se confía.", "Indicamos el almacén donde está el certificado que nos identifica.", "Indicamos la clave para acceder a dicho almacén y a los certificados dentro del almacén.", "3");
+            /*03*/      tipo_test("¿Qué comando debemos utilizar para generar los certificados de los sockets seguros?", "keytool.", "securekey.", "Ambos comandos se pueden utilizar.", "Los sockets seguros no necesitan certificados.", "1");
+            /*04*/      tipo_test("¿Qué significan las siglas del algoritmo AES?", "Advanced Encryption Standard.", "Advantage Encryption Standard.", "Advanced Edition Standard.", "Advanced Encryption Situation.", "1");
+            /*05*/      tipo_test("Con la opción javax.net.ssl.keyStorePassword:", "Indicamos la clave para acceder a dicho almacén y para acceder al certificado dentro del almacén.", "Indicamos el almacén donde están los certificados en los que se confía.", "Indicamos el almacén donde está el certificado que nos identifica.", "Indicamos la clave para acceder a dicho almacén y a los certificados dentro del almacén.", "1");
+            /*06*/      tipo_test("¿Qué significan las siglas del protocolo SSL?", "Secure Signed Layer.", "Secure Socket teLecomunication.", "Secure Sigma Layer.", "Secure Sockets Layer.", "4");
+            /*07*/      tipo_test("Con la opción javax.net.ssl.trustStorePassword:", "Indicamos la clave para acceder a dicho almacén y para acceder al certificado dentro\n    del almacén.", "Indicamos el almacén donde están los certificados en los que se confía.", "Indicamos el almacén donde está el certificado que nos identifica.", "Indicamos la clave para acceder a dicho almacén y a los certificados dentro del almacén.", "4");
+            /*08*/      tipo_test("Las fases del protocolo SSL son:", "Intercambio de claves, negociación de algoritmos, verificación canal seguro.", "Verificación canal seguro, intercambio de claves, negociación de algoritmos.", "Negociación de algoritmos, intercambio de claves, verificación canal seguro.", "Intercambio de claves, verificación canal seguro, intercambio de claves.", "3");
+            /*09*/      tipo_test("¿Qué biblioteca debemos descargar para poder realizar un cifrado AES?", "commons-codec.", "codec-AES.", "AES-cipher.", "commons-codecs.", "1");
+            /*10*/      tipo_test("Con la opción javax.net.ssl.trustStore:", "Indicamos la clave para acceder a dicho almacén y para acceder al certificado dentro\n    del almacén.", "Indicamos el almacén donde están los certificados en los que se confía.", "Indicamos el almacén donde está el certificado que nos identifica.", "Indicamos la clave para acceder a dicho almacén y a los certificados dentro del almacén.", "2");                        
                     }
                     case "40" -> ProgramacionServiciosProcesos.Test_Rep_I_Pro_Ser_Pro.test_Repaso();
                     case "50" -> ProgramacionServiciosProcesos.Test_Rep_II_Pro_Ser_Pro.test_Repaso();
                     
                     case "0" -> {}
-                    default -> {
-                            meterEspacios(25);
-                            System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
-                            meterEspacios(15);
-                            esperar(1500);
-                            }
+                    default -> miDefault();
                 }
             }  catch (Exception e) {
-                System.out.println("Error: " + e.toString());
-                System.out.println("MENSAJE " + e.getMessage());
-                System.out.println("La Excepción es: " + e.getClass());
+                miError(e);
             }
         } while (!"0".equals(menu));
-    }
-    
+    }    
 }
